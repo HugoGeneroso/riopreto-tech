@@ -1,167 +1,170 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rio Preto Tech — agência de IAs · sites que fazem seu negócio aparecer</title>
-<meta name="description" content="Criação de sites para negócios de São José do Rio Preto/SP. Protótipo pronto antes de você pagar. Site completo por R$200, pagamento único.">
-<style>
-:root{
-  --bg:#0b0f14;--bg2:#111823;--card:#141c29;--line:#223047;
-  --txt:#e8eef7;--mut:#93a4bc;--acc:#38bdf8;--acc2:#0ea5e9;--ok:#34d399;
-}
-*{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6;overflow-x:hidden}
-.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
-a{color:var(--acc);text-decoration:none}
-h2{font-size:clamp(1.5rem,3.5vw,2.1rem);margin-bottom:10px}
-.sub{color:var(--mut);max-width:640px;margin-bottom:34px}
-section{padding:72px 0;border-top:1px solid var(--line)}
-.btn{display:inline-block;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#04121c;font-weight:700;padding:14px 28px;border-radius:10px;font-size:1.05rem;transition:.2s}
-.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
-.btn.ghost{background:transparent;color:var(--acc);border:1px solid var(--acc)}
-.tag{display:inline-block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);border:1px solid var(--acc);border-radius:99px;padding:4px 14px;margin-bottom:18px}
-header{position:sticky;top:0;background:rgba(11,15,20,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
-header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 24px}
-.logo{font-weight:800;font-size:1.15rem}
-.logo span{color:var(--acc)}
-nav a{color:var(--mut);margin-left:22px;font-size:.92rem}
-nav a:hover{color:var(--txt)}
-/* hero */
-.hero{padding:96px 0 80px;border-top:none;background:radial-gradient(800px 400px at 70% -10%,rgba(56,189,248,.14),transparent)}
-.hero h1{font-size:clamp(2rem,5.5vw,3.3rem);line-height:1.15;margin-bottom:18px}
-.hero h1 em{font-style:normal;color:var(--acc)}
-.hero p{color:var(--mut);font-size:1.12rem;max-width:600px;margin-bottom:32px}
-.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
-.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:38px}
-.badges span{font-size:.85rem;color:var(--mut);border:1px solid var(--line);background:var(--bg2);border-radius:99px;padding:6px 14px}
-/* grids */
-.grid{display:grid;gap:18px}
-.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-.g4{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
-.card h3{font-size:1.1rem;margin-bottom:8px}
-.card p{color:var(--mut);font-size:.94rem}
-.card .preco{display:block;margin-top:14px;font-weight:800;color:var(--acc);font-size:1.05rem}
-.dif .num{color:var(--acc);font-weight:800;font-size:.85rem;letter-spacing:.1em;margin-bottom:8px}
-/* portfolio */
-.proto{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
-.proto img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;object-position:top}
-.proto .info{padding:16px 18px}
-.proto .info p{color:var(--mut);font-size:.9rem;margin-top:4px}
-.selo{position:absolute;top:10px;left:10px;background:rgba(4,18,28,.85);color:var(--acc);font-size:.72rem;border:1px solid var(--acc);border-radius:99px;padding:3px 10px}
-/* provas */
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
-.stat{text-align:center;padding:30px 16px}
-.stat b{display:block;font-size:2.2rem;color:var(--acc)}
-.stat span{color:var(--mut);font-size:.92rem}
-/* faq */
-.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;padding:18px 22px}
-.faq summary{cursor:pointer;font-weight:600}
-.faq details p{color:var(--mut);margin-top:10px;font-size:.95rem}
-/* footer cta */
-.final{text-align:center}
-.final .btn{margin-top:10px}
-footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-size:.85rem;text-align:center}
-@media(max-width:640px){nav a:not(.btn){display:none}section{padding:52px 0}.hero .ctas .btn{width:100%;text-align:center}.hero h1{font-size:1.85rem}}
-</style>
-</head>
-<body>
-
-<header>
-  <div class="wrap">
-    <div class="logo">rio preto<span>.tech</span></div>
-    <nav>
-      <a href="#diferenciais">Diferenciais</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#portfolio">Portfólio</a>
-      <a href="#faq">FAQ</a>
-      <a class="btn" style="padding:8px 18px;font-size:.9rem" href="https://wa.me/5517991317923" target="_blank" rel="noopener">WhatsApp</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="wrap">
-    <span class="tag">São José do Rio Preto · SP · 100% feita e liderada por IAs</span>
-    <h1>Rio Preto Tech — sites que fazem seu negócio <em>aparecer</em></h1>
-    <p>Criação de sites e chatbots de atendimento para negócios locais. Somos a primeira agência da região <strong>100% construída e liderada por agentes de IA</strong> — por isso o preço cabe no bolso. Você vê o protótipo do seu site <strong>pronto, antes de pagar um centavo</strong>.</p>
-    <div class="ctas">
-      <a class="btn" href="https://wa.me/5517991317923" target="_blank" rel="noopener">Falar no WhatsApp →</a>
-      <a class="btn ghost" href="#faq">Ver perguntas frequentes</a>
-    </div>
-    <div class="badges">
-      <span>✓ Protótipo antes de pagar</span>
-      <span>✓ Site completo por R$200 + R$30/mês</span>
-      <span>✓ SEO local e QR Reviews inclusos</span>
-      <span>✓ Domínio no seu nome</span>
-      <span>✓ Atendimento por WhatsApp</span>
-    </div>
-  </div>
-</section>
-
-<section id="diferenciais">
-  <div class="wrap">
-    <h2>Por que diferente das agências daqui</h2>
-    <p class="sub">Nada de promessa vaga. Nosso processo é o oposto do que você já ouviu de agência.</p>
-    <div class="grid g2">
-      <div class="card dif"><div class="num">01</div><h3>Protótipo pronto antes de pagar</h3><p>Fazemos um site de demonstração com dados reais do seu negócio. Você vê, testa e só decide depois. Nenhuma agência local faz isso.</p></div>
-      <div class="card dif"><div class="num">02</div><h3>Preço transparente</h3><p>Site completo com SEO local por R$200 + R$30/mês de manutenção opcional. Sem mensalidade escondida, sem fidelidade — e o SEO que faz você APARECER já vem incluso, não é upsell.</p></div>
-      <div class="card dif"><div class="num">03</div><h3>Domínio sempre no seu nome</h3><p>O domínio é registrado no nome do seu negócio. Ele é seu desde o primeiro dia — não fica refém de agência.</p></div>
-      <div class="card dif"><div class="num">04</div><h3>Atendimento por WhatsApp com IA</h3><p>Nosso próprio atendimento roda em WhatsApp com IA: resposta rápida a qualquer hora. E aplicamos a mesma tecnologia no seu negócio.</p></div>
-      <div class="card dif"><div class="num">05</div><h3>100% IA, 100% local</h3><p>Somos uma agência feita e liderada por agentes de inteligência artificial — pesquisa, desenvolvimento, design e atendimento. Um fundador humano em Rio Preto cuida de tudo, e a IA faz o resto. É assim que conseguimos cobrar R$200 em vez de R$1.800.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="servicos">
-  <div class="wrap">
-    <h2>Serviços</h2>
-    <p class="sub">Pacotes e serviços avulsos, com preço na mesa.</p>
-    <div class="grid g4">
-      <div class="card"><h3>🖥️ Site completo + SEO local</h3><p>Site profissional, rápido e responsivo, com SEO local incluso: Google Meu Negócio, busca orgânica e QR Reviews. Você é o dono — domínio no seu nome.</p><span class="preco">R$200 único + R$30/mês manutenção</span></div>
-      <div class="card"><h3>🤖 Chatbot de atendimento</h3><p>Atendimento automático no WhatsApp e no site: responde, agenda e filtra cliente quente 24h. Projeto analisado por caso e complexidade.</p><span class="preco">a consultar</span></div>
-    </div>
-  </div>
-</section>
-
-
-<section id="provas">
-  <div class="wrap">
-    <h2>A operação em números</h2>
-    <p class="sub">Métricas reais da nossa operação de prospecção na cidade.</p>
-    <div class="stats">
-      <div class="card stat"><b>134+</b><span>negócios locais mapeados e analisados</span></div>
-      <div class="card stat"><b>100%</b><span>dos protótipos entregues antes de qualquer pagamento</span></div>
-      <div class="card stat"><b>R$0</b><span>custo para ver o protótipo do seu site</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="faq" class="faq">
-  <div class="wrap">
-    <h2>Perguntas frequentes</h2>
-    <p class="sub">Se ficou qualquer dúvida, chama no WhatsApp.</p>
-    <details><summary>O protótipo é grátis mesmo?</summary><p>Sim. Fazemos o protótipo com dados reais do seu negócio e você só contrata se gostar. Sem compromisso.</p></details>
-    <details><summary>O domínio fica no meu nome?</summary><p>Sempre. Registramos o domínio direto no nome do seu negócio — ele é seu desde o primeiro dia, não fica refém de agência.</p></details>
-    <details><summary>Quanto custa e como posso pagar?</summary><p>Site completo com SEO local: R$200 (pagamento único) + R$30/mês de manutenção opcional (site + SEO ativo, pode cancelar quando quiser — o site continua seu). Domínio e hospedagem ficam registrados no SEU nome, pelo custo real (ex.: .com.br ~R$40/ano). Chatbot de atendimento: analisado por caso e complexidade, a consultar.</p></details>
-    <details><summary>Quanto tempo fica pronto?</summary><p>O protótipo sai em dias, não semanas. Ajustes finais com seu conteúdo costumam levar poucos dias após a aprovação.</p></details>
-    <details><summary>Atendem só em São José do Rio Preto?</summary><p>Somos da cidade e priorizamos a região, mas atendemos negócios de toda a região NW de São Paulo também.</p></details>
-  </div>
-</section>
-
-<section class="final">
-  <div class="wrap">
-    <h2>Quer ver o site do seu negócio antes de pagar?</h2>
-    <p class="sub" style="margin:0 auto 26px">Manda um "oi" no WhatsApp. Em poucos dias você recebe o protótipo.</p>
-    <a class="btn" href="https://wa.me/5517991317923" target="_blank" rel="noopener">Chamar no WhatsApp →</a>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">rio preto.tech — agência 100% feita e liderada por IAs · São José do Rio Preto/SP · <a href="https://wa.me/5517991317923">WhatsApp (17) 99131-7923</a> · © 2026</div>
-</footer>
-
-</body>
-</html>
+1|<!DOCTYPE html>
+2|<html lang="pt-BR">
+3|<head>
+4|<meta charset="UTF-8">
+5|<meta name="viewport" content="width=device-width, initial-scale=1.0">
+6|<title>Rio Preto Tech — agência de IAs · sites que fazem seu negócio aparecer</title>
+7|<meta name="description" content="Criação de sites para negócios de São José do Rio Preto/SP. Protótipo pronto antes de você pagar. Site completo por R$200, pagamento único.">
+8|<style>
+9|:root{
+10|  --bg:#0b0f14;--bg2:#111823;--card:#141c29;--line:#223047;
+11|  --txt:#e8eef7;--mut:#93a4bc;--acc:#38bdf8;--acc2:#0ea5e9;--ok:#34d399;
+12|}
+13|*{margin:0;padding:0;box-sizing:border-box}
+14|html{scroll-behavior:smooth}
+15|body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6;overflow-x:hidden}
+16|.wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+17|a{color:var(--acc);text-decoration:none}
+18|h2{font-size:clamp(1.5rem,3.5vw,2.1rem);margin-bottom:10px}
+19|.sub{color:var(--mut);max-width:640px;margin-bottom:34px}
+20|section{padding:72px 0;border-top:1px solid var(--line)}
+21|.btn{display:inline-block;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#04121c;font-weight:700;padding:14px 28px;border-radius:10px;font-size:1.05rem;transition:.2s}
+22|.btn:hover{transform:translateY(-2px);filter:brightness(1.1)}
+23|.btn.ghost{background:transparent;color:var(--acc);border:1px solid var(--acc)}
+24|.tag{display:inline-block;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);border:1px solid var(--acc);border-radius:99px;padding:4px 14px;margin-bottom:18px}
+25|header{position:sticky;top:0;background:rgba(11,15,20,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+26|header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 24px}
+27|.logo{font-weight:800;font-size:1.15rem}
+28|.logo span{color:var(--acc)}
+29|nav a{color:var(--mut);margin-left:22px;font-size:.92rem}
+30|nav a:hover{color:var(--txt)}
+31|/* hero */
+32|.hero{padding:96px 0 80px;border-top:none;background:radial-gradient(800px 400px at 70% -10%,rgba(56,189,248,.14),transparent)}
+33|.hero h1{font-size:clamp(2rem,5.5vw,3.3rem);line-height:1.15;margin-bottom:18px}
+34|.hero h1 em{font-style:normal;color:var(--acc)}
+35|.hero p{color:var(--mut);font-size:1.12rem;max-width:600px;margin-bottom:32px}
+36|.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+37|.badges{display:flex;gap:10px;flex-wrap:wrap;margin-top:38px}
+38|.badges span{font-size:.85rem;color:var(--mut);border:1px solid var(--line);background:var(--bg2);border-radius:99px;padding:6px 14px}
+39|/* grids */
+40|.grid{display:grid;gap:18px}
+41|.g2{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+42|.g4{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+43|.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+44|.card h3{font-size:1.1rem;margin-bottom:8px}
+45|.card p{color:var(--mut);font-size:.94rem}
+46|.card .preco{display:block;margin-top:14px;font-weight:800;color:var(--acc);font-size:1.05rem}
+47|.dif .num{color:var(--acc);font-weight:800;font-size:.85rem;letter-spacing:.1em;margin-bottom:8px}
+48|/* portfolio */
+49|.proto{position:relative;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--card)}
+50|.proto img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover;object-position:top}
+51|.proto .info{padding:16px 18px}
+52|.proto .info p{color:var(--mut);font-size:.9rem;margin-top:4px}
+53|.selo{position:absolute;top:10px;left:10px;background:rgba(4,18,28,.85);color:var(--acc);font-size:.72rem;border:1px solid var(--acc);border-radius:99px;padding:3px 10px}
+54|/* provas */
+55|.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px}
+56|.stat{text-align:center;padding:30px 16px}
+57|.stat b{display:block;font-size:2.2rem;color:var(--acc)}
+58|.stat span{color:var(--mut);font-size:.92rem}
+59|/* faq */
+60|.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;padding:18px 22px}
+61|.faq summary{cursor:pointer;font-weight:600}
+62|.faq details p{color:var(--mut);margin-top:10px;font-size:.95rem}
+63|/* footer cta */
+64|.final{text-align:center}
+65|.final .btn{margin-top:10px}
+66|footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-size:.85rem;text-align:center}
+67|@media(max-width:640px){nav a:not(.btn){display:none}section{padding:52px 0}.hero .ctas .btn{width:100%;text-align:center}.hero h1{font-size:1.85rem}}
+68|</style>
+69|</head>
+70|<body>
+71|
+72|<header>
+73|  <div class="wrap">
+74|    <div class="logo">rio preto<span>.tech</span></div>
+75|    <nav>
+76|      <a href="#diferenciais">Diferenciais</a>
+77|      <a href="#servicos">Serviços</a>
+78|      <a href="#portfolio">Portfólio</a>
+79|      <a href="#faq">FAQ</a>
+80|      <a class="btn" style="padding:8px 18px;font-size:.9rem" href="https://wa.me/5517991317923" target="_blank" rel="noopener">WhatsApp</a>
+81|    </nav>
+82|  </div>
+83|</header>
+84|
+85|<section class="hero">
+86|  <div class="wrap">
+87|    <span class="tag">São José do Rio Preto · SP · 100% feita e liderada por IAs</span>
+88|    <h1>Rio Preto Tech — sites que fazem seu negócio <em>aparecer</em></h1>
+89|    <p>Criação de sites e chatbots de atendimento para negócios locais. Somos a primeira agência da região <strong>100% construída e liderada por agentes de IA</strong> — por isso o preço cabe no bolso. Você vê o protótipo do seu site <strong>pronto, antes de pagar um centavo</strong>.</p>
+90|    <div class="ctas">
+91|      <a class="btn" href="https://wa.me/5517991317923" target="_blank" rel="noopener">Falar no WhatsApp →</a>
+92|      <a class="btn ghost" href="#faq">Ver perguntas frequentes</a>
+93|    </div>
+94|    <div class="badges">
+95|      <span>✓ Protótipo antes de pagar</span>
+96|      <span>✓ Site completo por R$200 + R$30/mês</span>
+97|      <span>✓ SEO local e QR Reviews inclusos</span>
+98|      <span>✓ Domínio no seu nome</span>
+99|      <span>✓ Atendimento por WhatsApp</span>
+100|    </div>
+101|  </div>
+102|</section>
+103|
+104|<section id="diferenciais">
+105|  <div class="wrap">
+106|    <h2>Por que diferente das agências daqui</h2>
+107|    <p class="sub">Nada de promessa vaga. Nosso processo é o oposto do que você já ouviu de agência.</p>
+108|    <div class="grid g2">
+109|      <div class="card dif"><div class="num">01</div><h3>Protótipo pronto antes de pagar</h3><p>Fazemos um site de demonstração com dados reais do seu negócio. Você vê, testa e só decide depois. Nenhuma agência local faz isso.</p></div>
+110|      <div class="card dif"><div class="num">02</div><h3>Preço transparente</h3><p>Site completo com SEO local por R$200 + R$30/mês de manutenção opcional. Sem mensalidade escondida, sem fidelidade — e o SEO que faz você APARECER já vem incluso, não é upsell.</p></div>
+111|      <div class="card dif"><div class="num">03</div><h3>Domínio sempre no seu nome</h3><p>O domínio é registrado no nome do seu negócio. Ele é seu desde o primeiro dia — não fica refém de agência.</p></div>
+112|      <div class="card dif"><div class="num">04</div><h3>Atendimento por WhatsApp com IA</h3><p>Nosso próprio atendimento roda em WhatsApp com IA: resposta rápida a qualquer hora. E aplicamos a mesma tecnologia no seu negócio.</p></div>
+113|      <div class="card dif"><div class="num">05</div><h3>100% IA, 100% local</h3><p>Somos uma agência feita e liderada por agentes de inteligência artificial — pesquisa, desenvolvimento, design e atendimento. Um fundador humano em Rio Preto cuida de tudo, e a IA faz o resto. É assim que conseguimos cobrar R$200 em vez de R$1.800.</p></div>
+114|    </div>
+115|  </div>
+116|</section>
+117|
+118|<section id="servicos">
+119|  <div class="wrap">
+120|    <h2>Serviços</h2>
+121|    <p class="sub">Pacotes e serviços avulsos, com preço na mesa.</p>
+122|    <div class="grid g4">
+123|      <div class="card"><h3>🖥️ Site completo + SEO local</h3><p>Site profissional, rápido e responsivo, com SEO local incluso: Google Meu Negócio, busca orgânica e QR Reviews.</p><span class="preco">R$200 único + R$30/mês manutenção</span></div>
+      <div class="card"><h3>🌐 Domínio próprio</h3><p>Suamarca.com.br registrado NO SEU NOME — você é o dono desde o primeiro dia. Necessário pra competir de verdade no Google.</p><span class="preco">R$40/ano</span></div>
+      <div class="card"><h3>☁️ Hospedagem</h3><p>Site hospedado na nossa infraestrutura: rápido, HTTPS, uptime monitorado. Migração facilitada se um dia quiser sair.</p><span class="preco">R$15/mês</span></div>
+124|      <div class="card"><h3>🤖 Chatbot de atendimento</h3><p>Atendimento automático no WhatsApp e no site: responde, agenda e filtra cliente quente 24h. Projeto analisado por caso e complexidade.</p><span class="preco">a consultar</span></div>
+125|    </div>
+126|  </div>
+127|</section>
+128|
+129|
+130|<section id="provas">
+131|  <div class="wrap">
+132|    <h2>A operação em números</h2>
+133|    <p class="sub">Métricas reais da nossa operação de prospecção na cidade.</p>
+134|    <div class="stats">
+135|      <div class="card stat"><b>134+</b><span>negócios locais mapeados e analisados</span></div>
+136|      <div class="card stat"><b>100%</b><span>dos protótipos entregues antes de qualquer pagamento</span></div>
+137|      <div class="card stat"><b>R$0</b><span>custo para ver o protótipo do seu site</span></div>
+138|    </div>
+139|  </div>
+140|</section>
+141|
+142|<section id="faq" class="faq">
+143|  <div class="wrap">
+144|    <h2>Perguntas frequentes</h2>
+145|    <p class="sub">Se ficou qualquer dúvida, chama no WhatsApp.</p>
+146|    <details><summary>O protótipo é grátis mesmo?</summary><p>Sim. Fazemos o protótipo com dados reais do seu negócio e você só contrata se gostar. Sem compromisso.</p></details>
+147|    <details><summary>O domínio fica no meu nome?</summary><p>Sempre. Registramos o domínio direto no nome do seu negócio — ele é seu desde o primeiro dia, não fica refém de agência.</p></details>
+148|    <details><summary>Quanto custa e como posso pagar?</summary><p>Site completo com SEO local: R$200 (pagamento único) + R$30/mês de manutenção opcional (cancela quando quiser — o site continua seu). Domínio próprio: R$40/ano (.com.br), registrado no SEU nome. Hospedagem: R$15/mês na nossa infraestrutura. Alternativa econômica: subdomínio grátis (nome.riopreto.tech) — mas pra competir de verdade no Google, o domínio próprio faz diferença. Chatbot: analisado por caso, a consultar.</p></details>
+149|    <details><summary>Quanto tempo fica pronto?</summary><p>O protótipo sai em dias, não semanas. Ajustes finais com seu conteúdo costumam levar poucos dias após a aprovação.</p></details>
+150|    <details><summary>Atendem só em São José do Rio Preto?</summary><p>Somos da cidade e priorizamos a região, mas atendemos negócios de toda a região NW de São Paulo também.</p></details>
+151|  </div>
+152|</section>
+153|
+154|<section class="final">
+155|  <div class="wrap">
+156|    <h2>Quer ver o site do seu negócio antes de pagar?</h2>
+157|    <p class="sub" style="margin:0 auto 26px">Manda um "oi" no WhatsApp. Em poucos dias você recebe o protótipo.</p>
+158|    <a class="btn" href="https://wa.me/5517991317923" target="_blank" rel="noopener">Chamar no WhatsApp →</a>
+159|  </div>
+160|</section>
+161|
+162|<footer>
+163|  <div class="wrap">rio preto.tech — agência 100% feita e liderada por IAs · São José do Rio Preto/SP · <a href="https://wa.me/5517991317923">WhatsApp (17) 99131-7923</a> · © 2026</div>
+164|</footer>
+165|
+166|</body>
+167|</html>
+168|
