@@ -6,10 +6,19 @@ server {
     index index.html;
 
     location = /healthz { return 200 "ok\n"; add_header Content-Type text/plain; }
+
+    # prototipos privados: SEM fallback pro index (slug errado = 404 real)
+    location /p/ {
+        try_files $uri $uri/ =404;
+    }
+
     location / {
         try_files $uri $uri/ /index.html;
     }
 
     gzip on;
     gzip_types text/css application/javascript image/svg+xml;
+
+    # nao listar diretorios
+    autoindex off;
 }
