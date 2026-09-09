@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instituto Harmonizar — Harmonização Facial em São José do Rio Preto</title>
+<style>
+:root{--rose:#b76e79;--rose-esc:#8e4a56;--dourado:#c9a86a;--esc:#2a1e21;--creme:#fbf6f2}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Georgia','Segoe UI',serif}
+html{scroll-behavior:smooth}
+body{background:var(--creme);color:var(--esc)}
+.demo-badge{position:fixed;bottom:16px;right:16px;background:#b45309;color:#fff;padding:8px 14px;border-radius:999px;font-size:12px;font-weight:600;z-index:99;box-shadow:0 4px 12px rgba(0,0,0,.25);font-family:'Segoe UI',sans-serif}
+header{position:sticky;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);padding:14px 5%;display:flex;justify-content:space-between;align-items:center;z-index:50;box-shadow:0 1px 8px rgba(0,0,0,.06)}
+header .logo{font-size:1.25rem;font-weight:700;color:var(--rose-esc);letter-spacing:1px}
+nav a{color:var(--esc);text-decoration:none;margin-left:22px;font-size:.92rem;font-family:'Segoe UI',sans-serif}
+nav a:hover{color:var(--rose)}
+.hero{background:linear-gradient(rgba(42,30,33,.55),rgba(142,74,86,.6)),url('https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=1600&q=80') center/cover;color:#fff;padding:120px 5%;text-align:center}
+.hero h1{font-size:2.7rem;line-height:1.2;max-width:760px;margin:0 auto 18px}
+.hero p{max-width:560px;margin:0 auto 32px;font-size:1.1rem;color:#f3e8e4}
+.btn{display:inline-block;background:var(--rose);color:#fff;padding:15px 38px;border-radius:999px;text-decoration:none;font-weight:600;font-family:'Segoe UI',sans-serif;transition:.2s}
+.btn:hover{background:var(--rose-esc);transform:translateY(-2px)}
+section{padding:70px 5%}
+h2{font-size:2rem;text-align:center;margin-bottom:10px;color:var(--rose-esc)}
+.sub{text-align:center;color:#7a6a6e;margin-bottom:45px;max-width:600px;margin-inline:auto;font-family:'Segoe UI',sans-serif}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px;max-width:1150px;margin:0 auto}
+.card{background:#fff;border-radius:16px;padding:32px;box-shadow:0 6px 18px rgba(142,74,86,.08);transition:.2s}
+.card:hover{transform:translateY(-5px);box-shadow:0 12px 28px rgba(142,74,86,.18)}
+.card h3{color:var(--rose);margin-bottom:10px;font-size:1.15rem}
+.card p{color:#6d5c60;font-size:.95rem;line-height:1.55;font-family:'Segoe UI',sans-serif}
+.card .demo-tag{display:inline-block;margin-top:12px;font-size:.7rem;background:#fef3c7;color:#92400e;padding:3px 10px;border-radius:99px;font-weight:600;font-family:'Segoe UI',sans-serif}
+.sobre{background:#fff}
+.sobre .wrap{max-width:860px;margin:0 auto;text-align:center;font-size:1.05rem;color:#4a3a3e;line-height:1.75}
+.equipe{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:24px;max-width:900px;margin:40px auto 0}
+.membro{background:var(--creme);border-radius:14px;padding:26px;text-align:center}
+.membro .foto{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--rose),var(--dourado));margin:0 auto 14px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.6rem}
+.membro b{color:var(--rose-esc)}
+.membro small{display:block;color:#8a7478;margin-top:4px;font-family:'Segoe UI',sans-serif;font-size:.78rem}
+.membro .demo-tag{display:inline-block;margin-top:10px;font-size:.65rem;background:#fef3c7;color:#92400e;padding:2px 9px;border-radius:99px;font-weight:600;font-family:'Segoe UI',sans-serif}
+.cta{background:linear-gradient(135deg,var(--rose-esc),var(--esc));color:#fff;text-align:center}
+.cta h2{color:#fff}
+.cta p{color:#e8d6da;max-width:520px;margin:0 auto 30px;font-family:'Segoe UI',sans-serif}
+.cta .btn{background:var(--dourado);color:var(--esc)}
+footer{background:var(--esc);color:#b39a9f;text-align:center;padding:35px 5%;font-size:.85rem;line-height:1.8;font-family:'Segoe UI',sans-serif}
+footer b{color:#fff}
+@media(max-width:640px){.hero h1{font-size:1.55rem}header{flex-direction:column;gap:10px}nav a{margin:0 8px}section{padding:42px 16px}}
+</style>
+</head>
+<body>
+<div class="demo-badge">⚠️ Protótipo de demonstração</div>
+
+<header>
+  <div class="logo">Instituto Harmonizar</div>
+  <nav>
+    <a href="#procedimentos">Procedimentos</a>
+    <a href="#sobre">O Instituto</a>
+    <a href="#equipe">Equipe</a>
+    <a href="#contato">Agendar</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>Realce sua beleza natural com quem entende de <span style="color:var(--dourado)">harmonização facial</span></h1>
+  <p>Clínica multidisciplinar de harmonização facial em São José do Rio Preto, com profissionais e tratamentos especializados.</p>
+  <a class="btn" href="#contato">Agende sua avaliação</a>
+</div>
+
+<section id="procedimentos">
+  <h2>Nossos Procedimentos</h2>
+  <p class="sub">Técnicas avançadas para corrigir assimetrias e valorizar a harmonia do seu rosto.</p>
+  <div class="grid">
+    <div class="card">
+      <h3>Preenchimento Facial</h3>
+      <p>Ácido hialurônico para devolver volume, contornar lábios e suavizar sulcos com naturalidade.</p>
+      <span class="demo-tag">conteúdo de demonstração</span>
+    </div>
+    <div class="card">
+      <h3>Bioestimulador de Colágeno</h3>
+      <p>Estimula a produção natural de colágeno para firmeza e rejuvenescimento progressivo.</p>
+      <span class="demo-tag">conteúdo de demonstração</span>
+    </div>
+    <div class="card">
+      <h3>Toxina Botulínica</h3>
+      <p>Suavização de linhas de expressão e prevenção de rugas dinâmicas com precisão.</p>
+      <span class="demo-tag">conteúdo de demonstração</span>
+    </div>
+    <div class="card">
+      <h3>Threads / Fios de Sustentação</h3>
+      <p>Lifting sem cirurgia, com efeito de sustentação imediato e estímulo de colágeno.</p>
+      <span class="demo-tag">conteúdo de demonstração</span>
+    </div>
+    <div class="card">
+      <h3>Harmonização de Glúteo</h3>
+      <p>Contorno corporal com técnica segura e resultado proporcional ao biotipo.</p>
+      <span class="demo-tag">conteúdo de demonstração</span>
+    </div>
+    <div class="card">
+      <h3>Protocolos Personalizados</h3>
+      <p>Avaliação individual para o plano de tratamento ideal para o seu rosto.</p>
+      <span class="demo-tag">conteúdo de demonstração</span>
+    </div>
+  </div>
+</section>
+
+<section id="sobre" class="sobre">
+  <h2>O Instituto</h2>
+  <p class="sub">Mais harmonia e simetria, com segurança.</p>
+  <div class="wrap">
+    <p>O Instituto Harmonizar é uma clínica multidisciplinar de harmonização facial em São José do Rio Preto. Reúne profissionais e tratamentos especializados para cuidar da sua autoestima com técnica, segurança e resultados naturais.</p>
+    <p style="margin-top:16px;font-size:.85rem;color:#b45309;font-family:'Segoe UI',sans-serif">[conteúdo de demonstração — aguardando confirmação do instituto]</p>
+  </div>
+</section>
+
+<section id="equipe">
+  <h2>Equipe Especializada</h2>
+  <p class="sub">Profissionais dedicados a cada detalhe do seu resultado.</p>
+  <div class="equipe">
+    <div class="membro">
+      <div class="foto">👤</div>
+      <b>[Nome do profissional]</b>
+      <small>[Especialidade — CRM/CRO]</small>
+      <span class="demo-tag">demonstração</span>
+    </div>
+    <div class="membro">
+      <div class="foto">👤</div>
+      <b>[Nome do profissional]</b>
+      <small>[Especialidade — CRM/CRO]</small>
+      <span class="demo-tag">demonstração</span>
+    </div>
+  </div>
+</section>
+
+<section id="contato" class="cta">
+  <h2>Agende sua avaliação</h2>
+  <p style="margin-top:14px">Vagas limitadas por semana. Dê o primeiro passo para a sua melhor versão.</p>
+  <a class="btn" href="https://wa.me/5517000000000" title="[Hugo: substituir pelo WhatsApp real do instituto]">Falar no WhatsApp</a>
+  <p style="margin-top:26px;font-size:.85rem">📞 Telefone: [Hugo preencher] · 📍 Endereço: [Hugo preencher]</p>
+  <p style="margin-top:10px;font-size:.8rem;color:var(--dourado)">[conteúdo de demonstração — dados de contato não incluídos]</p>
+</section>
+
+<footer>
+  <b>Instituto Harmonizar</b><br>
+  Harmonização Facial · São José do Rio Preto · SP<br><br>
+  Protótipo criado pela Agência Rio Preto — não é o site oficial. Fonte pública: Facebook/@institutoharmonizar
+</footer>
+</body>
+</html>
