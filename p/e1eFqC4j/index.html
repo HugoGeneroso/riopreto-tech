@@ -1,169 +1,168 @@
-1|<!DOCTYPE html>
-2|<html lang="pt-BR">
-3|<head>
-4|<meta charset="UTF-8">
-5|<meta name="viewport" content="width=device-width, initial-scale=1.0">
-6|<title>Point do Churrasco — Boutique de Carnes Nobres em Salvador</title>
-7|<meta name="description" content="Boutique de carnes nobres e linha Angus em Salvador. Cortes premium, entregas em Salvador e Lauro de Freitas. Peça pelo WhatsApp.">
-8|<style>
-9|:root{--fogo:#ea580c;--fogo-esc:#7c2d12;--brasa:#fbbf24;--carvao:#140d08;--defumado:#2a1a10;--creme:#fdf6ee;--tinta:#3d2c1e}
-10|*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,sans-serif}
-11|html{scroll-behavior:smooth}
-12|body{background:var(--creme);color:var(--tinta);line-height:1.6}
-13|img{max-width:100%;display:block}
-14|.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
-15|
-16|header{position:sticky;top:0;z-index:50;background:rgba(20,13,8,.94);backdrop-filter:blur(10px)}
-17|header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 22px}
-18|.logo{color:#fff;font-weight:800;font-size:1.15rem}
-19|.logo span{color:var(--brasa)}
-20|nav a{color:#d9c4ae;text-decoration:none;margin-left:20px;font-size:.92rem}
-21|nav a:hover{color:#fff}
-22|nav .cta{background:linear-gradient(135deg,var(--fogo),#f97316);color:#fff;padding:9px 18px;border-radius:99px;font-weight:600}
-23|
-24|.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
-25|.hero .bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=1920&q=80') center/cover}
-26|.hero .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,13,8,.55) 0%,rgba(20,13,8,.35) 40%,rgba(20,13,8,.96) 100%)}
-27|.hero .bg::before{content:'';position:absolute;inset:0;background:radial-gradient(700px 320px at 15% 85%,rgba(234,88,12,.35),transparent),radial-gradient(500px 260px at 90% 10%,rgba(251,191,36,.14),transparent);z-index:1}
-28|.hero .wrap{position:relative;z-index:2;padding:140px 22px 90px}
-29|.tag{display:inline-block;font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brasa);border:1px solid rgba(251,191,36,.5);border-radius:99px;padding:6px 16px;margin-bottom:22px;background:rgba(20,13,8,.4)}
-30|.hero h1{font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.08;max-width:700px;margin-bottom:18px;text-shadow:0 4px 24px rgba(0,0,0,.5)}
-31|.hero h1 em{font-style:normal;color:var(--brasa)}
-32|.hero p{color:#efe0cf;font-size:1.12rem;max-width:560px;margin-bottom:34px;text-shadow:0 2px 12px rgba(0,0,0,.6)}
-33|.btn{display:inline-block;background:linear-gradient(135deg,var(--fogo),#f97316);color:#fff;font-weight:700;padding:15px 30px;border-radius:12px;text-decoration:none;transition:.2s;box-shadow:0 8px 28px rgba(234,88,12,.45)}
-34|.btn:hover{transform:translateY(-2px)}
-35|.btn.ghost{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(4px);box-shadow:none}
-36|.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
-37|
-38|section{padding:84px 0}
-39|section.alt{background:linear-gradient(180deg,#f7ead9,var(--creme))}
-40|h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:10px}
-41|.kicker{color:var(--fogo);font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:10px}
-42|.sub{color:#6b5443;max-width:640px;margin-bottom:42px}
-43|
-44|.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
-45|.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 10px 32px rgba(60,30,10,.1);transition:.25s}
-46|.card:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(60,30,10,.16)}
-47|.card img{height:220px;width:100%;object-fit:cover}
-48|.card .body{padding:22px}
-49|.card h3{margin-bottom:8px;font-size:1.12rem}
-50|.card p{color:#6b5443;font-size:.93rem}
-51|.badge{display:inline-block;background:#fff7ed;color:var(--fogo-esc);border:1px solid #fed7aa;font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:99px;margin-bottom:10px;letter-spacing:.06em;text-transform:uppercase}
-52|
-53|.sobre{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-54|.sobre img{border-radius:20px;box-shadow:0 20px 50px rgba(60,30,10,.22)}
-55|.sobre ul{list-style:none;margin-top:18px}
-56|.sobre li{padding:10px 0;display:flex;gap:12px;align-items:flex-start}
-57|.sobre li svg{flex-shrink:0;margin-top:3px}
-58|
-59|.entrega{position:relative;color:#fff;text-align:center;overflow:hidden}
-60|.entrega .bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1544025162-d76694265947?w=1920&q=80') center/cover}
-61|.entrega .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(20,13,8,.94),rgba(124,45,18,.85))}
-62|.entrega .wrap{position:relative;z-index:2;padding:96px 22px}
-63|.entrega h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:14px}
-64|.entrega p{color:#f3ddc7;max-width:560px;margin:0 auto 34px}
-65|
-66|footer{background:var(--carvao);color:#a08a76;padding:26px 0;font-size:.82rem;text-align:center}
-67|footer a{color:#e8c9a5}
-68|.demo{position:fixed;bottom:14px;right:14px;background:#b45309;color:#fff;padding:7px 14px;border-radius:99px;font-size:.72rem;font-weight:700;z-index:60;box-shadow:0 6px 18px rgba(0,0,0,.3)}
-69|
-70|@media(max-width:820px){.sobre{grid-template-columns:1fr}.hero .wrap{padding:120px 22px 70px}nav a:not(.cta){display:none}}
-71|</style>
-72|</head>
-73|<body>
-74|
-75|<header>
-76|  <div class="wrap">
-77|    <div class="logo">Point <span>do Churrasco</span></div>
-78|    <nav>
-79|      <a href="#cortes">Cortes</a>
-80|      <a href="#loja">A Loja</a>
-81|      <a href="#entrega" class="cta">Peça pelo WhatsApp</a>
-82|    </nav>
-83|  </div>
-84|</header>
-85|
-86|<section class="hero">
-87|  <div class="bg"></div>
-88|  <div class="wrap">
-89|    <span class="tag">Boutique de carnes · Salvador & Lauro de Freitas</span>
-90|    <h1>A excelência que o seu churrasco <em>merece</em></h1>
-91|    <p>Boutique de carnes nobres, linha Premium e Angus. Cortes selecionados à mão, maturação no ponto certo e entrega na sua casa.</p>
-92|    <div class="ctas">
-93|      <a class="btn" href="https://wa.me/5571000000000" target="_blank" rel="noopener">Peça pelo WhatsApp</a>
-94|      <a class="btn ghost" href="#cortes">Ver os cortes</a>
-95|    </div>
-96|  </div>
-97|</section>
-98|
-99|<section id="cortes">
-100|  <div class="wrap">
-101|    <div class="kicker">Cortes Premium</div>
-102|    <h2>Boutique de carnes nobres</h2>
-103|    <p class="sub">Linha Premium e Angus: cada peça escolhida à mão, com a espessura e a maturação ideais pro ponto perfeito na brasa.</p>
-104|    <div class="grid3">
-105|      <div class="card">
-106|        <img src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?w=800&q=80" alt="Cortes Angus">
-107|        <div class="body"><span class="badge">Linha Angus</span><h3>Cortes Angus</h3><p>Marmoreio impecável: ancho, chorizo, entrânho e bife ancho pra quem não abre mão de suculência.</p></div>
-108|      </div>
-109|      <div class="card">
-110|        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80" alt="Costela e Brasa">
-111|        <div class="body"><span class="badge">Brasa lenta</span><h3>Costelas & Brasa</h3><p>Costela, briguetada e ponta de peito prontos pro fogo lento: paciência que vira suculência.</p></div>
-112|      </div>
-113|      <div class="card">
-114|        <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=800&q=80" alt="Cortes Nobres">
-115|        <div class="body"><span class="badge">Selecionados</span><h3>Cortes Nobres</h3><p>Picanha, maminha, alcatra e cortes especiais selecionados à mão no ponto exato de maturação.</p></div>
-116|      </div>
-117|      <div class="card">
-118|        <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=800&q=80" alt="Linguiça e Acompanhamentos">
-119|        <div class="body"><span class="badge">Completos</span><h3>Linguiças & Acompanha</h3><p>Linguiça artesanal, queijo coalho, pão de alho e tudo que completa o churrasco perfeito.</p></div>
-120|      </div>
-121|      <div class="card">
-122|        <img src="https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?w=800&q=80" alt="Kits Churrasco">
-123|        <div class="body"><span class="badge">Pronto pro fogo</span><h3>Kits de Churrasco</h3><p>Kits montados por quantidade de pessoas: você chega, acende a brasa e aproveita.</p></div>
-124|      </div>
-125|      <div class="card">
-126|        <img src="https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=800&q=80" alt="Bebidas">
-127|        <div class="body"><span class="badge">Bebidas</span><h3>Bebidas Geladas</h3><p>Cervejas artesanais e clássicas, sempre na temperatura certa pro seu churrasco.</p></div>
-128|      </div>
-129|    </div>
-130|  </div>
-131|</section>
-132|
-133|<section class="alt" id="loja">
-134|  <div class="wrap">
-135|    <div class="sobre">
-136|      <div>
-137|        <div class="kicker">A Loja</div>
-138|        <h2>Boutique, não açougue</h2>
-139|        <p class="sub" style="margin-bottom:12px">Aqui cada corte é escolhido a mão, embalado no ponto e entregue com a orientação de como preparar. O seu churrasco come na escolha da carne.</p>
-140|        <ul>
-141|          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Seleção Premium e Angus</b> — marmoreio e maciez garantidos</span></li>
-142|          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Orientação de preparo</b> — te dizemos o ponto, o tempo e o fogo</span></li>
-143|          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Entrega em Salvador & Lauro de Freitas</b> — gelado, embalado, no seu horário</span></li>
-144|        </ul>
-145|        <a class="btn" style="margin-top:20px" href="https://wa.me/5571000000000" target="_blank" rel="noopener">Montar meu pedido</a>
-146|      </div>
-147|      <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=900&q=80" alt="Balcão de carnes">
-148|    </div>
-149|  </div>
-150|</section>
-151|
-152|<section class="entrega" id="entrega">
-153|  <div class="bg"></div>
-154|  <div class="wrap">
-155|    <h2>Entregamos em Salvador & Lauro de Freitas</h2>
-156|    <p>Peça pelo WhatsApp, escolha os cortes e receba em casa. Fim de semana com churrasco começa com mensagem nova na conversa.</p>
-157|    <a class="btn" href="https://wa.me/5571000000000" target="_blank" rel="noopener">Chamar no WhatsApp</a>
-158|  </div>
-159|</section>
-160|
-161|<footer>
-162|  <div class="wrap">© 2026 Point do Churrasco — Boutique de Carnes · Salvador/BA</div>
-163|  <div class="wrap" style="margin-top:6px">Protótipo criado pela <a href="https://riopreto.tech">Agência Rio Preto Tech</a> — não é o site oficial. Dados públicos: @pointdochurrasco.ssa</div>
-164|</footer>
-165|<div class="demo">Protótipo de demonstração — não é o site oficial</div>
-166|
-167|</body>
-168|</html>
-169|
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Point do Churrasco — Boutique de Carnes Nobres em Salvador</title>
+<meta name="description" content="Boutique de carnes nobres e linha Angus em Salvador. Cortes premium, entregas em Salvador e Lauro de Freitas. Peça pelo WhatsApp.">
+<style>
+:root{--fogo:#ea580c;--fogo-esc:#7c2d12;--brasa:#fbbf24;--carvao:#140d08;--defumado:#2a1a10;--creme:#fdf6ee;--tinta:#3d2c1e}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',system-ui,sans-serif}
+html{scroll-behavior:smooth}
+body{background:var(--creme);color:var(--tinta);line-height:1.6}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+header{position:sticky;top:0;z-index:50;background:rgba(20,13,8,.94);backdrop-filter:blur(10px)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 22px}
+.logo{color:#fff;font-weight:800;font-size:1.15rem}
+.logo span{color:var(--brasa)}
+nav a{color:#d9c4ae;text-decoration:none;margin-left:20px;font-size:.92rem}
+nav a:hover{color:#fff}
+nav .cta{background:linear-gradient(135deg,var(--fogo),#f97316);color:#fff;padding:9px 18px;border-radius:99px;font-weight:600}
+
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?w=1920&q=80') center/cover}
+.hero .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,13,8,.55) 0%,rgba(20,13,8,.35) 40%,rgba(20,13,8,.96) 100%)}
+.hero .bg::before{content:'';position:absolute;inset:0;background:radial-gradient(700px 320px at 15% 85%,rgba(234,88,12,.35),transparent),radial-gradient(500px 260px at 90% 10%,rgba(251,191,36,.14),transparent);z-index:1}
+.hero .wrap{position:relative;z-index:2;padding:140px 22px 90px}
+.tag{display:inline-block;font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--brasa);border:1px solid rgba(251,191,36,.5);border-radius:99px;padding:6px 16px;margin-bottom:22px;background:rgba(20,13,8,.4)}
+.hero h1{font-size:clamp(2.2rem,6vw,3.8rem);line-height:1.08;max-width:700px;margin-bottom:18px;text-shadow:0 4px 24px rgba(0,0,0,.5)}
+.hero h1 em{font-style:normal;color:var(--brasa)}
+.hero p{color:#efe0cf;font-size:1.12rem;max-width:560px;margin-bottom:34px;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--fogo),#f97316);color:#fff;font-weight:700;padding:15px 30px;border-radius:12px;text-decoration:none;transition:.2s;box-shadow:0 8px 28px rgba(234,88,12,.45)}
+.btn:hover{transform:translateY(-2px)}
+.btn.ghost{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.4);backdrop-filter:blur(4px);box-shadow:none}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+
+section{padding:84px 0}
+section.alt{background:linear-gradient(180deg,#f7ead9,var(--creme))}
+h2{font-size:clamp(1.7rem,3.5vw,2.3rem);margin-bottom:10px}
+.kicker{color:var(--fogo);font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:10px}
+.sub{color:#6b5443;max-width:640px;margin-bottom:42px}
+
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 10px 32px rgba(60,30,10,.1);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(60,30,10,.16)}
+.card img{height:220px;width:100%;object-fit:cover}
+.card .body{padding:22px}
+.card h3{margin-bottom:8px;font-size:1.12rem}
+.card p{color:#6b5443;font-size:.93rem}
+.badge{display:inline-block;background:#fff7ed;color:var(--fogo-esc);border:1px solid #fed7aa;font-size:.72rem;font-weight:700;padding:3px 10px;border-radius:99px;margin-bottom:10px;letter-spacing:.06em;text-transform:uppercase}
+
+.sobre{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.sobre img{border-radius:20px;box-shadow:0 20px 50px rgba(60,30,10,.22)}
+.sobre ul{list-style:none;margin-top:18px}
+.sobre li{padding:10px 0;display:flex;gap:12px;align-items:flex-start}
+.sobre li svg{flex-shrink:0;margin-top:3px}
+
+.entrega{position:relative;color:#fff;text-align:center;overflow:hidden}
+.entrega .bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1544025162-d76694265947?w=1920&q=80') center/cover}
+.entrega .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(20,13,8,.94),rgba(124,45,18,.85))}
+.entrega .wrap{position:relative;z-index:2;padding:96px 22px}
+.entrega h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:14px}
+.entrega p{color:#f3ddc7;max-width:560px;margin:0 auto 34px}
+
+footer{background:var(--carvao);color:#a08a76;padding:26px 0;font-size:.82rem;text-align:center}
+footer a{color:#e8c9a5}
+.demo{position:fixed;bottom:14px;right:14px;background:#b45309;color:#fff;padding:7px 14px;border-radius:99px;font-size:.72rem;font-weight:700;z-index:60;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+
+@media(max-width:820px){.sobre{grid-template-columns:1fr}.hero .wrap{padding:120px 22px 70px}nav a:not(.cta){display:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Point <span>do Churrasco</span></div>
+    <nav>
+      <a href="#cortes">Cortes</a>
+      <a href="#loja">A Loja</a>
+      <a href="#entrega" class="cta">Peça pelo WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="bg"></div>
+  <div class="wrap">
+    <span class="tag">Boutique de carnes · Salvador & Lauro de Freitas</span>
+    <h1>A excelência que o seu churrasco <em>merece</em></h1>
+    <p>Boutique de carnes nobres, linha Premium e Angus. Cortes selecionados à mão, maturação no ponto certo e entrega na sua casa.</p>
+    <div class="ctas">
+      <a class="btn" href="https://wa.me/5571000000000" target="_blank" rel="noopener">Peça pelo WhatsApp</a>
+      <a class="btn ghost" href="#cortes">Ver os cortes</a>
+    </div>
+  </div>
+</section>
+
+<section id="cortes">
+  <div class="wrap">
+    <div class="kicker">Cortes Premium</div>
+    <h2>Boutique de carnes nobres</h2>
+    <p class="sub">Linha Premium e Angus: cada peça escolhida à mão, com a espessura e a maturação ideais pro ponto perfeito na brasa.</p>
+    <div class="grid3">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?w=800&q=80" alt="Cortes Angus">
+        <div class="body"><span class="badge">Linha Angus</span><h3>Cortes Angus</h3><p>Marmoreio impecável: ancho, chorizo, entrânho e bife ancho pra quem não abre mão de suculência.</p></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=80" alt="Costela e Brasa">
+        <div class="body"><span class="badge">Brasa lenta</span><h3>Costelas & Brasa</h3><p>Costela, briguetada e ponta de peito prontos pro fogo lento: paciência que vira suculência.</p></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1588168333986-5078d3ae3976?w=800&q=80" alt="Cortes Nobres">
+        <div class="body"><span class="badge">Selecionados</span><h3>Cortes Nobres</h3><p>Picanha, maminha, alcatra e cortes especiais selecionados à mão no ponto exato de maturação.</p></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1558030006-450675393462?w=800&q=80" alt="Linguiça e Acompanhamentos">
+        <div class="body"><span class="badge">Completos</span><h3>Linguiças & Acompanha</h3><p>Linguiça artesanal, queijo coalho, pão de alho e tudo que completa o churrasco perfeito.</p></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1615937657715-bc7b4b7962c1?w=800&q=80" alt="Kits Churrasco">
+        <div class="body"><span class="badge">Pronto pro fogo</span><h3>Kits de Churrasco</h3><p>Kits montados por quantidade de pessoas: você chega, acende a brasa e aproveita.</p></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1546833998-877b37c2e5c6?w=800&q=80" alt="Bebidas">
+        <div class="body"><span class="badge">Bebidas</span><h3>Bebidas Geladas</h3><p>Cervejas artesanais e clássicas, sempre na temperatura certa pro seu churrasco.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="loja">
+  <div class="wrap">
+    <div class="sobre">
+      <div>
+        <div class="kicker">A Loja</div>
+        <h2>Boutique, não açougue</h2>
+        <p class="sub" style="margin-bottom:12px">Aqui cada corte é escolhido a mão, embalado no ponto e entregue com a orientação de como preparar. O seu churrasco come na escolha da carne.</p>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Seleção Premium e Angus</b> — marmoreio e maciez garantidos</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Orientação de preparo</b> — te dizemos o ponto, o tempo e o fogo</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#ea580c" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Entrega em Salvador & Lauro de Freitas</b> — gelado, embalado, no seu horário</span></li>
+        </ul>
+        <a class="btn" style="margin-top:20px" href="https://wa.me/5571000000000" target="_blank" rel="noopener">Montar meu pedido</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=900&q=80" alt="Balcão de carnes">
+    </div>
+  </div>
+</section>
+
+<section class="entrega" id="entrega">
+  <div class="bg"></div>
+  <div class="wrap">
+    <h2>Entregamos em Salvador & Lauro de Freitas</h2>
+    <p>Peça pelo WhatsApp, escolha os cortes e receba em casa. Fim de semana com churrasco começa com mensagem nova na conversa.</p>
+    <a class="btn" href="https://wa.me/5571000000000" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Point do Churrasco — Boutique de Carnes · Salvador/BA</div>
+  <div class="wrap" style="margin-top:6px">Protótipo criado pela <a href="https://riopreto.tech">Agência Rio Preto Tech</a> — não é o site oficial. Dados públicos: @pointdochurrasco.ssa</div>
+</footer>
+<div class="demo">Protótipo de demonstração — não é o site oficial</div>
+
+</body>
+</html>
