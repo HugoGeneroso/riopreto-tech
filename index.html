@@ -13,6 +13,9 @@
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <style>
+/* rio interativo */
+#rio-canvas{position:fixed;inset:0;z-index:0;pointer-events:none}
+header,section,footer,.wrap{position:relative;z-index:1}
 :root{
   --bg:#0b0f14;--bg2:#111823;--card:#141c29;--line:#223047;
   --txt:#e8eef7;--mut:#93a4bc;--acc:#38bdf8;--acc2:#0ea5e9;--ok:#34d399;
@@ -73,8 +76,10 @@ nav a:hover{color:var(--txt)}
 footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-size:.85rem;text-align:center}
 @media(max-width:640px){nav a:not(.btn){display:none}header .btn{padding:8px 12px;font-size:.85rem}section{padding:52px 0}.hero .ctas .btn{width:100%;text-align:center}.hero h1{font-size:1.85rem}.tag{white-space:normal;text-align:center;line-height:1.5}.hero p{font-size:1rem;overflow-wrap:break-word}*{max-width:100vw}}
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.3/p5.min.js"></script>
 </head>
 <body>
+<div id="rio-canvas"></div>
 
 <header>
   <div class="wrap">
@@ -172,6 +177,136 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-siz
 <footer>
   <div class="wrap">rio preto.tech — agência 100% autônoma, dirigida e operada por IAs, com supervisão humana · São José do Rio Preto/SP · <a href="https://wa.me/5517991317923">WhatsApp (17) 99131-7923</a> · © 2026</div>
 </footer>
+
+
+<script>
+// ===== Rio interativo — baseado no logo 3 (Chevron + Rio) =====
+(function(){
+p5.disableFriendlyErrors = true;
+const PALETTE = {
+  bg1: [11,15,20], bg2: [17,24,35],
+  acc: [56,189,248], deep: [3,105,161], foam: [232,238,247]
+};
+let flowLayer, particles = [], t = 0;
+let mouse = {x: 0, y: 0, speed: 0, idle: 0};
+let visible = true;
+
+const sketch = (p) => {
+  p.setup = function() {
+    const c = p.createCanvas(p.windowWidth, p.windowHeight);
+    c.parent('rio-canvas');
+    p.pixelDensity(1);
+    flowLayer = p.createGraphics(p.width, p.height);
+    flowLayer.background(11,15,20);
+    p.background(11,15,20);
+    mouse.x = p.width/2; mouse.y = p.height*0.4;
+    const N = Math.min(300, Math.floor(p.width*p.height/5200));
+    for (let i = 0; i < N; i++) particles.push(new Spark());
+  };
+  p.draw = function() {
+    if (!visible) return;
+    t += 0.0035;
+    flowLayer.noStroke();
+    flowLayer.fill(11,15,20,7);
+    flowLayer.rect(0,0,p.width,p.height);
+    // rios (fluxo horizontal com meandro)
+    const steps = 90;
+    flowLayer.noFill();
+    for (let i = 0; i < steps; i++) {
+      const y0 = (i/steps)*p.height;
+      const band = flowLayer.noise(0.9, y0*0.004 + t*0.7);
+      if (band < 0.52) continue;
+      let x = (i*37.7 + t*260) % (p.width+120) - 60;
+      let y = y0;
+      flowLayer.strokeWeight(1.1);
+      const hueMix = flowLayer.noise(x*0.002, y0*0.003, t);
+      flowLayer.stroke(
+        p.lerp(56,3,hueMix), p.lerp(189,105,hueMix), p.lerp(248,161,hueMix), 22);
+      flowLayer.beginShape();
+      for (let s = 0; s < 12; s++) {
+        const a = Mathsin2(x,y)*p.PI;
+        x += Math.cos(a)*2.4; y += Math.sin(a)*2.4*0.6;
+        flowLayer.vertex(x,y);
+      }
+      flowLayer.endShape();
+    }
+    p.image(flowLayer, 0, 0);
+    // partículas-brilho
+    p.noStroke();
+    for (const sp of particles) { sp.update(); sp.display(p); }
+    // chevron na calmaria
+    if (mouse.idle > 150) drawChevron(mouse.x, mouse.y);
+  };
+  p.windowResized = function() {
+    p.resizeCanvas(p.windowWidth, p.windowHeight);
+    flowLayer = p.createGraphics(p.width, p.height);
+    flowLayer.background(11,15,20);
+  };
+  p.mouseMoved = function() { mouse.x = p.mouseX; mouse.y = p.mouseY; };
+  p.touchMoved = function() { mouse.x = p.touches[0]?.x ?? p.mouseX; mouse.y = p.touches[0]?.y ?? p.mouseY; };
+};
+
+class Spark {
+  constructor(){ this.reset(true); }
+  reset(anywhere){
+    this.x = anywhere ? Math.random()* (window.innerWidth) : -20;
+    this.y = Math.random()* (window.innerHeight);
+    this.life = 200 + Math.random()*400;
+    this.size = 0.6 + Math.random()*1.8;
+    this.bright = Math.random() < 0.18;
+  }
+  update(){
+    const a = Mathsin2(this.x, this.y) * Math.PI;
+    const boost = this.bright ? 2.4 : 1.5;
+    this.x += Math.cos(a)*boost;
+    this.y += Math.sin(a)*boost*0.55;
+    this.life -= 1;
+    if (this.x > window.innerWidth + 20 || this.life <= 0) this.reset(false);
+  }
+  display(p){
+    const alpha = this.bright ? 80 : 30;
+    if (this.bright) { this._p.fill(232,238,247,alpha); this._p.ellipse(this.x,this.y,this.size*2.2); }
+    else { this._p.fill(56,189,248,alpha); this._p.ellipse(this.x,this.y,this.size); }
+  }
+}
+function Mathsin2(x, y){
+  const a = Math.sin(x*0.0016 + t*1.1)*0.5 + Math.sin(y*0.004 + t*0.8)*0.5;
+  const dx = x - mouse.x, dy = y - mouse.y;
+  const d2 = dx*dx + dy*dy, R = 240;
+  let ang = a*0.8 + Math.PI*0.9;
+  if (d2 < R*R) {
+    const d = Math.sqrt(d2)+0.001;
+    const f = (1-d/R)*1.2;
+    ang = ang*(1-f) + Math.atan2(dy,dx)*f;
+  }
+  return ang/Math.PI;
+}
+
+function drawChevron(cx, cy){
+  const p = p5.instance;
+  const pulse = (Math.sin(performance.now()*0.001)+1)/2;
+  const s = 46 + pulse*6;
+  p.push();
+  p.noFill();
+  p.stroke(56,189,248, 50 + pulse*35);
+  p.strokeWeight(7); p.strokeJoin(p.ROUND); p.strokeCap(p.ROUND);
+  p.beginShape();
+  p.vertex(cx-s, cy+s*0.5); p.vertex(cx, cy-s*0.5); p.vertex(cx+s, cy+s*0.5);
+  p.endShape();
+  p.strokeWeight(4);
+  p.beginShape();
+  for (let x=-s; x<=s; x+=6){
+    const yy = cy + s*1.1 + Math.sin(x*0.08 + performance.now()*0.003)*5;
+    p.vertex(cx+x, yy);
+  }
+  p.endShape();
+  p.pop();
+}
+// pausa quando aba oculta (economia)
+document.addEventListener('visibilitychange', ()=>{ visible = !document.hidden; });
+new p5(sketch, 'rio-canvas');
+})();
+</script>
 
 </body>
 </html>
