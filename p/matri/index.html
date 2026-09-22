@@ -83,6 +83,17 @@ footer a{color:var(--gold)}
 /* faixa flutuante protótipo */
 .proto-badge{position:fixed;bottom:0;left:0;right:0;background:var(--ink);color:#fff;text-align:center;padding:10px 16px;font-size:.82rem;z-index:50}
 .proto-badge a{color:#e6c88a;text-decoration:underline}
+
+/* galeria */
+.galeria{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.galeria figure{position:relative;margin:0;overflow:hidden;border-radius:2px}
+.galeria img{width:100%;height:260px;object-fit:cover;display:block;transition:.5s}
+.galeria figure:hover img{transform:scale(1.05)}
+.galeria figcaption{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(30,24,19,.85));color:#fff;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;padding:30px 14px 12px}
+.galeria .g1{grid-column:span 2}
+.galeria .g1 img{height:534px}
+@media(max-width:760px){.galeria{grid-template-columns:1fr 1fr}.galeria .g1{grid-column:span 2}.galeria img,.galeria .g1 img{height:200px}}
+
 </style>
 </head>
 <body>
@@ -102,11 +113,12 @@ footer a{color:var(--gold)}
   </div>
 </header>
 
-<section class="hero">
-  <div class="wrap">
-    <span class="orn">✦ ✦ ✦</span>
-    <h1>Seu casamento planejado<br>nos mínimos detalhes</h1>
-    <p>Há 7 anos transformando o grande dia dos casais de São José do Rio Preto e região em lembranças perfeitas — do primeiro planejamento ao último brinde.</p>
+<section class="hero" style="position:relative;padding:150px 0 110px;background:#1a140e">
+  <img src="img/hero.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55">
+  <div class="wrap" style="position:relative">
+    <span class="orn" style="color:#e6c88a">✦ ✦ ✦</span>
+    <h1 style="color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.45)">Seu casamento planejado<br>nos mínimos detalhes</h1>
+    <p style="color:#e8ded0;text-shadow:0 1px 12px rgba(0,0,0,.5)">Há 7 anos transformando o grande dia dos casais de São José do Rio Preto e região em lembranças perfeitas — do primeiro planejamento ao último brinde.</p>
     <a class="btn" href="https://wa.me/5517981021580">Agende uma reunião →</a>
     <div class="stats">
       <div class="stat"><b>7 anos</b><span>de mercado</span></div>
@@ -154,16 +166,35 @@ footer a{color:var(--gold)}
   </div>
 </section>
 
+
+<section id="galeria">
+  <div class="wrap">
+    <span class="tag">Galeria</span>
+    <h2>Momentos que já realizamos</h2>
+    <p class="sub">Cada casamento tem a sua história — um vislumbre do que já produzimos com os nossos casais.</p>
+    <div class="galeria">
+      <figure class="g1"><img src="img/foto2.jpg" alt="Cerimônia ao ar livre organizada pela Matrimonium"><figcaption>cerimônia ao ar livre</figcaption></figure>
+      <figure class="g2"><img src="img/foto3.jpg" alt="Recepção e decoração de festa"><figcaption>recepção &amp; decoração</figcaption></figure>
+      <figure class="g3"><img src="img/foto4.jpg" alt="Bouquet da noiva"><figcaption>detalhes que emocionam</figcaption></figure>
+      <figure class="g4"><img src="img/foto5.jpg" alt="Decoração da festa"><figcaption>festa sob medida</figcaption></figure>
+      <figure class="g5"><img src="img/foto6.jpg" alt="Primeira dança dos noivos"><figcaption>a primeira dança</figcaption></figure>
+      <figure class="g6"><img src="img/foto7.jpg" alt="Brinde dos noivos"><figcaption>o brinde</figcaption></figure>
+    </div>
+  </div>
+</section>
+
 <section id="historia">
   <div class="wrap">
     <span class="tag">Casais confiam</span>
     <h2>Recomendado por 98% dos casais</h2>
     <p class="sub">Nota 4.9 de 5 no maior portal de casamentos do Brasil.</p>
     <div class="prova">
-      <span class="nota">4.9</span>
+      <div style="text-align:center;min-width:180px">
+        <div style="color:var(--gold);font-size:2.6rem;letter-spacing:4px;line-height:1">★★★★★</div>
+        <div style="font-size:.85rem;color:var(--mut);margin-top:4px"><b style="color:var(--ink)">4.9 de 5</b> · 98% recomendam</div>
+      </div>
       <div>
-        <div class="stars">★★★★★</div>
-        <p><b>Matrimonium Assessoria e Cerimonial</b> — avaliação no Casamentos.com.br, o maior portal de casamentos do país. Recomendado por 98% dos casais atendidos.</p>
+        <p><b>Matrimonium Assessoria e Cerimonial</b> — avaliação no <b>Casamentos.com.br</b>, o maior portal de casamentos do Brasil. Nota baseada nos casais atendidos.</p>
       </div>
     </div>
     <div class="prova">
