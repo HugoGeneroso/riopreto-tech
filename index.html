@@ -252,6 +252,9 @@ const riverMat = new THREE.ShaderMaterial({
       col += crest * spec * 0.35;
       float vign = smoothstep(1.02, 0.55, length(uv - 0.5) * 1.4);
       col *= vign;
+      // escurece a faixa central-superior (atrás do texto do hero)
+      float textZone = smoothstep(0.75, 0.15, abs(uv.y - 0.52) + (uv.x - 0.5) * 0.35);
+      col *= mix(1.0, 0.38, textZone);
       gl_FragColor = vec4(col, 1.0);
     }`
 });
