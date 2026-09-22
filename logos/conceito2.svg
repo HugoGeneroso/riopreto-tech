@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Conceito 2: Letra R formada por rio + cursor tech -->
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="240" fill="#0b0f14"/>
+  <!-- R estilizada: haste + barriga em curva de rio + perna -->
+  <path d="M170 130 L170 382" stroke="url(#g2)" stroke-width="42" stroke-linecap="round"/>
+  <path d="M170 130 C 320 130, 360 200, 300 250 C 280 266, 240 274, 190 274"
+        fill="none" stroke="url(#g2)" stroke-width="42" stroke-linecap="round"/>
+  <path d="M250 274 L 360 382" stroke="#38bdf8" stroke-width="42" stroke-linecap="round"/>
+  <!-- gota/circuito no topo da barriga -->
+  <circle cx="330" cy="160" r="18" fill="#38bdf8"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Conceito 1: Rio que vira circuito - onda dupla com nodes -->
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <circle cx="256" cy="256" r="240" fill="#0b0f14" stroke="url(#g1)" stroke-width="12"/>
+  <!-- onda do rio (curva dupla) -->
+  <path d="M96 300 C 160 220, 220 380, 288 300 S 400 240, 416 260"
+        fill="none" stroke="url(#g1)" stroke-width="36" stroke-linecap="round"/>
+  <!-- nodes de circuito na onda -->
+  <circle cx="96" cy="300" r="22" fill="#38bdf8"/>
+  <circle cx="288" cy="300" r="16" fill="#0ea5e9"/>
+  <circle cx="416" cy="260" r="22" fill="#38bdf8"/>
+  <!-- ponto de conexão (tech) -->
+  <line x1="416" y1="260" x2="416" y2="200" stroke="#38bdf8" stroke-width="10"/>
+  <circle cx="416" cy="185" r="14" fill="none" stroke="#38bdf8" stroke-width="10"/>
+</svg>

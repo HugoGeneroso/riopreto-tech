@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Conceito 3: Onda do rio dentro de chevron/cursor (direção: aparecer, subir) -->
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+  <rect x="36" y="36" width="440" height="440" rx="100" fill="#0b0f14" stroke="url(#g3)" stroke-width="10"/>
+  <!-- chevron pra cima (crescimento/aparecer) -->
+  <path d="M136 300 L256 180 L376 300" fill="none" stroke="url(#g3)" stroke-width="40" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- rio: onda horizontal sob o chevron -->
+  <path d="M150 360 C 200 330, 260 390, 310 360 S 370 340, 376 350"
+        fill="none" stroke="#38bdf8" stroke-width="24" stroke-linecap="round" opacity="0.85"/>
+</svg>
