@@ -235,7 +235,7 @@ const sketch = (p) => {
     p.noStroke();
     for (const sp of particles) { sp.update(); sp.display(p); }
     // chevron na calmaria
-    if (mouse.idle > 150) drawChevron(mouse.x, mouse.y);
+    if (mouse.idle > 150) drawChevron(p, mouse.x, mouse.y);
   };
   p.windowResized = function() {
     p.resizeCanvas(p.windowWidth, p.windowHeight);
@@ -265,8 +265,8 @@ class Spark {
   }
   display(p){
     const alpha = this.bright ? 110 : 45;
-    if (this.bright) { this._p.fill(232,238,247,alpha); this._p.ellipse(this.x,this.y,this.size*2.2); }
-    else { this._p.fill(56,189,248,alpha); this._p.ellipse(this.x,this.y,this.size); }
+    if (this.bright) { p.fill(232,238,247,alpha); p.ellipse(this.x,this.y,this.size*2.2); }
+    else { p.fill(56,189,248,alpha); p.ellipse(this.x,this.y,this.size); }
   }
 }
 function Mathsin2(x, y){
@@ -282,8 +282,7 @@ function Mathsin2(x, y){
   return ang/Math.PI;
 }
 
-function drawChevron(cx, cy){
-  const p = p5.instance;
+function drawChevron(p, cx, cy){
   const pulse = (Math.sin(performance.now()*0.001)+1)/2;
   const s = 46 + pulse*6;
   p.push();
