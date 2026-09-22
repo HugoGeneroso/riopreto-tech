@@ -94,6 +94,26 @@ footer a{color:var(--gold)}
 .galeria .g1 img{height:534px}
 @media(max-width:760px){.galeria{grid-template-columns:1fr 1fr}.galeria .g1{grid-column:span 2}.galeria img,.galeria .g1 img{height:200px}}
 
+
+/* cards com foto */
+.card{padding:0;overflow:hidden}
+.card .foto{height:170px;overflow:hidden}
+.card .foto img{width:100%;height:100%;object-fit:cover;display:block;transition:.5s}
+.card:hover .foto img{transform:scale(1.06)}
+.card .card-body{padding:22px 24px 26px}
+.card .card-body h3{margin:10px 0 8px}
+.card .card-body p{font-size:.92rem}
+/* depoimentos reais */
+.depo-grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));margin-top:30px}
+.depo{background:#fff;border:1px solid var(--line);padding:24px;display:flex;flex-direction:column;gap:12px}
+.depo .estrelas{color:var(--gold);letter-spacing:3px;font-size:1.05rem}
+.depo .estrelas small{color:var(--mut);letter-spacing:0;margin-left:6px}
+.depo p.txt{font-size:.92rem;color:var(--ink);font-style:italic;line-height:1.65;flex:1}
+.depo .quem{display:flex;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:14px}
+.depo .avatar{width:42px;height:42px;border-radius:50%;background:var(--gold);color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600}
+.depo .quem b{display:block;font-size:.92rem;color:var(--ink)}
+.depo .quem small{color:var(--mut);font-size:.78rem}
+
 </style>
 </head>
 <body>
@@ -134,12 +154,12 @@ footer a{color:var(--gold)}
     <h2>Tudo o que o seu grande dia precisa</h2>
     <p class="sub">Da primeira reunião ao último detalhe da festa — a equipe cuida de tudo para que vocês vivam o dia sem preocupação.</p>
     <div class="grid g3">
-      <div class="card"><span class="ic">✦</span><h3>Planejamento completo</h3><p>Organização de todo o casamento: fornecedores, cronograma, orçamento e checklist — vocês aprovam, a gente executa.</p></div>
-      <div class="card"><span class="ic">✦</span><h3>Cerimônia &amp; festa</h3><p>Coordenação da cerimônia e da recepção: fornecedores no lugar certo, na hora certa, e a festa fluindo sem imprevistos.</p></div>
-      <div class="card"><span class="ic">✦</span><h3>O grande dia</h3><p>Equipe presente do início ao fim ao lado do casal e da família, resolvendo qualquer imprevisto sem que vocês percebam.</p></div>
-      <div class="card"><span class="ic">✦</span><h3>Reunião de alinhamento</h3><p>Primeiro passo: uma reunião para entender o sonho de vocês e desenhar o casamento que combina com a história de vocês.</p></div>
-      <div class="card"><span class="ic">✦</span><h3>SJRP e região</h3><p>Atendemos casamentos em São José do Rio Preto e cidades vizinhas — a equipe se desloca até o seu evento.</p></div>
-      <div class="card"><span class="ic">✦</span><h3>Acompanhamento dedicado</h3><p>A cerimonialista Shélica Gonçalves acompanha pessoalmente cada casal, do contrato ao "sim".</p></div>
+      <div class="card"><div class="foto"><img src="img/foto4.jpg" alt="Planejamento de casamento"></div><div class="card-body"><h3>Planejamento completo</h3><p>Organização de todo o casamento: fornecedores, cronograma, orçamento e checklist — vocês aprovam, a gente executa.</p></div></div>
+      <div class="card"><div class="foto"><img src="img/foto2.jpg" alt="Cerimônia"></div><div class="card-body"><h3>Cerimônia &amp; festa</h3><p>Coordenação da cerimônia e da recepção: fornecedores no lugar certo, na hora certa, e a festa fluindo sem imprevistos.</p></div></div>
+      <div class="card"><div class="foto"><img src="img/foto6.jpg" alt="O grande dia"></div><div class="card-body"><h3>O grande dia</h3><p>Equipe presente do início ao fim ao lado do casal e da família, resolvendo qualquer imprevisto sem que vocês percebam.</p></div></div>
+      <div class="card"><div class="foto"><img src="img/foto7.jpg" alt="Reunião de alinhamento"></div><div class="card-body"><h3>Reunião de alinhamento</h3><p>Primeiro passo: uma reunião para entender o sonho de vocês e desenhar o casamento que combina com a história de vocês.</p></div></div>
+      <div class="card"><div class="foto"><img src="img/foto3.jpg" alt="SJRP e região"></div><div class="card-body"><h3>SJRP e região</h3><p>Atendemos casamentos em São José do Rio Preto e cidades vizinhas — a equipe se desloca até o seu evento.</p></div></div>
+      <div class="card"><div class="foto"><img src="img/foto8.jpg" alt="Acompanhamento dedicado"></div><div class="card-body"><h3>Acompanhamento dedicado</h3><p>A cerimonialista Shélica Gonçalves acompanha pessoalmente cada casal, do contrato ao "sim".</p></div></div>
     </div>
   </div>
 </section>
@@ -185,27 +205,33 @@ footer a{color:var(--gold)}
 
 <section id="historia">
   <div class="wrap">
-    <span class="tag">Casais confiam</span>
-    <h2>Recomendado por 98% dos casais</h2>
-    <p class="sub">Nota 4.9 de 5 no maior portal de casamentos do Brasil.</p>
-    <div class="prova">
-      <div style="text-align:center;min-width:180px">
-        <div style="color:var(--gold);font-size:2.6rem;letter-spacing:4px;line-height:1">★★★★★</div>
-        <div style="font-size:.85rem;color:var(--mut);margin-top:4px"><b style="color:var(--ink)">4.9 de 5</b> · 98% recomendam</div>
+    <span class="tag">Casais atendidos</span>
+    <h2>Quem viveu, recomenda</h2>
+    <p class="sub">Depoimentos reais de casais atendidos pela equipe — avaliação média <b style="color:var(--ink)">4.9 de 5</b> no Casamentos.com.br, o maior portal de casamentos do Brasil.</p>
+    <div class="depo-grid">
+      <div class="depo">
+        <div class="estrelas">★★★★★ <small>5.0 · 29/05/2022</small></div>
+        <p class="txt">"Amei contratar a Shélica e sua equipe para o nosso casamento! Extremamente resolutiva, prática, muito pé no chão — sempre apresenta o problema junto com as soluções."</p>
+        <div class="quem"><span class="avatar">G</span><div><b>Gabriele</b><small>casou em maio de 2022</small></div></div>
       </div>
-      <div>
-        <p><b>Matrimonium Assessoria e Cerimonial</b> — avaliação no <b>Casamentos.com.br</b>, o maior portal de casamentos do Brasil. Nota baseada nos casais atendidos.</p>
+      <div class="depo">
+        <div class="estrelas">★★★★★ <small>5.0 · 06/03/2019</small></div>
+        <p class="txt">"Equipe impecável! Seguiu à risca o cronograma do meu casamento. Shélica, você foi um dos grandes motivos do sucesso do meu casamento — tornou o dia inesquecível!"</p>
+        <div class="quem"><span class="avatar">J</span><div><b>Jessica</b><small>casou em março de 2019</small></div></div>
       </div>
-    </div>
-    <div class="prova">
-      <span class="nota">7</span>
-      <div>
-        <div class="stars">anos de história</div>
-        <p>Sete anos organizando casamentos em São José do Rio Preto e região, com cerimônia e festa do início ao fim.</p>
+      <div class="depo">
+        <div class="estrelas">★★★★★ <small>5.0 · 20/11/2017</small></div>
+        <p class="txt">"Super indico! Encontrei apoio e segurança: organização, competência e muito carinho nesse dia tão especial. Mesmo com todas as loucuras, elas me apoiaram. Melhor dia, melhor carinho."</p>
+        <div class="quem"><span class="avatar">M</span><div><b>Mayara</b><small>casou em novembro de 2017</small></div></div>
+      </div>
+      <div class="depo">
+        <div class="estrelas">★★★★★ <small>5.0 · 26/10/2017</small></div>
+        <p class="txt">"Serviço excelente, profissionais super competentes e qualificadas. Pontualidade e respeito não só com as noivas, mas com toda a família. Deixaram minha festa impecável."</p>
+        <div class="quem"><span class="avatar">C</span><div><b>Catierine</b><small>casou em outubro de 2017</small></div></div>
       </div>
     </div>
   </div>
-</section>
+</section>>
 
 <section class="final">
   <div class="wrap">
