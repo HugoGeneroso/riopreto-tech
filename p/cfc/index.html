@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CFC Ideal — Autoescola em São José do Rio Preto · CNH A e B</title>
+<meta name="description" content="Autoescola CFC Ideal em São José do Rio Preto: CNH A e B, aulas práticas, exames e reciclagem. Acelerando seus sonhos desde 2019. Vila Maceno. Fale no WhatsApp!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0e1420; --bg2:#141c2b; --card:#1a2333; --line:#2a3548;
+  --txt:#eef2f8; --mut:#9aa8bd;
+  --acc:#f5b301; --acc-d:#d99a00; --blue:#2563eb;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--txt);line-height:1.6;overflow-x:hidden}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+h1,h2,h3,.cond{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.02em}
+a{color:var(--acc);text-decoration:none}
+section{padding:64px 0}
+.tag{display:inline-block;background:var(--acc);color:#0e1420;font-weight:700;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;padding:5px 14px;margin-bottom:16px}
+h2{font-size:clamp(1.7rem,4vw,2.4rem);line-height:1.1;margin-bottom:10px}
+.sub{color:var(--mut);max-width:620px;margin-bottom:36px}
+.btn{display:inline-block;background:var(--acc);color:#0e1420;font-weight:800;padding:14px 30px;border-radius:6px;font-size:1rem;text-transform:uppercase;letter-spacing:.03em;transition:.2s}
+.btn:hover{background:var(--acc-d);transform:translateY(-2px)}
+header{padding:14px 0;background:rgba(14,20,32,.95);border-bottom:2px solid var(--acc);position:sticky;top:0;z-index:10}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:nowrap}
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{height:40px}
+.brandtext{font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:1.3rem;text-transform:uppercase;line-height:1}
+.brandtext small{display:block;font-size:.6rem;color:var(--mut);letter-spacing:.2em;font-family:'Inter',sans-serif;font-weight:400}
+nav{display:flex;gap:6px;align-items:center;flex-shrink:0}
+nav a{color:var(--mut);font-size:.85rem;margin-left:0}
+nav .btn{padding:9px 16px;font-size:.8rem}
+/* hero */
+.hero{position:relative;padding:120px 0 100px;background:#0a0f18}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
+.hero::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,15,24,.92) 0%,rgba(10,15,24,.55) 60%,rgba(10,15,24,.75) 100%)}
+.hero .wrap{position:relative}
+.hero .tag{margin-bottom:14px}
+.hero h1{font-size:clamp(2.4rem,7vw,4rem);line-height:.98;margin-bottom:14px}
+.hero h1 span{color:var(--acc)}
+.hero p{color:#c7d2e0;font-size:1.08rem;max-width:520px;margin-bottom:30px}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero .sub{color:#c7d2e0;font-size:1.02rem}
+/* faixa */
+.faixa{background:var(--acc);color:#0e1420;padding:14px 0;text-align:center;font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.1rem;text-transform:uppercase;letter-spacing:.05em}
+/* serviços */
+.grid{display:grid;gap:16px}
+.g3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:var(--acc)}
+.card .foto{height:150px;overflow:hidden}
+.card .foto img{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}
+.card:hover .foto img{transform:scale(1.07)}
+.card .card-body{padding:18px 20px 22px}
+.card h3{font-size:1.25rem;margin-bottom:6px;color:var(--acc)}
+.card p{color:var(--mut);font-size:.92rem}
+/* processo */
+.processo{background:var(--bg2)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:st}
+.step{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:22px 18px;position:relative}
+.step::before{counter-increment:st;content:counter(st);font-family:'Barlow Condensed',sans-serif;font-weight:800;font-size:2.4rem;color:var(--acc);opacity:.9;display:block;line-height:1}
+.step h4{font-family:'Barlow Condensed',sans-serif;font-size:1.15rem;text-transform:uppercase;margin:8px 0 6px}
+.step p{color:var(--mut);font-size:.88rem}
+/* diferenciais */
+.difs{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.dif{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:16px}
+.dif b{color:var(--acc);font-size:1.2rem;line-height:1}
+.dif p{color:var(--txt);font-size:.92rem}
+/* cta */
+.cta{background:linear-gradient(135deg,#16203180,#1a2333),var(--bg2);text-align:center;border-top:2px solid var(--acc)}
+.cta h2{margin-bottom:8px}
+.cta p{color:var(--mut);margin-bottom:26px}
+footer{padding:24px 0;text-align:center;color:var(--mut);font-size:.85rem;border-top:1px solid var(--line)}
+footer a{color:var(--acc)}
+.proto-badge{position:fixed;bottom:0;left:0;right:0;background:#2a3548;color:#c7d2e0;text-align:center;padding:9px 16px;font-size:.78rem;z-index:50}
+.proto-badge a{color:var(--acc);text-decoration:underline}
+@media(max-width:640px){
+  header .brand img{height:34px}
+  .brandtext{font-size:1.05rem}
+  .brandtext small{font-size:.52rem}
+  nav a:not(.btn){display:none}
+  .hero{padding:80px 0 70px}
+  .steps{grid-template-columns:1fr 1fr}
+  .difs{grid-template-columns:1fr}
+  section{padding:48px 0}
+  .wrap{padding:0 16px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <img src="img/hero.jpg" alt="CFC Ideal">
+      <div class="brandtext">CFC Ideal<small>autoescola · sjrp</small></div>
+    </div>
+    <nav>
+      <a href="#servicos">Categorias</a>
+      <a href="#processo">Como funciona</a>
+      <a class="btn" href="https://wa.me/5517997693585">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="img/hero.jpg" alt="">
+  <div class="wrap">
+    <span class="tag">Autoescola em São José do Rio Preto</span>
+    <h1>Acelerando<br>seus <span>sonhos</span></h1>
+    <p>CNH A e B com atendimento direto, horários que cabem na sua rotina e instrutores que te deixam seguro no trânsito — na Vila Maceno.</p>
+    <div class="ctas">
+      <a class="btn" href="https://wa.me/5517997693585">Falar no WhatsApp →</a>
+      <a class="btn" style="background:transparent;color:var(--acc);border:2px solid var(--acc)" href="#servicos">Ver categorias</a>
+    </div>
+  </div>
+</section>
+
+<div class="faixa">Matrícula aberta · CNH A e B · parcelamos no cartão ou PIX</div>
+
+<section id="servicos">
+  <div class="wrap">
+    <span class="tag">Categorias</span>
+    <h2>Escolha sua categoria</h2>
+    <p class="sub">Primeira habilitação, adicionação de categoria ou reciclagem — a gente cuida de todo o processo.</p>
+    <div class="grid g3">
+      <div class="card"><div class="foto"><img src="img/foto6.jpg" alt="CNH A — moto"></div><div class="card-body"><h3>CNH A — Moto</h3><p>Prática e teórica pra você sair pilotando com segurança, da 125 à 1000cc.</p></div></div>
+      <div class="card"><div class="foto"><img src="img/foto1.jpg" alt="CNH B — carro"></div><div class="card-body"><h3>CNH B — Carro</h3><p>Aulas no seu ritmo, simulador e instruções pros exames sem sustos.</p></div></div>
+      <div class="card"><div class="foto"><img src="img/foto2.jpg" alt="Adição de categoria"></div><div class="card-body"><h3>Adição de categoria</h3><p>Já tem CNH B e quer a A (ou o contrário)? Processo rápido e direto.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="processo" class="processo">
+  <div class="wrap">
+    <span class="tag">Como funciona</span>
+    <h2>Do zero à CNH em 4 passos</h2>
+    <p class="sub">A gente cuida da burocracia, você foca em aprender.</p>
+    <div class="steps">
+      <div class="step"><h4>Matrícula no WhatsApp</h4><p>Manda uma mensagem, resolve a documentação e paga como preferir: cartão ou PIX.</p></div>
+      <div class="step"><h4>Curso teórico</h4><p>Aulas preparatórias pro exame teórico do DETRAN.</p></div>
+      <div class="step"><h4>Aulas práticas</h4><p>Horários flexíveis — de manhã, à tarde ou depois do trabalho.</p></div>
+      <div class="step"><h4>Exames &amp; CNH</h4><p>Agendamos os exames pra você. Passou, sua CNH chega — acelerando seus sonhos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="diferenciais">
+  <div class="wrap">
+    <span class="tag">Por que o CFC Ideal</span>
+    <h2>Autoescola de bairro,<br>atendimento de gente</h2>
+    <p class="sub">Somos da Vila Maceno e conhecemos nossos alunos pelo nome.</p>
+    <div class="difs">
+      <div class="dif"><b>✓</b><p>Parcelamos no cartão ou PIX — começar a dirigir sem aperto no bolso.</p></div>
+      <div class="dif"><b>✓</b><p>Horários flexíveis: encaixamos as aulas na sua rotina de trabalho.</p></div>
+      <div class="dif"><b>✓</b><p>Instrutores pacientes — calmo com quem nunca dirigiu na vida.</p></div>
+      <div class="dif"><b>✓</b><p>Processo transparente: você sabe sempre em que etapa está.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="wrap">
+    <h2>Pronto pra acelerar seus sonhos?</h2>
+    <p>Manda um "oi" no WhatsApp e faça sua matrícula hoje mesmo.</p>
+    <a class="btn" href="https://wa.me/5517997693585">Quero minha CNH →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">CFC Ideal — Auto Escola · R. General Glicério 2160, Vila Maceno · São José do Rio Preto/SP · <a href="https://wa.me/5517997693585">(17) 99769-3585</a> · desde 2019</div>
+</footer>
+
+<div class="proto-badge">Página de demonstração criada pela <a href="https://riopreto.tech">Rio Preto Tech</a> — não é o site oficial. Dados públicos: Instagram e registros do CFC.</div>
+
+</body>
+</html>
