@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KRF Laudos e Perícias — Laudo Técnico e Perícia de Imóveis em São José do Rio Preto</title>
+<meta name="description" content="Laudos técnicos e perícias de imóveis em São José do Rio Preto: laudo de vistoria, avaliação, habitese, espelhos de matrícula com engenheiro responsável. Atendimento personalizado.">
+<style>
+:root{
+  --navy:#0e2a3a; --navy2:#12374d; --ink:#132b3d; --paper:#f5f8fa; --line:#dce6ec;
+  --blue:#1373a5; --blue2:#0e5d86; --gold:#c9a24b; --gold2:#b08a34; --txt:#2c4250; --mut:#5d7484;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;color:var(--txt);background:var(--paper);line-height:1.65}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+/* HEADER */
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.hd{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .mark{width:44px;height:44px;background:var(--navy);color:#fff;border-radius:9px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:19px;letter-spacing:.5px;border:2px solid var(--gold)}
+.brand .bt b{display:block;font-size:1.12rem;color:var(--navy);letter-spacing:.4px;line-height:1.15}
+.brand .bt span{font-size:.72rem;color:var(--mut);letter-spacing:1.6px;text-transform:uppercase}
+nav{display:flex;gap:26px;align-items:center}
+nav a{font-size:.93rem;font-weight:600;color:var(--txt)}
+nav a:hover{color:var(--blue)}
+.cta{background:var(--gold);color:#fff!important;padding:10px 20px;border-radius:7px;font-weight:700;box-shadow:0 3px 10px rgba(201,162,75,.35)}
+.cta:hover{background:var(--gold2)!important}
+
+/* HERO */
+.hero{position:relative;background:linear-gradient(rgba(14,42,58,.82),rgba(14,42,58,.9)),url('img/hero.jpg') center/cover;min-height:520px;display:flex;align-items:center;color:#fff}
+.hero .wrap{padding:70px 22px}
+.kicker{display:inline-block;background:rgba(201,162,75,.18);border:1px solid var(--gold);color:#e8cf96;font-size:.78rem;letter-spacing:2.2px;text-transform:uppercase;padding:7px 16px;border-radius:100px;margin-bottom:22px}
+.hero h1{font-size:clamp(1.9rem,4.4vw,3rem);line-height:1.16;font-weight:800;max-width:700px}
+.hero h1 em{font-style:normal;color:#e8c877}
+.hero p{margin:18px 0 30px;font-size:1.08rem;max-width:560px;color:#cfdce4}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:14px 28px;border-radius:8px;font-weight:700;font-size:.98rem;transition:.2s}
+.btn-gold{background:var(--gold);color:#fff;box-shadow:0 4px 14px rgba(201,162,75,.4)}
+.btn-gold:hover{background:var(--gold2);transform:translateY(-1px)}
+.btn-ghost{border:1.5px solid rgba(255,255,255,.45);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+
+/* FAIXA CONFIANÇA */
+.faixa{background:var(--navy);color:#fff;padding:18px 0}
+.faixa .wrap{display:flex;gap:34px;justify-content:center;flex-wrap:wrap;text-align:center}
+.faixa b{display:block;font-size:1.35rem;color:#e8c877}
+.faixa span{font-size:.82rem;color:#9fb4c0;letter-spacing:.6px}
+
+/* SEÇÕES */
+section{padding:74px 0}
+.stag{display:inline-block;background:var(--navy);color:#e8c877;font-size:.74rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:6px 14px;border-radius:100px;margin-bottom:14px}
+h2{font-size:clamp(1.5rem,3vw,2.1rem);color:var(--navy);line-height:1.2;margin-bottom:12px}
+.sub{color:var(--mut);max-width:640px;margin-bottom:38px}
+
+/* SERVIÇOS */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:12px;overflow:hidden;transition:.25s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(14,42,58,.12)}
+.card .im{height:150px;background:var(--navy2);overflow:hidden}
+.card .im img{width:100%;height:100%;object-fit:cover}
+.card .bd{padding:20px 20px 22px;flex:1}
+.card h3{color:var(--navy);font-size:1.06rem;margin-bottom:8px}
+.card p{font-size:.9rem;color:var(--mut)}
+
+/* PROCESSO */
+.proc{background:var(--navy);color:#fff}
+.proc h2{color:#fff}
+.proc .sub{color:#9fb4c0}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;counter-reset:st}
+.step{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:24px 20px;position:relative}
+.step::before{counter-increment:st;content:"0" counter(st);font-size:2rem;font-weight:800;color:var(--gold);display:block;margin-bottom:10px;font-family:Georgia,serif}
+.step h4{font-size:.98rem;margin-bottom:7px;color:#fff}
+.step p{font-size:.85rem;color:#b8c9d4}
+
+/* DIFERENCIAIS */
+.duo{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.duo .im{border-radius:14px;overflow:hidden;box-shadow:0 16px 40px rgba(14,42,58,.18)}
+.duo ul{list-style:none;margin-top:20px}
+.duo li{padding:9px 0 9px 34px;position:relative;color:var(--txt);font-size:.97rem}
+.duo li::before{content:"✓";position:absolute;left:0;top:8px;width:22px;height:22px;background:var(--gold);color:#fff;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:800}
+
+/* CITAÇÃO / SEGMENTOS */
+.segs{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:8px}
+.seg{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:10px;padding:18px 20px}
+.seg b{color:var(--navy);display:block;margin-bottom:4px;font-size:.97rem}
+.seg p{font-size:.88rem;color:var(--mut)}
+
+/* CTA FINAL */
+.cta-final{background:linear-gradient(rgba(14,42,58,.93),rgba(14,42,58,.96)),url('img/foto2.jpg') center/cover;color:#fff;text-align:center;padding:86px 0}
+.cta-final h2{color:#fff}
+.cta-final p{color:#cfdce4;max-width:540px;margin:14px auto 32px}
+
+/* FOOTER */
+footer{background:#0a1e2b;color:#8ba1ae;padding:44px 0 26px;font-size:.88rem}
+.ft{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;margin-bottom:30px}
+.ft b{color:#fff;display:block;margin-bottom:10px;font-size:.95rem}
+.ft a{display:block;padding:3px 0}
+.ft a:hover{color:#e8c877}
+.copy{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.8rem}
+.tag-agencia{background:rgba(201,162,75,.15);color:#e8cf96;padding:2px 10px;border-radius:100px;font-size:.72rem}
+
+@media(max-width:860px){
+  .grid3{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr 1fr}
+  .duo{grid-template-columns:1fr}
+  .ft{grid-template-columns:1fr 1fr}
+  nav a:not(.cta){display:none}
+}
+@media(max-width:560px){
+  .grid3{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .segs{grid-template-columns:1fr}
+  .ft{grid-template-columns:1fr}
+  .hero{min-height:480px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <div class="brand">
+      <div class="mark">KRF</div>
+      <div class="bt"><b>KRF LAUDOS &amp; PERÍCIAS</b><span>São José do Rio Preto · SP</span></div>
+    </div>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#processo">Como funciona</a>
+      <a href="#porque">Por que a KRF</a>
+      <a class="cta" href="https://wa.me/5517991233211?text=Ol%C3%A1!%20Preciso%20de%20um%20laudo%20ou%20per%C3%ADcia.">Pedir orçamento</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <span class="kicker">Engenheiro responsável · Laudos com validade jurídica</span>
+    <h1>Laudo técnico e perícia de imóveis <em>com segurança jurídica</em> em Rio Preto</h1>
+    <p>Vistoria, avaliação, Habitese e documentos para compra, venda, financiamento e regularização — atendimento personalizado, prazo respeitado e laudo assinado por engenheiro responsável.</p>
+    <div class="btns">
+      <a class="btn btn-gold" href="https://wa.me/5517991233211?text=Ol%C3%A1!%20Preciso%20de%20um%20laudo%20ou%20per%C3%ADcia.">Pedir orçamento no WhatsApp</a>
+      <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+    </div>
+  </div>
+</div>
+
+<div class="faixa">
+  <div class="wrap">
+    <div><b>Laudos</b><span>com validade jurídica</span></div>
+    <div><b>Atendimento</b><span>personalizado</span></div>
+    <div><b>Prazos</b><span>respeitados</span></div>
+    <div><b>Rio Preto</b><span>e região</span></div>
+  </div>
+</div>
+
+<section id="servicos">
+  <div class="wrap">
+    <span class="stag">Serviços</span>
+    <h2>O que a KRF faz por você</h2>
+    <p class="sub">Do documento para o banco ao laudo que protege seu processo na justiça — tudo com responsabilidade técnica.</p>
+    <div class="grid3">
+      <div class="card"><div class="im"><img src="img/foto1.jpg" alt="Laudo de vistoria de imóvel"></div>
+        <div class="bd"><h3>Laudo de Vistoria</h3><p>Estado de conservação do imóvel para compra, venda, locação ou entrega de obra — com registro fotográfico completo.</p></div></div>
+      <div class="card"><div class="im"><img src="img/foto2.jpg" alt="Avaliação de imóvel"></div>
+        <div class="bd"><h3>Avaliação de Imóvel</h3><p>Valor de mercado conforme norma ABNT — para financiamento bancário, inventário, partilha ou venda segura.</p></div></div>
+      <div class="card"><div class="im"><img src="img/foto3.jpg" alt="Perícia técnica"></div>
+        <div class="bd"><h3>Perícia Técnica</h3><p>Perícia judicial e extrajudicial: vícios construtivos, sinistros, nulidade de obra e assistência técnica.</p></div></div>
+      <div class="card"><div class="im"><img src="img/foto4.jpg" alt="Habitese"></div>
+        <div class="bd"><h3>Habite-se</h3><p>O documento que atesta que a construção segue as normas do município — sem ele, o imóvel não pode ser legalmente ocupado.</p></div></div>
+      <div class="card"><div class="im"><img src="img/foto5.jpg" alt="Espelho de matrícula"></div>
+        <div class="bd"><h3>Espelho de Matrícula</h3><p>Documentação completa do histórico do imóvel no Cartório de Registro de Imóveis, sem burocracia pra você.</p></div></div>
+      <div class="card"><div class="im"><img src="img/foto6.jpg" alt="Regularização de imóveis"></div>
+        <div class="bd"><h3>Regularização</h3><p>Regularização de construções e documentos junto à prefeitura — deixe seu imóvel 100% em ordem para vender ou financiar.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="proc" id="processo">
+  <div class="wrap">
+    <span class="stag" style="background:rgba(201,162,75,.18)">Como funciona</span>
+    <h2>Do primeiro contato ao laudo na sua mão</h2>
+    <p class="sub">Processo claro, sem volta e sem surpresa — você acompanha cada etapa.</p>
+    <div class="steps">
+      <div class="step"><h4>Contato pelo WhatsApp</h4><p>Você conta o que precisa e envia os dados do imóvel — respondemos rápido.</p></div>
+      <div class="step"><h4>Orçamento e agendamento</h4><p>Escopo, prazo e valor definidos com clareza antes de qualquer visita.</p></div>
+      <div class="step"><h4>Vistoria técnica</h4><p>Visita do engenheiro responsável com coleta de dados e registro fotográfico.</p></div>
+      <div class="step"><h4>Laudo entregue</h4><p>Documento técnico completo, assinado e pronto para o fim que você precisa.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="porque">
+  <div class="wrap duo">
+    <div>
+      <span class="stag">Por que a KRF</span>
+      <h2>Atendimento de gente que conhece imóvel — e conhece você pelo nome</h2>
+      <p style="color:var(--mut)">A KRF Laudos e Perícias usa todo seu potencial para oferecer o que há de melhor em prestação de serviços, sempre respeitando prazos e necessidades de cada cliente.</p>
+      <ul>
+        <li><strong>Engenheiro responsável</strong> em todos os laudos — validade jurídica garantida</li>
+        <li><strong>Atendimento personalizado</strong>: você fala direto com quem faz</li>
+        <li><strong>Prazos respeitados</strong> — seu processo não pode esperar</li>
+        <li><strong>Conhecimento local</strong>: Rio Preto e região, norma e prefeitura dominadas</li>
+        <li><strong>Documentação completa</strong>: laudo, matrícula e regularização num só lugar</li>
+      </ul>
+    </div>
+    <div class="im"><img src="img/foto7.jpg" alt="Engenheiro em vistoria técnica de imóvel"></div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <span class="stag">Para quem servimos</span>
+    <h2>Um laudo para cada situação</h2>
+    <div class="segs">
+      <div class="seg"><b>Comprador e vendedor</b><p>Compre e venda com segurança: saiba o real estado e valor do imóvel antes de assinar.</p></div>
+      <div class="seg"><b>Processos judiciais</b><p>Perícia e assistência técnica para inventários, partilhas, ações de vício construtivo e sinistros.</p></div>
+      <div class="seg"><b>Bancos e financiamento</b><p>Avaliação conforme norma ABNT para financiamento habitacional e garantias.</p></div>
+      <div class="seg"><b>Construtoras e donos de obra</b><p>Habite-se e regularização para ocupar, vender ou financiar o imóvel construído.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="wrap">
+    <h2>Precisa de um laudo ou perícia?</h2>
+    <p>Mande sua dúvida no WhatsApp — respondemos rápido com escopo, prazo e valor claros.</p>
+    <a class="btn btn-gold" href="https://wa.me/5517991233211?text=Ol%C3%A1!%20Preciso%20de%20um%20laudo%20ou%20per%C3%ADcia.">Falar com a KRF agora</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <b>KRF Laudos e Perícias</b>
+        <p>Especialistas em laudos e perícias de imóveis em São José do Rio Preto. Atendimento personalizado, prazos respeitados e responsabilidade técnica.</p>
+      </div>
+      <div>
+        <b>Navegação</b>
+        <a href="#servicos">Serviços</a>
+        <a href="#processo">Como funciona</a>
+        <a href="#porque">Por que a KRF</a>
+      </div>
+      <div>
+        <b>Contato</b>
+        <a href="https://wa.me/5517991233211">WhatsApp (17) 99123-3211</a>
+        <a>R. Sírio Libanesa, 755 — Vila Sinibaldi</a>
+        <a>São José do Rio Preto · SP</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 KRF Laudos e Perícias. Todos os direitos reservados.</span>
+      <span class="tag-agencia">Protótipo demonstrativo criado pela Rio Preto Tech — nada aqui é o site oficial ainda.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
