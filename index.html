@@ -34,7 +34,14 @@ section{padding:72px 0;border-top:1px solid var(--line)}
 .tag{display:inline-block;font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--acc);border:1px solid var(--acc);border-radius:99px;padding:5px 14px;margin-bottom:18px;line-height:1.5}
 header{position:sticky;top:0;background:rgba(11,15,20,.85);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
 header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;gap:10px;flex-wrap:nowrap}
-.logo{font-weight:800;font-size:1.15rem}
+.brandmark{display:flex;align-items:center;gap:10px}
+.brandmark img{width:44px;height:44px;display:block}
+.brandtext{font-weight:800;font-size:1.15rem}
+@media(max-width:640px){
+  .brandmark{gap:8px}
+  .brandmark img{width:32px;height:32px}
+  .brandtext{font-size:.88rem}
+}
 .logo span{color:var(--acc)}
 nav a{color:var(--mut);margin-left:18px;font-size:.9rem}
 nav a:hover{color:var(--txt)}
@@ -79,6 +86,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-siz
 /* ===== mobile UX ===== */
 @media(max-width:640px){
   header .wrap{padding:12px 14px;gap:8px}
+  header .brand span.mark, header .logo{font-size:.88rem;letter-spacing:0}
   .brand img, header img{width:34px;height:34px}
   .logo, header .logo span{font-size:.95rem}
   nav{display:flex;gap:6px;align-items:center;flex-shrink:0}
@@ -108,7 +116,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-siz
 
 <header>
   <div class="wrap">
-    <div class="logo" style="display:flex;align-items:center;gap:10px"><img src="logo-transparent-512.png" alt="Rio Preto Tech" style="width:44px;height:44px;display:block"><span style="font-weight:800;font-size:1.15rem">rio preto<span style="color:var(--acc)">.tech</span></span></div>
+    <div class="logo brandmark"><img src="logo-transparent-512.png" alt="Rio Preto Tech"><span class="brandtext">rio preto<b style="color:var(--acc)">.tech</b></span></div>
     <nav>
       <a href="#diferenciais">Diferenciais</a>
       <a href="#servicos">Serviços</a>
