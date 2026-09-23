@@ -39,6 +39,16 @@ header .wrap{display:flex;justify-content:space-between;align-items:center;paddi
 .brandtext{font-weight:800;font-size:1.15rem}
 @media(max-width:640px){
   .brandmark{gap:8px}
+  .brandmark img{width:34px;height:34px}
+  .brandtext{font-size:.9rem}
+  /* em telas MUITO estreitas (<430px) só o ícone */
+  .brandtext{display:none}
+}
+@media(max-width:430px){
+  .brandtext{display:none}
+}
+@media(min-width:431px) and (max-width:640px){
+  .brandtext{display:inline}
   .brandmark img{width:32px;height:32px}
   .brandtext{font-size:.88rem}
 }
