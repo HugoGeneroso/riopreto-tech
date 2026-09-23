@@ -74,7 +74,7 @@ nav a:hover{color:var(--txt)}
 .final{text-align:center}
 .final .btn{margin-top:10px}
 footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-size:.85rem;text-align:center}
-@media(max-width:640px){nav a:not(.btn){display:none}header .btn{padding:8px 12px;font-size:.85rem}section{padding:52px 0}.hero .ctas .btn{width:100%;text-align:center}.hero h1{font-size:1.85rem}.tag{white-space:normal;text-align:center;line-height:1.5}.hero p{font-size:1rem;overflow-wrap:break-word}*{max-width:100vw}}
+@media(max-width:640px){nav a:not(.btn){display:none}header .btn{padding:8px 12px;font-size:.85rem}section{padding:52px 0}.hero .ctas .btn{width:100%;text-align:center}.hero h1{font-size:1.85rem}.tag{white-space:normal;text-align:center;line-height:1.5}.hero p{font-size:1rem;overflow-wrap:break-word}}
 
 /* ===== mobile UX ===== */
 @media(max-width:640px){
@@ -209,7 +209,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--mut);font-siz
 import * as THREE from 'https://unpkg.com/three@0.160.0/build/three.module.js';
 
 const cv = document.createElement('canvas');
-cv.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;z-index:0;pointer-events:none';
+cv.style.cssText = 'position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none';
 document.getElementById('rio-canvas').appendChild(cv);
 
 const scene = new THREE.Scene();
