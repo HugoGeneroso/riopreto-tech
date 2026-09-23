@@ -36,7 +36,7 @@ nav a{color:var(--mut);font-size:.85rem;margin-left:0}
 nav .btn{padding:9px 16px;font-size:.8rem}
 /* hero */
 .hero{position:relative;padding:120px 0 100px;background:#0a0f18}
-.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.35}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.5;object-position:center 35%}
 .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,15,24,.92) 0%,rgba(10,15,24,.55) 60%,rgba(10,15,24,.75) 100%)}
 .hero .wrap{position:relative}
 .hero .tag{margin-bottom:14px}
@@ -79,7 +79,7 @@ footer a{color:var(--acc)}
 .proto-badge{position:fixed;bottom:0;left:0;right:0;background:#2a3548;color:#c7d2e0;text-align:center;padding:9px 16px;font-size:.78rem;z-index:50}
 .proto-badge a{color:var(--acc);text-decoration:underline}
 @media(max-width:640px){
-  header .brand img{height:34px}
+  header .mark-icon{width:34px;height:34px;font-size:1.1rem}
   .brandtext{font-size:1.05rem}
   .brandtext small{font-size:.52rem}
   nav a:not(.btn){display:none}
@@ -96,7 +96,7 @@ footer a{color:var(--acc)}
 <header>
   <div class="wrap">
     <div class="brand">
-      <img src="img/hero.jpg" alt="CFC Ideal">
+      <div class="mark-icon">◆</div>
       <div class="brandtext">CFC Ideal<small>autoescola · sjrp</small></div>
     </div>
     <nav>
@@ -108,7 +108,7 @@ footer a{color:var(--acc)}
 </header>
 
 <section class="hero">
-  <img src="img/hero.jpg" alt="">
+  <img src="img/hero.jpg" alt="" style="object-position:center 30%">
   <div class="wrap">
     <span class="tag">Autoescola em São José do Rio Preto</span>
     <h1>Acelerando<br>seus <span>sonhos</span></h1>
@@ -151,8 +151,9 @@ footer a{color:var(--acc)}
 
 <section id="diferenciais">
   <div class="wrap">
+    <h2 style="margin-bottom:10px">Autoescola de bairro,<br>atendimento de <span style="color:var(--acc)">gente</span></h2>
+    <p class="sub" style="margin-bottom:26px">Sem fila de atendimento, sem enrolação — aqui você é aluno, não número de matrícula.</p>
     <span class="tag">Por que o CFC Ideal</span>
-    <h2>Autoescola de bairro,<br>atendimento de gente</h2>
     <p class="sub">Somos da Vila Maceno e conhecemos nossos alunos pelo nome.</p>
     <div class="difs">
       <div class="dif"><b>✓</b><p>Parcelamos no cartão ou PIX — começar a dirigir sem aperto no bolso.</p></div>
@@ -160,6 +161,14 @@ footer a{color:var(--acc)}
       <div class="dif"><b>✓</b><p>Instrutores pacientes — calmo com quem nunca dirigiu na vida.</p></div>
       <div class="dif"><b>✓</b><p>Processo transparente: você sabe sempre em que etapa está.</p></div>
     </div>
+  </div>
+</section>
+
+<section style="padding:48px 0;background:var(--bg2);text-align:center">
+  <div class="wrap">
+    <div style="color:var(--acc);font-size:2.2rem;letter-spacing:5px;line-height:1">★★★★★</div>
+    <div style="font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;text-transform:uppercase;margin:8px 0 4px">o que dizem nossos alunos</div>
+    <p style="color:var(--mut);font-size:.9rem">Veja as avaliações no Instagram e Google — e vem fazer parte.</p>
   </div>
 </section>
 
@@ -172,7 +181,7 @@ footer a{color:var(--acc)}
 </section>
 
 <footer>
-  <div class="wrap">CFC Ideal — Auto Escola · R. General Glicério 2160, Vila Maceno · São José do Rio Preto/SP · <a href="https://wa.me/5517997693585">(17) 99769-3585</a> · desde 2019</div>
+  <div class="wrap">CFC Ideal — Auto Escola · R. General Glicério 2160, Vila Maceno · São José do Rio Preto/SP · <a href="https://wa.me/5517997693585">(17) 99769-3585</a> · <a href="https://instagram.com/autoescolaideal">@autoescolaideal</a> · desde 2019</div>
 </footer>
 
 <div class="proto-badge">Página de demonstração criada pela <a href="https://riopreto.tech">Rio Preto Tech</a> — não é o site oficial. Dados públicos: Instagram e registros do CFC.</div>
