@@ -6,7 +6,7 @@
 <title>Matrimonium Assessoria e Cerimonial — Casamentos em São José do Rio Preto e região</title>
 <meta name="description" content="Assessoria e cerimonial de casamentos em São José do Rio Preto. 7 anos organizando casamentos perfeitos: planejamento completo, cerimônia e festa. Nota 4.9 no Casamentos.com.br. Atendemos SJRP e região.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
 <style>
 :root{
   --bg:#faf7f2; --bg2:#f3ede4; --ink:#3d3229; --mut:#8a7d6f;
@@ -18,11 +18,11 @@ body{font-family:'Jost',sans-serif;background:var(--bg);color:var(--ink);line-he
 .wrap{max-width:1020px;margin:0 auto;padding:0 24px}
 h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;font-weight:600}
 a{color:var(--gold);text-decoration:none}
-section{padding:70px 0}
+section{padding:70px 0;border-top:1px solid rgba(176,141,87,.28)}
 .tag{font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:block}
 h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:12px;color:var(--ink)}
 .sub{color:var(--mut);max-width:600px;margin-bottom:40px}
-header{padding:22px 0;border-bottom:1px solid var(--line);background:var(--bg)}
+header{padding:22px 0;border-bottom:1px solid rgba(176,141,87,.28);background:var(--bg)}
 header .wrap{display:flex;justify-content:space-between;align-items:center}
 .brand{display:flex;align-items:center;gap:12px}
 .brand .mark{font-family:'Cormorant Garamond',serif;font-size:1.5rem;letter-spacing:.08em}
@@ -30,7 +30,7 @@ header .wrap{display:flex;justify-content:space-between;align-items:center}
 nav a{color:var(--ink);margin-left:24px;font-size:.9rem;letter-spacing:.05em}
 nav a:hover{color:var(--gold)}
 /* hero */
-.hero{padding:90px 0 80px;text-align:center;background:linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%)}
+.hero{padding:150px 0 110px;text-align:center;position:relative;background:#1a140e}
 .hero .orn{color:var(--gold);font-size:1.4rem;letter-spacing:.6em;margin-bottom:20px}
 .hero h1{font-size:clamp(2.2rem,5vw,3.4rem);font-style:italic;font-weight:400;line-height:1.2;margin-bottom:18px}
 .hero p{color:var(--mut);max-width:560px;margin:0 auto 34px;font-size:1.05rem}
@@ -78,7 +78,7 @@ footer a{color:var(--gold)}
 @media(max-width:760px){
   .about .wrap{grid-template-columns:1fr}
   .stats{grid-template-columns:1fr}
-  nav a{margin-left:12px;font-size:.82rem}
+  nav a:not(.btn){display:none}
 }
 /* faixa flutuante protótipo */
 .proto-badge{position:fixed;bottom:0;left:0;right:0;background:var(--ink);color:#fff;text-align:center;padding:10px 16px;font-size:.82rem;z-index:50}
@@ -128,18 +128,22 @@ footer a{color:var(--gold)}
       <a href="#servicos">Serviços</a>
       <a href="#processo">Como funciona</a>
       <a href="#historia">Nossa história</a>
-      <a class="btn" style="padding:9px 20px;font-size:.78rem" href="https://wa.me/5517981021580">Orçamento</a>
+      <a class="btn" style="padding:9px 20px;font-size:.78rem" href="https://wa.me/5517981021580">Fale conosco</a>
     </nav>
   </div>
 </header>
 
 <section class="hero" style="position:relative;padding:150px 0 110px;background:#1a140e">
-  <img src="img/hero.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55">
+  <img src="img/hero.jpg" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.72">
+  <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(26,20,14,.25) 0%,rgba(26,20,14,.55) 60%,rgba(26,20,14,.75) 100%)"></div>
   <div class="wrap" style="position:relative">
-    <span class="orn" style="color:#e6c88a">✦ ✦ ✦</span>
-    <h1 style="color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.45)">Seu casamento planejado<br>nos mínimos detalhes</h1>
+    <span class="orn" style="color:#e6c88a">— ✦ —</span>
+    <h1 style="color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.5);font-size:clamp(2.4rem,5.6vw,3.6rem)">Seu casamento planejado<br>nos mínimos detalhes</h1>
     <p style="color:#e8ded0;text-shadow:0 1px 12px rgba(0,0,0,.5)">Há 7 anos transformando o grande dia dos casais de São José do Rio Preto e região em lembranças perfeitas — do primeiro planejamento ao último brinde.</p>
-    <a class="btn" href="https://wa.me/5517981021580">Agende uma reunião →</a>
+    <div style="display:flex;gap:26px;align-items:center;justify-content:center;flex-wrap:wrap">
+      <a class="btn" href="https://wa.me/5517981021580">Agende uma conversa →</a>
+      <a href="#galeria" style="color:#f0e6d8;letter-spacing:.08em;font-size:.92rem;border-bottom:1px solid rgba(230,200,138,.6);padding-bottom:2px">ver casamentos realizados ↓</a>
+    </div>
     <div class="stats">
       <div class="stat"><b>7 anos</b><span>de mercado</span></div>
       <div class="stat">
@@ -180,11 +184,15 @@ footer a{color:var(--gold)}
         <div class="step"><span class="n">04</span><div><h4>O grande dia</h4><p>Equipe completa no local, cuidando de cada detalhe enquanto vocês vivem o momento.</p></div></div>
       </div>
     </div>
-    <div>
-      <span class="tag">Nossa história</span>
-      <p class="quote">Cada detalhe estará presente em seu grande dia — é essa dedicação que faz de cada casamento uma linda realidade.</p>
-      <p style="color:var(--mut);font-size:.95rem">A cerimonialista <b style="color:var(--ink)">Shélica Gonçalves</b> e sua equipe há 7 anos realizam o sonho de casais de São José do Rio Preto e região, com planejamento, organização da cerimônia e da festa — e suporte total no dia do evento.</p>
-      <p class="sig">— Shélica Gonçalves, cerimonialista</p>
+    <div style="text-align:center">
+      <div style="width:230px;height:230px;border-radius:50%;margin:0 auto 22px;overflow:hidden;border:3px solid var(--gold);background:var(--bg);display:flex;align-items:center;justify-content:center">
+        <img src="img/gal7.jpg" alt="Shélica Gonçalves — retrato (foto oficial a validar)" style="width:100%;height:100%;object-fit:cover;opacity:.85">
+      </div>
+      <p style="font-size:.72rem;color:var(--mut);letter-spacing:.1em;margin:-14px 0 24px;text-transform:uppercase">retrato oficial a validar</p>
+      <p class="quote" style="text-align:left">Cada detalhe estará presente em seu grande dia — é essa dedicação que faz de cada casamento uma linda realidade.</p>
+      <p style="color:var(--mut);font-size:.95rem;text-align:left">Há 7 anos realizando o sonho de casais de São José do Rio Preto e região — planejamento, cerimônia, festa e suporte total no grande dia.</p>
+      <p style="font-family:'Pinyon Script',cursive;font-size:2.2rem;color:var(--gold);margin-top:18px">Shélica Gonçalves</p>
+      <p style="color:var(--mut);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-top:-8px">cerimonialista &amp; fundadora</p>
     </div>
   </div>
 </section>
@@ -196,12 +204,12 @@ footer a{color:var(--gold)}
     <h2>Momentos que já realizamos</h2>
     <p class="sub">Cada casamento tem a sua história — um vislumbre do que já produzimos com os nossos casais.</p>
     <div class="galeria">
-      <figure class="g1"><img src="img/foto2.jpg" alt="Cerimônia ao ar livre organizada pela Matrimonium"><figcaption>cerimônia ao ar livre</figcaption></figure>
-      <figure class="g2"><img src="img/foto3.jpg" alt="Recepção e decoração de festa"><figcaption>recepção &amp; decoração</figcaption></figure>
-      <figure class="g3"><img src="img/foto4.jpg" alt="Bouquet da noiva"><figcaption>detalhes que emocionam</figcaption></figure>
-      <figure class="g4"><img src="img/foto5.jpg" alt="Decoração da festa"><figcaption>festa sob medida</figcaption></figure>
-      <figure class="g5"><img src="img/foto6.jpg" alt="Primeira dança dos noivos"><figcaption>a primeira dança</figcaption></figure>
-      <figure class="g6"><img src="img/foto7.jpg" alt="Brinde dos noivos"><figcaption>o brinde</figcaption></figure>
+      <figure class="g1"><img src="img/gal1.jpg" alt="Alianças na cerimônia"><figcaption>o sim</figcaption></figure>
+      <figure class="g2"><img src="img/gal2.jpg" alt="Momento da festa"><figcaption>festa</figcaption></figure>
+      <figure class="g3"><img src="img/gal3.jpg" alt="Decoração da recepção"><figcaption>recepção</figcaption></figure>
+      <figure class="g4"><img src="img/gal4.jpg" alt="Entrada dos noivos"><figcaption>a entrada</figcaption></figure>
+      <figure class="g5"><img src="img/gal5.jpg" alt="Detalhe da decoração"><figcaption>cada detalhe</figcaption></figure>
+      <figure class="g6"><img src="img/gal6.jpg" alt="Celebração com convidados"><figcaption>celebração</figcaption></figure>
     </div>
   </div>
 </section>
@@ -213,28 +221,28 @@ footer a{color:var(--gold)}
     <p class="sub">Depoimentos reais de casais atendidos pela equipe — avaliação média <b style="color:var(--ink)">4.9 de 5</b> no Casamentos.com.br, o maior portal de casamentos do Brasil.</p>
     <div class="depo-grid">
       <div class="depo">
-        <div class="estrelas">★★★★★ <small>5.0 · 29/05/2022</small></div>
+        <div class="estrelas">★★★★★ <small>casou em 2022</small></div>
         <p class="txt">"Amei contratar a Shélica e sua equipe para o nosso casamento! Extremamente resolutiva, prática, muito pé no chão — sempre apresenta o problema junto com as soluções."</p>
-        <div class="quem"><span class="avatar">G</span><div><b>Gabriele</b><small>casou em maio de 2022</small></div></div>
+        <div class="quem"><span class="avatar">G</span><div><b>Gabriele</b><small>casou em 2022</small></div></div>
       </div>
       <div class="depo">
-        <div class="estrelas">★★★★★ <small>5.0 · 06/03/2019</small></div>
+        <div class="estrelas">★★★★★ <small>casou em 2019</small></div>
         <p class="txt">"Equipe impecável! Seguiu à risca o cronograma do meu casamento. Shélica, você foi um dos grandes motivos do sucesso do meu casamento — tornou o dia inesquecível!"</p>
-        <div class="quem"><span class="avatar">J</span><div><b>Jessica</b><small>casou em março de 2019</small></div></div>
+        <div class="quem"><span class="avatar">J</span><div><b>Jessica</b><small>casou em 2019</small></div></div>
       </div>
       <div class="depo">
-        <div class="estrelas">★★★★★ <small>5.0 · 20/11/2017</small></div>
+        <div class="estrelas">★★★★★ <small>casou em 2017</small></div>
         <p class="txt">"Super indico! Encontrei apoio e segurança: organização, competência e muito carinho nesse dia tão especial. Mesmo com todas as loucuras, elas me apoiaram. Melhor dia, melhor carinho."</p>
-        <div class="quem"><span class="avatar">M</span><div><b>Mayara</b><small>casou em novembro de 2017</small></div></div>
+        <div class="quem"><span class="avatar">M</span><div><b>Mayara</b><small>casou em 2017</small></div></div>
       </div>
       <div class="depo">
-        <div class="estrelas">★★★★★ <small>5.0 · 26/10/2017</small></div>
+        <div class="estrelas">★★★★★ <small>casou em 2017</small></div>
         <p class="txt">"Serviço excelente, profissionais super competentes e qualificadas. Pontualidade e respeito não só com as noivas, mas com toda a família. Deixaram minha festa impecável."</p>
-        <div class="quem"><span class="avatar">C</span><div><b>Catierine</b><small>casou em outubro de 2017</small></div></div>
+        <div class="quem"><span class="avatar">C</span><div><b>Catierine</b><small>casou em 2017</small></div></div>
       </div>
     </div>
   </div>
-</section>>
+</section>
 
 <section class="final">
   <div class="wrap">
