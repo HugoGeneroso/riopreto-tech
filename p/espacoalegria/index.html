@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espaço Alegria Festas | Festa infantil completa em São José do Rio Preto</title>
+<meta name="description" content="Há mais de 10 anos realizando festas infantis inesquecíveis em São José do Rio Preto. Buffet completo, recreação e estrutura para até 100 convidados. Festas a partir de R$1.549.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --roxo:#5b2d8f; --roxo-escuro:#3d1d63;
+  --laranja:#ff7a1a; --amarelo:#ffc93c;
+  --rosa:#ff4f8b; --azul:#2aa7e8;
+  --creme:#fff9f0; --tinta:#2d2438;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',sans-serif;color:var(--tinta);background:var(--creme);line-height:1.6}
+h1,h2,h3,.marca{font-family:'Baloo 2',cursive;line-height:1.15}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+
+/* header */
+header{position:sticky;top:0;background:#fff;box-shadow:0 2px 14px rgba(61,29,99,.08);z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1080px;margin:0 auto}
+.marca{font-size:1.25rem;font-weight:800;color:var(--roxo);display:flex;align-items:center;gap:8px}
+.marca .ball{width:26px;height:26px;border-radius:50%;background:conic-gradient(var(--laranja) 0 25%,var(--amarelo) 0 50%,var(--rosa) 0 75%,var(--azul) 0);flex:none}
+.nav a.link{font-weight:700;color:var(--tinta);margin-left:22px;font-size:.95rem}
+.nav a.link:hover{color:var(--laranja)}
+@media(max-width:640px){.nav a.link{margin-left:14px;font-size:.85rem}}
+
+/* hero */
+.hero{position:relative;min-height:520px;display:flex;align-items:center;color:#fff;overflow:hidden}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(61,29,99,.88) 0%,rgba(91,45,143,.62) 45%,rgba(91,45,143,.18) 100%)}
+.hero .txt{position:relative;z-index:2;max-width:1080px;margin:0 auto;padding:70px 20px}
+.hero h1{font-size:clamp(1.9rem,4.6vw,3.3rem);font-weight:800;max-width:640px}
+.hero h1 span{color:var(--amarelo)}
+.hero p{margin:18px 0 26px;font-size:1.1rem;max-width:520px;font-weight:600;color:#f3eaff}
+.cta{display:inline-block;background:var(--laranja);color:#fff;font-weight:800;padding:15px 30px;border-radius:999px;font-size:1.05rem;box-shadow:0 8px 22px rgba(255,122,26,.45);transition:.2s}
+.cta:hover{transform:translateY(-2px);background:#ff8c3a}
+.hero .selo{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(4px);border-radius:999px;padding:7px 16px;font-weight:700;font-size:.9rem;margin-bottom:18px}
+
+/* faixa prova social */
+.faixa{background:var(--amarelo);color:var(--roxo-escuro);text-align:center;padding:14px 16px;font-weight:800;font-size:1.02rem}
+
+/* seções */
+section{padding:70px 0}
+.tag{display:inline-block;background:var(--roxo);color:#fff;font-weight:800;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border-radius:999px;margin-bottom:14px}
+h2{font-size:clamp(1.6rem,3.4vw,2.3rem);color:var(--roxo-escuro);margin-bottom:14px}
+.lead2{font-size:1.08rem;max-width:640px;color:#5a4d6b}
+
+/* pacotes */
+.pacotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:34px}
+.pacote{background:#fff;border-radius:20px;padding:30px 26px;box-shadow:0 10px 30px rgba(61,29,99,.09);border-top:6px solid var(--amarelo);position:relative}
+.pacote.destaque{border-top-color:var(--laranja);transform:scale(1.02)}
+.pacote .tagp{position:absolute;top:-14px;right:18px;background:var(--laranja);color:#fff;font-weight:800;font-size:.75rem;padding:4px 12px;border-radius:999px}
+.pacote h3{color:var(--roxo);font-size:1.3rem}
+.pacote .preco{font-size:1.9rem;font-weight:800;color:var(--laranja);margin:8px 0 4px}
+.pacote .preco small{font-size:.85rem;color:#8a7d9c;font-weight:700}
+.pacote ul{list-style:none;margin-top:14px}
+.pacote li{padding:7px 0 7px 26px;position:relative;font-weight:600;font-size:.95rem}
+.pacote li::before{content:"✓";position:absolute;left:0;color:var(--azul);font-weight:800}
+.pacote .obs{margin-top:10px;font-size:.8rem;color:#8a7d9c}
+
+/* estrutura */
+.galeria{display:grid;grid-template-columns:1.4fr 1fr;gap:16px;margin-top:34px}
+.galeria img{width:100%;height:100%;object-fit:cover;border-radius:18px}
+.galeria .col{display:grid;gap:16px}
+@media(max-width:720px){.galeria{grid-template-columns:1fr}}
+.itens{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:30px}
+.item{background:#fff;border-radius:16px;padding:18px;font-weight:700;font-size:.95rem;display:flex;gap:12px;align-items:center;box-shadow:0 6px 18px rgba(61,29,99,.07)}
+.item .ico{font-size:1.5rem;flex:none}
+
+/* unidades */
+.unidades{background:#fff;padding:70px 0}
+.uni{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin-top:30px}
+.carduni{background:var(--creme);border-radius:18px;padding:26px}
+.carduni h3{color:var(--roxo);margin-bottom:8px}
+.carduni p{font-size:.95rem;color:#5a4d6b}
+
+/* cta final */
+.final{background:linear-gradient(120deg,var(--roxo) 0%,var(--roxo-escuro) 100%);color:#fff;text-align:center}
+.final h2{color:#fff}
+.final p{color:#e9dcff;max-width:560px;margin:0 auto 28px}
+.final .cta{background:var(--amarelo);color:var(--roxo-escuro);box-shadow:0 8px 22px rgba(0,0,0,.25)}
+
+footer{background:var(--roxo-escuro);color:#cbb6ee;text-align:center;padding:26px 16px;font-size:.9rem}
+footer b{color:#fff}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <div class="marca"><span class="ball"></span> Espaço Alegria <span style="color:var(--laranja)">Festas</span></div>
+    <div>
+      <a class="link" href="#pacotes">Pacotes</a>
+      <a class="link" href="#estrutura">Estrutura</a>
+      <a class="link" href="#unidades">Unidades</a>
+    </div>
+  </nav>
+</header>
+
+<div class="hero">
+  <img src="hero.jpg" alt="Crianças comemorando festa de aniversário">
+  <div class="txt">
+    <span class="selo">⭐ 5,0 no Facebook · 46 avaliações</span>
+    <h1>A festa do seu filho <span>completa, segura e sem dor de cabeça</span></h1>
+    <p>Há mais de 10 anos realizando aniversários inesquecíveis em São José do Rio Preto — buffet, recreação e toda a estrutura num só lugar.</p>
+    <a class="cta" href="https://wa.me/5517991419435?text=Oi!%20Quero%20saber%20mais%20sobre%20as%20festas%20do%20Espa%C3%A7o%20Alegria%20%F0%9F%8E%89">🎉 Quero reservar a festa</a>
+  </div>
+</div>
+
+<div class="faixa">🎈 Festas completas a partir de <u>R$ 1.549</u> · 2 unidades em Rio Preto · Mais de 10 anos de alegria</div>
+
+<section id="pacotes">
+  <div class="wrap">
+    <span class="tag">Pacotes</span>
+    <h2>Você escolhe o tamanho da festa, a gente cuida de tudo</h2>
+    <p class="lead2">Sem sichê com 5 fornecedores: buffet, bolo, recreação e decoração num contrato só.</p>
+    <div class="pacotes">
+      <div class="pacote">
+        <h3>Festa Alegria</h3>
+        <div class="preco">R$ 1.549 <small>a partir de</small></div>
+        <ul>
+          <li>Espaço decorado por 4 horas</li>
+          <li>Buffet kids + salgados</li>
+          <li>Recreação monitorada</li>
+          <li>Convite digital personalizado</li>
+        </ul>
+        <p class="obs">*Valores do perfil oficial — confirmar condições atuais.</p>
+      </div>
+      <div class="pacote destaque">
+        <span class="tagp">MAIS ESCOLHIDO</span>
+        <h3>Festa Super Alegria</h3>
+        <div class="preco">R$ 2.490 <small>a partir de</small></div>
+        <ul>
+          <li>Tudo do Festa Alegria</li>
+          <li>Bolo + doces personalizados</li>
+          <li>Personagem vivo do tema</li>
+          <li>Sessão de fotos da festa</li>
+          <li>Brindes para os convidados</li>
+        </ul>
+        <p class="obs">*Valores ilustrativos do plano personalizado.</p>
+      </div>
+      <div class="pacote">
+        <h3>Festa em Casa</h3>
+        <div class="preco">Sob medida</div>
+        <ul>
+          <li>Levamos a festa até você</li>
+          <li>Buffet e equipe no seu endereço</li>
+          <li>Recreação e brincadeiras</li>
+          <li>Ideal para até 40 convidados</li>
+        </ul>
+        <p class="obs">*Orçamento por WhatsApp em minutos.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="estrutura">
+  <div class="wrap">
+    <span class="tag">A estrutura</span>
+    <h2>Um espaço pensado para criançada (e para a paz dos pais)</h2>
+    <p class="lead2">Salões climatizados, área de brincadeiras monitorada e cozinha própria — você só aparece e aproveita.</p>
+    <div class="galeria">
+      <img src="foto-mesa.jpg" alt="Mesa de festa infantil decorada">
+      <div class="col">
+        <img src="foto-baloes.jpg" alt="Decoração com balões">
+        <img src="foto-brincadeira.jpg" alt="Crianças brincando na festa">
+      </div>
+    </div>
+    <div class="itens">
+      <div class="item"><span class="ico">🎂</span> Buffet próprio kids</div>
+      <div class="item"><span class="ico">🤹</span> Recreação monitorada</div>
+      <div class="item"><span class="ico">🧸</span> Espaço brincadeiras seguro</div>
+      <div class="item"><span class="ico">❄️</span> Salões climatizados</div>
+      <div class="item"><span class="ico">🎨</span> Decoração por tema</div>
+      <div class="item"><span class="ico">📸</span> Registro da festa</div>
+    </div>
+  </div>
+</section>
+
+<section class="unidades" id="unidades">
+  <div class="wrap">
+    <span class="tag">Onde estamos</span>
+    <h2>Duas unidades em São José do Rio Preto</h2>
+    <div class="uni">
+      <div class="carduni">
+        <h3>📍 Unidade Jaguaré</h3>
+        <p>R. José Signorini, 255 — Jaguaré<br>Salão principal, estacionamento no local.</p>
+      </div>
+      <div class="carduni">
+        <h3>📍 Espaço Alegre &amp; Cia</h3>
+        <p>Nossa segunda casa de festas, para datas e horários alternativos.</p>
+      </div>
+      <div class="carduni">
+        <h3>🕒 Horários</h3>
+        <p>Festas com horários flexíveis, inclusive fins de semana e feriados.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>A data está chegando? Garanta a sua 🎂</h2>
+    <p>As datas de fim de semana voam — fale agora com a gente e receba o orçamento da festa em minutos.</p>
+    <a class="cta" href="https://wa.me/5517991419435?text=Oi!%20Quero%20verificar%20a%20disponibilidade%20de%20data%20%F0%9F%8E%88">Falar no WhatsApp agora</a>
+  </div>
+</section>
+
+<footer>
+  <b>Espaço Alegria Festas e Eventos</b> · São José do Rio Preto/SP<br>
+  📱 (17) 99141-9435 · Instagram @espacoalegriafesta<br>
+  <small>Protótipo de um site criado pela Rio Preto Tech — imagens ilustrativas.</small>
+</footer>
+
+</body>
+</html>
