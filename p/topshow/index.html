@@ -32,12 +32,12 @@ nav a:hover{color:var(--aqua2)}
 .hero{position:relative;background:linear-gradient(rgba(8,51,68,.80),rgba(12,74,110,.86)),url('img/hero.jpg?v=2') center/cover;min-height:540px;display:flex;align-items:center;color:#fff}
 .hero .wrap{padding:64px 22px}
 .kicker{display:inline-block;background:rgba(6,182,212,.16);border:1px solid var(--aqua);color:#a5f3fc;font-size:.78rem;letter-spacing:2.2px;text-transform:uppercase;padding:7px 16px;border-radius:100px;margin-bottom:22px}
-.hero h1{font-size:clamp(1.9rem,4.4vw,3rem);line-height:1.14;font-weight:800;max-width:690px}
+.hero h1{font-size:clamp(1.6rem,7.2vw,3rem);line-height:1.14;font-weight:800;max-width:690px;overflow-wrap:anywhere}
 .hero h1 em{font-style:normal;color:#67e8f9}
 .hero p{margin:18px 0 30px;font-size:1.08rem;max-width:580px;color:#d8eefc}
 .btns{display:flex;gap:14px;flex-wrap:wrap}
 .btn{padding:14px 28px;border-radius:9px;font-weight:800;font-size:.98rem;transition:.2s;display:inline-block}
-.btn-wa{background:#25d366;color:#053316;box-shadow:0 4px 14px rgba(37,211,102,.4)}
+.btn-wa{background:var(--orange);color:#fff;box-shadow:0 4px 14px rgba(249,115,22,.4)}
 .btn-wa:hover{filter:brightness(.94)}
 .btn-ghost{background:transparent;color:#e0f2fe;border:2px solid #7dd3fc}
 .btn-ghost:hover{border-color:#fff;color:#fff}
@@ -91,6 +91,14 @@ details p{padding:0 20px 18px;color:var(--mut);font-size:.93rem}
 .finbox p{margin-top:8px;font-size:.95rem;font-weight:600;color:#fff;background:rgba(0,0,0,.22);display:inline-block;padding:8px 14px;border-radius:8px}
 .btn-white{background:#fff;color:#c2410c;box-shadow:0 4px 14px rgba(0,0,0,.15)}
 .btn-white:hover{filter:brightness(.95)}
+@media(max-width:900px){
+  nav a{display:none}
+  nav a.cta{display:inline-block}
+  .hero{min-height:0}
+  .hero .wrap{padding:52px 22px}
+  .trust{gap:18px}
+  .ft{grid-template-columns:1fr!important}
+}
 </style>
 </head>
 <body>
@@ -134,7 +142,7 @@ details p{padding:0 20px 18px;color:var(--mut);font-size:.93rem}
     <p class="sec-s">Da água verde à piscina de estreia: um time só para limpeza, obra, equipamento e aquecimento.</p>
     <div class="cards">
       <div class="card">
-        <div class="ph"><img src="img/limpeza.jpg?v=2" alt="Equipe realizando manutenção de piscina"></div>
+        <div class="ph"><img src="img/limpeza.jpg?v=2" alt="Piscina em manutenção e recuperação de revestimento"></div>
         <div class="bd">
           <h3>Limpeza &amp; Manutenção</h3>
           <p>Limpeza, tratamento químico e ajuste de pH — água cristalina e saudável. Plano semanal ou a cada 3–4 dias em época de uso intenso.</p>
@@ -142,7 +150,7 @@ details p{padding:0 20px 18px;color:var(--mut);font-size:.93rem}
         </div>
       </div>
       <div class="card">
-        <div class="ph"><img src="img/instalacao.jpg?v=2" alt="Piscina em fase de instalação"></div>
+        <div class="ph"><img src="img/instalacao-v3.jpg" alt="Piscina em fase de instalação"></div>
         <div class="bd">
           <h3>Instalação de Piscinas</h3>
           <p>Projetos em vinil, fibra ou alvenaria com acabamento impecável e garantia. Prazo médio de 15 a 30 dias do preparo ao enchimento.</p>
@@ -208,6 +216,10 @@ details p{padding:0 20px 18px;color:var(--mut);font-size:.93rem}
     </div>
   </div>
 </section>
+
+<div class="wrap"><div style="background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;border-radius:12px;padding:14px 20px;font-size:.92rem;font-weight:600;display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+      <span style="color:#f97316;font-size:1.2rem">✓</span> Atendimento em São José do Rio Preto e região &nbsp;·&nbsp; Peças originais Jacuzzi, Pentair e Nautilus &nbsp;·&nbsp; Garantia estendida e suporte pós-venda
+    </div></div>
 
 <section class="faq" id="faq">
   <div class="wrap">
