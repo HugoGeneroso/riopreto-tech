@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Show Piscinas — Limpeza, instalação e aquecimento de piscinas em São José do Rio Preto</title>
+<meta name="description" content="Manutenção, limpeza e tratamento de piscina, instalação de vinil, fibra e alvenaria, filtros, bombas e aquecimento solar em São José do Rio Preto e região. Orçamento pelo WhatsApp.">
+<style>
+:root{
+  --aqua:#06b6d4; --aqua2:#0891b2; --deep:#083344; --deep2:#0c4a6e;
+  --orange:#f97316; --paper:#f0f9ff; --line:#bae6fd; --txt:#134e63; --mut:#4f7d8f;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Segoe UI',system-ui,sans-serif;color:var(--txt);background:var(--paper);line-height:1.65}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:50}
+.hd{display:flex;align-items:center;justify-content:space-between;padding:13px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.mark{width:46px;height:46px;background:linear-gradient(135deg,var(--aqua),var(--deep2));color:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:900;border:0}
+.bt b{display:block;font-size:1.12rem;color:var(--deep);letter-spacing:.3px;line-height:1.1}
+.bt span{font-size:.7rem;color:var(--mut);letter-spacing:1.6px;text-transform:uppercase}
+nav{display:flex;gap:22px;align-items:center}
+nav a{font-size:.92rem;font-weight:600;color:var(--txt)}
+nav a:hover{color:var(--aqua2)}
+.cta{background:var(--orange);color:#fff!important;padding:10px 20px;border-radius:8px;font-weight:800;box-shadow:0 3px 10px rgba(249,115,22,.35)}
+.cta:hover{filter:brightness(.94)}
+
+.hero{position:relative;background:linear-gradient(rgba(8,51,68,.72),rgba(12,74,110,.82)),url('img/hero.jpg') center/cover;min-height:540px;display:flex;align-items:center;color:#fff}
+.hero .wrap{padding:64px 22px}
+.kicker{display:inline-block;background:rgba(6,182,212,.16);border:1px solid var(--aqua);color:#a5f3fc;font-size:.78rem;letter-spacing:2.2px;text-transform:uppercase;padding:7px 16px;border-radius:100px;margin-bottom:22px}
+.hero h1{font-size:clamp(1.9rem,4.4vw,3rem);line-height:1.14;font-weight:800;max-width:690px}
+.hero h1 em{font-style:normal;color:#67e8f9}
+.hero p{margin:18px 0 30px;font-size:1.08rem;max-width:580px;color:#d8eefc}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:14px 28px;border-radius:9px;font-weight:800;font-size:.98rem;transition:.2s;display:inline-block}
+.btn-wa{background:#25d366;color:#053316;box-shadow:0 4px 14px rgba(37,211,102,.4)}
+.btn-wa:hover{filter:brightness(.94)}
+.btn-ghost{background:transparent;color:#e0f2fe;border:2px solid #7dd3fc}
+.btn-ghost:hover{border-color:#fff;color:#fff}
+.trust{display:flex;gap:26px;flex-wrap:wrap;margin-top:38px;padding-top:24px;border-top:1px solid rgba(165,243,252,.28)}
+.trust div{font-size:.86rem;color:#c9e9f7}
+.trust b{display:block;color:#fff;font-size:1.02rem}
+
+section{padding:74px 0}
+.sec-t{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:800;color:var(--deep);margin-bottom:10px}
+.sec-s{color:var(--mut);max-width:640px;margin-bottom:40px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 4px 18px rgba(8,51,68,.06);display:flex;flex-direction:column}
+.card .ph{aspect-ratio:16/9;background:#0c4a6e;overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .bd{padding:22px;flex:1;display:flex;flex-direction:column}
+.card h3{color:var(--deep);font-size:1.08rem;margin-bottom:8px}
+.card p{font-size:.9rem;color:var(--mut);flex:1}
+.card a{margin-top:16px;font-size:.88rem;font-weight:800;color:var(--aqua2)}
+.card a:hover{color:var(--deep2)}
+
+.diff{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:30px}
+.di{border-left:4px solid var(--aqua);padding-left:18px}
+.di h3{font-size:1.02rem;color:var(--deep);margin-bottom:6px}
+.di p{font-size:.9rem;color:var(--mut)}
+.di .tag{display:inline-block;background:#cffafe;color:#0e5e74;font-size:.7rem;font-weight:800;letter-spacing:1.2px;text-transform:uppercase;padding:3px 10px;border-radius:100px;margin-bottom:10px}
+
+.steps{counter-reset:st}
+.step{display:flex;gap:22px;margin-bottom:34px;align-items:flex-start}
+.num{counter-increment:st;flex:0 0 54px;height:54px;border-radius:50%;background:linear-gradient(135deg,var(--aqua),var(--deep2));color:#fff;display:flex;align-items:center;justify-content:center;font-size:1.3rem;font-weight:900}
+.num::before{content:counter(st,decimal-leading-zero)}
+.step h3{color:var(--deep);font-size:1.08rem}
+.step p{color:var(--mut);font-size:.94rem;max-width:560px}
+
+.faq{background:#fff;border-top:1px solid var(--line)}
+details{border:1px solid var(--line);border-radius:12px;margin-bottom:12px;background:#f8fdff}
+summary{cursor:pointer;padding:17px 20px;font-weight:700;color:var(--deep);list-style:none;display:flex;justify-content:space-between;align-items:center}
+summary::after{content:'+';font-size:1.35rem;color:var(--aqua2);font-weight:400}
+details[open] summary::after{content:'–'}
+details p{padding:0 20px 18px;color:var(--mut);font-size:.93rem}
+
+.area{background:linear-gradient(135deg,var(--deep),var(--deep2));color:#e0f2fe}
+.area .sec-t{color:#fff}
+.area .sec-s{color:#9edcf3}
+.pills{display:flex;flex-wrap:wrap;gap:12px}
+.pill{background:rgba(255,255,255,.09);border:1px solid rgba(125,211,252,.45);border-radius:100px;padding:10px 22px;font-weight:600;font-size:.95rem}
+
+.fina{padding:0 0 84px}
+.finbox{background:linear-gradient(135deg,#f97316,#ea580c);border-radius:22px;color:#fff;padding:46px 38px;display:flex;flex-wrap:wrap;gap:26px;align-items:center;justify-content:space-between;box-shadow:0 14px 40px rgba(234,88,12,.35)}
+.finbox h2{font-size:clamp(1.3rem,2.6vw,1.8rem);max-width:520px}
+.finbox p{opacity:.92;margin-top:6px;font-size:.95rem}
+.btn-white{background:#fff;color:#c2410c;box-shadow:0 4px 14px rgba(0,0,0,.15)}
+.btn-white:hover{filter:brightness(.95)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <div class="brand">
+      <div class="mark">TS</div>
+      <div class="bt"><b>Top Show Piscinas</b><span>Rio Preto · Zona Rural</span></div>
+    </div>
+    <nav>
+      <a href="#servicos">Serviços</a>
+      <a href="#como">Como funciona</a>
+      <a href="#area">Área</a>
+      <a href="#faq">Dúvidas</a>
+      <a class="cta" id="cta-top" href="#contato">Orçamento</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding:0">
+  <div class="wrap">
+    <span class="kicker">Limpeza · Instalação · Aquecimento</span>
+    <h1>Sua piscina <em>cristalina o ano inteiro</em>, pronta para a família</h1>
+    <p>Manutenção com plano semanal, instalação de piscinas de vinil, fibra e alvenaria, venda de filtros e bombas e aquecimento solar — em São José do Rio Preto e região, com garantia e suporte técnico.</p>
+    <div class="btns">
+      <a class="btn btn-wa" id="wa-hero" href="#">💬 Pedir orçamento no WhatsApp</a>
+      <a class="btn btn-ghost" href="#servicos">Ver serviços</a>
+    </div>
+    <div class="trust">
+      <div><b>Vinil · Fibra · Alvenaria</b>instalação com garantia</div>
+      <div><b>Marcas originais</b>Jacuzzi, Pentair e Nautilus</div>
+      <div><b>Visita técnica</b>orçamento no local, sem enrolação</div>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="wrap">
+    <h2 class="sec-t">O que fazemos pela sua piscina</h2>
+    <p class="sec-s">Da água verde à piscina de estreia: um time só para limpeza, obra, equipamento e aquecimento.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="ph"><img src="img/limpeza.jpg" alt="Limpeza de piscina com utensílio adequado"></div>
+        <div class="bd">
+          <h3>Limpeza &amp; Manutenção</h3>
+          <p>Limpeza, tratamento químico e ajuste de pH — água cristalina e saudável. Plano semanal ou a cada 3–4 dias em época de uso intenso.</p>
+          <a class="lnk-wa" href="#">Agendar limpeza →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="img/instalacao.jpg" alt="Piscina em fase de instalação"></div>
+        <div class="bd">
+          <h3>Instalação de Piscinas</h3>
+          <p>Projetos em vinil, fibra ou alvenaria com acabamento impecável e garantia. Prazo médio de 15 a 30 dias do preparo ao enchimento.</p>
+          <a class="lnk-wa" href="#">Cotar instalação →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="img/cristalina.jpg" alt="Água de piscina límpida vista de baixo"></div>
+        <div class="bd">
+          <h3>Filtros &amp; Bombas</h3>
+          <p>Venda e instalação de filtros e bombas de alto desempenho das principais marcas do mercado, com orientação do modelo certo pro seu volume.</p>
+          <a class="lnk-wa" href="#">Ver equipamentos →</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="ph"><img src="img/aquecimento.jpg" alt="Placas de aquecimento solar"></div>
+        <div class="bd">
+          <h3>Aquecimento Solar &amp; Elétrico</h3>
+          <p>Placas solares, trocadores de calor e bombas de calor — piscina utilisável até no inverno, com economia na conta de luz.</p>
+          <a class="lnk-wa" href="#">Cotar aquecimento →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="diff" id="diferenciais">
+  <div class="wrap">
+    <h2 class="sec-t">Por que Top Show?</h2>
+    <p class="sec-s">Três compromissos que você cobra no dia a contrato:</p>
+    <div class="dgrid">
+      <div class="di"><span class="tag">atendimento</span><h3>Personalizado</h3><p>Cada projeto é único. Entendemos a piscina e a rotina da família antes de propor solução — nada de orçamento de prateleira.</p></div>
+      <div class="di"><span class="tag">equipamentos</span><h3>Peças originais</h3><p>Trabalhamos com marcas reconhecidas e garantimos a procedência de tudo que instalamos e vendemos.</p></div>
+      <div class="di"><span class="tag">pós-venda</span><h3>Garantia e suporte</h3><p>Garantia estendida em serviços e produtos, com retorno rápido sempre que precisar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="como">
+  <div class="wrap">
+    <h2 class="sec-t">Como funciona</h2>
+    <p class="sec-s">Do primeiro "oi" no WhatsApp à piscina pronta:</p>
+    <div class="steps">
+      <div class="step"><div class="num"></div><div><h3>Você chama no WhatsApp</h3><p>Conte o que precisa — limpeza recorrente, obra nova, troca de bomba ou aquecimento.</p></div></div>
+      <div class="step"><div class="num"></div><div><h3>Visita técnica</h3><p>Vamos até você avaliar, medir e propor a melhor solução para o seu caso.</p></div></div>
+      <div class="step"><div class="num"></div><div><h3>Execução e entrega</h3><p>Equipe capacitada, prazo combinado e tudo funcionando perfeitamente na entrega.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="area" id="area">
+  <div class="wrap">
+    <h2 class="sec-t">Onde atendemos</h2>
+    <p class="sec-s">Base na Zona Rural de Rio Preto, com deslocamento para toda a cidade e cidades vizinhas:</p>
+    <div class="pills">
+      <span class="pill">São José do Rio Preto (todas as zonas)</span>
+      <span class="pill">Bady Bassitt</span>
+      <span class="pill">Mirassol</span>
+      <span class="pill">Potirendaba</span>
+      <span class="pill">Cedral</span>
+      <span class="pill">Icém</span>
+      <span class="pill">e região</span>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <h2 class="sec-t">Dúvidas frequentes</h2>
+    <p class="sec-s">O que os clientes mais perguntam antes de chamar:</p>
+    <details><summary>Com que frequência devo limpar minha piscina?</summary><p>Recomendamos limpeza semanal para evitar acúmulo de sujeira e proliferação de algas. Em época de muito uso, a cada 3 ou 4 dias.</p></details>
+    <details><summary>Vocês vendem filtros e bombas?</summary><p>Sim — trabalhamos com as principais marcas do mercado, como Jacuzzi, Pentair e Nautilus, tanto para venda quanto para instalação.</p></details>
+    <details><summary>O aquecimento solar funciona em dias nublados?</summary><p>Sim. Os painéis captam calor mesmo com tempo nublado (com rendimento menor). Em dias ensolarados, a água pode chegar a 30°C.</p></details>
+    <details><summary>Quanto tempo leva para instalar uma piscina de vinil?</summary><p>O prazo médio é de 15 a 30 dias, dependendo do projeto e das condições do terreno. Cuidamos de tudo, da preparação ao acabamento.</p></details>
+    <details><summary>Atendem bairros afastados e cidades vizinhas?</summary><p>Atendemos toda São José do Rio Preto — zona norte, sul, leste e oeste — além de Bady Bassitt, Mirassol, Potirendaba, Cedral, Icém e região.</p></details>
+  </div>
+</section>
+
+<section class="fina" id="contato">
+  <div class="wrap">
+    <div class="finbox">
+      <div>
+        <h2>Peça seu orçamento sem compromisso</h2>
+        <p>Resposta rápida no WhatsApp · (17) 98147-3695 · fixo (17) 3216-1011</p>
+      </div>
+      <a class="btn btn-white" id="wa-fin" href="#">💬 Chamar no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer style="background:#083344;color:#8fc7e0;padding:40px 0 24px;font-size:.86rem">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:30px;margin-bottom:26px">
+      <div>
+        <b style="color:#fff;display:block;margin-bottom:10px;font-size:.95rem">TOP SHOW PISCINAS</b>
+        Limpeza, instalação, equipamentos e aquecimento de piscinas.<br>Rua Rouxinóis, 305 — Res. Vista Alegre (Zona Rural)<br>São José do Rio Preto/SP
+      </div>
+      <div>
+        <b style="color:#fff;display:block;margin-bottom:10px;font-size:.95rem">Links rápidos</b>
+        <a href="#servicos" style="display:block;padding:3px 0">Serviços</a>
+        <a href="#como" style="display:block;padding:3px 0">Como funciona</a>
+        <a href="#faq" style="display:block;padding:3px 0">Dúvidas frequentes</a>
+      </div>
+      <div>
+        <b style="color:#fff;display:block;margin-bottom:10px;font-size:.95rem">Contato</b>
+        <a class="lnk-wa" href="#" style="display:block;padding:3px 0">WhatsApp (17) 98147-3695</a>
+        <span style="display:block;padding:3px 0">Fixo (17) 3216-1011</span>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(141,199,224,.25);padding-top:18px;display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center">
+      <span>© <span id="yr"></span> Top Show Piscinas — São José do Rio Preto/SP</span>
+      <span style="background:rgba(249,115,22,.16);border:1px solid rgba(249,115,22,.55);color:#fdba74;border-radius:100px;padding:5px 14px;font-weight:700">🛠 Protótipo de um site criado pela Rio Preto Tech — fotos ilustrativas, textos a confirmar com o proprietário</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+const NUM="5517981473695";
+const PRE="Olá! Vim pelo site da Top Show Piscinas e quero um orçamento";
+const link=`https://wa.me/${NUM}?text=${encodeURIComponent(PRE)}`;
+['wa-hero','wa-fin'].forEach(id=>document.getElementById(id).href=link);
+document.querySelectorAll('.lnk-wa').forEach(a=>a.href=link);
+document.getElementById('cta-top').href='#contato';
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
