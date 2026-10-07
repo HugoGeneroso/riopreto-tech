@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>S.A Yakiniku — Rodízio Japonês: Sushi + Churrasco na Mesa | São José do Rio Preto</title>
+<meta name="description" content="S.A Yakiniku SJRP — rodízio japonês com sushi à vontade e churrasco japonês na sua mesa, na Vila Santa Cruz. Reserve pelo WhatsApp. Menu de fondue sazonal.">
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:title" content="S.A Yakiniku — Rodízio de sushi + churrasco japonês na mesa | São José do Rio Preto">
+<meta property="og:description" content="Sushi à vontade e brasa na sua mesa, na Vila Santa Cruz. Reserve pelo WhatsApp (17) 98135-6292.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1563612116625-3012372fccce?q=80&w=1200&auto=format&fit=crop">
+<meta property="og:locale" content="pt_BR">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Restaurant",
+  "name":"S.A Yakiniku",
+  "image":"https://images.unsplash.com/photo-1563612116625-3012372fccce?q=80&w=1200&auto=format&fit=crop",
+  "servesCuisine":["Japanese","Yakiniku","Rodízio"],
+  "telephone":"+5517981356292",
+  "address":{"@type":"PostalAddress","streetAddress":"R. Siqueira Campos 3700","addressLocality":"São José do Rio Preto","addressRegion":"SP","addressCountry":"BR"},
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","reviewCount":"1076"}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --carvao:#151009;--carvao2:#1f1710;--tinta:#0d0a06;--verm:#c8322b;--verm2:#e04b3a;
+  --gold:#d9a441;--gold2:#f0c978;--creme:#f6efe2;--nublado:#c8b9a4;--wa:#1fa855;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Zen Kaku Gothic New',sans-serif;background:var(--carvao);color:var(--creme);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.container{max-width:1120px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:'Shippori Mincho',serif;color:var(--creme);letter-spacing:.01em}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+/* ---------- fundo em camadas ---------- */
+.bg-layers{position:fixed;inset:0;z-index:-2;background:
+  radial-gradient(900px 600px at 85% -10%, rgba(200,50,43,.22), transparent 60%),
+  radial-gradient(760px 540px at -10% 30%, rgba(217,164,65,.10), transparent 55%),
+  radial-gradient(1000px 700px at 50% 118%, rgba(200,50,43,.14), transparent 60%),
+  linear-gradient(180deg,#151009,#100c07);}
+.bg-ondas{position:fixed;inset:0;z-index:-1;opacity:.5;background-image:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='120'%3E%3Cpath d='M0 60 Q30 30 60 60 T120 60 T180 60 T240 60' fill='none' stroke='%23d9a441' stroke-opacity='.055' stroke-width='2'/%3E%3Cpath d='M0 100 Q30 70 60 100 T120 100 T180 100 T240 100' fill='none' stroke='%23c8322b' stroke-opacity='.05' stroke-width='2'/%3E%3C/svg%3E")}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(17,12,7,.82);backdrop-filter:blur(12px);border-bottom:1px solid rgba(217,164,65,.16);transition:.35s}
+header.scrolled{box-shadow:0 14px 34px -18px rgba(0,0,0,.8);background:rgba(17,12,7,.95)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:13px 0}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo svg{width:44px;height:44px}
+.logo b{font-family:'Shippori Mincho',serif;font-size:1.38rem;color:var(--creme);line-height:1;font-weight:800}
+.logo span{display:block;font-size:.58rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:700}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{text-decoration:none;font-weight:700;font-size:.9rem;color:var(--nublado);transition:.2s}
+.nav-links a:hover{color:var(--gold2)}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--wa);color:#fff!important;text-decoration:none;font-weight:900;font-size:.93rem;padding:12px 22px;border-radius:999px;box-shadow:0 12px 26px -12px rgba(31,168,85,.55);transition:.25s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:17px;height:17px;fill:currentColor}
+.btn-brasa{background:linear-gradient(135deg,var(--verm),var(--verm2));box-shadow:0 12px 28px -12px rgba(224,75,58,.6)}
+@media(max-width:860px){.nav-links a:not(.btn){display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:78px 0 96px}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:54px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;font-weight:900;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-bottom:16px}
+.kicker::before{content:"";width:32px;height:2px;background:var(--gold)}
+.hero h1{font-size:clamp(2.4rem,5vw,3.75rem);line-height:1.12;font-weight:800}
+.hero h1 em{font-style:normal;color:var(--verm2)}
+.hero p.lead{margin:20px 0 28px;font-size:1.08rem;color:var(--nublado);max-width:33em;font-weight:500}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-mini{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:9px;background:rgba(246,239,226,.05);border:1.5px solid rgba(217,164,65,.25);border-radius:999px;padding:9px 16px;font-size:.85rem;font-weight:700;color:var(--creme)}
+.pill svg{width:17px;height:17px;stroke:var(--gold);fill:none;stroke-width:1.9}
+.hero-art{position:relative}
+.hero-art .frame{border-radius:8px;overflow:hidden;box-shadow:0 0 0 1px rgba(217,164,65,.35),0 46px 90px -34px rgba(0,0,0,.9)}
+.hero-art img{width:100%;height:520px;object-fit:cover}
+.selo-unico{position:absolute;right:-14px;top:28px;background:var(--verm);color:#fff;border-radius:8px;padding:14px 18px;max-width:210px;transform:rotate(2deg);box-shadow:0 22px 40px -16px rgba(200,50,43,.7);border:1px solid rgba(255,255,255,.14)}
+.selo-unico b{font-family:'Shippori Mincho';font-size:1.05rem;line-height:1.25;display:block}
+.selo-unico small{font-size:.72rem;opacity:.92;display:block;margin-top:4px}
+.fogo{position:absolute;left:-26px;bottom:52px;width:112px;height:112px;animation:pulse 3.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{filter:drop-shadow(0 0 10px rgba(224,75,58,.5))}50%{filter:drop-shadow(0 0 26px rgba(240,201,120,.7))}}
+.hanko{position:absolute;left:22px;top:-24px;width:74px;height:74px;border:3px solid var(--verm2);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Shippori Mincho';font-weight:800;font-size:1.5rem;color:var(--verm2);transform:rotate(-8deg);background:rgba(21,16,9,.6)}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-art img{height:400px}.selo-unico{right:8px}.fogo{display:none}}
+
+/* ---------- barra confiança ---------- */
+.trustbar{background:linear-gradient(90deg,var(--tinta),var(--carvao2) 50%,var(--tinta));border-top:1px solid rgba(217,164,65,.2);border-bottom:1px solid rgba(217,164,65,.2);overflow:hidden}
+.trustbar .container{display:flex;justify-content:space-between;gap:16px;padding:20px 22px;flex-wrap:wrap}
+.trustbar div{display:flex;align-items:center;gap:10px;font-weight:700;font-size:.9rem;color:var(--nublado)}
+.trustbar svg{width:20px;height:20px;stroke:var(--gold);fill:none;stroke-width:1.9;flex:none}
+.trustbar b{color:var(--creme)}
+
+/* ---------- seções ---------- */
+section{padding:88px 0}
+.sec-head{max-width:680px;margin-bottom:48px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+h2{font-size:clamp(1.9rem,3.4vw,2.7rem);font-weight:700;line-height:1.2}
+.sec-head p{color:var(--nublado);margin-top:12px;font-size:1rem}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.grid2,.grid3{grid-template-columns:1fr}}
+.card{background:linear-gradient(180deg,rgba(246,239,226,.055),rgba(246,239,226,.02));border:1.5px solid rgba(217,164,65,.18);border-radius:14px;overflow:hidden;transition:.3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);border-color:rgba(217,164,65,.45);box-shadow:0 34px 60px -32px rgba(0,0,0,.9)}
+.card .ph{position:relative;height:230px}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(13,10,6,.85))}
+.card .tag{position:absolute;left:16px;top:16px;background:var(--verm);color:#fff;font-weight:900;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 13px;border-radius:5px;z-index:2}
+.card .bd{padding:26px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card h3{font-size:1.45rem}
+.card p{color:var(--nublado);font-size:.94rem}
+
+/* ---------- fondue ---------- */
+#fondue{background:linear-gradient(180deg,transparent,rgba(217,164,65,.07) 14%,rgba(217,164,65,.07) 86%,transparent)}
+.fondue-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center}
+.fondue-img{border-radius:14px;overflow:hidden;box-shadow:0 0 0 1px rgba(217,164,65,.35),0 40px 80px -34px rgba(0,0,0,.9)}
+.fondue-img img{width:100%;height:440px;object-fit:cover}
+.fondue-txt h2 em{font-style:normal;color:var(--gold2)}
+.preco{display:inline-flex;align-items:baseline;gap:10px;background:var(--verm);color:#fff;border-radius:8px;padding:10px 18px;font-weight:900;margin:18px 0 8px}
+.preco b{font-family:'Shippori Mincho';font-size:1.5rem}
+.nota-honest{font-size:.78rem;color:var(--nublado);opacity:.85;font-style:italic}
+@media(max-width:900px){.fondue-grid{grid-template-columns:1fr}}
+
+/* ---------- passos ---------- */
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:p}
+@media(max-width:900px){.passos{grid-template-columns:1fr}}
+.passo{background:rgba(246,239,226,.04);border:1.5px solid rgba(217,164,65,.16);border-radius:12px;padding:28px 22px;position:relative}
+.passo::before{counter-increment:p;content:"0" counter(p);font-family:'Shippori Mincho';font-weight:800;font-size:1.15rem;color:var(--gold);display:block;margin-bottom:12px}
+.passo h3{font-size:1.2rem;margin-bottom:8px}
+.passo p{color:var(--nublado);font-size:.92rem}
+
+/* ---------- números ---------- */
+.numeros{border-top:1px solid rgba(217,164,65,.16);border-bottom:1px solid rgba(217,164,65,.16);padding:56px 0}
+.num-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+@media(max-width:900px){.num-grid{grid-template-columns:repeat(2,1fr)}}
+.num-grid b{font-family:'Shippori Mincho';font-size:2.6rem;color:var(--gold2);display:block;line-height:1}
+.num-grid span{font-size:.85rem;color:var(--nublado);font-weight:700;display:block;margin-top:8px}
+
+/* ---------- reputação ---------- */
+.rep-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.rep-grid{grid-template-columns:1fr}}
+.rep{background:rgba(246,239,226,.04);border:1.5px solid rgba(217,164,65,.16);border-radius:12px;padding:26px 24px}
+.rep svg{width:26px;height:26px;stroke:var(--gold);fill:none;stroke-width:1.8;margin-bottom:14px}
+.rep h3{font-size:1.15rem;margin-bottom:8px}
+.rep p{color:var(--nublado);font-size:.92rem}
+.estrelas{display:flex;gap:3px;margin-bottom:12px}
+.estrelas svg{width:18px;height:18px;margin:0;fill:var(--gold);stroke:var(--gold)}
+
+/* ---------- contato ---------- */
+.cta-final{position:relative;background:linear-gradient(135deg,var(--verm) 0%,#8f1f1a 100%);border-radius:18px;padding:64px 40px;text-align:center;overflow:hidden;border:1px solid rgba(240,201,120,.35)}
+.cta-final::before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='70'%3E%3Cpath d='M0 35 Q17.5 17.5 35 35 T70 35 T105 35 T140 35' fill='none' stroke='%23ffffff' stroke-opacity='.08' stroke-width='2'/%3E%3C/svg%3E")}
+.cta-final h2{color:#fff;position:relative}
+.cta-final p{color:rgba(255,255,255,.92);margin:12px auto 26px;max-width:36em;position:relative;font-weight:500}
+.cta-final .btn{position:relative;font-size:1.05rem;padding:15px 30px}
+.info-linha{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+@media(max-width:900px){.info-linha{grid-template-columns:1fr}}
+.info{display:flex;gap:14px;align-items:flex-start;background:rgba(246,239,226,.04);border:1px solid rgba(217,164,65,.16);border-radius:12px;padding:20px}
+.info svg{width:22px;height:22px;stroke:var(--gold);fill:none;stroke-width:1.8;flex:none;margin-top:2px}
+.info b{display:block;font-size:.95rem}
+.info p,.info a{color:var(--nublado);font-size:.88rem;text-decoration:none}
+.info a:hover{color:var(--gold2)}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid rgba(217,164,65,.16);background:var(--tinta);padding:38px 0 30px}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.aviso{margin-top:22px;text-align:center;font-size:.8rem;color:var(--nublado);opacity:.75;border-top:1px dashed rgba(217,164,65,.2);padding-top:16px}
+
+[data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+[data-reveal].in{opacity:1;transform:none}
+</style>
+</head>
+<body id="topo">
+<div class="bg-layers"></div><div class="bg-ondas"></div>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#topo">
+      <svg viewBox="0 0 48 48" fill="none">
+        <circle cx="24" cy="24" r="22" fill="#1f1710" stroke="#d9a441" stroke-width="1.5"/>
+        <path d="M24 10c4 5 8 7 8 13a8 8 0 0 1-16 0c0-6 4-8 8-13z" fill="#c8322b"/>
+        <path d="M24 17c2 2.6 4 3.6 4 6.6a4 4 0 0 1-8 0c0-3 2-4 4-6.6z" fill="#f0c978"/>
+      </svg>
+      <span style="display:flex;flex-direction:column"><b>S.A Yakiniku</b><span>SJRP · Rodízio Japonês</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#rodizio">Rodízio</a>
+      <a href="#fondue">Fondue</a>
+      <a href="#reserva">Reserva</a>
+      <a class="btn btn-brasa" href="https://wa.me/5517981356292?text=Ol%C3%A1!%20Quero%20reservar%20uma%20mesa%20no%20S.A%20Yakiniku." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 13.6c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.7-.8c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.3.5.4.1.1.1.5-.1 1.1z"/></svg>
+        Reservar mesa
+      </a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div data-reveal>
+      <span class="kicker">Vila Santa Cruz · São José do Rio Preto</span>
+      <h1>Sushi à vontade <em>e</em> churrasco japonês na sua mesa. No mesmo rodízio.</h1>
+      <p class="lead">O S.A Yakiniku é o rodízio que une os dois mundos da cozinha japonesa: o balcão de sushi e a brasa na mesa — você grelha suas carnes enquanto as peças de sushi chegam à vontade.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="https://wa.me/5517981356292?text=Ol%C3%A1!%20Quero%20reservar%20uma%20mesa%20no%20S.A%20Yakiniku." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 13.6c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.7-.8c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.3.5.4.1.1.1.5-.1 1.1z"/></svg>
+          Reserva pelo WhatsApp
+        </a>
+        <a class="btn btn-brasa" href="#rodizio" style="background:transparent;border:1.5px solid var(--gold);color:var(--gold2)!important;box-shadow:none">Ver como funciona</a>
+      </div>
+      <div class="hero-mini">
+        <span class="pill"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.5 6.8L12 16.9 5.9 20.2l1.5-6.8L2.2 8.9l6.9-.6z"/></svg> 4,7 no Google · 1.000+ avaliações</span>
+        <span class="pill"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.3" cy="6.7" r="1"/></svg> 53 mil no Instagram</span>
+        <span class="pill"><svg viewBox="0 0 24 24"><path d="M12 21c-5-4.2-8-7.2-8-11a8 8 0 0 1 16 0c0 3.8-3 6.8-8 11z"/><circle cx="12" cy="10" r="3"/></svg> R. Siqueira Campos 3700</span>
+      </div>
+    </div>
+    <div class="hero-art" data-reveal>
+      <div class="hanko">焼</div>
+      <div class="frame"><img src="https://images.unsplash.com/photo-1563612116625-3012372fccce?q=80&w=1200&auto=format&fit=crop" alt="Balcão de peças de sushi variadas" loading="eager"></div>
+      <svg class="fogo" viewBox="0 0 100 100" fill="none">
+        <path d="M50 8c10 14 22 18 22 34a22 22 0 0 1-44 0C28 26 40 22 50 8z" fill="#c8322b"/>
+        <path d="M50 30c5 7 11 9 11 17a11 11 0 0 1-22 0c0-8 6-10 11-17z" fill="#f0c978"/>
+      </svg>
+      <div class="selo-unico"><b>Em Rio Preto, só aqui</b><small>sushi à vontade + brasa na sua mesa</small></div>
+    </div>
+  </div>
+</section>
+
+<div class="trustbar">
+  <div class="container">
+    <div><svg viewBox="0 0 24 24"><path d="M12 2l7 3v6c0 5-3.2 8.4-7 10-3.8-1.6-7-5-7-10V5z"/><path d="M8.5 12l2.3 2.3 4.7-4.6"/></svg> Nota <b>&nbsp;4,7&nbsp;</b> com mais de mil avaliações</div>
+    <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg> Menu de <b>&nbsp;fondue&nbsp;</b> na temporada de frio</div>
+    <div><svg viewBox="0 0 24 24"><path d="M4 20V9m5 11V4m5 16v-8m5 8V7"/></svg> Reserva direta <b>&nbsp;pelo WhatsApp&nbsp;</b></div>
+  </div>
+</div>
+
+<section id="rodizio">
+  <div class="container">
+    <div class="sec-head center" data-reveal>
+      <span class="kicker" style="justify-content:center">Os dois mundos</span>
+      <h2>Um rodízio, duas brasas</h2>
+      <p>Enquanto a churrascaria japonesa aquece a sua mesa, o balcão de sushi não para de rodar.</p>
+    </div>
+    <div class="grid2">
+      <div class="card" data-reveal>
+        <div class="ph"><span class="tag">Sushi à vontade</span><img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=1200&auto=format&fit=crop" alt="Combinado de makis e uramaki" loading="lazy"></div>
+        <div class="bd">
+          <h3>O balcão de sushi</h3>
+          <p>Combinados, makis, uramakis e peças pedidas na mesa, no ritmo do rodízio — do clássico ao autoral.</p>
+        </div>
+      </div>
+      <div class="card" data-reveal>
+        <div class="ph"><span class="tag">Yakiniku na mesa</span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Yakiniku_grill_with_slices_of_beef%2C_chicken_and_pork.jpg/960px-Yakiniku_grill_with_slices_of_beef%2C_chicken_and_pork.jpg" alt="Carne, frango e porco grelhando na grelha de mesa do rodízio yakiniku" loading="lazy"></div>
+        <div class="bd">
+          <h3>Churrasco japonês com você no comando</h3>
+          <p>Cortes temperados grelhados na brasa da sua própria mesa — o jeito yakiniku de comer: no seu tempo, do seu ponto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="fondue">
+  <div class="container fondue-grid">
+    <div class="fondue-img" data-reveal><img src="https://images.unsplash.com/photo-1512594282804-b5f400408c9d?q=80&w=1200&auto=format&fit=crop" alt="Panela de fondue com pão para mergulhar" loading="lazy"></div>
+    <div class="fondue-txt" data-reveal>
+      <span class="kicker">Temporada de outono/inverno</span>
+      <h2>E quando esfria, entra o <em>fondue</em></h2>
+      <p style="color:var(--nublado);margin-top:12px">O menu sazonal de fondue do S.A Yakiniku virou manchete na imprensa gastronômica de Rio Preto — um programa a dois que lota mesa no fim de ano.</p>
+      <div class="preco">Fondue por <b>R$ 99,99</b></div>
+      <p style="color:var(--nublado);margin-bottom:18px;font-size:.9rem">Valor da temporada — confirme disponibilidade e cardápio no WhatsApp da casa.</p>
+      <a class="btn" href="https://wa.me/5517981356292?text=Ol%C3%A1!%20Vi%20o%20menu%20de%20fondue%20e%20quero%20reservar." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 13.6c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.7-.8c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.3.5.4.1.1.1.5-.1 1.1z"/></svg>
+        Garantir mesa de fondue
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="numeros">
+  <div class="container num-grid" data-reveal>
+    <div><b>4,7</b><span>nota no Google</span></div>
+    <div><b>1.076</b><span>avaliações de clientes</span></div>
+    <div><b>53 mil</b><span>seguidores no Instagram</span></div>
+    <div><b>2</b><span>sushis: balcão + brasa na mesa</span></div>
+  </div>
+</div>
+
+<section id="reserva" style="padding-top:80px">
+  <div class="container">
+    <div class="sec-head center" data-reveal>
+      <span class="kicker" style="justify-content:center">Simples assim</span>
+      <h2>Reservar leva 1 minuto</h2>
+    </div>
+    <div class="passos">
+      <div class="passo" data-reveal><h3>Escolha o dia</h3><p>Sexta, sábado ou domingo — chame no WhatsApp e pergunte as mesas livres para o seu horário.</p></div>
+      <div class="passo" data-reveal><h3>Confirme na hora</h3><p>Sem app, sem cadastro, sem link de terceiro: a resposta vem direto da casa no seu WhatsApp.</p></div>
+      <div class="passo" data-reveal><h3>Sente e grelhe</h3><p>Na mesa, a brasa esquenta; no balcão, o sushi roda. Bom apetite — itadakimasu.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="rep-grid">
+      <div class="rep" data-reveal>
+        <div class="estrelas">
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.5 6.8L12 16.9 5.9 20.2l1.5-6.8L2.2 8.9l6.9-.6z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.5 6.8L12 16.9 5.9 20.2l1.5-6.8L2.2 8.9l6.9-.6z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.5 6.8L12 16.9 5.9 20.2l1.5-6.8L2.2 8.9l6.9-.6z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.5 6.8L12 16.9 5.9 20.2l1.5-6.8L2.2 8.9l6.9-.6z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.5 6.8L12 16.9 5.9 20.2l1.5-6.8L2.2 8.9l6.9-.6z"/></svg>
+        </div>
+        <h3>Mais de mil avaliações</h3>
+        <p>Nota 4,7 construída em mais de mil avaliações — a prova social que hoje só aparece dentro de diretórios, e não no Google da casa.</p>
+      </div>
+      <div class="rep" data-reveal>
+        <svg viewBox="0 0 24 24"><path d="M23 3a16 16 0 0 0-2 1 7 7 0 0 1-6.4 2.5A6.9 6.9 0 0 1 11 2.8a6.1 6.1 0 0 0 4.4 1.9 6.1 6.1 0 0 1-4.3-1.1 6.15 6.15 0 0 0 5.5 8.9q-1.9 1.1-4.4 1.1a9.9 9.9 0 0 0 15-13.5z"/></svg>
+        <h3>53 mil seguidores</h3>
+        <p>A maior audiência do nicho japonês da cidade merece uma casa própria na internet — não só um agregador de links.</p>
+      </div>
+      <div class="rep" data-reveal>
+        <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+        <h3>Quem busca, acha diretório</h3>
+        <p>Digitar “yakiniku rio preto” hoje devolve ficha de agregador — nunca o site da casa, com cardápio, fondue e reserva direta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="container">
+    <div class="cta-final" data-reveal>
+      <h2>A mesa da brasa é sua</h2>
+      <p>Reserve pelo WhatsApp e receba a confirmação direto da casa — sem intermediário, sem link de terceiro.</p>
+      <a class="btn" href="https://wa.me/5517981356292?text=Ol%C3%A1!%20Quero%20reservar%20uma%20mesa%20no%20S.A%20Yakiniku." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 13.6c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.7-.8c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.3.5.4.1.1.1.5-.1 1.1z"/></svg>
+        (17) 98135-6292
+      </a>
+    </div>
+    <div class="info-linha">
+      <div class="info" data-reveal>
+        <svg viewBox="0 0 24 24"><path d="M12 21c-5-4.2-8-7.2-8-11a8 8 0 0 1 16 0c0 3.8-3 6.8-8 11z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><b>Endereço</b><p>R. Siqueira Campos, 3700<br>Vila Santa Cruz — São José do Rio Preto/SP</p></div>
+      </div>
+      <div class="info" data-reveal>
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <div><b>WhatsApp oficial</b><a href="https://wa.me/5517981356292" target="_blank" rel="noopener">(17) 98135-6292 — reservas</a></div>
+      </div>
+      <div class="info" data-reveal>
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.3" cy="6.7" r="1"/></svg>
+        <div><b>Instagram</b><a href="https://instagram.com/sayakinikusjdoriopreto" target="_blank" rel="noopener">@sayakinikusjdoriopreto</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot">
+      <a class="logo" href="#topo" style="text-decoration:none">
+        <svg viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="22" fill="#1f1710" stroke="#d9a441" stroke-width="1.5"/>
+          <path d="M24 10c4 5 8 7 8 13a8 8 0 0 1-16 0c0-6 4-8 8-13z" fill="#c8322b"/>
+          <path d="M24 17c2 2.6 4 3.6 4 6.6a4 4 0 0 1-8 0c0-3 2-4 4-6.6z" fill="#f0c978"/>
+        </svg>
+        <span style="display:flex;flex-direction:column"><b>S.A Yakiniku</b><span>SJRP · Rodízio Japonês</span></span>
+      </a>
+      <div style="text-align:right;font-size:.88rem;color:var(--nublado)">
+        R. Siqueira Campos 3700, Vila Santa Cruz · Reserva: (17) 98135-6292
+      </div>
+    </div>
+    <div class="aviso">Protótipo criado pela Agência Rio Preto Tech — não é o site oficial.</div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+addEventListener('scroll',()=>{const h=document.querySelector('header');h.classList.toggle('scrolled',scrollY>30)},{passive:true});
+</script>
+</body>
+</html>
