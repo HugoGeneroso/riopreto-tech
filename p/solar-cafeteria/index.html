@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar Cafeteria & Restaurante — Café das 06h, Almoço e Porções | São José do Rio Preto</title>
+<meta name="description" content="Solar Cafeteria & Restaurante no Posto São Pedro (Av. Gov. Adhemar P. de Barros, 2270), São José do Rio Preto — café das 06h, almoço, porções e chopp, todos os dias até 23h. Peça ou reserve pelo WhatsApp.">
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:title" content="Solar Cafeteria & Restaurante — 06h às 23h, todos os dias | Rio Preto">
+<meta property="og:description" content="Cá das 06h, almoço, porções e chopp gelado no Posto São Pedro. Reserve ou peça pelo WhatsApp (17) 99602-0853.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop">
+<meta property="og:locale" content="pt_BR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;0,900;1,500&family=Karla:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Restaurant",
+  "name":"Solar Cafeteria & Restaurante",
+  "image":"https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop",
+  "servesCuisine":["Brasileira","Cafeteria","Lanches","Porções"],
+  "telephone":"+5517996020853",
+  "address":{"@type":"PostalAddress","streetAddress":"Av. Gov. Adhemar Pereira de Barros, 2270 - Posto São Pedro","addressLocality":"São José do Rio Preto","addressRegion":"SP","addressCountry":"BR"},
+  "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"06:00","closes":"23:00"}],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"40"}
+}
+</script>
+<style>
+:root{
+  --espresso:#241610;--espresso2:#3a2418;--torra:#5c3a22;
+  --ambar:#c8781f;--ambar2:#e7a54b;--creme:#f7efe2;--leite:#fdf9f1;--poeira:#e6d8c2;
+  --verde:#4c6b4f;--texto:#463529;--suave:#8a7563;--wa:#1fa855;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Karla',sans-serif;background:var(--creme);color:var(--texto);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.container{max-width:1120px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:'Fraunces',serif;color:var(--espresso);line-height:1.12;font-weight:600}
+img{display:block;max-width:100%}
+a{color:inherit}
+.kicker{display:inline-block;font-size:.72rem;letter-spacing:.28em;text-transform:uppercase;font-weight:800;color:var(--ambar);margin-bottom:14px}
+
+/* ---------- fundo em camadas ---------- */
+.bg-layers{position:fixed;inset:0;z-index:-2;background:
+  radial-gradient(900px 620px at 90% -8%, rgba(200,120,31,.14), transparent 60%),
+  radial-gradient(760px 560px at -6% 30%, rgba(76,107,79,.10), transparent 55%),
+  radial-gradient(1050px 720px at 48% 118%, rgba(36,22,16,.14), transparent 62%),
+  linear-gradient(180deg,#f7efe2,#f1e6d3);}
+.graos{position:fixed;inset:0;z-index:-1;opacity:.5;background-image:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='320'%3E%3Cg fill='%235c3a22' fill-opacity='.055'%3E%3Ccircle cx='38' cy='52' r='3'/%3E%3Ccircle cx='140' cy='28' r='2'/%3E%3Ccircle cx='262' cy='90' r='3'/%3E%3Ccircle cx='88' cy='188' r='2'/%3E%3Ccircle cx='206' cy='240' r='3'/%3E%3Ccircle cx='300' cy='210' r='2'/%3E%3Ccircle cx='52' cy='292' r='2'/%3E%3C/g%3E%3Cg stroke='%235c3a22' stroke-opacity='.05' stroke-width='2.6' fill='none' stroke-linecap='round'%3E%3Cpath d='M236 40c-14 22-4 40 6 58s12 36-2 54'/%3E%3Cpath d='M254 44c-12 20-4 38 6 56'/%3E%3C/g%3E%3C/svg%3E")}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:60;background:rgba(247,239,226,.92);backdrop-filter:blur(12px);border-bottom:1px solid rgba(36,22,16,.08);transition:.35s}
+header.scrolled{box-shadow:0 14px 34px -20px rgba(36,22,16,.35)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:13px 0}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo svg{width:42px;height:42px}
+.logo b{font-family:'Fraunces';font-size:1.35rem;color:var(--espresso);line-height:1;font-weight:700;letter-spacing:.01em}
+.logo span{display:block;font-size:.55rem;letter-spacing:.26em;text-transform:uppercase;color:var(--ambar);font-weight:800}
+.nav-links{display:flex;gap:22px;align-items:center}
+.nav-links a{text-decoration:none;font-weight:600;font-size:.9rem;color:var(--texto);transition:.2s}
+.nav-links a:hover{color:var(--ambar)}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--wa);color:#fff!important;text-decoration:none;font-weight:700;font-size:.94rem;padding:13px 24px;border-radius:12px;box-shadow:0 14px 28px -12px rgba(31,168,85,.5);transition:.25s}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.06)}
+.btn.quente{background:var(--ambar);box-shadow:0 14px 28px -12px rgba(200,120,31,.55)}
+.menu-btn{display:none;background:none;border:0;cursor:pointer}
+@media(max-width:920px){.nav-links{display:none}.menu-btn{display:block}}
+
+/* ---------- hero ---------- */
+.hero{padding:74px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.hero h1{font-size:clamp(2.3rem,4.7vw,3.6rem);margin-bottom:18px}
+.hero h1 em{font-style:italic;color:var(--ambar)}
+.hero p.lead{font-size:1.12rem;max-width:31em;margin-bottom:28px;color:#574232}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:22px}
+.hero-note{font-size:.88rem;color:var(--suave)}
+.hero-note b{color:var(--espresso)}
+.hero-photo{position:relative}
+.hero-photo .frame{border-radius:26px;overflow:hidden;box-shadow:0 40px 80px -34px rgba(36,22,16,.55);aspect-ratio:4/4.15}
+.hero-photo .frame img{width:100%;height:100%;object-fit:cover}
+.hero-photo .cap{position:absolute;bottom:14px;left:14px;right:14px;background:rgba(253,249,241,.94);backdrop-filter:blur(8px);border-radius:14px;padding:11px 15px;display:flex;gap:11px;align-items:center}
+.hero-photo .cap b{display:block;font-family:'Fraunces';color:var(--espresso);font-size:.96rem}
+.hero-photo .cap span{font-size:.74rem;color:var(--suave)}
+.selo-horario{position:absolute;top:18px;right:-14px;z-index:2;background:var(--espresso);color:var(--creme);border-radius:14px;padding:11px 17px;box-shadow:0 20px 40px -18px rgba(36,22,16,.65);text-align:center;transform:rotate(2deg)}
+.selo-horario b{display:block;font-family:'Fraunces';font-size:1.15rem;color:var(--ambar2)}
+.selo-horario span{font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;opacity:.8}
+@media(max-width:920px){.hero-grid{grid-template-columns:1fr}.selo-horario{right:8px}}
+
+/* ---------- faixa números ---------- */
+.stats-wrap{padding:20px 0 6px}
+.stats{background:var(--espresso);border-radius:26px;padding:26px 34px;display:grid;grid-template-columns:repeat(4,1fr);gap:22px;color:var(--creme);position:relative;overflow:hidden}
+.stats::after{content:"";position:absolute;inset:0;background:radial-gradient(420px 200px at 88% -30%, rgba(200,120,31,.35), transparent 65%)}
+.stat{position:relative;z-index:1}
+.stat b{display:block;font-family:'Fraunces';font-size:1.66rem;color:#fff}
+.stat span{font-size:.74rem;letter-spacing:.07em;text-transform:uppercase;color:rgba(247,239,226,.66)}
+@keyframes rise{0%{transform:translateY(0) scaleX(1);opacity:.55}55%{transform:translateY(-9px) scaleX(.86);opacity:.16}100%{transform:translateY(0) scaleX(1);opacity:.55}}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(31,168,85,.45)}70%{box-shadow:0 0 0 11px rgba(31,168,85,0)}100%{box-shadow:0 0 0 0 rgba(31,168,85,0)}}
+@media(max-width:860px){.stats{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- seções ---------- */
+section{padding:80px 0}
+.sec-head{max-width:660px;margin-bottom:42px}
+.sec-head h2{font-size:clamp(1.8rem,3.4vw,2.5rem);margin-bottom:12px}
+.sec-head p{color:#5c4938}
+.sec-head.center{margin:0 auto 44px;text-align:center}
+
+/* rotina do dia */
+.rotina{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;position:relative}
+.rotina::before{content:"";position:absolute;left:6%;right:6%;top:33px;height:2px;background:linear-gradient(90deg,transparent,rgba(200,120,31,.4) 18%,rgba(200,120,31,.4) 82%,transparent)}
+.hora{background:var(--leite);border:1px solid rgba(36,22,16,.09);border-radius:20px;padding:24px 20px;transition:.3s;position:relative}
+.hora:hover{transform:translateY(-4px);box-shadow:0 26px 46px -28px rgba(36,22,16,.35)}
+.hora .t{display:inline-flex;align-items:center;gap:8px;background:var(--espresso);color:var(--ambar2);font-family:'Fraunces';font-weight:700;font-size:1rem;border-radius:10px;padding:6px 12px;margin-bottom:14px;position:relative;z-index:1}
+.hora h3{font-size:1.1rem;margin-bottom:7px}
+.hora p{font-size:.88rem;color:#5c4938}
+@media(max-width:980px){.rotina{grid-template-columns:repeat(2,1fr)}.rotina::before{display:none}}
+@media(max-width:560px){.rotina{grid-template-columns:1fr}}
+
+/* destaques */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:#fff;border-radius:22px;overflow:hidden;border:1px solid rgba(36,22,16,.08);transition:.3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-5px);box-shadow:0 32px 56px -30px rgba(36,22,16,.4)}
+.card .ph{position:relative;overflow:hidden}
+.card .ph img{width:100%;aspect-ratio:4/3.1;object-fit:cover;transition:transform .6s}
+.card:hover .ph img{transform:scale(1.05)}
+.card .tag{position:absolute;top:12px;left:12px;background:var(--ambar);color:#fff;font-weight:800;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;border-radius:9px}
+.card .bd{padding:20px 20px 22px;flex:1}
+.card h3{font-size:1.12rem;margin-bottom:8px}
+.card p{font-size:.9rem;color:#5c4938}
+@media(max-width:980px){.cards{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}}
+
+/* destaque com foto */
+.destaque{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.destaque .foto{border-radius:26px;overflow:hidden;box-shadow:0 34px 64px -30px rgba(36,22,16,.45)}
+.destaque .foto img{width:100%;aspect-ratio:4/3.05;object-fit:cover}
+.destaque h2{font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:14px}
+.destaque p{color:#5c4938;margin-bottom:12px}
+.destaque .lista{list-style:none;margin:8px 0 22px}
+.destaque .lista li{padding:8px 0 8px 32px;position:relative;font-weight:600;color:var(--espresso)}
+.destaque .lista li::before{content:"";position:absolute;left:0;top:12px;width:19px;height:19px;border-radius:50%;background:rgba(200,120,31,.16)}
+.destaque .lista svg{position:absolute;left:2px;top:10px;width:15px;height:15px}
+.illus{font-size:.74rem;color:var(--suave);font-style:italic}
+@media(max-width:920px){.destaque{grid-template-columns:1fr}}
+
+/* como pedir */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
+.step{background:#fff;border-radius:20px;padding:26px 24px;border:1px solid rgba(36,22,16,.08)}
+.step::before{counter-increment:s;content:"0" counter(s);font-family:'Fraunces';font-size:2rem;color:rgba(200,120,31,.55);font-weight:700;display:block;margin-bottom:10px}
+.step h3{font-size:1.05rem;margin-bottom:7px}
+.step p{font-size:.9rem;color:#5c4938}
+@media(max-width:860px){.steps{grid-template-columns:1fr}}
+
+/* galeria */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gal figure{border-radius:20px;overflow:hidden;position:relative;box-shadow:0 26px 48px -28px rgba(36,22,16,.4)}
+.gal img{width:100%;aspect-ratio:4/3.2;object-fit:cover}
+@media(max-width:760px){.gal{grid-template-columns:1fr}}
+
+/* CTA final */
+.cta-final{background:linear-gradient(135deg,var(--espresso),var(--torra));border-radius:28px;padding:52px 44px;color:var(--creme);text-align:center;position:relative;overflow:hidden}
+.cta-final::after{content:"";position:absolute;inset:0;background:radial-gradient(560px 300px at 84% -24%, rgba(231,165,75,.3), transparent 60%)}
+.cta-final h2{color:#fff;font-size:clamp(1.7rem,3.2vw,2.4rem);margin-bottom:14px;position:relative;z-index:1}
+.cta-final p{max-width:36em;margin:0 auto 28px;color:rgba(247,239,226,.85);position:relative;z-index:1}
+.cta-final .btn{position:relative;z-index:1}
+footer{padding:56px 0 40px;border-top:1px solid rgba(36,22,16,.1);margin-top:80px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;margin-bottom:30px}
+.foot-grid h4{font-family:'Fraunces';color:var(--espresso);margin-bottom:12px;font-size:1.05rem}
+.foot-grid p,.foot-grid li{font-size:.9rem;color:#5c4938}
+.foot-grid ul{list-style:none}
+.foot-grid li{padding:4px 0}
+.foot-grid a{color:var(--ambar);text-decoration:none;font-weight:700}
+.aviso{background:rgba(36,22,16,.06);border:1px dashed rgba(36,22,16,.25);border-radius:12px;padding:12px 16px;font-size:.82rem;color:var(--suave);text-align:center}
+@media(max-width:860px){.foot-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="bg-layers"></div>
+<div class="graos"></div>
+
+<header id="topo">
+  <div class="container nav">
+    <a class="logo" href="#topo" aria-label="Solar Cafeteria e Restaurante">
+      <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <circle cx="24" cy="24" r="23" fill="#241610"/>
+        <path d="M15 20h14v8a7 7 0 0 1-7 7h0a7 7 0 0 1-7-7v-8Z" fill="#f7efe2"/>
+        <path d="M29 22h3.5a3 3 0 0 1 0 6H29" stroke="#f7efe2" stroke-width="2"/>
+        <path d="M19 12c-1.6 2 .6 3-.8 5M24 11c-1.6 2 .6 3-.8 5M29 12c-1.6 2 .6 3-.8 5" stroke="#e7a54b" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span><b>Solar</b><span>Cafeteria & Restaurante</span></span>
+    </a>
+    <nav class="nav-links" aria-label="Seções">
+      <a href="#rotina">O dia na Solar</a>
+      <a href="#sabores">Sabores</a>
+      <a href="#pedir">Como pedir</a>
+      <a href="#casa">A casa</a>
+      <a class="btn" href="https://wa.me/5517996020853?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20na%20Solar." target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.4A10 10 0 1 0 12 2Zm4.6 14c-.2.5-1.1 1-1.6 1-.4 0-1 0-1.5-.2a10 10 0 0 1-4.9-4.3c-.6-1-.7-1.8-.7-2.3 0-.5.4-1.2.8-1.5.3-.2.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.7 1.7c.1.2.1.4 0 .6l-.4.6c-.2.2-.3.4-.1.7.5.9 1.6 2 2.6 2.5.3.2.5.1.7-.1l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.4.2.4.4.4.6v.5Z"/></svg>
+        Pedir no WhatsApp
+      </a>
+    </nav>
+    <button class="menu-btn" aria-label="Abrir cardápio">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#241610" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="kicker">Posto São Pedro · Rio Preto · aberto todos os dias</span>
+      <h1>O café que abre <em>às seis</em> e a brasa que fecha às onze.</h1>
+      <p class="lead">Café coado de manhã, almoço completo no meio-dia, porções e chopp gelado no fim da tarde — a Solar é a sala de estar de quem passa pela Adhemar de Barros, todo dia das 06h às 23h.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="https://wa.me/5517996020853?text=Ol%C3%A1!%20Quero%20reservar%20uma%20mesa%20na%20Solar." target="_blank" rel="noopener">Reservar mesa pelo WhatsApp</a>
+        <a class="btn quente" href="#rotina">Ver o dia na Solar</a>
+      </div>
+      <p class="hero-note"><b>Av. Gov. Adhemar P. de Barros, 2270</b> — Posto São Pedro, São José do Rio Preto/SP · Pedidos também pelo iFood.</p>
+    </div>
+    <div class="hero-photo" data-reveal>
+      <div class="selo-horario"><b>06h — 23h</b><span>todos os dias</span></div>
+      <div class="frame"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1200&auto=format&fit=crop" alt="Xícaras de café com latte art sobre mesa de madeira entre plantas" loading="eager"></div>
+      <div class="cap"><b>Café passado na hora</b><span>logo cedo, antes do trabalho — foto ilustrativa</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-wrap container">
+  <div class="stats">
+    <div class="stat"><b>5,0</b><span>nota na Restaurant Guru · 40 avaliações</span></div>
+    <div class="stat"><b>17h</b><span>abertos todos os dias, das 06h às 23h</span></div>
+    <div class="stat"><b>7,3 mil</b><span>seguidores no Instagram @solarcafe.riopreto</span></div>
+    <div class="stat"><b>#7</b><span>entre os restaurantes novos mais falados da cidade</span></div>
+  </div>
+</div>
+
+<section id="rotina">
+  <div class="container">
+    <div class="sec-head center">
+      <span class="kicker">Um dia inteiro de Solar</span>
+      <h2>Da primeira xícara ao último petisco</h2>
+      <p>Quem trabalha na região já sabe: a Solar troca de clima ao longo do dia sem nunca fechar a porta.</p>
+    </div>
+    <div class="rotina">
+      <div class="hora" data-reveal><span class="t">06h</span><h3>Café da manhã</h3><p>Café passado na hora, pão quente e o começo do dia de quem sai de casa cedo — motoristas, moradores e o turno da manhã.</p></div>
+      <div class="hora" data-reveal><span class="t">12h</span><h3>Almoço</h3><p>Prato feito com comida caseira de verdade. Cardápio do dia sai direto no WhatsApp — é só chamar e perguntar.</p></div>
+      <div class="hora" data-reveal><span class="t">16h</span><h3>Café da tarde</h3><p>A volta do café com algo doce na mesa — quem passa no posto aproveita a paradinha obrigatória.</p></div>
+      <div class="hora" data-reveal><span class="t">19h</span><h3>Porções & chopp</h3><p>Fim de dia pede brasa e gelada: porções pra dividir, chopp no ponto e conversa que não tem hora pra acabar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="sabores">
+  <div class="container">
+    <div class="sec-head">
+      <span class="kicker">Da casa</span>
+      <h2>O que a Solar serve, serve bem</h2>
+      <p>Cardápio completo e preços confirmados com a casa — aqui vai o espírito da cozinha, em quatro cenas.</p>
+    </div>
+    <div class="cards">
+      <article class="card" data-reveal>
+        <div class="ph"><span class="tag">Café</span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Coffee_preparation_in_a_modern_cafe_with_steaming_equipment_and_skilled_barista_at_work_during_the_morning_rush_hour.jpg/1280px-Coffee_preparation_in_a_modern_cafe_with_steaming_equipment_and_skilled_barista_at_work_during_the_morning_rush_hour.jpg" alt="Barista preparando café no vapor junto à máquina expresso" loading="lazy"></div>
+        <div class="bd"><h3>Passado com calma</h3><p>Espresso, coado e leite vaporizado na hora — o cheiro que anuncia a cafeteria desde a avenida. <span class="illus">foto ilustrativa</span></p></div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="ph"><span class="tag">Almoço</span><img src="https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=900&auto=format&fit=crop" alt="Fatias de carne assada servidas na tábua de madeira" loading="lazy"></div>
+        <div class="bd"><h3>Comida de verdade</h3><p>Prato do dia com o capricho de cozinha caseira, servido no horário certo de quem trabalha fora. <span class="illus">foto ilustrativa</span></p></div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="ph"><span class="tag">Porções</span><img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=900&auto=format&fit=crop" alt="Tábua de costela grelhada com fritas e acompanhamentos" loading="lazy"></div>
+        <div class="bd"><h3>Para dividir</h3><p>Da fritinha da casa ao assado de tábua — o par perfeito para a mesa de fim de tarde. <span class="illus">foto ilustrativa</span></p></div>
+      </article>
+      <article class="card" data-reveal>
+        <div class="ph"><span class="tag">Gelada</span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Rinkuskiai_Proginis_%2810140880343%29.jpg/1280px-Rinkuskiai_Proginis_%2810140880343%29.jpg" alt="Copo alto de cerveja gelada com colarinho e condensação sobre mesa de bar" loading="lazy"></div>
+        <div class="bd"><h3>Chopp no ponto</h3><p>Suando no copo, colarinho na medida — a recompensa de quem chegou do serviço. <span class="illus">foto ilustrativa</span></p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="casa">
+  <div class="container destaque">
+    <div class="foto" data-reveal><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Coffee_preparation_in_a_modern_cafe_with_steaming_equipment_and_skilled_barista_at_work_during_the_morning_rush_hour.jpg/1280px-Coffee_preparation_in_a_modern_cafe_with_steaming_equipment_and_skilled_barista_at_work_during_the_morning_rush_hour.jpg" alt="Balcão da cafeteria com máquina de espresso em funcionamento" loading="lazy"></div>
+    <div>
+      <span class="kicker">Mais que uma parada</span>
+      <h2>O posto é de passagem. A Solar é de ficar.</h2>
+      <p>Enquanto o tanque enche na bomba ao lado, a mesa da Solar está posta: café, almoço, lanche, porção, chopp — e a conveniência do posto cobrindo o resto, dos itens de estrada ao achocolatado da criançada.</p>
+      <ul class="lista">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#c8781f" stroke-width="2.4" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg>Aberta todos os dias, 06h às 23h</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#c8781f" stroke-width="2.4" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg>Almoço caseiro + porções à noite</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#c8781f" stroke-width="2.4" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg>Conveniência de posto no mesmo endereço</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="#c8781f" stroke-width="2.4" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg>Pedidos e reservas direto no WhatsApp da casa</li>
+      </ul>
+      <a class="btn" href="https://wa.me/5517996020853?text=Ol%C3%A1!%20Quero%20ver%20o%20card%C3%A1pio%20do%20dia%20na%20Solar." target="_blank" rel="noopener">Perguntar o cardápio do dia</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sec-head center">
+      <span class="kicker">Simples assim</span>
+      <h2>Peça, reserve ou venha já</h2>
+    </div>
+    <div class="steps">
+      <div class="step" data-reveal><h3>Chame no WhatsApp</h3><p>(17) 99602-0853 — cardápio do dia, reserva de mesa ou pedido pra viagem, sem fila e sem intermediário.</p></div>
+      <div class="step" data-reveal><h3>Confirme o horário</h3><p>Das 06h às 23h, todos os dias. Almoço no meio-dia, porções e chopp a partir do fim da tarde.</p></div>
+      <div class="step" data-reveal><h3>Venha à Solar</h3><p>Av. Gov. Adhemar P. de Barros, 2270 — Posto São Pedro. Tem estacionamento no posto e mesa na calçada.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="sec-head center">
+      <span class="kicker">Na mesa</span>
+      <h2>Ambiente de quem gosta de ficar</h2>
+    </div>
+    <div class="gal">
+      <figure data-reveal><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=900&auto=format&fit=crop" alt="Três mãos brindando com xícaras de café sobre mesa de madeira" loading="lazy"></figure>
+      <figure data-reveal><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=900&auto=format&fit=crop" alt="Cafés com latte art sobre mesa com plantas" loading="lazy"></figure>
+      <figure data-reveal><img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=900&auto=format&fit=crop" alt="Tábua de costela grelhada com fritas servida no bar" loading="lazy"></figure>
+    </div>
+    <p class="illus" style="text-align:center;margin-top:14px">Fotos ilustrativas — substituídas por imagens reais da casa na versão final.</p>
+  </div>
+</section>
+
+<div class="container">
+  <div class="cta-final">
+    <h2>Seu café das 06h já está aberto.</h2>
+    <p>Reserve a mesa do almoço, pergunte a porção do dia ou só mande um oi — quem atende é a própria casa, no número oficial.</p>
+    <a class="btn" href="https://wa.me/5517996020853?text=Ol%C3%A1!%20Passei%20no%20site%20da%20Solar%20e%20quero%20falar%20com%20voc%C3%AAs." target="_blank" rel="noopener">Chamar a Solar no WhatsApp — (17) 99602-0853</a>
+  </div>
+</div>
+</main>
+
+<footer id="pedir">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <h4>Solar Cafeteria & Restaurante</h4>
+        <p>Café das 06h, almoço caseiro, porções e chopp no Posto São Pedro — todos os dias, na Av. Gov. Adhemar P. de Barros, 2270, São José do Rio Preto/SP.</p>
+      </div>
+      <div>
+        <h4>Atendimento</h4>
+        <ul>
+          <li>WhatsApp: <a href="https://wa.me/5517996020853" target="_blank" rel="noopener">(17) 99602-0853</a></li>
+          <li>Instagram: <a href="https://instagram.com/solarcafe.riopreto" target="_blank" rel="noopener">@solarcafe.riopreto</a></li>
+          <li>Pedidos também pelo iFood</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Horários</h4>
+        <ul>
+          <li>Cafeteria: todos os dias, 06h — 23h</li>
+          <li>Almoço: a partir do meio-dia</li>
+          <li>Porções & chopp: fim de tarde</li>
+        </ul>
+      </div>
+    </div>
+    <p class="aviso">Protótipo criado pela Agência Rio Preto Tech — não é o site oficial.</p>
+  </div>
+</footer>
+
+<script>
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('[data-reveal]').forEach(el=>{el.style.opacity=0;el.style.transform='translateY(22px)';el.style.transition='opacity .7s ease, transform .7s ease';obs.observe(el)});
+const st=document.styleSheets[0];st.insertRule('.on{opacity:1!important;transform:none!important}',st.cssRules.length);
+addEventListener('scroll',()=>document.getElementById('topo').classList.toggle('scrolled',scrollY>10),{passive:true});
+document.querySelector('.menu-btn')?.addEventListener('click',()=>{const n=document.querySelector('.nav-links');n.style.display=n.style.display==='flex'?'':'flex';n.style.flexDirection='column';n.style.position='absolute';n.style.top='64px';n.style.right='22px';n.style.background='#fdf9f1';n.style.padding='16px 22px';n.style.borderRadius='14px';n.style.boxShadow='0 20px 40px -18px rgba(36,22,16,.5)'});
+</script>
+</body>
+</html>
