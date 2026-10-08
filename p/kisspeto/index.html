@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kisspeto Espetaria e Petiscaria — Espetos e Porções em São José do Rio Preto</title>
+<meta name="description" content="Kisspeto Espetaria e Petiscaria — espetos na brasa e porções de petiscaria em São José do Rio Preto. Terça a domingo, 18h à meia-noite. Peça pelo WhatsApp ou retire no salão.">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Kisspeto Espetaria e Petiscaria — espetos na brasa até a meia-noite | São José do Rio Preto">
+<meta property="og:description" content="Espetos na brasa e porções de petiscaria no Centro de Rio Preto. Terça a domingo, 18h à 00h. Pedido direto no WhatsApp (17) 98151-8150.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200&auto=format&fit=crop">
+<meta property="og:locale" content="pt_BR">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Kisspeto Espetaria e Petiscaria",
+  "image": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200&auto=format&fit=crop",
+  "servesCuisine": ["Espetos", "Petiscos", "Lanches de bar"],
+  "telephone": "+5517981518150",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "R. Marechal Deodoro da Fonseca, 1771",
+    "addressLocality": "São José do Rio Preto",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "18:00",
+    "closes": "00:00"
+  }],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "1229"
+  },
+  "sameAs": "https://instagram.com/kisspetoespetaria"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brasa:#e2571f;--brasa2:#ff7a35;--fumaca:#161311;--fumaca2:#211c18;--fuligem:#0e0c0a;
+  --dourado:#f2b13c;--creme:#f7efe3;--nublado:#b6a794;--wa:#1fa855;--vermelho:#b3271e;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow',sans-serif;background:var(--fumaca);color:var(--creme);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.container{max-width:1120px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:'Bebas Neue',sans-serif;font-weight:400;letter-spacing:.035em;line-height:1.05}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+/* ---------- fundo em camadas ---------- */
+.bg-layers{position:fixed;inset:0;z-index:-2;background:
+  radial-gradient(880px 560px at 90% -8%, rgba(226,87,31,.20), transparent 62%),
+  radial-gradient(720px 520px at -8% 28%, rgba(242,177,60,.10), transparent 55%),
+  radial-gradient(950px 660px at 45% 118%, rgba(179,39,30,.16), transparent 60%),
+  linear-gradient(180deg,#161311,#100e0c);}
+.fuma{position:fixed;inset:0;z-index:-1;opacity:.6;background-image:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cpath d='M40 260q18-40 4-84t14-92' fill='none' stroke='%23f7efe3' stroke-opacity='.045' stroke-width='6' stroke-linecap='round'/%3E%3Cpath d='M150 280q22-46 8-96t16-104' fill='none' stroke='%23f7efe3' stroke-opacity='.04' stroke-width='5' stroke-linecap='round'/%3E%3Cpath d='M250 260q16-38 4-80t12-88' fill='none' stroke='%23f2b13c' stroke-opacity='.05' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E")}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(14,12,10,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(226,87,31,.25);transition:.35s}
+header.scrolled{box-shadow:0 14px 34px -18px rgba(0,0,0,.85);background:rgba(14,12,10,.96)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:13px 0}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo svg{width:44px;height:44px}
+.logo b{font-family:'Bebas Neue';font-size:1.62rem;color:var(--creme);line-height:1;letter-spacing:.06em}
+.logo span{display:block;font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:var(--brasa2);font-weight:800;font-family:'Barlow'}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{text-decoration:none;font-weight:700;font-size:.9rem;color:var(--nublado);transition:.2s}
+.nav-links a:hover{color:var(--dourado)}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--wa);color:#fff!important;text-decoration:none;font-weight:800;font-size:.95rem;padding:12px 24px;border-radius:8px;box-shadow:0 12px 26px -12px rgba(31,168,85,.55);transition:.25s;font-family:'Barlow'}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:17px;height:17px;fill:currentColor}
+.btn-brasa{background:linear-gradient(135deg,var(--brasa),var(--brasa2));box-shadow:0 12px 28px -12px rgba(226,87,31,.6)}
+@media(max-width:860px){.nav-links a:not(.btn){display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:76px 0 92px}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:800;letter-spacing:.26em;text-transform:uppercase;color:var(--brasa2);margin-bottom:14px;font-family:'Barlow'}
+.kicker::before{content:"";width:32px;height:3px;background:var(--brasa)}
+.hero h1{font-size:clamp(3rem,6.4vw,4.9rem);color:var(--creme)}
+.hero h1 em{font-style:normal;color:var(--brasa2)}
+.hero p.lead{margin:18px 0 26px;font-size:1.1rem;color:var(--nublado);max-width:32em;font-weight:500}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-mini{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:9px;background:rgba(247,239,227,.05);border:1.5px solid rgba(226,87,31,.32);border-radius:999px;padding:8px 15px;font-size:.85rem;font-weight:700;color:var(--creme)}
+.pill svg{width:17px;height:17px;stroke:var(--dourado);fill:none;stroke-width:1.9}
+.hero-art{position:relative}
+.hero-art .frame{border-radius:12px;overflow:hidden;box-shadow:0 0 0 1px rgba(242,177,60,.3),0 46px 90px -34px rgba(0,0,0,.92);transform:rotate(1.2deg)}
+.hero-art img{width:100%;height:520px;object-fit:cover}
+.selo-horario{position:absolute;left:-18px;bottom:46px;background:var(--dourado);color:var(--fuligem);border-radius:10px;padding:14px 18px;box-shadow:0 22px 40px -16px rgba(242,177,60,.5);transform:rotate(-3deg)}
+.selo-horario b{font-family:'Bebas Neue';font-size:1.5rem;line-height:1;display:block}
+.selo-horario small{font-size:.72rem;font-weight:800;display:block;margin-top:3px}
+.espeto-svg{position:absolute;right:-20px;top:-18px;width:86px;transform:rotate(24deg);filter:drop-shadow(0 12px 18px rgba(0,0,0,.6))}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-art img{height:400px}.selo-horario{left:10px}.espeto-svg{right:56px;top:-10px;width:70px}}
+
+/* ---------- barra confiança ---------- */
+.trustbar{background:linear-gradient(90deg,var(--fuligem),var(--fumaca2) 50%,var(--fuligem));border-top:1px solid rgba(242,177,60,.22);border-bottom:1px solid rgba(242,177,60,.22)}
+.trustbar .container{display:flex;justify-content:space-between;gap:16px;padding:20px 22px;flex-wrap:wrap}
+.trustbar div{display:flex;align-items:center;gap:10px;font-weight:600;font-size:.92rem;color:var(--nublado)}
+.trustbar svg{width:20px;height:20px;stroke:var(--brasa2);fill:none;stroke-width:1.9;flex:none}
+.trustbar b{color:var(--creme)}
+
+/* ---------- seções ---------- */
+section{padding:84px 0}
+.sec-head{max-width:660px;margin-bottom:46px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+h2{font-size:clamp(2.1rem,3.8vw,3rem);color:var(--creme)}
+.sec-head p{color:var(--nublado);margin-top:10px;font-size:1.02rem}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+@media(max-width:900px){.grid3,.grid2{grid-template-columns:1fr}}
+.card{background:linear-gradient(180deg,rgba(247,239,227,.055),rgba(247,239,227,.02));border:1.5px solid rgba(242,177,60,.16);border-radius:14px;overflow:hidden;transition:.3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);border-color:rgba(226,87,31,.5);box-shadow:0 34px 60px -32px rgba(0,0,0,.92)}
+.card .ph{position:relative;height:216px}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(14,12,10,.8))}
+.card .tag{position:absolute;left:14px;top:14px;background:var(--brasa);color:#fff;font-weight:800;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:6px;z-index:2;font-family:'Barlow'}
+.card .bd{padding:24px 22px;display:flex;flex-direction:column;gap:9px;flex:1}
+.card h3{font-size:1.5rem}
+.card p{color:var(--nublado);font-size:.94rem}
+.nota-honest{font-size:.78rem;color:var(--nublado);opacity:.8;font-style:italic;margin-top:auto}
+
+/* ---------- salão vs entrega ---------- */
+#formato{background:linear-gradient(180deg,transparent,rgba(226,87,31,.07) 15%,rgba(226,87,31,.07) 85%,transparent)}
+.formato-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media(max-width:900px){.formato-grid{grid-template-columns:1fr}}
+.formato{border-radius:16px;overflow:hidden;position:relative;min-height:360px;display:flex;align-items:flex-end;color:#fff}
+.formato img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:.6s}
+.formato:hover img{transform:scale(1.05)}
+.formato::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,12,10,.1) 25%,rgba(14,12,10,.92))}
+.formato .inf{position:relative;z-index:2;padding:28px 26px}
+.formato h3{font-size:1.9rem;color:var(--dourado)}
+.formato p{opacity:.94;font-weight:500;margin-top:6px;font-size:.97rem}
+
+/* ---------- passos ---------- */
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:p}
+@media(max-width:900px){.passos{grid-template-columns:1fr}}
+.passo{background:rgba(247,239,227,.04);border:1.5px solid rgba(242,177,60,.15);border-radius:12px;padding:28px 22px}
+.passo::before{counter-increment:p;content:"0" counter(p);font-family:'Bebas Neue';font-weight:400;font-size:1.5rem;color:var(--brasa2);display:block;margin-bottom:10px}
+.passo h3{font-size:1.35rem;margin-bottom:8px}
+.passo p{color:var(--nublado);font-size:.92rem}
+
+/* ---------- números ---------- */
+.numeros{border-top:1px solid rgba(242,177,60,.16);border-bottom:1px solid rgba(242,177,60,.16);padding:54px 0}
+.num-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+@media(max-width:900px){.num-grid{grid-template-columns:repeat(2,1fr)}}
+.num-grid b{font-family:'Bebas Neue';font-size:2.9rem;color:var(--dourado);display:block;line-height:1}
+.num-grid span{font-size:.84rem;color:var(--nublado);font-weight:600;display:block;margin-top:8px}
+
+/* ---------- contato ---------- */
+.cta-final{position:relative;background:linear-gradient(135deg,var(--vermelho) 0%,#6e1712 100%);border-radius:18px;padding:60px 40px;text-align:center;overflow:hidden;border:1px solid rgba(242,177,60,.4)}
+.cta-final::before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='80'%3E%3Cpath d='M20 70 L60 10 M70 74 L110 14 M115 66 L150 18' stroke='%23ffffff' stroke-opacity='.07' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E")}
+.cta-final h2{color:#fff;position:relative;font-size:clamp(2.2rem,4vw,3.2rem)}
+.cta-final p{color:rgba(255,255,255,.92);margin:10px auto 24px;max-width:36em;position:relative;font-weight:500}
+.cta-final .btn{position:relative;font-size:1.05rem;padding:15px 30px}
+.info-linha{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:42px}
+@media(max-width:900px){.info-linha{grid-template-columns:1fr}}
+.info{display:flex;gap:14px;align-items:flex-start;background:rgba(247,239,227,.04);border:1px solid rgba(242,177,60,.15);border-radius:12px;padding:20px}
+.info svg{width:22px;height:22px;stroke:var(--dourado);fill:none;stroke-width:1.8;flex:none;margin-top:2px}
+.info b{display:block;font-size:.98rem;font-family:'Bebas Neue';letter-spacing:.05em}
+.info p,.info a{color:var(--nublado);font-size:.88rem;text-decoration:none}
+.info a:hover{color:var(--dourado)}
+
+footer{border-top:1px solid rgba(242,177,60,.15);background:var(--fuligem);padding:36px 0 28px}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.aviso{margin-top:20px;text-align:center;font-size:.8rem;color:var(--nublado);opacity:.75;border-top:1px dashed rgba(242,177,60,.2);padding-top:15px}
+
+[data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+[data-reveal].in{opacity:1;transform:none}
+</style>
+</head>
+<body id="topo">
+<div class="bg-layers"></div><div class="fuma"></div>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#topo">
+      <svg viewBox="0 0 48 48" fill="none">
+        <circle cx="24" cy="24" r="22" fill="#211c18" stroke="#e2571f" stroke-width="1.6"/>
+        <path d="M24 8 L24 40" stroke="#f2b13c" stroke-width="2.4" stroke-linecap="round"/>
+        <rect x="18.5" y="13" width="11" height="7" rx="3" fill="#e2571f"/>
+        <rect x="18.5" y="22" width="11" height="7" rx="3" fill="#b3271e"/>
+        <rect x="18.5" y="31" width="11" height="6" rx="3" fill="#e2571f"/>
+      </svg>
+      <span style="display:flex;flex-direction:column"><b>Kisspeto</b><span>Espetaria &amp; Petiscaria</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#espetos">Espetos</a>
+      <a href="#formato">Salão &amp; Entrega</a>
+      <a href="#pedir">Pedir</a>
+      <a class="btn btn-brasa" href="https://wa.me/5517981518150?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20na%20Kisspeto." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 13.6c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.7-.8c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.3.5.4.1.1.1.5-.1 1.1z"/></svg>
+        Pedir no WhatsApp
+      </a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div data-reveal>
+      <span class="kicker">R. Marechal Deodoro da Fonseca 1771 · Centro</span>
+      <h1>A <em>espetaria</em> que não apaga a brasa até a meia-noite</h1>
+      <p class="lead">Espetos na brasa e porções de petiscaria, terça a domingo, das 18h à 00h — no salão com a galera ou direto na sua casa.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="https://wa.me/5517981518150?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20na%20Kisspeto." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 13.6c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.7-.8c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.3.5.4.1.1.1.5-.1 1.1z"/></svg>
+          Pedido no WhatsApp
+        </a>
+        <a class="btn" href="#espetos" style="background:transparent;border:1.5px solid var(--dourado);color:var(--dourado)!important;box-shadow:none">Ver o cardápio</a>
+      </div>
+      <div class="hero-mini">
+        <span class="pill"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.5 6.8L12 16.9 5.9 20.2l1.5-6.8L2.2 8.9l6.9-.6z"/></svg> 4,8 · 1.229 avaliações</span>
+        <span class="pill"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg> Terça a domingo · 18h–00h</span>
+        <span class="pill"><svg viewBox="0 0 24 24"><path d="M3 7h13l4 5v4h-4M3 16h4v-2M7 12h6"/><circle cx="7.5" cy="17.5" r="1.8"/><circle cx="16.5" cy="17.5" r="1.8"/></svg> Delivery próprio</span>
+      </div>
+    </div>
+    <div class="hero-art" data-reveal>
+      <svg class="espeto-svg" viewBox="0 0 60 200" fill="none">
+        <path d="M30 4 L30 196" stroke="#9aa0a6" stroke-width="3.4" stroke-linecap="round"/>
+        <rect x="14" y="34" width="32" height="24" rx="11" fill="#e2571f"/>
+        <rect x="14" y="68" width="32" height="24" rx="11" fill="#b3271e"/>
+        <rect x="14" y="102" width="32" height="24" rx="11" fill="#f2b13c"/>
+        <rect x="14" y="136" width="32" height="24" rx="11" fill="#e2571f"/>
+      </svg>
+      <div class="frame"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1200&auto=format&fit=crop" alt="Espetos de carne grelhando na brasa" loading="eager"></div>
+      <div class="selo-horario"><b>18h — 00h</b><small>TERÇA A DOMINGO</small></div>
+    </div>
+  </div>
+</section>
+
+<div class="trustbar">
+  <div class="container">
+    <div><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.5 6.8L12 16.9 5.9 20.2l1.5-6.8L2.2 8.9l6.9-.6z"/></svg> Nota <b>&nbsp;4,8&nbsp;</b> com 1.229 avaliações</div>
+    <div><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Pedido direto <b>&nbsp;pelo WhatsApp&nbsp;</b></div>
+    <div><svg viewBox="0 0 24 24"><path d="M12 21c-5-4.2-8-7.2-8-11a8 8 0 0 1 16 0c0 3.8-3 6.8-8 11z"/><circle cx="12" cy="10" r="3"/></svg> Salão no <b>&nbsp;centro de Rio Preto&nbsp;</b></div>
+  </div>
+</div>
+
+<section id="espetos">
+  <div class="container">
+    <div class="sec-head center" data-reveal>
+      <span class="kicker" style="justify-content:center">Na brasa &amp; na panela</span>
+      <h2>Espeto é lei, petisco é cultura</h2>
+      <p>O cardápio que levou a Kisspeto ao top 20 dos restaurantes mais bem avaliados da cidade.</p>
+    </div>
+    <div class="grid3">
+      <div class="card" data-reveal>
+        <div class="ph"><span class="tag">Na brasa</span><img src="https://images.unsplash.com/photo-1603360946369-dc9bb6258143?q=80&w=900&auto=format&fit=crop" alt="Espetinho de carne com sal grosso na grelha" loading="lazy"></div>
+        <div class="bd">
+          <h3>Espetos tradicionais</h3>
+          <p>Carne, frango, linguiça e coração no capricho da brasa — o clássico do espetinho de esquina, em versão de petiscaria.</p>
+          <p class="nota-honest">Itens e preços do cardápio: confirmar com a casa antes da publicação.</p>
+        </div>
+      </div>
+      <div class="card" data-reveal>
+        <div class="ph"><span class="tag">Petiscaria</span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Potatoes_chips_and_beef_steak.jpg/960px-Potatoes_chips_and_beef_steak.jpg" alt="Prato preto com costela ao molho barbecue e batatas fritas rústicas para dividir" loading="lazy"></div>
+        <div class="bd">
+          <h3>Porções pra dividir</h3>
+          <p>As porções de petiscaria que nasceram pra mesa cheia — fritas rústicas, carne no ponto e acompanhamentos no capricho, do jeitinho do fim de noite.</p>
+          <p class="nota-honest">Itens e preços do cardápio: confirmar com a casa antes da publicação.</p>
+        </div>
+      </div>
+      <div class="card" data-reveal>
+        <div class="ph"><span class="tag">Geladas</span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Beer_in_glass_close_up.jpg/960px-Beer_in_glass_close_up.jpg" alt="Close de chopp com espuma densa e líquido dourado, sem marca" loading="lazy"></div>
+        <div class="bd">
+          <h3>Gelada na medida</h3>
+          <p>Nada de espeto seco: a carta de bebidas geladas e os combos do salão fazem par perfeito com a brasa.</p>
+          <p class="nota-honest">Rótulos e combos: confirmar com a casa antes da publicação.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="formato">
+  <div class="container">
+    <div class="sec-head center" data-reveal>
+      <span class="kicker" style="justify-content:center">Dois jeitos</span>
+      <h2>No salão ou na sua casa</h2>
+    </div>
+    <div class="formato-grid">
+      <div class="formato" data-reveal>
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=1200&auto=format&fit=crop" alt="Ambiente de restaurante à noite com mesas" loading="lazy">
+        <div class="inf">
+          <h3>Salão no Centro</h3>
+          <p>R. Marechal Deodoro da Fonseca 1771 — mesa posta, petisco gelado e clima de noite longa, terça a domingo das 18h à meia-noite.</p>
+        </div>
+      </div>
+      <div class="formato" data-reveal>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/A_man_carrying_takeaway_delivery_packages.jpg/960px-A_man_carrying_takeaway_delivery_packages.jpg" alt="Pessoa segurando caixas e sacola kraft de embalagens para delivery, fundo escuro" loading="lazy">
+        <div class="inf">
+          <h3>Delivery pelo WhatsApp</h3>
+          <p>Mande a lista no WhatsApp oficial e combine entrega ou retirada — sem depender de app com comissão, no horário que você já conhece.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="numeros">
+  <div class="container num-grid" data-reveal>
+    <div><b>4,8</b><span>nota dos clientes</span></div>
+    <div><b>1.229</b><span>avaliações colhidas</span></div>
+    <div><b>#20</b><span>de 3.401 restaurantes (Restaurant Guru)</span></div>
+    <div><b>6</b><span>noites de brasa por semana</span></div>
+  </div>
+</div>
+
+<section id="pedir">
+  <div class="container">
+    <div class="sec-head center" data-reveal>
+      <span class="kicker" style="justify-content:center">Simples assim</span>
+      <h2>Pedir leva 2 minutos</h2>
+    </div>
+    <div class="passos">
+      <div class="passo" data-reveal><h3>Manda a lista</h3><p>Abre o WhatsApp da casa e escreve os espetos e porções que quer — a gente confirma o total na hora.</p></div>
+      <div class="passo" data-reveal><h3>Entrega ou retirada</h3><p>Combine endereço ou passe no salão na Marechal Deodoro. Retirada costuma ser mais rápida que app.</p></div>
+      <div class="passo" data-reveal><h3>Brasa acesa</h3><p>Tudo vai na temperatura certa. Bom apetite — e boa noite.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:10px">
+  <div class="container">
+    <div class="cta-final" data-reveal>
+      <h2>A brasa tá acesa até 00h</h2>
+      <p>Chama a Kisspeto no WhatsApp e faz o pedido direto com a casa — sem intermediário, sem comissão de app.</p>
+      <a class="btn" href="https://wa.me/5517981518150?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido%20na%20Kisspeto." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 13.6c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.7-.8c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.3.5.4.1.1.1.5-.1 1.1z"/></svg>
+        (17) 98151-8150
+      </a>
+    </div>
+    <div class="info-linha">
+      <div class="info" data-reveal>
+        <svg viewBox="0 0 24 24"><path d="M12 21c-5-4.2-8-7.2-8-11a8 8 0 0 1 16 0c0 3.8-3 6.8-8 11z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><b>Endereço</b><p>R. Marechal Deodoro da Fonseca 1771<br>São José do Rio Preto/SP</p></div>
+      </div>
+      <div class="info" data-reveal>
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        <div><b>Horário</b><p>Terça a domingo, 18h às 00h<br>Segunda: fechado</p></div>
+      </div>
+      <div class="info" data-reveal>
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.3" cy="6.7" r="1"/></svg>
+        <div><b>Instagram</b><a href="https://instagram.com/kisspetoespetaria" target="_blank" rel="noopener">@kisspetoespetaria</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot">
+      <a class="logo" href="#topo" style="text-decoration:none">
+        <svg viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="22" fill="#211c18" stroke="#e2571f" stroke-width="1.6"/>
+          <path d="M24 8 L24 40" stroke="#f2b13c" stroke-width="2.4" stroke-linecap="round"/>
+          <rect x="18.5" y="13" width="11" height="7" rx="3" fill="#e2571f"/>
+          <rect x="18.5" y="22" width="11" height="7" rx="3" fill="#b3271e"/>
+          <rect x="18.5" y="31" width="11" height="6" rx="3" fill="#e2571f"/>
+        </svg>
+        <span style="display:flex;flex-direction:column"><b>Kisspeto</b><span>Espetaria &amp; Petiscaria</span></span>
+      </a>
+      <div style="text-align:right;font-size:.88rem;color:var(--nublado)">
+        R. Marechal Deodoro da Fonseca 1771 · Ter–Dom 18h–00h · (17) 98151-8150
+      </div>
+    </div>
+    <div class="aviso">Protótipo criado pela Agência Rio Preto Tech — não é o site oficial.</div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+addEventListener('scroll',()=>{document.querySelector('header').classList.toggle('scrolled',scrollY>30)},{passive:true});
+</script>
+</body>
+</html>
