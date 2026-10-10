@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Laser Center Rio Preto — Depilação a Laser, Remoção de Tatuagem/Micropigmentação + Cursos | FadeMaster</title>
+<meta name="description" content="Laser Center Rio Preto — depilação a laser definitiva, remoção de micropigmentação e tatuagem com método exclusivo FadeMaster, e cursos de formação em estética a laser. Agende pelo WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Laser Center Rio Preto — Pele lisa de verdade, sem lâmina, sem sofrência">
+<meta property="og:description" content="Depilação a laser + remoção de tatuagem e micropigmentação + cursos com o método FadeMaster. Agende sua avaliação pelo WhatsApp (17) 99254-7445.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1700760933574-9f0f4ea9aa3b?q=80&w=1200&auto=format&fit=crop">
+<meta property="og:locale" content="pt_BR">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"MedicalBusiness",
+  "name":"Laser Center Rio Preto",
+  "image":"https://images.unsplash.com/photo-1700760933574-9f0f4ea9aa3b?q=80&w=1200&auto=format&fit=crop",
+  "telephone":"+5517992547445",
+  "address":{"@type":"PostalAddress","addressLocality":"São José do Rio Preto","addressRegion":"SP","addressCountry":"BR"},
+  "medicalSpecialty":"Dermatologic",
+  "availableService":[
+    {"@type":"MedicalProcedure","name":"Depilação a laser"},
+    {"@type":"MedicalProcedure","name":"Remoção de micropigmentação"},
+    {"@type":"MedicalProcedure","name":"Remoção de tatuagem a laser"}
+  ]
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0e2a33;--ink2:#173d48;--petrol:#0f6b78;--aqua:#38b6bf;--aqua2:#8fdbe0;
+  --violet:#7a5ea8;--cream:#f8f5ef;--white:#ffffff;--nuvem:#5d7681;--wa:#1fa855;--laser:#c33d6b;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.container{max-width:1120px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:'Cormorant Garamond',serif;color:var(--ink);letter-spacing:.01em;font-weight:600;line-height:1.15}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+/* ---------- fundo em camadas (luz + feixes) ---------- */
+.bg-layers{position:fixed;inset:0;z-index:-2;background:
+  radial-gradient(900px 620px at 88% -10%, rgba(56,182,191,.16), transparent 60%),
+  radial-gradient(760px 540px at -10% 36%, rgba(122,94,168,.10), transparent 55%),
+  radial-gradient(1000px 700px at 50% 118%, rgba(56,182,191,.12), transparent 60%),
+  linear-gradient(180deg,#f8f5ef,#f1ede4);}
+.feixes{position:fixed;top:0;left:0;right:0;height:420px;z-index:-1;pointer-events:none;opacity:.5;background-image:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='420'%3E%3Cline x1='60' y1='0' x2='10' y2='420' stroke='%2338b6bf' stroke-opacity='.08' stroke-width='2'/%3E%3Cline x1='150' y1='0' x2='115' y2='420' stroke='%237a5ea8' stroke-opacity='.06' stroke-width='2'/%3E%3Cline x1='250' y1='0' x2='215' y2='420' stroke='%2338b6bf' stroke-opacity='.07' stroke-width='2'/%3E%3C/svg%3E")}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(248,245,239,.85);backdrop-filter:blur(12px);border-bottom:1px solid rgba(15,107,120,.15);transition:.35s}
+header.scrolled{box-shadow:0 14px 30px -18px rgba(14,42,51,.25);background:rgba(248,245,239,.97)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo svg{width:44px;height:44px}
+.logo b{font-family:'Cormorant Garamond';font-size:1.5rem;color:var(--ink);line-height:1;font-weight:700}
+.logo span{display:block;font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:var(--petrol);font-weight:800}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{text-decoration:none;font-weight:700;font-size:.88rem;color:var(--nuvem);transition:.2s}
+.nav-links a:hover{color:var(--petrol)}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--wa);color:#fff!important;text-decoration:none;font-weight:800;font-size:.92rem;padding:12px 22px;border-radius:999px;box-shadow:0 12px 26px -12px rgba(31,168,85,.5);transition:.25s}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:17px;height:17px;fill:currentColor}
+.btn-laser{background:linear-gradient(135deg,var(--laser),#a83460);box-shadow:0 12px 28px -12px rgba(195,61,107,.5)}
+@media(max-width:860px){.nav-links a:not(.btn){display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:76px 0 92px}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;font-weight:800;letter-spacing:.26em;text-transform:uppercase;color:var(--petrol);margin-bottom:16px}
+.kicker::before{content:"";width:32px;height:2px;background:var(--aqua)}
+.hero h1{font-size:clamp(2.5rem,5vw,3.7rem)}
+.hero h1 em{font-style:italic;color:var(--violet)}
+.hero p.lead{margin:20px 0 28px;font-size:1.06rem;color:var(--nuvem);max-width:33em;font-weight:500}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-mini{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1.5px solid rgba(15,107,120,.22);border-radius:999px;padding:9px 16px;font-size:.84rem;font-weight:700;color:var(--ink)}
+.pill svg{width:17px;height:17px;stroke:var(--petrol);fill:none;stroke-width:1.9}
+.hero-art{position:relative}
+.hero-art .frame{border-radius:14px;overflow:hidden;box-shadow:0 0 0 1px rgba(15,107,120,.2),0 46px 90px -34px rgba(14,42,51,.4)}
+.hero-art img{width:100%;height:520px;object-fit:cover}
+.selo-metodo{position:absolute;right:-12px;top:28px;background:var(--violet);color:#fff;border-radius:10px;padding:14px 18px;max-width:215px;transform:rotate(-2deg);box-shadow:0 22px 40px -16px rgba(122,94,168,.6);border:1px solid rgba(255,255,255,.25)}
+.selo-metodo b{font-family:'Cormorant Garamond';font-size:1.12rem;line-height:1.2;display:block}
+.selo-metodo small{font-size:.74rem;opacity:.94;display:block;margin-top:4px;font-weight:600}
+.facho{position:absolute;left:-22px;bottom:60px;width:104px;height:104px;animation:pulse 3.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{filter:drop-shadow(0 0 8px rgba(56,182,191,.45))}50%{filter:drop-shadow(0 0 22px rgba(122,94,168,.55))}}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-art img{height:400px}.selo-metodo{right:8px}.facho{display:none}}
+
+/* ---------- barra confiança ---------- */
+.trustbar{background:linear-gradient(90deg,var(--ink),var(--ink2) 50%,var(--ink));border-top:1px solid rgba(56,182,191,.3);border-bottom:1px solid rgba(56,182,191,.3)}
+.trustbar .container{display:flex;justify-content:space-between;gap:16px;padding:19px 22px;flex-wrap:wrap}
+.trustbar div{display:flex;align-items:center;gap:10px;font-weight:700;font-size:.88rem;color:var(--aqua2)}
+.trustbar svg{width:20px;height:20px;stroke:var(--aqua);fill:none;stroke-width:1.9;flex:none}
+.trustbar b{color:#fff}
+
+/* ---------- seções ---------- */
+section{padding:86px 0}
+.sec-head{max-width:700px;margin-bottom:46px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+h2{font-size:clamp(1.9rem,3.4vw,2.7rem)}
+.sec-head p{color:var(--nuvem);margin-top:12px;font-size:1rem}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:900px){.grid2,.grid3{grid-template-columns:1fr}}
+.card{background:#fff;border:1.5px solid rgba(15,107,120,.14);border-radius:14px;overflow:hidden;transition:.3s;display:flex;flex-direction:column;box-shadow:0 22px 46px -34px rgba(14,42,51,.35)}
+.card:hover{transform:translateY(-6px);border-color:rgba(56,182,191,.5);box-shadow:0 34px 60px -32px rgba(14,42,51,.45)}
+.card .ph{position:relative;height:220px}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .tag{position:absolute;left:14px;top:14px;background:var(--petrol);color:#fff;font-weight:800;font-size:.7rem;letter-spacing:.13em;text-transform:uppercase;padding:6px 13px;border-radius:5px;z-index:2}
+.card .tag.v{background:var(--violet)}
+.card .tag.r{background:var(--laser)}
+.card .bd{padding:22px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:1.35rem}
+.card p{color:var(--nuvem);font-size:.93rem}
+.card ul{list-style:none;margin-top:4px}
+.card li{display:flex;gap:9px;align-items:flex-start;font-size:.9rem;color:var(--ink);font-weight:600;margin-top:7px}
+.card li svg{width:16px;height:16px;stroke:var(--aqua);fill:none;stroke-width:2.4;flex:none;margin-top:4px}
+
+/* ---------- cursos ---------- */
+#cursos{background:linear-gradient(180deg,transparent,rgba(122,94,168,.07) 14%,rgba(122,94,168,.07) 86%,transparent)}
+.curso-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center}
+.curso-img{border-radius:14px;overflow:hidden;box-shadow:0 0 0 1px rgba(122,94,168,.25),0 40px 80px -34px rgba(14,42,51,.4)}
+.curso-img img{width:100%;height:430px;object-fit:cover}
+.curso-txt h2 em{font-style:italic;color:var(--violet)}
+.faixa{display:inline-flex;align-items:baseline;gap:10px;background:var(--violet);color:#fff;border-radius:8px;padding:10px 18px;font-weight:800;margin:16px 0 8px}
+.faixa b{font-family:'Cormorant Garamond';font-size:1.35rem;font-weight:700}
+.nota-fonte{font-size:.78rem;color:var(--nuvem);opacity:.85;font-style:italic}
+@media(max-width:900px){.curso-grid{grid-template-columns:1fr}}
+
+/* ---------- passos ---------- */
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:p}
+@media(max-width:900px){.passos{grid-template-columns:1fr}}
+.passo{background:#fff;border:1.5px solid rgba(15,107,120,.14);border-radius:12px;padding:28px 22px;box-shadow:0 18px 40px -32px rgba(14,42,51,.3)}
+.passo::before{counter-increment:p;content:"0" counter(p);font-family:'Cormorant Garamond';font-weight:700;font-size:1.5rem;color:var(--aqua);display:block;margin-bottom:10px}
+.passo h3{font-size:1.2rem;margin-bottom:8px}
+.passo p{color:var(--nuvem);font-size:.92rem}
+
+/* ---------- números ---------- */
+.numeros{background:linear-gradient(135deg,var(--ink),var(--ink2));border-radius:18px;padding:44px 34px;margin-top:10px}
+.num-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;text-align:center}
+@media(max-width:900px){.num-grid{grid-template-columns:1fr}}
+.num-grid b{font-family:'Cormorant Garamond';font-size:2.7rem;color:var(--aqua2);display:block;line-height:1;font-weight:700}
+.num-grid span{font-size:.84rem;color:rgba(248,245,239,.75);font-weight:700;display:block;margin-top:8px;text-transform:uppercase;letter-spacing:.06em}
+
+/* ---------- por que laser ---------- */
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:900px){.why-grid{grid-template-columns:1fr}}
+.why{background:#fff;border:1.5px solid rgba(15,107,120,.14);border-radius:12px;padding:26px 22px}
+.why svg{width:26px;height:26px;stroke:var(--violet);fill:none;stroke-width:1.8;margin-bottom:12px}
+.why h3{font-size:1.2rem;margin-bottom:8px}
+.why p{color:var(--nuvem);font-size:.92rem}
+
+/* ---------- contato ---------- */
+.cta-final{position:relative;background:linear-gradient(135deg,var(--petrol) 0%,var(--ink) 100%);border-radius:18px;padding:62px 40px;text-align:center;overflow:hidden;border:1px solid rgba(56,182,191,.4)}
+.cta-final::before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='70'%3E%3Cpath d='M0 35 Q17.5 17.5 35 35 T70 35 T105 35 T140 35' fill='none' stroke='%23ffffff' stroke-opacity='.07' stroke-width='2'/%3E%3C/svg%3E")}
+.cta-final h2{color:#fff;position:relative}
+.cta-final p{color:rgba(255,255,255,.92);margin:12px auto 26px;max-width:36em;position:relative;font-weight:600}
+.cta-final .btn{position:relative;font-size:1.03rem;padding:15px 30px}
+.info-linha{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:42px}
+@media(max-width:900px){.info-linha{grid-template-columns:1fr}}
+.info{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1.5px solid rgba(15,107,120,.14);border-radius:12px;padding:20px}
+.info svg{width:22px;height:22px;stroke:var(--petrol);fill:none;stroke-width:1.8;flex:none;margin-top:2px}
+.info b{display:block;font-size:.95rem}
+.info p,.info a{color:var(--nuvem);font-size:.88rem;text-decoration:none}
+.info a:hover{color:var(--petrol)}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid rgba(15,107,120,.15);background:#fff;padding:36px 0 28px}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.honesto{margin-top:18px;font-size:.76rem;color:var(--nuvem);opacity:.85;line-height:1.6}
+.aviso{margin-top:16px;text-align:center;font-size:.8rem;color:var(--nuvem);opacity:.8;border-top:1px dashed rgba(15,107,120,.2);padding-top:14px}
+
+[data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+[data-reveal].in{opacity:1;transform:none}
+</style>
+<noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body id="topo">
+<div class="bg-layers"></div><div class="feixes"></div>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#topo">
+      <svg viewBox="0 0 48 48" fill="none">
+        <circle cx="24" cy="24" r="22" fill="#0f6b78"/>
+        <path d="M24 8v10" stroke="#8fdbe0" stroke-width="3" stroke-linecap="round"/>
+        <path d="M16 14l5 7M32 14l-5 7" stroke="#8fdbe0" stroke-width="2.2" stroke-linecap="round"/>
+        <circle cx="24" cy="28" r="7" stroke="#fff" stroke-width="2.2" fill="none"/>
+        <circle cx="24" cy="28" r="2.4" fill="#c33d6b"/>
+      </svg>
+      <span style="display:flex;flex-direction:column"><b>Laser Center</b><span>Rio Preto · Depilação a Laser</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#agendar">Agendar</a>
+      <a class="btn" href="https://wa.me/5517992547445?text=Ol%C3%A1!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20depila%C3%A7%C3%A3o%20a%20laser%20no%20Laser%20Center." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 13.6c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.7-.8c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.3.5.4.1.1.1.5-.1 1.1z"/></svg>
+        Agendar avaliação
+      </a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div data-reveal>
+      <span class="kicker">São José do Rio Preto · SP</span>
+      <h1>Pele lisa <em>de verdade</em> — sem lâmina, sem cera, sem sofrência.</h1>
+      <p class="lead">A depilação a laser do Laser Center Rio Preto acaba com pelo encravado, foliculite e a rotina de aparar toda semana. E se a tattoo ou a micropigmentação não te representam mais, a remoção a laser resolve — com método próprio, o FadeMaster.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="https://wa.me/5517992547445?text=Ol%C3%A1!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20de%20depila%C3%A7%C3%A3o%20a%20laser%20no%20Laser%20Center." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 13.6c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.7-.8c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.3.5.4.1.1.1.5-.1 1.1z"/></svg>
+          Agendar pelo WhatsApp
+        </a>
+        <a class="btn btn-laser" href="#cursos" style="background:transparent;border:1.5px solid var(--violet);color:var(--violet)!important;box-shadow:none">Quero fazer o curso</a>
+      </div>
+      <div class="hero-mini">
+        <span class="pill"><svg viewBox="0 0 24 24"><path d="M23 3a16 16 0 0 0-2 1 7 7 0 0 1-6.4 2.5A6.9 6.9 0 0 1 11 2.8a6.1 6.1 0 0 0 4.4 1.9 6.1 6.1 0 0 1-4.3-1.1 6.15 6.15 0 0 0 5.5 8.9q-1.9 1.1-4.4 1.1a9.9 9.9 0 0 0 15-13.5z"/></svg> 4,4 mil seguidores no Instagram</span>
+        <span class="pill"><svg viewBox="0 0 24 24"><path d="M12 2l7 3v6c0 5-3.2 8.4-7 10-3.8-1.6-7-5-7-10V5z"/><path d="M8.5 12l2.3 2.3 4.7-4.6"/></svg> Método exclusivo FadeMaster</span>
+        <span class="pill"><svg viewBox="0 0 24 24"><path d="M12 21c-5-4.2-8-7.2-8-11a8 8 0 0 1 16 0c0 3.8-3 6.8-8 11z"/><circle cx="12" cy="10" r="3"/></svg> Atendimento + cursos em Rio Preto</span>
+      </div>
+    </div>
+    <div class="hero-art" data-reveal>
+      <div class="frame"><img src="https://images.unsplash.com/photo-1700760933574-9f0f4ea9aa3b?q=80&w=1200&auto=format&fit=crop" alt="Aplicação de depilação a laser nas pernas em cabine — imagem ilustrativa de banco de imagens" loading="eager"></div>
+      <svg class="facho" viewBox="0 0 100 100" fill="none">
+        <circle cx="50" cy="50" r="12" fill="#7a5ea8"/>
+        <circle cx="50" cy="50" r="22" stroke="#38b6bf" stroke-width="2" stroke-opacity=".6"/>
+        <circle cx="50" cy="50" r="34" stroke="#38b6bf" stroke-width="1.4" stroke-opacity=".3"/>
+        <path d="M50 2v14M50 84v14M2 50h14M84 50h14" stroke="#c33d6b" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      <div class="selo-metodo"><b>FadeMaster</b><small>método de remoção criado aqui, em Rio Preto</small></div>
+    </div>
+  </div>
+</section>
+
+<div class="trustbar">
+  <div class="container">
+    <div><svg viewBox="0 0 24 24"><path d="M12 2v10m0 0l4-4m-4 4L8 6"/><circle cx="12" cy="17" r="4"/></svg> Depilação a laser <b>&nbsp;com protocolo próprio&nbsp;</b></div>
+    <div><svg viewBox="0 0 24 24"><path d="M4 20V9m5 11V4m5 16v-8m5 8V7"/></svg> Agendamento <b>&nbsp;direto no WhatsApp&nbsp;</b> da casa</div>
+    <div><svg viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5zM6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg> <b>&nbsp;Cursos e formações&nbsp;</b> em estética a laser</div>
+  </div>
+</div>
+
+<section id="servicos">
+  <div class="container">
+    <div class="sec-head center" data-reveal>
+      <span class="kicker" style="justify-content:center">O que fazemos</span>
+      <h2>Três domínios, uma casa só</h2>
+      <p>Remoção de pelos, remoção de pigmento e formação profissional — tudo num endereço em Rio Preto.</p>
+    </div>
+    <div class="grid3">
+      <div class="card" data-reveal>
+        <div class="ph"><span class="tag">Depilação</span><img src="https://images.unsplash.com/photo-1700760933941-3a06a28fbf47?q=80&w=900&auto=format&fit=crop" alt="Aplicador de laser com ponteiro de mira sobre a pele da perna — imagem ilustrativa de banco de imagens" loading="lazy"></div>
+        <div class="bd">
+          <h3>Depilação a laser</h3>
+          <p>Axoilas, virilha, pernas, rosto, abdômen e costas, com protocolo por fototipo.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg> Adeus pelo encravado e foliculite</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg> Avaliação gratuita antes do pacote</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" data-reveal>
+        <div class="ph"><span class="tag r">Remoção</span><img src="https://images.unsplash.com/photo-1597852075234-fd721ac361d3?q=80&w=900&auto=format&fit=crop" alt="Tatuagem no braço — ilustração do problema que a remoção a laser resolve; imagem de banco de imagens" loading="lazy"></div>
+        <div class="bd">
+          <h3>Tatuagem e micropigmentação</h3>
+          <p>Remoção a laser de tatuagens que perderam o sentido e de micropigmentação de sobrancelha que saiu errada.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg> Método FadeMaster exclusivo</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg> Sessões com plano de evolução</li>
+          </ul>
+        </div>
+      </div>
+      <div class="card" data-reveal>
+        <div class="ph"><span class="tag v">Rosto</span><img src="https://images.unsplash.com/photo-1713085085470-fba013d67e65?q=80&w=900&auto=format&fit=crop" alt="Procedimento estético facial em cabine com profissional de luvas — imagem ilustrativa de banco de imagens" loading="lazy"></div>
+        <div class="bd">
+          <h3>Estética facial com tecnologia</h3>
+          <p>Cuidado com a pele do rosto usando equipamento de cabine, com avaliação antes de qualquer protocolo.</p>
+          <ul>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg> Atendimento com hora marcada</li>
+            <li><svg viewBox="0 0 24 24"><path d="M4 12l5 5L20 6"/></svg> Cardápio completo no WhatsApp</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="numeros" data-reveal>
+      <div class="num-grid">
+        <div><b>4,4 mil</b><span>seguidores no Instagram</span></div>
+        <div><b>FadeMaster</b><span>método exclusivo de remoção</span></div>
+        <div><b>2</b><span>fluxos: atendimento + cursos</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cursos">
+  <div class="container curso-grid">
+    <div class="curso-img" data-reveal><img src="https://images.unsplash.com/photo-1715848504087-11a748ce0058?q=80&w=1200&auto=format&fit=crop" alt="Turma em prática de curso profissionalizante de estética — imagem ilustrativa de banco de imagens" loading="lazy"></div>
+    <div class="curso-txt" data-reveal>
+      <span class="kicker">Formação profissional</span>
+      <h2>Aprenda o <em>FadeMaster</em> — a técnica que a casa criou</h2>
+      <p style="color:var(--nuvem);margin-top:12px">O Laser Center não só atende: forma profissionais de estética a laser com o método próprio de remoção de micropigmentação e tatuagem. Quem conclui o curso leva uma diferenciação que a maioria das clínicas de Rio Preto não tem — e sai com a técnica de quem vive o procedimento todo dia.</p>
+      <div class="faixa">Turmas <b>periódicas</b> · vagas e datas pelo WhatsApp</div>
+      <p class="nota-fonte" style="margin-bottom:18px">Conteúdo, carga horária, investimento e datas das próximas turmas a confirmar com a casa.</p>
+      <a class="btn" href="https://wa.me/5517992547445?text=Ol%C3%A1!%20Quero%20saber%20sobre%20o%20pr%C3%B3ximo%20curso%20de%20est%C3%A9tica%20a%20laser%20do%20Laser%20Center." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 13.6c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.7-.8c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.3.5.4.1.1.1.5-.1 1.1z"/></svg>
+        Quero me inscrever no curso
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="agendar">
+  <div class="container">
+    <div class="sec-head center" data-reveal>
+      <span class="kicker" style="justify-content:center">Simples assim</span>
+      <h2>Da primeira avaliação à última sessão</h2>
+    </div>
+    <div class="passos">
+      <div class="passo" data-reveal><h3>Chame no WhatsApp</h3><p>Diga a área que quer tratar (ou o curso que te interessa). A resposta vem direto da casa — sem link de terceiro.</p></div>
+      <div class="passo" data-reveal><h3>Avaliação e plano</h3><p>Na cabine, define-se fototipo, cor do pelo e o número realista de sessões antes de fechar qualquer pacote.</p></div>
+      <div class="passo" data-reveal><h3>Protocolo até o fim</h3><p>Sessões espaçadas com acompanhamento — e a liberdade de nunca mais viver refém de lâmina e cera.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:10px">
+  <div class="container">
+    <div class="sec-head center" data-reveal>
+      <span class="kicker" style="justify-content:center">Por que laser</span>
+      <h2>A conta que ninguém te mostra</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why" data-reveal>
+        <svg viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <h3>Cera e lâmina acumulam</h3>
+        <p>Cada sessão de depilação no decorrer dos anos forma um gasto que não acaba nunca. O laser é investimento com fim de linha.</p>
+      </div>
+      <div class="why" data-reveal>
+        <svg viewBox="0 0 24 24"><path d="M12 22c5-4.2 8-7.2 8-11a8 8 0 0 0-16 0c0 3.8 3 6.8 8 11z" transform="rotate(180 12 12)"/><path d="M8 8s1.5-2 4-2 4 2 4 2"/></svg>
+        <h3>Pele que você vê no espelho</h3>
+        <p>Pelo encravado e foliculite somem do protocolo — sobra a pele lisa que a lâmina nunca entregou.</p>
+      </div>
+      <div class="why" data-reveal>
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        <h3>Tempo devolvido</h3>
+        <p>Menos uma rotina de manutenção por semana é menos horas por ano — e menos motivo para cancelar plano de fim de semana.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="container">
+    <div class="cta-final" data-reveal>
+      <h2>Marque sua avaliação — ela é o primeiro passo</h2>
+      <p>Depilação, remoção de tatuagem ou curso: fale direto com o WhatsApp da casa e receba a resposta dela — sem intermediário, sem link na bio de terceiro.</p>
+      <a class="btn" href="https://wa.me/5517992547445?text=Ol%C3%A1!%20Quero%20agendar%20uma%20avalia%C3%A7%C3%A3o%20no%20Laser%20Center%20Rio%20Preto." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 13.6c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.7-.8c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.3.5.4.1.1.1.5-.1 1.1z"/></svg>
+        (17) 99254-7445
+      </a>
+    </div>
+    <div class="info-linha">
+      <div class="info" data-reveal>
+        <svg viewBox="0 0 24 24"><path d="M12 21c-5-4.2-8-7.2-8-11a8 8 0 0 1 16 0c0 3.8-3 6.8-8 11z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><b>Endereço</b><p>São José do Rio Preto/SP<br><em>endereço e horários a confirmar com a casa</em></p></div>
+      </div>
+      <div class="info" data-reveal>
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <div><b>WhatsApp oficial</b><a href="https://wa.me/5517992547445" target="_blank" rel="noopener">(17) 99254-7445 — agende sua consulta</a></div>
+      </div>
+      <div class="info" data-reveal>
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.3" cy="6.7" r="1"/></svg>
+        <div><b>Instagram</b><a href="https://instagram.com/lasercenter.riopreto" target="_blank" rel="noopener">@lasercenter.riopreto</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot">
+      <a class="logo" href="#topo" style="text-decoration:none">
+        <svg viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="22" fill="#0f6b78"/>
+          <path d="M24 8v10" stroke="#8fdbe0" stroke-width="3" stroke-linecap="round"/>
+          <path d="M16 14l5 7M32 14l-5 7" stroke="#8fdbe0" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="24" cy="28" r="7" stroke="#fff" stroke-width="2.2" fill="none"/>
+          <circle cx="24" cy="28" r="2.4" fill="#c33d6b"/>
+        </svg>
+        <span style="display:flex;flex-direction:column"><b>Laser Center</b><span>Rio Preto · Depilação a Laser</span></span>
+      </a>
+      <div style="text-align:right;font-size:.88rem;color:var(--nuvem)">
+        Depilação a laser · Remoção FadeMaster · Cursos · WhatsApp (17) 99254-7445
+      </div>
+    </div>
+    <p class="honesto">Protótipo de demonstração. Serviços, método e presença digital da casa verificados por pesquisa (Instagram @lasercenter.riopreto, Linktree oficial, diretórios); fotos são de banco de imagens e serão substituídas por fotos reais da clínica na customização. Valores, protocolos, datas de curso e endereço completo a confirmar com a casa.</p>
+    <div class="aviso">Protótipo criado pela Agência Rio Preto Tech — não é o site oficial.</div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+addEventListener('scroll',()=>{const h=document.querySelector('header');h.classList.toggle('scrolled',scrollY>30)},{passive:true});
+</script>
+</body>
+</html>
