@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdos Grill — Rodízio All Inclusive de Churrasco | Vila Redentora + Nova Unidade JK | São José do Rio Preto</title>
+<meta name="description" content="Abdos Grill SJRP — rodízio de churrascaria all inclusive com 4,8 no RestaurantGuru. Unidade Vila Redentora + nova unidade na Av. JK com 700 lugares abrindo 22 de outubro. Reserve almoço e jantar pelo WhatsApp.">
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:title" content="Abdos Grill — Rodízio All Inclusive | Rio Preto, duas unidades">
+<meta property="og:description" content="Cortes na brasa, defumados e bebidas inclusas. Unidade Vila Redentora + nova unidade JK com 700 lugares — 22/10. Reserva direta pelo WhatsApp.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=1200&auto=format&fit=crop">
+<meta property="og:locale" content="pt_BR">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Restaurant",
+  "name":"Abdos Grill Rio Preto",
+  "image":"https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=1200&auto=format&fit=crop",
+  "servesCuisine":["Churrasco","Rodízio","Brasileira"],
+  "telephone":"+5517991222768",
+  "address":{"@type":"PostalAddress","streetAddress":"Av. Marginal Comendador Vicente Filizola, 5220","addressLocality":"São José do Rio Preto","addressRegion":"SP","postalCode":"15015-510","addressCountry":"BR"},
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"565","bestRating":"5"}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brasa:#170f0a;--brasa2:#241710;--tinta:#120b07;--ember:#e0561f;--ember2:#f47b3c;
+  --latao:#c8873a;--latao2:#e9b46a;--creme:#f5ecdd;--fumo:#c2ab90;--wa:#1fa855;--verde:#2f7d4f;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Barlow',sans-serif;background:var(--brasa);color:var(--creme);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.container{max-width:1120px;margin:0 auto;padding:0 22px}
+h1,h2,h3{font-family:'Anton',sans-serif;color:var(--creme);letter-spacing:.02em;font-weight:400;text-transform:uppercase;line-height:1.14}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+/* ---------- fundo em camadas (fumaça + brasa) ---------- */
+.bg-layers{position:fixed;inset:0;z-index:-2;background:
+  radial-gradient(920px 620px at 88% -12%, rgba(224,86,31,.20), transparent 60%),
+  radial-gradient(760px 540px at -12% 34%, rgba(200,135,58,.12), transparent 55%),
+  radial-gradient(1050px 720px at 52% 120%, rgba(224,86,31,.14), transparent 62%),
+  linear-gradient(180deg,#170f0a,#0f0906);}
+.bg-fumo{position:fixed;inset:0;z-index:-1;opacity:.45;background-image:
+  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='130'%3E%3Cpath d='M0 70 Q32 40 65 70 T130 70 T195 70 T260 70' fill='none' stroke='%23c8873a' stroke-opacity='.06' stroke-width='2.4'/%3E%3Cpath d='M0 108 Q32 80 65 108 T130 108 T195 108 T260 108' fill='none' stroke='%23e0561f' stroke-opacity='.05' stroke-width='2'/%3E%3C/svg%3E")}
+
+/* ---------- header ---------- */
+header{position:sticky;top:0;z-index:50;background:rgba(18,11,7,.84);backdrop-filter:blur(12px);border-bottom:1px solid rgba(200,135,58,.2);transition:.35s}
+header.scrolled{box-shadow:0 14px 34px -18px rgba(0,0,0,.85);background:rgba(18,11,7,.96)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:13px 0}
+.logo{display:flex;align-items:center;gap:11px;text-decoration:none}
+.logo svg{width:46px;height:46px}
+.logo b{font-family:'Anton';font-size:1.42rem;color:var(--creme);line-height:1;letter-spacing:.04em}
+.logo span{display:block;font-size:.58rem;letter-spacing:.3em;text-transform:uppercase;color:var(--latao2);font-weight:800}
+.nav-links{display:flex;gap:24px;align-items:center}
+.nav-links a{text-decoration:none;font-weight:800;font-size:.9rem;color:var(--fumo);transition:.2s;text-transform:uppercase;letter-spacing:.06em}
+.nav-links a:hover{color:var(--latao2)}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--wa);color:#fff!important;text-decoration:none;font-weight:800;font-size:.93rem;padding:12px 22px;border-radius:999px;box-shadow:0 12px 26px -12px rgba(31,168,85,.55);transition:.25s;letter-spacing:.03em}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:17px;height:17px;fill:currentColor}
+.btn-brasa{background:linear-gradient(135deg,var(--ember),var(--ember2));box-shadow:0 12px 28px -12px rgba(224,86,31,.6)}
+@media(max-width:860px){.nav-links a:not(.btn){display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;padding:76px 0 92px}
+.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.kicker{display:inline-flex;align-items:center;gap:10px;font-size:.72rem;font-weight:800;letter-spacing:.26em;text-transform:uppercase;color:var(--latao2);margin-bottom:16px}
+.kicker::before{content:"";width:32px;height:2px;background:var(--latao)}
+.hero h1{font-size:clamp(2.5rem,5.2vw,3.9rem)}
+.hero h1 em{font-style:normal;color:var(--ember2)}
+.hero p.lead{margin:20px 0 28px;font-size:1.08rem;color:var(--fumo);max-width:33em;font-weight:500}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-mini{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.pill{display:inline-flex;align-items:center;gap:9px;background:rgba(245,236,221,.05);border:1.5px solid rgba(200,135,58,.28);border-radius:999px;padding:9px 16px;font-size:.85rem;font-weight:700;color:var(--creme)}
+.pill svg{width:17px;height:17px;stroke:var(--latao2);fill:none;stroke-width:1.9}
+.hero-art{position:relative}
+.hero-art .frame{border-radius:8px;overflow:hidden;box-shadow:0 0 0 1px rgba(200,135,58,.4),0 46px 90px -34px rgba(0,0,0,.92)}
+.hero-art img{width:100%;height:520px;object-fit:cover}
+.selo-abertura{position:absolute;right:-12px;top:26px;background:var(--ember);color:#fff;border-radius:8px;padding:14px 18px;max-width:225px;transform:rotate(2deg);box-shadow:0 22px 40px -16px rgba(224,86,31,.7);border:1px solid rgba(255,255,255,.16)}
+.selo-abertura b{font-family:'Anton';font-size:1.02rem;line-height:1.25;display:block;letter-spacing:.03em}
+.selo-abertura small{font-size:.74rem;opacity:.95;display:block;margin-top:4px;font-weight:600}
+.fogo{position:absolute;left:-26px;bottom:50px;width:112px;height:112px;animation:pulse 3.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{filter:drop-shadow(0 0 10px rgba(224,86,31,.5))}50%{filter:drop-shadow(0 0 26px rgba(233,180,106,.7))}}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-art img{height:400px}.selo-abertura{right:8px}.fogo{display:none}}
+
+/* ---------- barra confiança ---------- */
+.trustbar{background:linear-gradient(90deg,var(--tinta),var(--brasa2) 50%,var(--tinta));border-top:1px solid rgba(200,135,58,.22);border-bottom:1px solid rgba(200,135,58,.22)}
+.trustbar .container{display:flex;justify-content:space-between;gap:16px;padding:20px 22px;flex-wrap:wrap}
+.trustbar div{display:flex;align-items:center;gap:10px;font-weight:700;font-size:.9rem;color:var(--fumo)}
+.trustbar svg{width:20px;height:20px;stroke:var(--latao2);fill:none;stroke-width:1.9;flex:none}
+.trustbar b{color:var(--creme)}
+
+/* ---------- seções ---------- */
+section{padding:88px 0}
+.sec-head{max-width:700px;margin-bottom:46px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+h2{font-size:clamp(1.9rem,3.4vw,2.7rem)}
+.sec-head p{color:var(--fumo);margin-top:12px;font-size:1rem}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.grid2,.grid3{grid-template-columns:1fr}.grid4{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.grid4{grid-template-columns:1fr}}
+.card{background:linear-gradient(180deg,rgba(245,236,221,.055),rgba(245,236,221,.02));border:1.5px solid rgba(200,135,58,.2);border-radius:14px;overflow:hidden;transition:.3s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);border-color:rgba(200,135,58,.5);box-shadow:0 34px 60px -32px rgba(0,0,0,.92)}
+.card .ph{position:relative;height:225px}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(18,11,7,.88))}
+.card .tag{position:absolute;left:16px;top:16px;background:var(--ember);color:#fff;font-weight:800;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 13px;border-radius:5px;z-index:2}
+.card .bd{padding:24px 22px;display:flex;flex-direction:column;gap:9px;flex:1}
+.card h3{font-size:1.32rem}
+.card p{color:var(--fumo);font-size:.94rem}
+
+/* ---------- unidade JK ---------- */
+#jk{background:linear-gradient(180deg,transparent,rgba(200,135,58,.07) 14%,rgba(200,135,58,.07) 86%,transparent)}
+.jk-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center}
+.jk-img{border-radius:14px;overflow:hidden;box-shadow:0 0 0 1px rgba(200,135,58,.38),0 40px 80px -34px rgba(0,0,0,.92)}
+.jk-img img{width:100%;height:440px;object-fit:cover}
+.jk-txt h2 em{font-style:normal;color:var(--latao2)}
+.faixa{display:inline-flex;align-items:baseline;gap:10px;background:var(--ember);color:#fff;border-radius:8px;padding:10px 18px;font-weight:800;margin:18px 0 8px}
+.faixa b{font-family:'Anton';font-size:1.4rem;font-weight:400;letter-spacing:.03em}
+.nota-fonte{font-size:.78rem;color:var(--fumo);opacity:.85;font-style:italic}
+@media(max-width:900px){.jk-grid{grid-template-columns:1fr}}
+
+/* ---------- passos ---------- */
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:p}
+@media(max-width:900px){.passos{grid-template-columns:1fr}}
+.passo{background:rgba(245,236,221,.04);border:1.5px solid rgba(200,135,58,.18);border-radius:12px;padding:28px 22px}
+.passo::before{counter-increment:p;content:"0" counter(p);font-family:'Anton';font-size:1.3rem;color:var(--latao2);display:block;margin-bottom:10px}
+.passo h3{font-size:1.15rem;margin-bottom:8px}
+.passo p{color:var(--fumo);font-size:.92rem}
+
+/* ---------- números ---------- */
+.numeros{border-top:1px solid rgba(200,135,58,.18);border-bottom:1px solid rgba(200,135,58,.18);padding:56px 0}
+.num-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+@media(max-width:900px){.num-grid{grid-template-columns:repeat(2,1fr)}}
+.num-grid b{font-family:'Anton';font-size:2.7rem;color:var(--latao2);display:block;line-height:1}
+.num-grid span{font-size:.85rem;color:var(--fumo);font-weight:700;display:block;margin-top:8px;text-transform:uppercase;letter-spacing:.05em}
+
+/* ---------- reputação ---------- */
+.rep-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.rep-grid{grid-template-columns:1fr}}
+.rep{background:rgba(245,236,221,.04);border:1.5px solid rgba(200,135,58,.18);border-radius:12px;padding:26px 24px}
+.rep svg{width:26px;height:26px;stroke:var(--latao2);fill:none;stroke-width:1.8;margin-bottom:14px}
+.rep h3{font-size:1.12rem;margin-bottom:8px}
+.rep p{color:var(--fumo);font-size:.92rem}
+.estrelas{display:flex;gap:3px;margin-bottom:12px}
+.estrelas svg{width:18px;height:18px;margin:0;fill:var(--latao2);stroke:var(--latao2)}
+
+/* ---------- unidades / contato ---------- */
+.units{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-bottom:44px}
+@media(max-width:900px){.units{grid-template-columns:1fr}}
+.unit{background:rgba(245,236,221,.04);border:1.5px solid rgba(200,135,58,.2);border-radius:12px;padding:24px 22px}
+.unit h3{font-size:1.15rem;margin-bottom:6px;color:var(--latao2)}
+.unit p{color:var(--fumo);font-size:.92rem}
+.unit .aberto{display:inline-block;background:var(--verde);color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:4px;margin-bottom:10px}
+.unit .emobra{display:inline-block;background:var(--ember);color:#fff;font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;padding:4px 12px;border-radius:4px;margin-bottom:10px}
+
+.cta-final{position:relative;background:linear-gradient(135deg,var(--ember) 0%,#8f3010 100%);border-radius:18px;padding:64px 40px;text-align:center;overflow:hidden;border:1px solid rgba(233,180,106,.4)}
+.cta-final::before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='70'%3E%3Cpath d='M0 35 Q17.5 17.5 35 35 T70 35 T105 35 T140 35' fill='none' stroke='%23ffffff' stroke-opacity='.08' stroke-width='2'/%3E%3C/svg%3E")}
+.cta-final h2{color:#fff;position:relative}
+.cta-final p{color:rgba(255,255,255,.94);margin:12px auto 26px;max-width:36em;position:relative;font-weight:600}
+.cta-final .btn{position:relative;font-size:1.05rem;padding:15px 30px}
+.info-linha{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:44px}
+@media(max-width:900px){.info-linha{grid-template-columns:1fr}}
+.info{display:flex;gap:14px;align-items:flex-start;background:rgba(245,236,221,.04);border:1px solid rgba(200,135,58,.18);border-radius:12px;padding:20px}
+.info svg{width:22px;height:22px;stroke:var(--latao2);fill:none;stroke-width:1.8;flex:none;margin-top:2px}
+.info b{display:block;font-size:.95rem}
+.info p,.info a{color:var(--fumo);font-size:.88rem;text-decoration:none}
+.info a:hover{color:var(--latao2)}
+
+/* ---------- footer ---------- */
+footer{border-top:1px solid rgba(200,135,58,.18);background:var(--tinta);padding:38px 0 30px}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.honesto{margin-top:20px;font-size:.76rem;color:var(--fumo);opacity:.8;line-height:1.6}
+.aviso{margin-top:18px;text-align:center;font-size:.8rem;color:var(--fumo);opacity:.8;border-top:1px dashed rgba(200,135,58,.24);padding-top:16px}
+
+[data-reveal]{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+[data-reveal].in{opacity:1;transform:none}
+</style>
+<noscript><style>[data-reveal]{opacity:1!important;transform:none!important}</style></noscript>
+</head>
+<body id="topo">
+<div class="bg-layers"></div><div class="bg-fumo"></div>
+
+<header>
+  <div class="container nav">
+    <a class="logo" href="#topo">
+      <svg viewBox="0 0 48 48" fill="none">
+        <circle cx="24" cy="24" r="22" fill="#241710" stroke="#c8873a" stroke-width="1.5"/>
+        <path d="M24 9c4.5 5.5 9 8 9 14.5a9 9 0 0 1-18 0C15 17 19.5 14.5 24 9z" fill="#e0561f"/>
+        <path d="M24 17c2.2 3 4.2 4 4.2 7.4a4.2 4.2 0 0 1-8.4 0c0-3.4 2-4.4 4.2-7.4z" fill="#e9b46a"/>
+        <path d="M10 36h28" stroke="#c8873a" stroke-width="2.4" stroke-linecap="round"/>
+      </svg>
+      <span style="display:flex;flex-direction:column"><b>Abdos Grill</b><span>SJRP · Rodízio All Inclusive</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#rodizio">Rodízio</a>
+      <a href="#jk">Unidade JK</a>
+      <a href="#reserva">Reserva</a>
+      <a class="btn btn-brasa" href="https://wa.me/5517991222768?text=Ol%C3%A1!%20Quero%20reservar%20uma%20mesa%20no%20Abdos%20Grill." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 13.6c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.7-.8c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.3.5.4.1.1.1.5-.1 1.1z"/></svg>
+        Reservar
+      </a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div data-reveal>
+      <span class="kicker">Vila Redentora · São José do Rio Preto</span>
+      <h1>Rodízio <em>all inclusive</em>: a brasa gira, a bebida acompanha.</h1>
+      <p class="lead">Cortes nobres na brasa, defumados de cocção longa e bebidas à mesa no ritmo do rodízio — com nota 4,8 construída em mais de 500 avaliações. Agora são duas casas: a sua na Vila Redentora e a nova unidade JK, com 700 lugares, abrindo dia 22 de outubro.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="https://wa.me/5517991222768?text=Ol%C3%A1!%20Quero%20reservar%20uma%20mesa%20no%20Abdos%20Grill." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 13.6c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.7-.8c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.3.5.4.1.1.1.5-.1 1.1z"/></svg>
+          Reserva pelo WhatsApp
+        </a>
+        <a class="btn btn-brasa" href="#jk" style="background:transparent;border:1.5px solid var(--latao);color:var(--latao2)!important;box-shadow:none">Conhecer a unidade JK</a>
+      </div>
+      <div class="hero-mini">
+        <span class="pill"><svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.5 6.8L12 16.9 5.9 20.2l1.5-6.8L2.2 8.9l6.9-.6z"/></svg> 4,8 · 565 avaliações no RGuru</span>
+        <span class="pill"><svg viewBox="0 0 24 24"><path d="M12 21c-5-4.2-8-7.2-8-11a8 8 0 0 1 16 0c0 3.8-3 6.8-8 11z"/><circle cx="12" cy="10" r="3"/></svg> Av. Marginal Vicente Filizola 5220</span>
+        <span class="pill"><svg viewBox="0 0 24 24"><path d="M4 20V9m5 11V4m5 16v-8m5 8V7"/></svg> All inclusive · almoço e jantar</span>
+      </div>
+    </div>
+    <div class="hero-art" data-reveal>
+      <div class="frame"><img src="https://images.unsplash.com/photo-1558030006-450675393462?q=80&w=1200&auto=format&fit=crop" alt="Corte de carne na parrilla sobre fogo alto — imagem ilustrativa de banco de imagens" loading="eager"></div>
+      <svg class="fogo" viewBox="0 0 100 100" fill="none">
+        <path d="M50 8c10 14 22 18 22 34a22 22 0 0 1-44 0C28 26 40 22 50 8z" fill="#e0561f"/>
+        <path d="M50 30c5 7 11 9 11 17a11 11 0 0 1-22 0c0-8 6-10 11-17z" fill="#e9b46a"/>
+      </svg>
+      <div class="selo-abertura"><b>22 DE OUTUBRO</b><small>abre a nova unidade JK — 700 lugares</small></div>
+    </div>
+  </div>
+</section>
+
+<div class="trustbar">
+  <div class="container">
+    <div><svg viewBox="0 0 24 24"><path d="M12 2l7 3v6c0 5-3.2 8.4-7 10-3.8-1.6-7-5-7-10V5z"/><path d="M8.5 12l2.3 2.3 4.7-4.6"/></svg> Nota <b>&nbsp;4,8&nbsp;</b> em 565 avaliações</div>
+    <div><svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg> <b>&nbsp;2 unidades&nbsp;</b> — Vila Redentora + JK</div>
+    <div><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg> Reserva direta <b>&nbsp;pelo WhatsApp&nbsp;</b> da casa</div>
+  </div>
+</div>
+
+<section id="rodizio">
+  <div class="container">
+    <div class="sec-head center" data-reveal>
+      <span class="kicker" style="justify-content:center">O rodízio</span>
+      <h2>Tudo na mesa, tudo incluso</h2>
+      <p>O formato all inclusive do Abdos: você não pede uma por uma — os cortes circulam na sua mesa no ritmo do rodízio.</p>
+    </div>
+    <div class="grid4">
+      <div class="card" data-reveal>
+        <div class="ph"><span class="tag">Na brasa</span><img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?q=80&w=900&auto=format&fit=crop" alt="Bife grelhado com marcas de grelha e batatas rústicas — imagem ilustrativa de banco de imagens" loading="lazy"></div>
+        <div class="bd"><h3>Cortes na brasa</h3><p>Picanha, fraldinha e cia. no ponto, saindo direto da grelha para a sua mesa.</p></div>
+      </div>
+      <div class="card" data-reveal>
+        <div class="ph"><span class="tag">Defumados</span><img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?q=80&w=900&auto=format&fit=crop" alt="Costela defumada fatiada com crosta escura e anel de fumaça — imagem ilustrativa de banco de imagens" loading="lazy"></div>
+        <div class="bd"><h3>Lentos na fumaça</h3><p>Costela e peças de cocção longa, com casca e suculência de churrasco raiz.</p></div>
+      </div>
+      <div class="card" data-reveal>
+        <div class="ph"><span class="tag">Porções</span><img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=900&auto=format&fit=crop" alt="Tábua de costela barbecue com acompanhamentos — imagem ilustrativa de banco de imagens" loading="lazy"></div>
+        <div class="bd"><h3>Companheiros de mesa</h3><p>Pão de alho, saladas, porções e os acompanhamentos que fecham o rodízio.</p></div>
+      </div>
+      <div class="card" data-reveal>
+        <div class="ph"><span class="tag">Incluso</span><img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=900&auto=format&fit=crop" alt="Grupo brindando com taças — imagem ilustrativa de banco de imagens" loading="lazy"></div>
+        <div class="bd"><h3>All inclusive de verdade</h3><p>A proposta da casa: rodízio + bebidas à mesa em um preço fechado. Consulte a regra atual no WhatsApp.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="jk">
+  <div class="container jk-grid">
+    <div class="jk-img" data-reveal><img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=1200&auto=format&fit=crop" alt="Salão amplo de restaurante com cozinha aberta — imagem ilustrativa de banco de imagens" loading="lazy"></div>
+    <div class="jk-txt" data-reveal>
+      <span class="kicker">Nova unidade · Avenida JK</span>
+      <h2>São 700 lugares abrindo dia <em>22 de outubro</em></h2>
+      <p style="color:var(--fumo);margin-top:12px">A segunda casa do Abdos Grill ocupa o prédio da antiga Bartolomeu JK, na Avenida Juscelino Kubitschek — rodízio all inclusive no mesmo padrão da Vila Redentora, abrindo todos os dias no almoço e no jantar.</p>
+      <div class="faixa">Abertura <b>22/10</b> · Almoço e jantar todos os dias</div>
+      <p class="nota-fonte" style="margin-bottom:18px">Dados da reportagem de inauguração (Gazeta do Rio Preto, 08/10/2026). Endereço completo e horários da nova unidade a confirmar pela casa.</p>
+      <a class="btn" href="https://wa.me/5517991222768?text=Ol%C3%A1!%20Quero%20reservar%20para%20a%20inaugura%C3%A7%C3%A3o%20da%20unidade%20JK%20do%20Abdos%20Grill." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 13.6c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.7-.8c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.3.5.4.1.1.1.5-.1 1.1z"/></svg>
+        Reservar na inauguração
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="numeros">
+  <div class="container num-grid" data-reveal>
+    <div><b>4,8</b><span>nota no RestaurantGuru</span></div>
+    <div><b>565</b><span>avaliações de clientes</span></div>
+    <div><b>700</b><span>lugares na nova unidade</span></div>
+    <div><b>2</b><span>casas a partir de 22/10</span></div>
+  </div>
+</div>
+
+<section id="reserva" style="padding-top:80px">
+  <div class="container">
+    <div class="sec-head center" data-reveal>
+      <span class="kicker" style="justify-content:center">Simples assim</span>
+      <h2>Reservar leva 1 minuto</h2>
+    </div>
+    <div class="passos">
+      <div class="passo" data-reveal><h3>Escolha a casa</h3><p>Vila Redentora ou a nova unidade JK — chame no WhatsApp e diga o dia e o horário.</p></div>
+      <div class="passo" data-reveal><h3>Confirme na hora</h3><p>Sem app de terceiro, sem cadastro: a resposta vem direto da casa no seu WhatsApp.</p></div>
+      <div class="passo" data-reveal><h3>Chama o rodízio</h3><p>Mesa, brasa e bebida à vontade — o all inclusive do Abdos no seu ritmo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="container">
+    <div class="rep-grid">
+      <div class="rep" data-reveal>
+        <div class="estrelas">
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.5 6.8L12 16.9 5.9 20.2l1.5-6.8L2.2 8.9l6.9-.6z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.5 6.8L12 16.9 5.9 20.2l1.5-6.8L2.2 8.9l6.9-.6z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.5 6.8L12 16.9 5.9 20.2l1.5-6.8L2.2 8.9l6.9-.6z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.5 6.8L12 16.9 5.9 20.2l1.5-6.8L2.2 8.9l6.9-.6z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.5 1.5 6.8L12 16.9 5.9 20.2l1.5-6.8L2.2 8.9l6.9-.6z"/></svg>
+        </div>
+        <h3>4,8 com 565 avaliações</h3>
+        <p>Nota alta com volume real de avaliações — prova social que hoje mora dentro de agregador, não no Google da casa.</p>
+      </div>
+      <div class="rep" data-reveal>
+        <svg viewBox="0 0 24 24"><path d="M23 3a16 16 0 0 0-2 1 7 7 0 0 1-6.4 2.5A6.9 6.9 0 0 1 11 2.8a6.1 6.1 0 0 0 4.4 1.9 6.1 6.1 0 0 1-4.3-1.1 6.15 6.15 0 0 0 5.5 8.9q-1.9 1.1-4.4 1.1a9.9 9.9 0 0 0 15-13.5z"/></svg>
+        <h3>Quem busca, acha diretório</h3>
+        <p>Digitar “churrascaria rio preto” hoje devolve Tripadvisor e fichas de agregador — nunca o site da casa, com cardápio, reserva e a inauguração da JK.</p>
+      </div>
+      <div class="rep" data-reveal>
+        <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/></svg>
+        <h3>Duas casas, um endereço</h3>
+        <p>Com a unidade JK abrindo, o cliente merece um lugar único para achar as duas: horário, endereço e reserva de cada casa numa página só.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:20px">
+  <div class="container">
+    <div class="units">
+      <div class="unit" data-reveal>
+        <span class="aberto">Aberta agora</span>
+        <h3>Vila Redentora</h3>
+        <p>Av. Marginal Comendador Vicente Filizola, 5220 — São José do Rio Preto/SP (CEP 15015-510). Rodízio all inclusive, reserva direta no WhatsApp.</p>
+      </div>
+      <div class="unit" data-reveal>
+        <span class="emobra">Abre 22/10</span>
+        <h3>Nova unidade JK</h3>
+        <p>Avenida Juscelino Kubitschek (prédio da antiga Bartolomeu JK) — 700 lugares, almoço e jantar todos os dias. Endereço completo a confirmar pela casa.</p>
+      </div>
+    </div>
+    <div class="cta-final" data-reveal>
+      <h2>A brasa já está acesa nas duas casas</h2>
+      <p>Reserve pelo WhatsApp e receba a confirmação direto da casa — sem intermediário, sem link de terceiro.</p>
+      <a class="btn" href="https://wa.me/5517991222768?text=Ol%C3%A1!%20Quero%20reservar%20uma%20mesa%20no%20Abdos%20Grill." target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm4.5 13.6c-.2.6-1.2 1.2-1.7 1.2-.4.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.6-1.1-4.3-3.8-4.4-3.9-.1-.2-1-1.4-1-2.7s.7-1.9.9-2.1c.2-.3.5-.3.7-.3h.4c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.2.5.1.6-.1l.7-.8c.2-.3.4-.2.7-.1l1.9.9c.3.2.5.3.5.4.1.1.1.5-.1 1.1z"/></svg>
+        (17) 99122-2768
+      </a>
+    </div>
+    <div class="info-linha">
+      <div class="info" data-reveal>
+        <svg viewBox="0 0 24 24"><path d="M12 21c-5-4.2-8-7.2-8-11a8 8 0 0 1 16 0c0 3.8-3 6.8-8 11z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div><b>Unidade atual</b><p>Av. Marginal Com. Vicente Filizola, 5220<br>Vila Redentora — São José do Rio Preto/SP</p></div>
+      </div>
+      <div class="info" data-reveal>
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        <div><b>WhatsApp oficial</b><a href="https://wa.me/5517991222768" target="_blank" rel="noopener">(17) 99122-2768 — reservas</a></div>
+      </div>
+      <div class="info" data-reveal>
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.3" cy="6.7" r="1"/></svg>
+        <div><b>Instagram</b><a href="https://instagram.com/abdos_restauranteoficial" target="_blank" rel="noopener">@abdos_restauranteoficial</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot">
+      <a class="logo" href="#topo" style="text-decoration:none">
+        <svg viewBox="0 0 48 48" fill="none">
+          <circle cx="24" cy="24" r="22" fill="#241710" stroke="#c8873a" stroke-width="1.5"/>
+          <path d="M24 9c4.5 5.5 9 8 9 14.5a9 9 0 0 1-18 0C15 17 19.5 14.5 24 9z" fill="#e0561f"/>
+          <path d="M24 17c2.2 3 4.2 4 4.2 7.4a4.2 4.2 0 0 1-8.4 0c0-3.4 2-4.4 4.2-7.4z" fill="#e9b46a"/>
+          <path d="M10 36h28" stroke="#c8873a" stroke-width="2.4" stroke-linecap="round"/>
+        </svg>
+        <span style="display:flex;flex-direction:column"><b>Abdos Grill</b><span>SJRP · Rodízio All Inclusive</span></span>
+      </a>
+      <div style="text-align:right;font-size:.88rem;color:var(--fumo)">
+        Vila Redentora + JK · Reserva: (17) 99122-2768
+      </div>
+    </div>
+    <p class="honesto">Protótipo de demonstração. Nota 4,8/565 avaliações via RestaurantGuru; dados da nova unidade (22/10, 700 lugares, Av. JK) via Gazeta do Rio Preto de 08/10/2026. As fotos são de banco de imagens — o site final usa as fotos reais da casa. Cardápio, valores e horários a confirmar.</p>
+    <div class="aviso">Protótipo criado pela Agência Rio Preto Tech — não é o site oficial.</div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('[data-reveal]').forEach(el=>io.observe(el));
+addEventListener('scroll',()=>{const h=document.querySelector('header');h.classList.toggle('scrolled',scrollY>30)},{passive:true});
+</script>
+</body>
+</html>
