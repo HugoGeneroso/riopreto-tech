@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Star Baby — Enxoval de Bebê e Móveis Infantil em São José do Rio Preto</title>
+<meta name="description" content="22 anos vestindo e mobiliando a chegada dos bebês de São José do Rio Preto. Enxoval completo, móveis infantis e quartos planejados. Fale conosco pelo WhatsApp.">
+<style>
+:root{--rosa:#c96f8e;--rosaesc:#a24e6e;--creme:#fdf8f4;--cinza:#6d5f66;--escuro:#3a2a33;--dourado:#d9b08c;--branco:#fff}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Arial,sans-serif;background:var(--creme);color:var(--escuro);line-height:1.65}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(135deg,var(--escuro),#4d3745);color:var(--branco);padding:16px 0;position:sticky;top:0;z-index:99;box-shadow:0 2px 12px rgba(58,42,51,.35)}
+header .container{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.logo{font-size:1.4rem;letter-spacing:2px;font-weight:700}
+.logo span{color:var(--dourado)}
+.logo svg{vertical-align:-4px;margin-right:6px}
+nav a{color:#e8dfe4;text-decoration:none;margin-left:20px;font-size:.92rem;transition:.3s}
+nav a:hover{color:var(--dourado)}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--rosa),var(--rosaesc));color:#fff;padding:14px 34px;border-radius:40px;text-decoration:none;font-weight:700;letter-spacing:.5px;box-shadow:0 6px 18px rgba(162,78,110,.4);transition:.3s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(162,78,110,.5)}
+.badge-demo{display:inline-block;background:#8b0000;color:#fff;font-size:.72rem;padding:4px 12px;border-radius:20px;margin-bottom:14px;letter-spacing:1px}
+.hero{position:relative;color:#fff;text-align:center;padding:130px 20px;background:linear-gradient(rgba(58,42,51,.72),rgba(58,42,51,.82)),url('https://images.unsplash.com/photo-1522771930-78848d9293e8?w=1600') center/cover}
+.hero::after{content:'';position:absolute;bottom:0;left:0;right:0;height:60px;background:linear-gradient(transparent,var(--creme))}
+.hero h1{font-size:2.6rem;max-width:760px;margin:0 auto 16px;text-shadow:0 2px 10px rgba(0,0,0,.4)}
+.hero h1 em{color:var(--dourado);font-style:normal}
+.hero p{font-size:1.12rem;max-width:620px;margin:0 auto 32px;opacity:.92}
+.hero .tag{display:block;font-size:.85rem;letter-spacing:3px;text-transform:uppercase;color:var(--dourado);margin-bottom:14px}
+section{padding:74px 0}
+h2{text-align:center;font-size:2rem;margin-bottom:12px;color:var(--rosaesc)}
+.sub{text-align:center;max-width:620px;margin:0 auto 46px;color:var(--cinza)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:26px}
+.card{background:var(--branco);border-radius:14px;overflow:hidden;box-shadow:0 5px 20px rgba(58,42,51,.1);transition:.3s}
+.card:hover{transform:translateY(-5px);box-shadow:0 12px 30px rgba(58,42,51,.16)}
+.card img{width:100%;height:215px;object-fit:cover}
+.card .info{padding:20px}
+.card h3{color:var(--rosaesc);margin-bottom:8px;font-size:1.08rem}
+.card p{font-size:.92rem;color:var(--cinza)}
+.sobre{background:linear-gradient(180deg,var(--branco),var(--creme))}
+.sobre .container{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.sobre img{width:100%;border-radius:14px;box-shadow:0 8px 26px rgba(58,42,51,.18)}
+.destaques{display:flex;gap:18px;flex-wrap:wrap;margin-top:26px}
+.destaque{flex:1;min-width:130px;text-align:center;background:var(--creme);border-radius:12px;padding:18px;border:1px solid #f0e2e9}
+.destaque strong{display:block;font-size:1.7rem;color:var(--rosa)}
+.destaque span{font-size:.82rem;color:var(--cinza)}
+.cta{background:radial-gradient(circle at 20% 20%,rgba(201,111,142,.25),transparent 50%),radial-gradient(circle at 80% 80%,rgba(217,176,140,.25),transparent 50%),var(--escuro);color:#fff;text-align:center}
+.cta h2{color:#fff}
+.cta p{max-width:560px;margin:0 auto 30px;opacity:.85}
+.contato-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;margin-top:36px}
+.contato-item{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:12px;padding:22px}
+.contato-item strong{color:var(--dourado);display:block;margin-bottom:6px}
+footer{background:var(--escuro);color:#cbbfc6;text-align:center;padding:28px 20px;font-size:.85rem}
+footer .proto{margin-top:10px;color:#9a8a93;font-size:.78rem}
+@media(max-width:760px){.sobre .container{grid-template-columns:1fr}.hero h1{font-size:1.9rem}nav{display:none}}
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<div class="logo">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="#d9b08c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17l-6.1 3.6 1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+STAR <span>BABY</span>
+</div>
+<nav>
+<a href="#produtos">Produtos</a>
+<a href="#sobre">A Loja</a>
+<a href="#contato">Contato</a>
+</nav>
+</div>
+</header>
+
+<div class="hero">
+<span class="badge-demo">PROTÓTIPO DEMONSTRATIVO</span>
+<h1>22 anos preparando a chegada dos bebês de <em>São José do Rio Preto</em></h1>
+<p>Enxoval completo, móveis infantis e quartos dos sonhos — tudo em um só lugar, no coração da cidade.</p>
+<a class="btn" href="https://wa.me/551732319909?text=Olá!%20Quero%20montar%20o%20quarto%20do%20bebê">Fale conosco pelo WhatsApp</a>
+</div>
+
+<section id="produtos">
+<div class="container">
+<h2>Tudo para o quarto do seu bebê</h2>
+<p class="sub">Duas operações especializadas sob o mesmo teto: enxoval e móveis infantis.</p>
+<div class="grid">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1522771930-78848d9293e8?w=800" alt="Quarto de bebê completo">
+<div class="info"><h3>Quartos de Bebê Completos</h3><p>Berços, cômodas, poltronas de amamentação e composições que transformam o quartinho no ambiente dos sonhos.</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1526045478516-99145907023c?w=800" alt="Enxoval de bebê">
+<div class="info"><h3>Enxoval</h3><p>Lençóis, kit berço, toalhas, roupinhas e tudo o que a família precisa para a maternidade e os primeiros meses.</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519457431-44ccd64a579b?w=800" alt="Móveis infantis">
+<div class="info"><h3>Móveis Infantis</h3><p>Camas, escrivaninhas e móveis que acompanham o crescimento — da primeira infância à adolescência.</p></div>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=800" alt="Presentes para chá de bebê">
+<div class="info"><h3>Presentes & Chá de Bebê</h3><p>Opções encantadoras para presentear — e atendimento especial para listas de chá de bebê.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="sobre" id="sobre">
+<div class="container">
+<div>
+<h2 style="text-align:left">Uma história de 22 anos no Centro de Rio Preto</h2>
+<p style="color:var(--cinza);margin-top:10px">Na Rua General Glicério, 2647, a Star Baby construiu ao longo de duas décadas a confiança das famílias rio-pretenses na hora mais especial: a chegada de um bebê. Mais de 40 mil pessoas acompanham a loja no Instagram.</p>
+<div class="destaques">
+<div class="destaque"><strong>22</strong><span>anos de história</span></div>
+<div class="destaque"><strong>43 mil</strong><span>seguidores no Instagram</span></div>
+<div class="destaque"><strong>2</strong><span>operações: enxoval + móveis</span></div>
+</div>
+</div>
+<img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=900" alt="Família com bebê">
+</div>
+</section>
+
+<section class="cta" id="contato">
+<div class="container">
+<h2>Venha montar o quarto dos sonhos</h2>
+<p>Atendimento pessoal na loja ou orçamento direto pelo WhatsApp. Estamos no Centro, esperando sua família.</p>
+<a class="btn" href="https://wa.me/551732319909?text=Olá!%20Quero%20montar%20o%20quarto%20do%20bebê">Fale conosco pelo WhatsApp</a>
+<div class="contato-grid">
+<div class="contato-item"><strong>Endereço</strong>R. General Glicério, 2647 — Centro, São José do Rio Preto/SP</div>
+<div class="contato-item"><strong>Enxoval</strong>(17) 3231-9909</div>
+<div class="contato-item"><strong>Móveis Infantil</strong>(17) 3305-7064</div>
+</div>
+</div>
+</section>
+
+<footer>
+<strong style="color:#fff">STAR BABY</strong> — Enxoval e Móveis Infantil · São José do Rio Preto/SP<br>
+<div class="proto">Protótipo criado pela Agência Rio Preto Tech — não é o site oficial.</div>
+</footer>
+</body>
+</html>

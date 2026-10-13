@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OAS-Eventos — Fotografia e Vídeo de Casamento em São José do Rio Preto</title>
+<meta name="description" content="Fotografia e filmagem de casamentos com mais de 13 anos de experiência em São José do Rio Preto e região. Solicite seu orçamento pelo WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#2a2523; --charcoal:#1d1a19; --taupe:#8a7c70; --blush:#c9a189; --blush-d:#a97e62;
+  --ivory:#faf7f2; --stone:#ece6de; --white:#fff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:clip;overflow-x:hidden}
+.hero-content{max-width:100%}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;color:var(--ink);background:var(--ivory);line-height:1.65}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1.12}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+
+/* HERO */
+.hero{position:relative;min-height:94vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover}
+.hero-bg::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(20,16,14,.55) 0%,rgba(20,16,14,.35) 45%,rgba(20,16,14,.75) 100%);}
+.hero-content{position:relative;text-align:center;max-width:760px;margin:0 auto;padding:120px 24px}
+.eyebrow{font-size:.75rem;letter-spacing:.34em;text-transform:uppercase;color:var(--blush);font-weight:500;margin-bottom:22px}
+.hero h1{font-size:clamp(2.6rem,5.5vw,4.6rem);font-style:italic;margin-bottom:22px}
+.hero p{font-size:1.05rem;color:#e8e1d9;max-width:520px;margin:0 auto 38px;font-weight:300}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:16px 34px;border-radius:999px;text-decoration:none;font-size:.92rem;letter-spacing:.08em;text-transform:uppercase;font-weight:500;transition:all .25s}
+.btn svg{width:18px;height:18px}
+.btn-light{background:#fff;color:var(--charcoal)}
+.btn-light:hover{transform:translateY(-2px);box-shadow:0 18px 40px -14px rgba(0,0,0,.5)}
+.btn-line{border:1px solid rgba(255,255,255,.55);color:#fff;margin-left:12px}
+.btn-line:hover{background:rgba(255,255,255,.12)}
+.scroll-hint{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);color:rgba(255,255,255,.6);animation:float 2.4s infinite}
+@keyframes float{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+
+/* intro */
+.intro{padding:110px 0;text-align:center;
+  background:radial-gradient(700px 350px at 50% 0%, rgba(201,161,137,.12), transparent 70%), var(--ivory)}
+.intro h2{font-size:clamp(1.9rem,3.6vw,2.9rem);color:var(--charcoal);max-width:720px;margin:0 auto 20px}
+.intro h2 em{font-style:italic;color:var(--blush-d)}
+.intro p{max-width:600px;margin:0 auto;color:#5d544d;font-weight:300}
+.rule{width:60px;height:1px;background:var(--blush);margin:28px auto}
+
+/* gallery */
+.gallery{padding:0 0 110px;background:var(--ivory)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal-item{position:relative;overflow:hidden;border-radius:14px}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .5s;display:block}
+.gal-item:hover img{transform:scale(1.06)}
+.g1{grid-row:span 2}.g1 img{height:100%;min-height:480px}
+.gal-item:not(.g1) img{height:233px}
+
+/* services */
+.svc{background:var(--charcoal);color:#e9e2da;padding:110px 0;position:relative;overflow:hidden}
+.svc::before{content:"";position:absolute;width:700px;height:700px;border-radius:50%;
+  background:radial-gradient(circle,rgba(201,161,137,.14),transparent 65%);bottom:-350px;right:-200px}
+.svc-head{text-align:center;max-width:600px;margin:0 auto 60px;position:relative}
+.svc-head h2{font-size:clamp(1.9rem,3.6vw,2.9rem);color:#fff;margin-bottom:14px}
+.svc-head p{color:#a89d92;font-weight:300}
+.svc-grid{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.09);border-radius:20px;padding:36px 30px;transition:background .3s}
+.card:hover{background:rgba(255,255,255,.09)}
+.card svg{width:36px;height:36px;color:var(--blush);margin-bottom:20px}
+.card h3{font-size:1.45rem;color:#fff;margin-bottom:10px}
+.card p{font-size:.93rem;color:#b3a89d;font-weight:300}
+
+/* about */
+.about{padding:110px 0;background:linear-gradient(180deg,var(--ivory),var(--stone))}
+.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
+.split img{width:100%;height:520px;object-fit:cover;border-radius:200px 200px 18px 18px;box-shadow:0 34px 70px -30px rgba(29,26,25,.5)}
+.about h2{font-size:clamp(1.9rem,3.6vw,2.8rem);color:var(--charcoal);margin-bottom:18px}
+.about p{color:#5d544d;font-weight:300;margin-bottom:14px}
+.stats{display:flex;gap:38px;margin:32px 0 36px}
+.stat b{font-family:'Cormorant Garamond',serif;font-size:2.4rem;color:var(--blush-d);display:block;line-height:1}
+.stat span{font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;color:#8a7c70}
+
+/* cta */
+.cta{position:relative;text-align:center;padding:120px 0;color:#fff;overflow:hidden}
+.cta .hero-bg{filter:brightness(.45)}
+.cta-inner{position:relative}
+.cta h2{font-size:clamp(2rem,4vw,3.1rem);font-style:italic;margin-bottom:16px}
+.cta p{color:#ded5cb;max-width:500px;margin:0 auto 38px;font-weight:300}
+
+/* footer */
+footer{background:#141110;color:#8d8177;padding:50px 0 34px;font-size:.85rem;font-weight:300}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+.foot .serif{font-size:1.3rem;color:#e9e2da}
+.proto-note{margin-top:30px;padding-top:20px;border-top:1px solid rgba(255,255,255,.07);text-align:center;font-size:.74rem;color:#6b6058}
+
+@media(max-width:900px){
+  .gal-grid,.svc-grid,.split{grid-template-columns:1fr 1fr}
+  .split{grid-template-columns:1fr}
+  .g1 img{min-height:280px}
+  .gal-item:not(.g1) img{height:180px}
+  .btn-line{margin-left:0;margin-top:12px}
+}
+@media(max-width:560px){.gal-grid,.svc-grid{grid-template-columns:1fr}}
+
+@media(max-width:400px){
+  .hero h1{font-size:1.75rem}
+  .hero p{font-size:.95rem;padding:0 4px}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-bg"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=80" alt="Casal de noivos ao pôr do sol"></div>
+  <div class="hero-content">
+    <div class="eyebrow">Fotografia &amp; Vídeo · São José do Rio Preto</div>
+    <h1>Cada olhar, cada lágrima,<br>cada "sim".</h1>
+    <p>Há mais de 13 anos registrando histórias de casamento com sensibilidade, técnica e um olhar que enxerga o que você nem viu.</p>
+    <a class="btn btn-light" href="https://wa.me/5500000000000" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg>
+      Pedir orçamento
+    </a>
+    <a class="btn btn-line" href="#portfolio">Ver portfólio</a>
+  </div>
+  <div class="scroll-hint">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <div class="eyebrow">O diferencial</div>
+    <h2>Cobertura completa do <em>seu dia</em>, do "bom dia" ao último abraço.</h2>
+    <div class="rule"></div>
+    <p>Registramos cada detalhe: preparação dos noivos, a cerimônia, a festa — e as cenas espontâneas entre eles. Basta ter data disponível: agendamos com antecedência ou até 10 dias antes.</p>
+  </div>
+</section>
+
+<section class="gallery" id="portfolio">
+  <div class="wrap gal-grid">
+    <div class="gal-item g1"><img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=700&q=80" alt="Troca de alianças"></div>
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=700&q=80" alt="Buquê da noiva"></div>
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?auto=format&fit=crop&w=700&q=80" alt="Beijo dos noivos"></div>
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=700&q=80" alt="Mãos com alianças"></div>
+    <div class="gal-item"><img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=700&q=80" alt="Casal comemorando"></div>
+  </div>
+</section>
+
+<section class="svc">
+  <div class="wrap">
+    <div class="svc-head">
+      <div class="eyebrow">Serviços</div>
+      <h2>O que registramos pra você</h2>
+      <p>Pacotes a partir de R$1.350 até R$6.000 — montamos a cobertura do tamanho do seu casamento.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></svg>
+        <h3>Fotografia</h3>
+        <p>Cobertura completa com profissionais do segmento: Getting Ready, cerimônia, festas e sessões de bastidores dos noivos.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg>
+        <h3>Filmagem</h3>
+        <p>O filme do seu casamento com emoção de verdade — para reviver (e reviventar) o dia pelo resto da vida.</p>
+      </div>
+      <div class="card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5V5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2 2 2 0 0 1-0-1.5z"/><path d="M19 19H6a2 2 0 0 0-2 2"/></svg>
+        <h3>Álbum &amp; DVD</h3>
+        <p>DVD com todas as fotos, álbum fotográfico físico ou digital e entrega das cópias originais. Formatos que combinam com você.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="wrap split">
+    <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?auto=format&fit=crop&w=800&q=80" alt="Fotógrafo registrando casamento">
+    <div>
+      <div class="eyebrow" style="color:var(--blush-d)">Sobre nós</div>
+      <h2>13 anos eternizando o dia mais importante dos nossos clientes</h2>
+      <p>A OAS-Eventos nasceu em São José do Rio Preto com uma missão simples: registrar casamentos como histórias, não como formulários. Somos referência na cidade, com perfil no maior diretório de casamentos do Brasil.</p>
+      <div class="stats">
+        <div class="stat"><b>+13</b><span>anos de história</span></div>
+        <div class="stat"><b>100%</b><span>originais entregues</span></div>
+        <div class="stat"><b>Rio Preto</b><span>e toda a região</span></div>
+      </div>
+      <a class="btn btn-light" style="background:var(--charcoal);color:#fff" href="https://wa.me/5500000000000">Consultar disponibilidade</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="hero-bg"><img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=1800&q=80" alt="Fundo casamento"></div>
+  <div class="cta-inner wrap">
+    <div class="eyebrow" style="color:var(--blush)">Vamos conversar</div>
+    <h2>Sua data ainda está aberta?</h2>
+    <p>Chame no WhatsApp, conte como será o seu dia e receba uma proposta sob medida — sem compromisso.</p>
+    <a class="btn btn-light" href="https://wa.me/5500000000000">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg>
+      Falar no WhatsApp
+    </a>
+    <p style="margin:22px auto 0;font-size:.8rem;color:#bdb2a7">WhatsApp do OAS-Eventos [A VERIFICAR — link no perfil do Casamentos.com.br]</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="serif">OAS-Eventos</div>
+      <div>Fotografia &amp; Vídeo de Casamento</div>
+    </div>
+    <div>São José do Rio Preto/SP — R. Fritz Jacobs 3184 [CONFIRMADO no diretório]</div>
+  </div>
+  <div class="wrap proto-note">Protótipo criado pela Agência Rio Preto Tech — não é o site oficial.</div>
+</footer>
+
+</body>
+</html>

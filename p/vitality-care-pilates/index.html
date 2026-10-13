@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vitality Care — Pilates e Fisioterapia em São José do Rio Preto</title>
+<meta name="description" content="Estúdio de Pilates e Fisioterapia em São José do Rio Preto. Aulas em aparelhos, atenção individualizada e home care. Agende sua aula experimental.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#22332c; --deep:#143529; --sage:#5f7d6c; --sage-l:#8fae9a;
+  --cream:#f6f3ec; --sand:#eae4d6; --gold:#c8a15a; --white:#ffffff;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{overflow-x:clip;overflow-x:hidden}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+h1,h2,h3,.serif{font-family:'Fraunces',serif;font-weight:500;line-height:1.15}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+
+/* ===== HERO ===== */
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;
+  background:
+    radial-gradient(900px 500px at 85% -10%, rgba(200,161,90,.18), transparent 60%),
+    radial-gradient(700px 600px at -10% 110%, rgba(95,125,108,.25), transparent 55%),
+    linear-gradient(160deg,#f8f5ee 0%, #efe9dc 55%, #e7dfcd 100%);
+}
+.hero::before{content:"";position:absolute;inset:0;
+  background-image:radial-gradient(rgba(34,51,44,.05) 1px, transparent 1px);
+  background-size:22px 22px;}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;pointer-events:none}
+.b1{width:480px;height:480px;background:#b8cdb9;top:-120px;right:-100px}
+.b2{width:380px;height:380px;background:#e6cf9f;bottom:-140px;left:-80px}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:96px 0}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);font-weight:600;margin-bottom:20px}
+.kicker svg{width:16px;height:16px}
+.hero h1{font-size:clamp(2.4rem,4.6vw,3.9rem);color:var(--deep);margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--sage)}
+.hero p.lead{font-size:1.08rem;color:#4c5f55;max-width:480px;margin-bottom:32px}
+.cta-row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:999px;font-weight:600;font-size:.95rem;text-decoration:none;transition:transform .2s,box-shadow .2s}
+.btn svg{width:18px;height:18px}
+.btn-primary{background:var(--deep);color:#fff;box-shadow:0 12px 28px -10px rgba(20,53,41,.5)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 16px 34px -10px rgba(20,53,41,.6)}
+.btn-ghost{border:1.5px solid var(--sage);color:var(--deep)}
+.btn-ghost:hover{background:rgba(95,125,108,.1)}
+.hero-media{position:relative}
+.hero-media img{width:100%;height:560px;object-fit:cover;border-radius:220px 220px 26px 26px;box-shadow:0 40px 80px -30px rgba(20,53,41,.45)}
+.float-card{position:absolute;left:-28px;bottom:36px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-radius:18px;padding:16px 20px;display:flex;gap:14px;align-items:center;box-shadow:0 20px 40px -18px rgba(20,53,41,.4)}
+.float-card svg{width:34px;height:34px}
+.float-card b{display:block;font-size:.95rem;color:var(--deep)}
+.float-card span{font-size:.78rem;color:var(--sage)}
+
+/* ===== SECTIONS ===== */
+section{padding:96px 0}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 56px}
+.sec-head .kicker{justify-content:center}
+.sec-head h2{font-size:clamp(1.9rem,3.4vw,2.7rem);color:var(--deep);margin-bottom:14px}
+.sec-head p{color:#57685e}
+
+/* benefit strip */
+.strip{background:var(--deep);color:#e8efe9;position:relative;overflow:hidden}
+.strip::after{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(200,161,90,.15),transparent 70%);top:-300px;left:10%}
+.strip-grid{position:relative;display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.strip-item{display:flex;gap:16px;align-items:flex-start}
+.strip-item svg{width:38px;height:38px;flex:none;color:var(--gold)}
+.strip-item h3{font-size:1.1rem;color:#fff;margin-bottom:6px}
+.strip-item p{font-size:.92rem;color:#b9c9be}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.svc{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 18px 44px -24px rgba(20,53,41,.28);transition:transform .25s}
+.svc:hover{transform:translateY(-6px)}
+.svc img{width:100%;height:210px;object-fit:cover}
+.svc-body{padding:26px}
+.svc-body h3{font-size:1.25rem;color:var(--deep);margin-bottom:10px}
+.svc-body p{font-size:.93rem;color:#5a6b61}
+
+/* studio */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.split img{width:100%;height:480px;object-fit:cover;border-radius:26px;box-shadow:0 30px 60px -30px rgba(20,53,41,.4)}
+.checks{list-style:none;margin:26px 0 34px}
+.checks li{display:flex;gap:12px;align-items:flex-start;padding:9px 0;font-size:.98rem;color:#44544b}
+.checks svg{width:20px;height:20px;flex:none;color:var(--sage);margin-top:3px}
+
+/* cta */
+.cta{position:relative;background:
+  radial-gradient(600px 300px at 90% 20%, rgba(200,161,90,.25), transparent 60%),
+  linear-gradient(150deg,#16382c,#0e2a20);color:#eef4ef;text-align:center;overflow:hidden}
+.cta h2{font-size:clamp(1.9rem,3.4vw,2.7rem);color:#fff;margin-bottom:16px}
+.cta p{color:#b9c9be;max-width:520px;margin:0 auto 34px}
+.btn-gold{background:var(--gold);color:#2a2113}
+.btn-gold:hover{transform:translateY(-2px)}
+.mini{font-size:.8rem;color:#8aa393;margin-top:18px}
+
+/* footer */
+footer{background:#0b2018;color:#7f968a;padding:44px 0;font-size:.85rem}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center}
+.proto-note{margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08);font-size:.75rem;color:#5f776b;text-align:center}
+
+@media(max-width:900px){
+  .hero-grid,.split,.svc-grid,.strip-grid{grid-template-columns:1fr}
+  .hero-grid{padding:64px 0;gap:40px;margin:0 24px;width:auto}
+  .hero-media img{height:380px}
+  section{padding:64px 0}
+  .float-card{left:12px;bottom:14px}
+}
+
+@media(max-width:400px){
+  body{min-width:0}
+  .hero h1{font-size:1.75rem}
+  .hero p{font-size:.95rem;padding:0 4px}
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21C7 17 3 13.5 3 9.5A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9 3.5c0 4-4 7.5-9 11.5z"/></svg>
+        Pilates · Fisioterapia · Home Care — São José do Rio Preto
+      </span>
+      <h1>Seu corpo em equilíbrio, <em>no seu ritmo</em>.</h1>
+      <p class="lead">No estúdio de Pilates da Vitality Care, cada aula é individualizada: aparelhos de última geração, acompanhamento profissional próximo e um espaço pensado para o seu autocuidado.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#contato">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg>
+          Agendar aula experimental
+        </a>
+        <a class="btn btn-ghost" href="#servicos">Conheça os serviços</a>
+      </div>
+    </div>
+    <div class="hero-media">
+      <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80" alt="Aula de pilates em aparelho">
+      <div class="float-card">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#5f7d6c" stroke-width="1.6"><path d="M12 2a7 7 0 0 1 7 7c0 5-7 13-7 13S5 14 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        <div><b>Estúdio no Jardim Pinheiros</b><span>Av. Francisco das C. Oliveira, 285 [A VERIFICAR]</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="strip">
+  <div class="wrap strip-grid">
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      <div><h3>Atenção individualizada</h3><p>Sessões com acompanhamento próximo, respeitando suas limitações e objetivos.</p></div>
+    </div>
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+      <div><h3>Fisioterapia + Pilates</h3><p>Olhar clínico de fisioterapia dentro do pilates: prevenção, reabilitação e performance.</p></div>
+    </div>
+    <div class="strip-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v18M5 8l7-5 7 5M5 16l7 5 7-5"/></svg>
+      <div><h3>Home Care</h3><p>Atendimento de fisioterapia também na sua casa, com a mesma qualidade do estúdio.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="kicker">Serviços</span>
+      <h2>Movimento para cada fase da sua vida</h2>
+      <p>Do primeiro contato com o Pilates à reabilitação de lesões — um plano para o seu corpo.</p>
+    </div>
+    <div class="svc-grid">
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80" alt="Studio de pilates com aparelhos">
+        <div class="svc-body"><h3>Pilates em aparelhos</h3><p>Reformer, Cadillac eCombo Chair em sessões individuais ou em pequenos grupos, com progressão planejada.</p></div>
+      </article>
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=80" alt="Sessão de fisioterapia">
+        <div class="svc-body"><h3>Fisioterapia</h3><p>Prevenção e tratamento de dores na coluna, articulações e pós-lesão, com avaliação completa.</p></div>
+      </article>
+      <article class="svc">
+        <img src="https://images.unsplash.com/photo-1600881333168-2ef49b341f30?auto=format&fit=crop&w=800&q=80" alt="Alongamento guiado">
+        <div class="svc-body"><h3>Gestantes e terceira idade</h3><p>Programas adaptados para o conforto e a segurança de cada fase — mobilidade, força e equilíbrio.</p></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section style="background:linear-gradient(180deg,var(--cream),var(--sand))">
+  <div class="wrap split">
+    <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&w=900&q=80" alt="Interior de estúdio de pilates">
+    <div>
+      <span class="kicker">O Estúdio</span>
+      <h2>Um espaço moderno, calmo e exclusivo</h2>
+      <p style="color:#4c5f55">Chegou em São José do Rio Preto um estúdio feito para quem valoriza saúde, bem-estar e qualidade de vida. Aqui, o Pilates vai além do exercício: é uma experiência completa de autocuidado.</p>
+      <ul class="checks">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Aparelhos de última geração e ambiente climatizado</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Profissionais de fisioterapia com formação especializada</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Horários flexíveis, de manhã à noite</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Avaliação inicial para montar seu plano personalizado</li>
+      </ul>
+      <a class="btn btn-primary" href="#contato">Quero conhecer o estúdio</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contato">
+  <div class="wrap">
+    <span class="kicker" style="color:var(--gold)">Aula experimental</span>
+    <h2>Comece hoje a sua rotina de bem-estar</h2>
+    <p>Agende uma aula experimental pelo WhatsApp: a gente encontra o melhor horário e monta um plano do seu jeito.</p>
+    <a class="btn btn-gold" href="https://wa.me/551733640504" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.5L3 21l2-5.6A8.5 8.5 0 1 1 21 11.5z"/></svg>
+      Chamar no WhatsApp
+    </a>
+    <p class="mini">Telefone fixo (17) 3364-0504 [CONFIRMADO em diretórios] · WhatsApp da empresa [A VERIFICAR] · Seg–Sex, 8h às 18h</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="serif" style="font-size:1.15rem;color:#dfe8e1">Vitality Care</div>
+      <div>Pilates · Fisioterapia · Home Care</div>
+    </div>
+    <div>Av. Francisco das C. Oliveira, 285 — Jardim Pinheiros, São José do Rio Preto/SP [A VERIFICAR]</div>
+    <div>(17) 3364-0504 [A VERIFICAR WhatsApp]</div>
+  </div>
+  <div class="wrap proto-note">Protótipo criado pela Agência Rio Preto Tech — não é o site oficial.</div>
+</footer>
+
+</body>
+</html>
