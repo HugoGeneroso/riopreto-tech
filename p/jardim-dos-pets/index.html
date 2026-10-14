@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jardim dos Pets — Cemitério e Crematório de Animais em São José do Rio Preto/SP</title>
+<meta name="description" content="Primeiro cemitério e crematório para animais de São José do Rio Preto e região: cremação individual ou coletiva, sepultamento, planos preventivos e área verde de 6.000 m² no Vila Toninho. Atendimento 24 horas — (17) 99627-8508.">
+<meta property="og:title" content="Jardim dos Pets — Cemitério e Crematório de Animais | Rio Preto">
+<meta property="og:description" content="Um jardim de verdade para quem fez a sua casa inteira feliz. Cremação e sepultamento com planos em São José do Rio Preto, atendimento 24h.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/A_black_dog_lies_comfortably_on_lush_green_grass%2C_gazing_thoughtfully_into_the_distance.jpg/1280px-A_black_dog_lies_comfortably_on_lush_green_grass%2C_gazing_thoughtfully_into_the_distance.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"VeterinaryCare",
+  "additionalType":"https://schema.org/Cemetery",
+  "name":"Jardim dos Pets — Cemitério e Crematório de Animais",
+  "description":"Cemitério e crematório para animais em São José do Rio Preto: cremação individual ou coletiva, sepultamento, planos preventivos, atendimento 24 horas.",
+  "telephone":"+5517996278508",
+  "address":{"@type":"PostalAddress","addressLocality":"São José do Rio Preto","addressRegion":"SP","addressCountry":"BR"},
+  "areaServed":"São José do Rio Preto e região",
+  "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}
+}
+</script>
+<style>
+:root{
+  --pine:#1e3932; --pine2:#274a40; --moss:#4a7c59; --sage:#a8c3a0;
+  --cream:#f7f3ea; --sand:#efe8da; --gold:#c9a44c; --gold2:#b08d35;
+  --txt:#253029; --mut:#66756b; --white:#fff; --line:#e2dccb;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--txt);background:var(--cream);line-height:1.7}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+h1,h2,h3,.disp{font-family:'Fraunces',Georgia,serif;letter-spacing:-.01em}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+
+/* layered bg: paper + soft leaf light */
+.bg{position:fixed;inset:0;z-index:-1;background:
+ radial-gradient(1000px 520px at 88% -6%, rgba(168,195,160,.28), transparent 62%),
+ radial-gradient(820px 480px at -6% 34%, rgba(201,164,76,.10), transparent 58%),
+ radial-gradient(700px 480px at 52% 112%, rgba(74,124,89,.12), transparent 60%),
+ var(--cream);}
+.bg::after{content:"";position:absolute;inset:0;background-image:
+ radial-gradient(rgba(116,140,110,.10) 1.2px, transparent 1.3px);
+ background-size:26px 26px;
+ mask-image:linear-gradient(180deg,transparent,#000 20%,#000 80%,transparent);}
+
+header.site{position:sticky;top:0;z-index:50;background:rgba(30,57,50,.93);backdrop-filter:blur(10px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .mark{width:46px;height:46px;border-radius:50%;background:linear-gradient(150deg,var(--gold),var(--gold2));display:grid;place-items:center;box-shadow:0 6px 18px rgba(176,141,53,.4)}
+.brand .nm{color:#fff;font-family:'Fraunces';font-weight:700;font-size:1.18rem;line-height:1.05}
+.brand .tg{color:#bcd0c4;font-size:.7rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase}
+.menu{display:flex;gap:24px}
+.menu a{color:#d5e3d8;font-size:.9rem;font-weight:500;transition:color .2s}
+.menu a:hover{color:#f4e9c8}
+.pill{display:inline-flex;align-items:center;gap:9px;border-radius:999px;font-weight:600;font-size:.88rem;padding:11px 20px;transition:transform .15s,box-shadow .15s}
+.pill:hover{transform:translateY(-1px)}
+.pill.gold{background:linear-gradient(145deg,var(--gold),var(--gold2));color:#241c07;box-shadow:0 8px 22px rgba(176,141,53,.38)}
+.pill.pinebtn{background:var(--pine);color:#eaf3ec;box-shadow:0 8px 22px rgba(30,57,50,.3)}
+.pill.linebtn{border:1.5px solid var(--pine);color:var(--pine)}
+
+/* hero */
+.hero{position:relative;color:#fff;background:
+ linear-gradient(180deg, rgba(15,26,22,.62) 0%, rgba(15,26,22,.48) 44%, rgba(15,26,22,.78) 100%),
+ url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/A_black_dog_lies_comfortably_on_lush_green_grass%2C_gazing_thoughtfully_into_the_distance.jpg/1280px-A_black_dog_lies_comfortably_on_lush_green_grass%2C_gazing_thoughtfully_into_the_distance.jpg") center 38%/cover no-repeat;
+ padding:120px 0 96px;text-align:center}
+.hero .kicker{display:inline-flex;align-items:center;gap:9px;background:rgba(247,243,234,.13);border:1px solid rgba(247,243,234,.4);color:#f4e9c8;border-radius:999px;padding:8px 18px;font-size:.78rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;backdrop-filter:blur(4px)}
+.hero h1{font-size:clamp(2.2rem,5.4vw,3.7rem);font-weight:700;line-height:1.12;margin:24px auto 16px;max-width:760px;text-shadow:0 2px 22px rgba(0,0,0,.45)}
+.hero p.lead{max-width:620px;margin:0 auto 32px;color:#e8efe6;font-size:1.06rem;text-shadow:0 1px 12px rgba(0,0,0,.5)}
+.hero .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hero .band24{margin-top:44px;display:inline-flex;align-items:center;gap:10px;background:rgba(30,57,50,.72);border:1px solid rgba(201,164,76,.5);border-radius:14px;padding:12px 20px;font-size:.9rem;color:#f4e9c8;backdrop-filter:blur(6px)}
+
+/* sections */
+section{padding:84px 0}
+.sec-head{max-width:660px;margin:0 auto 46px;text-align:center}
+.sec-head .tag{font-size:.76rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2)}
+.sec-head h2{font-size:clamp(1.7rem,3.4vw,2.4rem);font-weight:700;margin:10px 0 12px;color:var(--pine)}
+.sec-head p{color:var(--mut)}
+
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px 28px;box-shadow:0 10px 30px rgba(35,50,40,.06);transition:transform .18s,box-shadow .18s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(35,50,40,.10)}
+.card .ico{width:48px;height:48px;border-radius:14px;background:linear-gradient(150deg,#f6efdd,#eadfbe);display:grid;place-items:center;border:1px solid #e4d5ae;margin-bottom:16px}
+.card h3{font-size:1.18rem;color:var(--pine);margin-bottom:9px}
+.card p{font-size:.93rem;color:var(--mut)}
+.card ul{margin:12px 0 0 2px;list-style:none}
+.card li{font-size:.9rem;color:var(--txt);padding:5px 0 5px 24px;position:relative}
+.card li::before{content:"";position:absolute;left:2px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--sage);border:2px solid var(--moss)}
+
+/* garden strip */
+.garden{background:var(--pine);color:#e8efe6;border-radius:0}
+.garden .cols{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center}
+.garden .imgbox{border-radius:18px;overflow:hidden;box-shadow:0 24px 50px rgba(0,0,0,.35);position:relative}
+.garden .imgbox img{width:100%;height:380px;object-fit:cover;display:block}
+.garden h2{color:#fff;font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:14px}
+.garden p{color:#c2d3c4;font-size:.98rem;margin-bottom:14px}
+.garden .num{display:flex;gap:26px;margin-top:26px;flex-wrap:wrap}
+.garden .num div b{display:block;font-family:'Fraunces';font-size:1.7rem;color:#f4e9c8}
+.garden .num div span{font-size:.8rem;color:#9db4a0}
+
+/* memory cards */
+.memgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.mem{position:relative;border-radius:16px;overflow:hidden;min-height:300px;display:flex;align-items:flex-end;box-shadow:0 14px 34px rgba(35,50,40,.14)}
+.mem .bgimg{position:absolute;inset:0;background-position:center;background-size:cover;transition:transform .4s}
+.mem:hover .bgimg{transform:scale(1.045)}
+.mem::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 38%,rgba(15,26,22,.86))}
+.mem .cap{position:relative;z-index:2;padding:22px;color:#f2efe6}
+.mem .cap b{display:block;font-family:'Fraunces';font-size:1.12rem;margin-bottom:4px}
+.mem .cap span{font-size:.84rem;color:#d7ddce}
+
+/* planos */
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.plan{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px 28px;position:relative;box-shadow:0 10px 30px rgba(35,50,40,.06)}
+.plan.hot{border:2px solid var(--gold);box-shadow:0 18px 44px rgba(176,141,53,.18)}
+.plan .badge{position:absolute;top:-13px;left:26px;background:linear-gradient(145deg,var(--gold),var(--gold2));color:#241c07;border-radius:999px;padding:4px 14px;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.plan h3{color:var(--pine);font-size:1.25rem;margin-bottom:6px}
+.plan .desc{font-size:.9rem;color:var(--mut);margin-bottom:14px}
+.plan ul{list-style:none;margin-bottom:18px}
+.plan li{font-size:.9rem;padding:5px 0 5px 24px;position:relative}
+.plan li::before{content:"";position:absolute;left:2px;top:12px;width:9px;height:9px;border-radius:50%;background:var(--sage);border:2px solid var(--moss)}
+.plan .note{font-size:.78rem;color:var(--gold2);font-weight:600}
+
+/* faq */
+.faq{max-width:760px;margin:0 auto}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
+.faq summary{cursor:pointer;padding:18px 22px;font-family:'Fraunces';font-weight:600;color:var(--pine);list-style:none;display:flex;justify-content:space-between;align-items:center}
+.faq summary::after{content:"";width:12px;height:12px;border-right:2px solid var(--gold2);border-bottom:2px solid var(--gold2);transform:rotate(45deg);transition:transform .2s}
+.faq details[open] summary::after{transform:rotate(225deg)}
+.faq .a{padding:0 22px 18px;font-size:.93rem;color:var(--mut)}
+
+/* cta */
+.cta{background:linear-gradient(120deg, rgba(15,26,22,.92), rgba(30,57,50,.85)), url("https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=1600&auto=format&fit=crop") center/cover no-repeat;border-radius:22px;color:#fff;text-align:center;padding:66px 28px}
+.cta h2{font-size:clamp(1.7rem,3.4vw,2.4rem);margin-bottom:12px}
+.cta p{color:#d5e3d8;max-width:580px;margin:0 auto 28px}
+.cta .sub{margin-top:20px;font-size:.88rem;color:#bcd0c4}
+.cta .sub b{color:#fff}
+
+/* zap float */
+.zap{position:fixed;right:20px;bottom:20px;z-index:60;width:58px;height:58px;border-radius:50%;background:#128c5e;display:grid;place-items:center;box-shadow:0 12px 30px rgba(18,140,94,.45);transition:transform .15s}
+.zap:hover{transform:scale(1.06)}
+
+footer{background:#12211c;color:#93a894;padding:46px 0 92px;font-size:.86rem}
+footer .grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:34px}
+footer h4{color:#fff;font-family:'Fraunces';font-size:1rem;margin-bottom:12px}
+footer a:hover{color:#f4e9c8}
+footer .legal{border-top:1px solid rgba(255,255,255,.08);margin-top:34px;padding-top:18px;font-size:.78rem;color:#6f8377;line-height:1.8}
+footer .proto-note{background:rgba(201,164,76,.12);border:1px solid rgba(201,164,76,.4);color:#f4e9c8;border-radius:10px;padding:10px 14px;margin-top:14px;font-weight:600;font-size:.82rem}
+
+@media (max-width:880px){
+  .menu{display:none}
+  .garden .cols{grid-template-columns:1fr}
+  footer .grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="bg"></div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#topo">
+      <span class="mark">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#241c07"><circle cx="12" cy="14.2" r="3.6"/><circle cx="6.4" cy="9.6" r="1.9"/><circle cx="10" cy="6.6" r="1.9"/><circle cx="14" cy="6.6" r="1.9"/><circle cx="17.6" cy="9.6" r="1.9"/></svg>
+      </span>
+      <span><span class="nm">Jardim dos Pets</span><br><span class="tg">Cemitério &amp; Crematório</span></span>
+    </a>
+    <nav class="menu">
+      <a href="#servicos">Serviços</a>
+      <a href="#jardim">O Jardim</a>
+      <a href="#homenagens">Homenagens</a>
+      <a href="#planos">Planos</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="pill gold" href="https://wa.me/5517996278508?text=Ol%C3%A1%2C%20preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20meu%20pet" target="_blank" rel="noopener">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5 13.9c-.3.7-1.5 1.3-2.2 1.2-.9-.1-1.7-.5-2.7-1.2-1.6-1-3-2.7-3.6-3.8-.4-.8-.5-1.7 0-2.4.2-.4.5-.7.9-.9.2-.1.5-.1.6 0 .1.2.6 1.2.7 1.4.1.2 0 .4-.1.5l-.4.5c-.1.2-.2.3 0 .6.5.9 1.4 1.8 2.4 2.3.3.1.4.1.6-.1l.5-.6c.2-.2.4-.3.6-.2.4.2 1.2.7 1.4.8.2.1.3.3.2.6z"/></svg>
+      24h — (17) 99627-8508
+    </a>
+  </div>
+</header>
+
+<main id="topo">
+
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+      São José do Rio Preto e região Noroeste
+    </span>
+    <h1>Um lugar de paz para quem fez a sua casa inteira feliz.</h1>
+    <p class="lead">O Jardim dos Pets é o primeiro cemitério e crematório para animais de Rio Preto: 6.000 m² de área verde no Vila Toninho, com cremação individual ou coletiva, sepultamento e atendimento 24 horas com veículo próprio.</p>
+    <div class="btns">
+      <a class="pill gold" href="https://wa.me/5517996278508?text=Ol%C3%A1%2C%20preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20meu%20pet" target="_blank" rel="noopener">Falar com atendimento 24h</a>
+      <a class="pill linebtn" style="border-color:#f2efe6;color:#f2efe6" href="#servicos">Conhecer os serviços</a>
+    </div>
+    <div class="band24">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+      Atendimento a qualquer hora — 24 horas por dia, todos os dias &nbsp;·&nbsp; (17) 99627-8508
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">O que oferecemos</span>
+      <h2>Do momento da despedida à lembrança que fica</h2>
+      <p>Estrutura completa para atender desde um simples sepultamento até os principais serviços funerários para o seu companheiro — com dignidade, discrição e cuidado de quem trata cada história como única.</p>
+    </div>
+    <div class="grid3">
+      <div class="card">
+        <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8a6c1e" stroke-width="2" stroke-linecap="round"><path d="M12 3c1 3-2 4-2 7a2 2 0 1 0 4 0c0-1 2-2 2-4 0-3-2-4-4-3z"/><path d="M7 21a5 5 0 0 1 10 0"/><path d="M5 21h14"/></svg></span>
+        <h3>Cremação</h3>
+        <p>Individual ou coletiva, com recolhimento a qualquer hora do dia ou da noite.</p>
+        <ul>
+          <li>Cremação individual com entrega das cinzas</li>
+          <li>Cremação coletiva com destino em área verde</li>
+          <li>Veículo próprio para atendimento 24 horas</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8a6c1e" stroke-width="2" stroke-linecap="round"><path d="M8 3h8a3 3 0 0 1 3 3v15H5V6a3 3 0 0 1 3-3z"/><path d="M9 11h6M9 15h6"/></svg></span>
+        <h3>Sepultamento</h3>
+        <p>Túmulos em jardim, com manutenção, acompanhamento e possibilidade de planos preventivos.</p>
+        <ul>
+          <li>Escolha do local dentro da área verde</li>
+          <li>Monumentos e identificação do túmulo</li>
+          <li>Planos preventivos (consulte o comercial)</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#8a6c1e" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-6.3-7-11a7 7 0 0 1 14 0c0 4.7-7 11-7 11z"/><path d="M9.5 10c.5-1.5 2-2 2.5-2s2 .5 2.5 2"/></svg></span>
+        <h3>Lembranças &amp; Homenagens</h3>
+        <p>Porque a despedida é o fim da visita, não do amor: itens e cerimônias para manter a memória viva.</p>
+        <ul>
+          <li>Espaço para visitas e homenagem</li>
+          <li>Orientação com acolhimento da família</li>
+          <li>Simples ou completa — no seu tempo</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="jardim" class="garden">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <span class="sec-head tag" style="display:block;text-align:left;margin-bottom:10px;color:#e9cf8c">Nosso jardim</span>
+        <h2>6.000 m² de área verde onde a saudade tem lugar bonito</h2>
+        <p>Um quintal de árvores, grama e silêncio, criado para que visitar o seu pet seja como vê-lo onde ele mais gostava de ficar. O Jardim dos Pets foi o primeiro cemitério e crematório para animais de São José do Rio Preto e região, e continua sendo o único endereço possível para essa homenagem.</p>
+        <p>Localizado no bairro Vila Toninho, com fácil acesso e atendimento a qualquer hora do dia ou da noite.</p>
+        <div class="num">
+          <div><b>6.000 m²</b><span>de área verde</span></div>
+          <div><b>1º</b><span>da cidade e região</span></div>
+          <div><b>24h</b><span>todos os dias</span></div>
+          <div><b>Vila</b><span>Toninho — Rio Preto</span></div>
+        </div>
+      </div>
+      <div class="imgbox">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Avenue_path_Avenue_bench_Capel_Manor_Enfield_London_England.jpg/1280px-Avenue_path_Avenue_bench_Capel_Manor_Enfield_London_England.jpg" alt="Alameda arborizada de jardim com banco sob a luz do fim de tarde — imagem ilustrativa livre de banco de imagens" loading="lazy">
+      </div>
+    </div>
+    <p style="margin-top:22px;font-size:.76rem;color:#7e937f">Imagens meramente ilustrativas (banco de imagens livre — Wikimedia Commons / Unsplash), sem vínculo com as instalações reais do Jardim dos Pets.</p>
+  </div>
+</section>
+
+<section id="homenagens">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Homenagens</span>
+      <h2>Cada túmulo conta uma história completa</h2>
+      <p>Flores vivas, corações gravados, placas e lembranças deixadas por quem visita: é assim que o amor continua aparecendo depois da despedida.</p>
+    </div>
+    <div class="memgrid">
+      <div class="mem">
+        <div class="bgimg" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Grave_of_dog_Veera.jpg/1280px-Grave_of_dog_Veera.jpg')" role="img" aria-label="Memorial pet com coração de metal, anjinho de cerâmica e roseiras em vasos sobre o túmulo"></div>
+        <div class="cap"><b>Túmulos cuidados</b><span>Florações vivas e marcadores personalizados mantidos pela família e pelo jardim.</span></div>
+      </div>
+      <div class="mem">
+        <div class="bgimg" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Brownie_the_Town_Dog_Grave_and_Memorial_in_Daytona_Beach_Florida_03.jpg/1280px-Brownie_the_Town_Dog_Grave_and_Memorial_in_Daytona_Beach_Florida_03.jpg')" role="img" aria-label="Placa memorial pública de um cachorro querido, com oferendas deixadas no local"></div>
+        <div class="cap"><b>Placas e memoriais</b><span>A homenagem que permanece legível para quem voltou: nome, datas e a história do pet.</span></div>
+      </div>
+      <div class="mem">
+        <div class="bgimg" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Dog_holding_a_bouquet_in_its_mouth._-front-_%289722807161%29.jpg/1280px-Dog_holding_a_bouquet_in_its_mouth._-front-_%289722807161%29.jpg')" role="img" aria-label="Cachorro segurando um buquê de flores na boca"></div>
+        <div class="cap"><b>Lembranças</b><span>Presentes do jardim: itens de recordação para levar um pouco dele para casa.</span></div>
+      </div>
+      <div class="mem">
+        <div class="bgimg" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/A_black_dog_lies_comfortably_on_lush_green_grass%2C_gazing_thoughtfully_into_the_distance.jpg/1280px-A_black_dog_lies_comfortably_on_lush_green_grass%2C_gazing_thoughtfully_into_the_distance.jpg')" role="img" aria-label="Cão idoso de pelo negro deitado na grama, olhando sereno o horizonte"></div>
+        <div class="cap"><b>Uma vida bem vivida</b><span>O direito de envelhecer com amor — e de ser lembrado com ele.</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="planos">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Planos</span>
+      <h2>Decidir com calma hoje é o maior cuidado de amanhã</h2>
+      <p>Assim como plano de saúde, o plano preventivo permite organizar a despedida sem o peso do momento — com condições especiais tratadas pelo departamento comercial. Valores e coberturas são apresentados na visita ou pelo WhatsApp, sem compromisso.</p>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Cremação Coletiva</h3>
+        <p class="desc">Com destino conjunto em área verde do jardim.</p>
+        <ul>
+          <li>Recolhimento 24h com veículo próprio</li>
+          <li>Cerimônia de despedida</li>
+          <li>Simples e acolhedora</li>
+        </ul>
+        <a class="pill linebtn" href="https://wa.me/5517996278508?text=Ol%C3%A1%2C%20quero%20saber%20sobre%20o%20plano%20de%20crema%C3%A7%C3%A3o%20coletiva" target="_blank" rel="noopener">Pedir condições</a>
+      </div>
+      <div class="plan hot">
+        <span class="badge">Mais procurado</span>
+        <h3>Cremação Individual</h3>
+        <p class="desc">Com entrega das cinzas à família.</p>
+        <ul>
+          <li>Recolhimento 24h com veículo próprio</li>
+          <li>Cinzas entregues com respeito e rito próprio</li>
+          <li>Disponível em plano preventivo</li>
+        </ul>
+        <a class="pill gold" href="https://wa.me/5517996278508?text=Ol%C3%A1%2C%20quero%20saber%20sobre%20o%20plano%20de%20crema%C3%A7%C3%A3o%20individual" target="_blank" rel="noopener">Pedir condições</a>
+      </div>
+      <div class="plan">
+        <h3>Sepultamento</h3>
+        <p class="desc">Túmulo em jardim, para visitar sempre.</p>
+        <ul>
+          <li>Escolha do local na área verde</li>
+          <li>Monumento e identificação</li>
+          <li>Planos preventivos com o comercial</li>
+        </ul>
+        <a class="pill linebtn" href="https://wa.me/5517996278508?text=Ol%C3%A1%2C%20quero%20saber%20sobre%20o%20plano%20de%20sepultamento" target="_blank" rel="noopener">Pedir condições</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Surgiu uma dúvida?</span>
+      <h2>Perguntas que a gente ouve todos os dias</h2>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>E se acontecer de madrugada ou no domingo?</summary>
+        <div class="a">O Jardim dos Pets atende 24 horas, todos os dias, com veículo próprio para recolhimento. Basta chamar o (17) 99627-8508 no WhatsApp — a orientação começa na hora, sem formulário e sem espera.</div>
+      </details>
+      <details>
+        <summary>Preciso decidir tudo na hora?</summary>
+        <div class="a">Não. A gente acolhe primeiro e explica depois: cremação coletiva, individual ou sepultamento são caminhos possíveis e a família escolhe com calma, inclusive com planos preventivos para não decidir em cima da dor.</div>
+      </details>
+      <details>
+        <summary>Posso visitar depois?</summary>
+        <div class="a">Sim — e essa é a diferença de um jardim: o sepultamento tem túmulo identificado, com flores e marcadores, para a família voltar quando quiser. Na cremação individual, as cinzas ficam com a família.</div>
+      </details>
+      <details>
+        <summary>Atendem gatos e outros animais?</summary>
+        <div class="a">Sim. A estrutura do crematório e do cemitério atende cães, gatos e outros pets de companhia — cada um com o mesmo respeito.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>Estamos aqui agora — e depois.</h2>
+      <p>Se o seu companheiro partiu hoje ou se você quer se planejar com carinho, fale com a nossa equipe. Atendimento humano, 24 horas, com a discrição que a hora pede.</p>
+      <a class="pill gold" href="https://wa.me/5517996278508?text=Ol%C3%A1%2C%20preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20meu%20pet" target="_blank" rel="noopener" style="font-size:1rem;padding:14px 28px">Chamar no WhatsApp — (17) 99627-8508</a>
+      <div class="sub">Bairro Vila Toninho · São José do Rio Preto/SP &nbsp;·&nbsp; <b>Atendimento 24h, todos os dias</b></div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<a class="zap" href="https://wa.me/5517996278508?text=Ol%C3%A1%2C%20preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20meu%20pet" target="_blank" rel="noopener" aria-label="WhatsApp Jardim dos Pets 24 horas">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2zm5 13.9c-.3.7-1.5 1.3-2.2 1.2-.9-.1-1.7-.5-2.7-1.2-1.6-1-3-2.7-3.6-3.8-.4-.8-.5-1.7 0-2.4.2-.4.5-.7.9-.9.2-.1.5-.1.6 0 .1.2.6 1.2.7 1.4.1.2 0 .4-.1.5l-.4.5c-.1.2-.2.3 0 .6.5.9 1.4 1.8 2.4 2.3.3.1.4.1.6-.1l.5-.6c.2-.2.4-.3.6-.2.4.2 1.2.7 1.4.8.2.1.3.3.2.6z"/></svg>
+</a>
+
+<footer>
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <h4>Jardim dos Pets</h4>
+        <p>Cemitério e crematório de animais — o primeiro de São José do Rio Preto e região. 6.000 m² de área verde no Vila Toninho, atendimento 24 horas com veículo próprio.</p>
+      </div>
+      <div>
+        <h4>Onde estamos</h4>
+        <p>Bairro Vila Toninho<br>São José do Rio Preto/SP<br>CEP 15062-001<br><span style="color:#6f8377;font-size:.8rem">Endereço confirmado no site oficial; rua exata a confirmar com a equipe.</span></p>
+      </div>
+      <div>
+        <h4>Contato 24h</h4>
+        <p><a href="https://wa.me/5517996278508" target="_blank" rel="noopener">WhatsApp (17) 99627-8508</a><br><a href="https://instagram.com/jardimdospetscemiterio" target="_blank" rel="noopener">@jardimdospetscemiterio</a><br><a href="https://facebook.com/cemiteriojardimdospets" target="_blank" rel="noopener">/cemiteriojardimdospets</a></p>
+      </div>
+    </div>
+    <div class="legal">
+      © 2026 Jardim dos Pets — demonstração. Fotos ilustrativas de banco de imagens livre (Wikimedia Commons / Unsplash), sem vínculo com as instalações reais.
+      <div class="proto-note">Protótipo criado pela Agência Rio Preto Tech — não é o site oficial.</div>
+    </div>
+  </div>
+</footer>
+
+<script>
+const hd=document.querySelector('header.site');
+addEventListener('scroll',()=>{hd.style.boxShadow=scrollY>10?'0 8px 24px rgba(0,0,0,.25)':'none'},{passive:true});
+</script>
+</body>
+</html>
