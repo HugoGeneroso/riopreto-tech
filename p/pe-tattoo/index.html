@@ -63,6 +63,10 @@ header{position:sticky;top:0;z-index:60;background:rgba(16,20,24,.92);backdrop-f
 nav{display:flex;gap:26px;font-size:.9rem;font-weight:500}
 nav a{color:#cfd8dd;transition:color .2s}
 nav a:hover{color:var(--sage)}
+.mnav{display:none;gap:10px;overflow-x:auto;scrollbar-width:none;padding:10px 24px;background:rgba(16,20,24,.96);border-bottom:1px solid rgba(143,174,148,.2)}
+.mnav::-webkit-scrollbar{display:none}
+.mnav a{flex:none;color:#cfd8dd;font-size:.82rem;font-weight:600;padding:7px 14px;border:1px solid rgba(143,174,148,.35);border-radius:999px;white-space:nowrap}
+.mnav a:active{background:rgba(143,174,148,.18)}
 .cta{display:inline-flex;align-items:center;gap:9px;background:var(--sage);color:var(--ink);font-weight:700;font-size:.92rem;padding:11px 20px;border-radius:999px;transition:transform .18s, background .18s;white-space:nowrap}
 .cta:hover{transform:translateY(-2px);background:#a6c6ab}
 .cta svg{width:17px;height:17px}
@@ -180,6 +184,12 @@ footer{background:var(--ink);color:#9aa6af;padding:56px 0 40px;font-size:.9rem}
       Pedir orçamento
     </a>
   </div>
+  <nav class="mnav" aria-label="Navegação mobile">
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#processo">Processo</a>
+      <a href="#estudio">Estúdio</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
 </header>
 
 <main id="topo">
