@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instituto Harmonizar — Harmonização Facial em São José do Rio Preto</title>
+<meta name="description" content="Preenchimento, bioestimulador de colágeno, toxina botulínica e harmonização facial em São José do Rio Preto. Equipe especializada. Agende sua avaliação.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--rose:#be185d;--rose-esc:#4c0519;--dourado:#c9a24b;--blush:#fdf2f6;--esc:#2a0a16;--tinta:#4a3b40}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',system-ui,sans-serif}
+html{scroll-behavior:smooth}
+body{background:var(--blush);color:var(--esc);line-height:1.6}
+h1,h2,h3,.logo span,.cta-final h2{font-family:'Cormorant Garamond',Georgia,serif}
+h1{font-weight:600;letter-spacing:.01em}
+h2{font-weight:600}
+.card h3{font-weight:600;font-size:1.35rem}
+img{max-width:100%;display:block}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+header{position:sticky;top:0;z-index:50;background:rgba(42,10,22,.92);backdrop-filter:blur(10px)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding:14px 22px}
+.logo{color:#fff;font-weight:700;font-size:1.15rem;letter-spacing:.06em}
+.logo span{color:var(--dourado)}
+nav a{color:#e7c9d4;text-decoration:none;margin-left:20px;font-size:.92rem}
+nav a:hover{color:#fff}
+nav .cta{background:linear-gradient(135deg,var(--rose),#ec4899);color:#fff;padding:9px 18px;border-radius:99px;font-weight:600}
+
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/34220540/pexels-photo-34220540.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover}
+.hero .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(110deg,rgba(42,10,22,.95) 0%,rgba(76,5,25,.82) 50%,rgba(190,24,93,.4) 100%)}
+.hero .bg::before{content:'';position:absolute;inset:0;background:radial-gradient(560px 280px at 80% 15%,rgba(201,162,75,.22),transparent);z-index:1}
+.hero .wrap{position:relative;z-index:2;padding:120px 22px}
+.tag{display:inline-block;font-size:.75rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dourado);border:1px solid rgba(201,162,75,.5);border-radius:99px;padding:6px 16px;margin-bottom:22px}
+.hero h1{font-size:clamp(2.1rem,5.5vw,3.4rem);line-height:1.12;max-width:660px;margin-bottom:18px}
+.hero h1 em{font-style:normal;color:var(--dourado)}
+.hero p{color:#eed6de;font-size:1.1rem;max-width:560px;margin-bottom:34px}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--rose),#ec4899);color:#fff;font-weight:700;padding:15px 30px;border-radius:12px;text-decoration:none;transition:.2s;box-shadow:0 8px 28px rgba(190,24,93,.4)}
+.btn:hover{transform:translateY(-2px)}
+.btn.dourado{background:linear-gradient(135deg,var(--dourado),#e2b95c);color:#2a1503}
+.btn.ghost{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(4px)}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+
+section{padding:84px 0}
+section.alt{background:linear-gradient(180deg,#fbe9ef,var(--blush))}
+h2{font-size:clamp(1.6rem,3.5vw,2.2rem);margin-bottom:10px}
+.kicker{color:var(--rose);font-size:.8rem;letter-spacing:.2em;text-transform:uppercase;font-weight:700;margin-bottom:10px}
+.sub{color:var(--tinta);max-width:620px;margin-bottom:42px}
+
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 10px 32px rgba(76,5,25,.08);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 44px rgba(76,5,25,.14)}
+.card img{height:210px;width:100%;object-fit:cover}
+.card .body{padding:22px}
+.card h3{margin-bottom:8px;font-size:1.1rem}
+.card p{color:var(--tinta);font-size:.93rem}
+
+.sobre{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.sobre img{border-radius:20px;box-shadow:0 20px 50px rgba(76,5,25,.18)}
+.sobre ul{list-style:none;margin-top:18px}
+.sobre li{padding:10px 0;display:flex;gap:12px;align-items:flex-start}
+.sobre li svg{flex-shrink:0;margin-top:3px}
+
+.cta-final{position:relative;color:#fff;text-align:center;overflow:hidden}
+.cta-final .bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/34220539/pexels-photo-34220539.jpeg?auto=compress&cs=tinysrgb&w=1920') center/cover}
+.cta-final .bg::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(42,10,22,.78),rgba(76,5,25,.62))}
+.cta-final .wrap{position:relative;z-index:2;padding:96px 22px}
+.cta-final h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:14px}
+.cta-final p{color:#eed6de;max-width:520px;margin:0 auto 34px}
+
+footer{background:var(--rose-esc);color:#d8a9b8;padding:26px 0;font-size:.82rem;text-align:center}
+footer a{color:#f3d5de}
+.demo{position:fixed;bottom:14px;right:14px;background:#b45309;color:#fff;padding:7px 14px;border-radius:99px;font-size:.72rem;font-weight:700;z-index:60;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+
+@media(max-width:820px){.sobre{grid-template-columns:1fr}.hero .wrap{padding:96px 22px}nav a:not(.cta){display:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">Instituto <span>Harmonizar</span></div>
+    <nav>
+      <a href="#procedimentos">Procedimentos</a>
+      <a href="#instituto">O Instituto</a>
+      <a href="#contato" class="cta">Agendar avaliação</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="bg"></div>
+  <div class="wrap">
+    <span class="tag">Harmonização Facial · São José do Rio Preto</span>
+    <h1>Seus traços, no <em>melhor</em> deles</h1>
+    <p>Equipe multidisciplinar especializada em harmonização facial e corporal — naturalidade como resultado, segurança como base.</p>
+    <div class="ctas">
+      <a class="btn dourado" href="https://wa.me/5517991655854" target="_blank" rel="noopener">Agendar avaliação</a>
+      <a class="btn ghost" href="#procedimentos">Ver procedimentos</a>
+    </div>
+  </div>
+</section>
+
+<section id="procedimentos">
+  <div class="wrap">
+    <div class="kicker">Procedimentos</div>
+    <h2>Nossos procedimentos</h2>
+    <p class="sub">Protocolos personalizados após avaliação individual — tecnologia e técnica a favor da naturalidade.</p>
+    <div class="grid3">
+      <div class="card">
+        <img src="https://images.pexels.com/photos/27666913/pexels-photo-27666913.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Lábios e face com agulha fina em procedimento facial — imagem ilustrativa de banco de imagens">
+        <div class="body"><h3>Preenchimento Facial</h3><p>Ácido hialurônico para contorno, volume e definição — com resultado imediato e natural.</p></div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/29648626/pexels-photo-29648626.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Aplicador facial sobre a pele da paciente, mãos com luva em consultório — imagem ilustrativa de banco de imagens">
+        <div class="body"><h3>Bioestimulador de Colágeno</h3><p>Estímulo à produção natural de colágeno: firmeza e qualidade de pele que evoluem com o tempo.</p></div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=800&q=80" alt="Toxina Botulínica">
+        <div class="body"><h3>Toxina Botulínica</h3><p>Suavização de linhas de expressão com precisão e naturalidade.</p></div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/34220525/pexels-photo-34220525.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cânula em procedimento facial com profissional de luvas — imagem ilustrativa de banco de imagens">
+        <div class="body"><h3>Threads / Fios de Sustentação</h3><p>Lifting sem cirurgia: reposicionamento e sustentação do rosto com fios absorvíveis.</p></div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/25054043/pexels-photo-25054043.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Contorno corporal (glúteo e coxa) em procedimento estético com aparelho na clínica — imagem ilustrativa de banco de imagens">
+        <div class="body"><h3>Harmonização de Glúteo</h3><p>Contorno corporal com preenchedores biocompatíveis e segurança.</p></div>
+      </div>
+      <div class="card">
+        <img src="https://images.pexels.com/photos/4586708/pexels-photo-4586708.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Aplicação de injetável facial com seringa em consultório — imagem ilustrativa de banco de imagens">
+        <div class="body"><h3>Protocolos Personalizados</h3><p>Combinação de técnicas desenhada para o seu rosto, seu corpo, seu momento.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="instituto">
+  <div class="wrap">
+    <div class="sobre">
+      <div>
+        <div class="kicker">O Instituto</div>
+        <h2>Equipe especializada, um só padrão: excelência</h2>
+        <p class="sub" style="margin-bottom:12px">Médicos e profissionais da estética reunidos num Instituto multidisciplinar — cada procedimento indicado, executado e acompanhado com critério.</p>
+        <ul>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#be185d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Avaliação completa</b> — nenhum procedimento sem análise facial detalhada</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#be185d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Produtos certificados</b> — apenas marcas de referência, rastreáveis</span></li>
+          <li><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="#be185d" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Acompanhamento</b> — retorno programado em todos os protocolos</span></li>
+        </ul>
+        <a class="btn" style="margin-top:20px" href="https://wa.me/5517991655854" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+      </div>
+      <img src="https://images.pexels.com/photos/16571735/pexels-photo-16571735.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Sala de procedimentos equipada em clínica estética — imagem ilustrativa de banco de imagens">
+    </div>
+  </div>
+</section>
+
+<section class="cta-final" id="contato">
+  <div class="bg"></div>
+  <div class="wrap">
+    <h2>Agende sua avaliação</h2>
+    <p>Descubra o protocolo ideal para você. Atendimento pelo WhatsApp, sem compromisso.</p>
+    <a class="btn dourado" href="https://wa.me/5517991655854" target="_blank" rel="noopener">Falar com o Instituto</a>
+    <div class="contato-info" style="margin-top:34px;font-size:.95rem;color:#f7d9e4">
+      <p style="margin-bottom:8px"><b>Endereço:</b> Av. Anísio Haddad 8001 — Torre Milan Sul, Sala 2A, São José do Rio Preto/SP</p>
+      <p style="margin-bottom:8px"><b>Instagram:</b> @dra.michelleangotti &nbsp;·&nbsp; <b>Horário de atendimento:</b> [a confirmar com a clínica]</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 Instituto Harmonizar — Harmonização Facial · São José do Rio Preto/SP</div>
+  <div class="wrap" style="margin-top:6px">Protótipo criado pela <a href="https://riopreto.tech">Agência Rio Preto Tech</a> — não é o site oficial.</div>
+</footer>
+<div class="demo">Protótipo de demonstração — não é o site oficial</div>
+
+</body>
+</html>
