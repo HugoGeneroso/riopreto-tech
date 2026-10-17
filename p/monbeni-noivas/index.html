@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monbeni Noivas — Aluguel de Vestidos de Noiva, Festa, 15 Anos e Formatura em Rio Preto | Protótipo</title>
+<meta name="description" content="Monbeni Noivas: a maior loja de aluguel de trajes de Rio Preto e região — noivas, festa, debutantes, madrinhas e formandas. Coleção 2027, prova agendada pelo WhatsApp.">
+<meta property="og:title" content="Monbeni Noivas — Aluguel de Vestidos em São José do Rio Preto">
+<meta property="og:description" content="Noiva, 15 anos, madrinha e formatura: vestido de festa sem comprar. Coleção 2027 com até 70% OFF no aluguel.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.pexels.com/photos/20352742/pexels-photo-20352742.jpeg?auto=compress&cs=tinysrgb&w=1200">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Prata&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Monbeni Noivas",
+  "description":"Aluguel de vestidos de noiva, festa, 15 anos, madrinha e formatura em São José do Rio Preto.",
+  "image":"https://images.pexels.com/photos/12060805/pexels-photo-12060805.jpeg",
+  "telephone":"+5517988347528",
+  "priceRange":"R$499+",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Av. Bady Bassitt, 2765",
+    "addressLocality":"São José do Rio Preto",
+    "addressRegion":"SP",
+    "addressCountry":"BR"
+  },
+  "url":"https://riopreto.tech/p/monbeni-noivas/",
+  "sameAs":["https://www.instagram.com/monbeninoivas","https://www.tiktok.com/@monbeninoivas"]
+}
+</script>
+<style>
+:root{
+  --pearl:#faf6f1;
+  --pearl2:#f1e9df;
+  --graphite:#2b2622;
+  --cappuccino:#8b6f5c;
+  --gold:#b98d4f;
+  --gold-soft:#dcc093;
+  --blush:#c89b8f;
+  --ink:#372f28;
+  --card:#fffdfa;
+  --shadow:0 24px 48px rgba(55,47,40,.14);
+  --r:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Outfit',system-ui,sans-serif;color:var(--ink);line-height:1.65;background:
+  radial-gradient(1100px 460px at 88% -6%, rgba(185,141,79,.13), transparent 62%),
+  radial-gradient(800px 420px at -8% 30%, rgba(200,155,143,.12), transparent 60%),
+  linear-gradient(180deg,var(--pearl) 0%,#f5eee5 60%,var(--pearl2) 100%);}
+h1,h2,h3,.serif{font-family:'Prata',serif;font-weight:400;line-height:1.18;color:var(--graphite)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.75rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--cappuccino)}
+.eyebrow::before{content:"";width:30px;height:1px;background:var(--gold)}
+
+nav{position:sticky;top:0;z-index:50;background:rgba(250,246,241,.9);backdrop-filter:blur(12px);border-bottom:1px solid rgba(185,141,79,.2)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 26px;max-width:1180px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.logo b{font-family:'Marcellus',serif;font-size:1.35rem;color:var(--graphite);letter-spacing:.04em}
+.logo small{display:block;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--cappuccino)}
+.nav-links{display:flex;gap:24px;font-size:.87rem;font-weight:500}
+.nav-links a{color:var(--ink);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font-weight:600;font-size:.9rem;padding:13px 26px;border-radius:999px;transition:transform .18s,box-shadow .18s}
+.btn.pri{background:linear-gradient(135deg,var(--graphite),#4a4138);color:#f7efe3;box-shadow:0 12px 26px rgba(43,38,34,.3);border:1px solid rgba(220,192,147,.4)}
+.btn.gold{background:linear-gradient(135deg,var(--gold),#96703a);color:#fff8ec;box-shadow:0 12px 26px rgba(150,112,58,.35)}
+.btn.ghost{background:transparent;color:#fff;border:1px solid rgba(247,239,227,.6)}
+.btn:hover{transform:translateY(-2px)}
+@media(max-width:880px){.nav-links{display:none}}
+
+.hero{position:relative;min-height:660px;display:flex;align-items:center;overflow:hidden;
+  background:
+    linear-gradient(99deg, rgba(43,38,34,.74) 0%, rgba(94,70,50,.5) 52%, rgba(43,38,34,.22) 100%),
+    url('https://images.pexels.com/photos/20352742/pexels-photo-20352742.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1050&w=1600&dpr=2') center 40%/cover no-repeat;}
+.hero::after{content:"";position:absolute;inset:auto 0 0 0;height:120px;background:linear-gradient(rgba(250,246,241,0),var(--pearl))}
+.hero-in{position:relative;z-index:2;max-width:660px;padding:96px 0 128px;color:#fff}
+.hero .eyebrow{color:var(--gold-soft)}.hero .eyebrow::before{background:var(--gold-soft)}
+.hero h1{color:#fbf6ec;font-size:clamp(2.4rem,5.2vw,3.9rem);margin:18px 0 18px;font-weight:400;text-shadow:0 2px 26px rgba(0,0,0,.4)}
+.hero h1 i{font-style:normal;color:var(--gold-soft)}
+.hero p{font-size:1.13rem;color:rgba(251,246,236,.93);text-shadow:0 1px 14px rgba(0,0,0,.45)}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero-tag{margin-top:26px;display:inline-flex;align-items:center;gap:10px;font-size:.82rem;color:rgba(251,246,236,.85);border:1px dashed rgba(220,192,147,.6);border-radius:999px;padding:8px 18px}
+
+.stats{position:relative;z-index:3;margin-top:-66px}
+.stats-in{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(185,141,79,.22);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow)}
+.stat{background:var(--card);padding:26px 20px;text-align:center}
+.stat b{display:block;font-family:'Prata',serif;font-size:1.7rem;color:var(--graphite)}
+.stat span{font-size:.76rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--cappuccino)}
+@media(max-width:820px){.stats-in{grid-template-columns:repeat(2,1fr)}}
+
+section{padding:90px 0}
+.sec-head{max-width:660px;margin-bottom:48px}
+.sec-head h2{font-size:clamp(1.8rem,3.4vw,2.6rem);margin:14px 0}
+.sec-head p{color:var(--cappuccino);font-size:1.03rem}
+
+/* coleções */
+.cols{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.col-card{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:3/4.1;text-decoration:none;display:flex;align-items:flex-end;box-shadow:var(--shadow)}
+.col-card .bg{position:absolute;inset:0;background:url() center 28%/cover no-repeat;transition:transform .5s}
+.col-card:hover .bg{transform:scale(1.06)}
+.col-card .ov{position:absolute;inset:0;background:linear-gradient(rgba(43,38,34,0) 40%,rgba(43,38,34,.8))}
+.col-body{position:relative;padding:22px;color:#fff;z-index:2}
+.col-body h3{color:#fbf6ec;font-size:1.28rem}
+.col-body p{font-size:.85rem;color:rgba(251,246,236,.86)}
+.col-body .pill{display:inline-block;font-size:.66rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#1e1a16;background:var(--gold-soft);border-radius:999px;padding:4px 11px;margin-bottom:10px}
+@media(max-width:900px){.cols{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.cols{grid-template-columns:1fr}}
+
+/* como funciona */
+.como{background:linear-gradient(180deg,#f5eee4 0%,var(--pearl) 100%)}
+.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.mini-card{background:var(--card);border:1px solid rgba(185,141,79,.22);border-radius:var(--r);padding:30px 26px;box-shadow:0 14px 28px rgba(55,47,40,.07)}
+.mini-card svg{margin-bottom:14px}
+.mini-card h3{font-size:1.15rem;margin-bottom:9px}
+.mini-card p{font-size:.9rem;color:var(--cappuccino)}
+.preco-stamp{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:center;margin-top:44px}
+.preco-stamp .chip{border:1px solid rgba(185,141,79,.45);background:rgba(185,141,79,.1);color:#7c5c2e;border-radius:999px;padding:9px 20px;font-size:.86rem;font-weight:600}
+@media(max-width:860px){.row3{grid-template-columns:1fr}}
+
+/* provador */
+.provador{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
+.p-img{position:relative}
+.p-img img.main{width:100%;height:540px;object-fit:cover;border-radius:var(--r);box-shadow:var(--shadow);object-position:center}
+.p-img img.mini{position:absolute;right:-20px;bottom:-24px;width:240px;height:180px;object-fit:cover;border-radius:16px;border:6px solid var(--pearl);box-shadow:var(--shadow)}
+.check{list-style:none;margin:20px 0 28px;display:grid;gap:12px}
+.check li{display:flex;gap:12px;align-items:flex-start;font-size:.97rem}
+.check svg{flex:none;margin-top:3px}
+@media(max-width:920px){.provador{grid-template-columns:1fr}.p-img img.mini{display:none}}
+
+/* galeria */
+.gal-sec{background:var(--graphite);color:#efe6d8}
+.gal-sec .sec-head h2{color:#f8f2e7}
+.gal-sec .sec-head p{color:#b9a78e}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gal figure{border-radius:16px;overflow:hidden;position:relative;aspect-ratio:4/5}
+.gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .45s}
+.gal figure:hover img{transform:scale(1.05)}
+.gal figcaption{position:absolute;inset:auto 0 0 0;padding:32px 14px 12px;background:linear-gradient(rgba(43,38,34,0),rgba(43,38,34,.85));font-size:.78rem;font-weight:600;letter-spacing:.05em}
+@media(max-width:900px){.gal{grid-template-columns:repeat(2,1fr)}}
+
+/* vitrine anuncio */
+.faixa{background:linear-gradient(120deg,rgba(185,141,79,.14),rgba(200,155,143,.12));border-block:1px solid rgba(185,141,79,.25);padding:22px 0;text-align:center;font-family:'Marcellus',serif;font-size:1.12rem;color:#6d4f24}
+.faixa b{color:var(--graphite)}
+
+/* cta final */
+.cta{position:relative;border-radius:26px;overflow:hidden;text-align:center;color:#fff;padding:82px 40px;
+  background:
+    linear-gradient(rgba(43,38,34,.72),rgba(74,54,38,.84)),
+    url('https://images.pexels.com/photos/12060805/pexels-photo-12060805.jpeg?auto=compress&cs=tinysrgb&w=1600&q=75') center/cover;}
+.cta h2{color:#fbf6ec;font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:12px}
+.cta p{color:rgba(251,246,236,.9);max-width:58ch;margin:0 auto 30px}
+
+/* contato */
+.c-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:38px}
+.c-box{background:var(--card);border:1px solid rgba(185,141,79,.22);border-radius:var(--r);padding:32px;box-shadow:0 14px 28px rgba(55,47,40,.07)}
+.c-row{display:flex;gap:14px;padding:13px 0;border-bottom:1px dashed rgba(185,141,79,.28);align-items:flex-start}
+.c-row:last-child{border-bottom:0}
+.c-row svg{flex:none;margin-top:3px}
+.c-row b{display:block;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--cappuccino);margin-bottom:2px}
+.c-row a{color:var(--graphite);text-decoration:none;font-weight:600}
+.c-row a:hover{color:var(--gold)}
+.note{display:inline-block;font-size:.66rem;font-weight:700;color:#8a6c3d;background:rgba(185,141,79,.14);border:1px solid rgba(185,141,79,.36);border-radius:999px;padding:2px 10px;margin-left:6px;vertical-align:middle}
+@media(max-width:900px){.c-grid{grid-template-columns:1fr}}
+
+footer{background:var(--graphite);color:#b9a78e;padding:46px 0 34px;font-size:.86rem}
+.f-in{display:flex;justify-content:space-between;gap:26px;flex-wrap:wrap}
+footer b.t{font-family:'Marcellus',serif;color:#f8f2e7;font-size:1.2rem;display:block;margin-bottom:6px}
+footer a{color:#e6d9c2;text-decoration:none}
+.aviso{background:rgba(220,192,147,.12);border:1px solid rgba(220,192,147,.35);color:#dcc093;border-radius:10px;padding:10px 16px;margin-top:28px;font-size:.8rem;text-align:center}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a class="logo" href="#topo">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <circle cx="16" cy="16" r="14" stroke="#b98d4f" stroke-width="1.6"/>
+        <path d="M16 6c-1.8 4.4-4.6 7.2-9 9 4.4 1.8 7.2 4.6 9 9 1.8-4.4 4.6-7.2 9-9-4.4-1.8-7.2-4.6-9-9z" fill="#b98d4f" fill-opacity=".9"/>
+      </svg>
+      <span><b>Monbeni</b><small>Noivas · Trajes</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#colecoes">Coleções</a>
+      <a href="#como">Como alugar</a>
+      <a href="#provador">Prova</a>
+      <a href="#contato">Loja</a>
+    </div>
+    <a class="btn gold" href="https://wa.me/5517988347528?text=Ol%C3%A1%2C%20quero%20agendar%20uma%20prova%20na%20Monbeni" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.2-.7-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1-1.4-1-2.7 0-1.3.7-1.9.9-2.2.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.3.7 1.2 1.5 1.9 1 .9 1.8 1.2 2.1 1.3.2.1.4.1.6-.1l.8-1c.2-.2.4-.2.6-.1l2 1c.3.1.4.2.5.3v.5z"/></svg>
+      Agendar prova
+    </a>
+  </div>
+</nav>
+
+<header class="hero" id="topo">
+  <div class="wrap hero-in">
+    <span class="eyebrow">Av. Bady Bassitt, 2765 · São José do Rio Preto</span>
+    <h1>O vestido do seu grande dia, <i>sem precisar comprá-lo.</i></h1>
+    <p>Noivas, debutantes, madrinhas e formandas: a Monbeni é a maior loja de aluguel de trajes de Rio Preto e região — coleção nova 2027, prova agendada e preço fixo de aluguel a partir de R$499.</p>
+    <div class="hero-ctas">
+      <a class="btn gold" href="https://wa.me/5517988347528?text=Ol%C3%A1%21%20Quero%20agendar%20uma%20prova%20de%20vestido" target="_blank" rel="noopener">Agendar minha prova</a>
+      <a class="btn ghost" href="#colecoes">Ver coleções</a>
+    </div>
+    <div class="hero-tag">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#dcc093" stroke-width="2" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.7-5.2 4.6 1.5 6.8L12 16.9 5.9 20.4l1.5-6.8L2.2 9l6.9-.7z"/></svg>
+      +12 mil seguidores no Facebook · TikTok atualizando toda semana
+    </div>
+  </div>
+</header>
+
+<div class="stats wrap">
+  <div class="stats-in">
+    <div class="stat"><b>R$499</b><span>aluguel a partir de</span></div>
+    <div class="stat"><b>70% OFF</b><span>coleção festas 2027</span></div>
+    <div class="stat"><b>4</b><span>mundos: noiva · festa · 15 anos · formatura</span></div>
+    <div class="stat"><b>1 dia</b><span>para escolher na prova</span></div>
+  </div>
+</div>
+
+<section id="colecoes">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Coleções</span>
+      <h2>Quatro ocasiões, uma arara de gente feliz</h2>
+      <p>Do "sim" no altar ao brinde da formatura — modelos novos toda temporada, com ajuste de corpo incluso na prova.</p>
+    </div>
+    <div class="cols">
+      <a class="col-card" href="https://wa.me/5517988347528?text=Quero%20ver%20a%20cole%C3%A7%C3%A3o%20de%20noivas" target="_blank" rel="noopener">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/20352729/pexels-photo-20352729.jpeg?auto=compress&cs=tinysrgb&w=900&q=75')"></div>
+        <div class="ov"></div>
+        <div class="col-body"><span class="pill">noivas</span><h3>Vestidos de Noiva</h3><p>Renda, tule e cetim — do clássico ao minimalista, com véu e ajustes.</p></div>
+      </a>
+      <a class="col-card" href="https://wa.me/5517988347528?text=Quero%20ver%20a%20cole%C3%A7%C3%A3o%20de%2015%20anos" target="_blank" rel="noopener">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/15591288/pexels-photo-15591288.jpeg?auto=compress&cs=tinysrgb&w=900&q=75')"></div>
+        <div class="ov"></div>
+        <div class="col-body"><span class="pill">15 anos</span><h3>Debutantes</h3><p>Vestidos de gala em cores vivas para a festa que ela nunca vai esquecer.</p></div>
+      </a>
+      <a class="col-card" href="https://wa.me/5517988347528?text=Quero%20ver%20vestidos%20de%20festa%20e%20madrinha" target="_blank" rel="noopener">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/27399479/pexels-photo-27399479.jpeg?auto=compress&cs=tinysrgb&w=900&q=75')"></div>
+        <div class="ov"></div>
+        <div class="col-body"><span class="pill">festa</span><h3>Madrinhas & Convidadas</h3><p>Longos e curtos para casar com a ocasião sem gastar o preço de um vestido.</p></div>
+      </a>
+      <a class="col-card" href="https://wa.me/5517988347528?text=Quero%20ver%20a%20cole%C3%A7%C3%A3o%20de%20formatura" target="_blank" rel="noopener">
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/18301461/pexels-photo-18301461.jpeg?auto=compress&cs=tinysrgb&w=900&q=75')"></div>
+        <div class="ov"></div>
+        <div class="col-body"><span class="pill">formatura</span><h3>Formandas</h3><p>O vestido do baile com a beca combinando — aluguel com preço fixo.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<div class="faixa"><b>Coleção Festas 2027</b> — aluguel com até 70% OFF e preço fixo, sem surpresa no contrato.</div>
+
+<section class="como" id="como">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Alugar um vestido em 3 passos</h2>
+    </div>
+    <div class="row3">
+      <div class="mini-card">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#b98d4f" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>
+        <h3>1 · Agende a prova</h3>
+        <p>Mande a data da festa no WhatsApp. Reservamos um horário com provador exclusivo e café pra acompanhante.</p>
+      </div>
+      <div class="mini-card">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#b98d4f" stroke-width="1.7" aria-hidden="true"><path d="M6 3l3 6-3 12M18 3l-3 6 3 12M9 9h6"/></svg>
+        <h3>2 · Escolha na arara</h3>
+        <p>Prove quantos modelos quiser. Ajustamos barra, corpo e acessórios no dia — o preço que você viu é o preço fixo.</p>
+      </div>
+      <div class="mini-card">
+        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#b98d4f" stroke-width="1.7" aria-hidden="true"><path d="M20 12v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7"/><path d="M2 7h20v5H2zM12 7v10M8.5 3.5L12 7l3.5-3.5"/></svg>
+        <h3>3 · Brilhe e devolva</h3>
+        <p>Retire pronto para a festa, use, devolva. Limpeza e manutenção são por nossa conta — você só assina o contrato.</p>
+      </div>
+    </div>
+    <div class="preco-stamp">
+      <span class="chip">Noiva · aluguel a partir de R$499</span>
+      <span class="chip">15 anos · gala com preço fixo</span>
+      <span class="chip">Madrinha · coleção 2027 até 70% OFF</span>
+    </div>
+    <div style="text-align:center;margin-top:34px">
+      <a class="btn pri" href="https://wa.me/5517988347528?text=Vi%20o%20site%20e%20quero%20entender%20os%20valores%20de%20aluguel" target="_blank" rel="noopener">Tirar dúvidas no WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section id="provador">
+  <div class="wrap provador">
+    <div class="p-img">
+      <img class="main" src="https://images.pexels.com/photos/12060806/pexels-photo-12060806.jpeg?auto=compress&cs=tinysrgb&w=1000&q=75" alt="Arara de vestidos de noiva com espelho na boutique — imagem ilustrativa de banco de imagens" loading="lazy" width="600" height="800">
+      <img class="mini" src="https://images.pexels.com/photos/10743453/pexels-photo-10743453.jpeg?auto=compress&cs=tinysrgb&w=700&q=75" alt="Cliente escolhendo vestido na arara da boutique — imagem ilustrativa de banco de imagens" loading="lazy" width="600" height="400">
+    </div>
+    <div>
+      <span class="eyebrow">A experiência da prova</span>
+      <h2 style="font-size:clamp(1.7rem,3vw,2.4rem);margin:12px 0 14px">Você entra com a data. Sai com o vestido.</h2>
+      <p style="color:var(--cappuccino)">Na Monbeni a prova não é fila de shopping: horário reservado, consultora só pra você e ajuste na hora. Quem aluga com a gente leva o look completo — e a economia de quem não precisou comprar.</p>
+      <ul class="check">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b98d4f" stroke-width="2.2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Horário reservado por WhatsApp — sem esperar na loja</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b98d4f" stroke-width="2.2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Ajuste de barra e corpo incluso no aluguel</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#b98d4f" stroke-width="2.2" aria-hidden="true"><path d="M5 13l4 4L19 7"/></svg>Limpeza pós-uso por conta da loja</li>
+      </ul>
+      <a class="btn gold" href="https://wa.me/5517988347528?text=Quero%20reservar%20hor%C3%A1rio%20de%20prova" target="_blank" rel="noopener">Reservar meu horário</a>
+    </div>
+  </div>
+</section>
+
+<section class="gal-sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow" style="color:#dcc093">Vitrine</span>
+      <h2>Um pouco da arara</h2>
+      <p>Imagens ilustrativas de referências (banco de imagens) — as fotos dos vestidos reais da coleção entram aqui quando a loja autorizar.</p>
+    </div>
+    <div class="gal">
+      <figure><img src="https://images.pexels.com/photos/15868533/pexels-photo-15868533.jpeg?auto=compress&cs=tinysrgb&w=800&q=75" alt="Detalhe de arara com vestidos de noiva — imagem ilustrativa de banco de imagens" loading="lazy"><figcaption>Noivas · renda</figcaption></figure>
+      <figure><img src="https://images.pexels.com/photos/20352730/pexels-photo-20352730.jpeg?auto=compress&cs=tinysrgb&w=800&q=75" alt="Vestido de renda no cabide diante de espelho — imagem ilustrativa de banco de imagens" loading="lazy"><figcaption>Noivas · clássicos</figcaption></figure>
+      <figure><img src="https://images.pexels.com/photos/2085521/pexels-photo-2085521.jpeg?auto=compress&cs=tinysrgb&w=800&q=75" alt="Costas de vestido com botões forrados — imagem ilustrativa de banco de imagens" loading="lazy"><figcaption>Detalhes que encantam</figcaption></figure>
+      <figure><img src="https://images.pexels.com/photos/19546139/pexels-photo-19546139.jpeg?auto=compress&cs=tinysrgb&w=800&q=75" alt="Vitrine iluminada de boutique com manequins — imagem ilustrativa de banco de imagens" loading="lazy"><figcaption>Vitrine da loja</figcaption></figure>
+    </div>
+    <div style="text-align:center;margin-top:38px">
+      <a class="btn gold" href="https://wa.me/5517988347528?text=Quero%20ver%20os%20vestidos%20dispon%C3%ADveis%20para%20a%20minha%20data" target="_blank" rel="noopener">Ver disponibilidade da minha data</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>Quem procura vestido de festa em Rio Preto precisa achar a Monbeni primeiro.</h2>
+      <p>Este é o caminho: um site com a coleção no Google, prova agendada direto no WhatsApp da loja e o nome da marca registrada — monbeni.com.br e variações ainda livres para vocês.</p>
+      <a class="btn gold" style="font-size:1rem;padding:15px 30px" href="https://wa.me/5517988347528?text=Sobre%20o%20prot%C3%B3tipo%20do%20site%20da%20Monbeni" target="_blank" rel="noopener">Falar sobre o site da loja</a>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">A loja</span>
+      <h2>Vem provar na Bady Bassitt</h2>
+    </div>
+    <div class="c-grid">
+      <div class="c-box">
+        <div class="c-row">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b6f5c" stroke-width="1.9" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          <div><b>WhatsApp · provas e reservas</b><a href="https://wa.me/5517988347528" target="_blank" rel="noopener">(17) 98834-7528</a> <span class="note">linha oficial da loja no zap</span></div>
+        </div>
+        <div class="c-row">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b6f5c" stroke-width="1.9" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.2" fill="#8b6f5c" stroke="none"/></svg>
+          <div><b>Instagram</b><a href="https://www.instagram.com/monbeninoivas" target="_blank" rel="noopener">@monbeninoivas</a></div>
+        </div>
+        <div class="c-row">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b6f5c" stroke-width="1.9" aria-hidden="true"><path d="M2 12a10 10 0 1 0 20 0 10 10 0 1 0-20 0M2 12h20M12 2c3 3 3 17 0 20M12 2c-3 3-3 17 0 20"/></svg>
+          <div><b>TikTok</b><a href="https://www.tiktok.com/@monbeninoivas" target="_blank" rel="noopener">@monbeninoivas</a></div>
+        </div>
+        <div class="c-row">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b6f5c" stroke-width="1.9" aria-hidden="true"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div><b>Endereço</b>Av. Bady Bassitt, 2765 — São José do Rio Preto/SP<br><a href="https://www.google.com/maps/search/Av.+Bady+Bassitt+2765+S%C3%A3o+Jos%C3%A9+do+Rio+Preto" target="_blank" rel="noopener">ver no Google Maps</a></div>
+        </div>
+        <div class="c-row">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8b6f5c" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <div><b>Horário</b>Seg a Sex, horário comercial <span class="note">confirmar com a loja</span></div>
+        </div>
+      </div>
+      <div class="c-box" style="background:linear-gradient(160deg,#fffdf9,#f3e9da)">
+        <h3 style="font-size:1.25rem;margin-bottom:12px">Um nome grande ainda sem casa na internet</h3>
+        <p style="color:var(--cappuccino);font-size:.95rem">A Monbeni tem mais de 12 mil seguidores no Facebook, TikTok ativo e a maior arara de aluguel da região — mas <strong>nenhum site e nenhum domínio</strong>: monbeni.com.br, monbeninoivas.com.br e monbeniriopreto.com.br estão LIVRES (checado hoje no Registro.br). Quem busca "vestido de noiva rio preto" hoje encontra concorrentes. Este protótipo mostra a loja onde a busca já deveria estar.</p>
+        <p style="margin-top:14px;font-size:.8rem;color:var(--cappuccino)">Valores, coleção e fotos reais entram quando a loja confirmar — nada aqui foi publicado no nome da Monbeni.</p>
+        <a class="btn pri" style="margin-top:16px" href="https://wa.me/5517988347528?text=Quero%20discutir%20o%20site%20e%20o%20dom%C3%ADnio%20da%20Monbeni" target="_blank" rel="noopener">Quero esse site pra loja</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-in">
+      <div style="max-width:42ch">
+        <b class="t">Monbeni Noivas</b>
+        <p>Aluguel de vestidos de noiva, festa, 15 anos e formatura — Av. Bady Bassitt, 2765, São José do Rio Preto/SP.</p>
+      </div>
+      <div>
+        <b class="t">Contato</b>
+        <p><a href="https://wa.me/5517988347528" target="_blank" rel="noopener">WhatsApp (17) 98834-7528</a><br>
+        <a href="https://www.instagram.com/monbeninoivas" target="_blank" rel="noopener">@monbeninoivas</a></p>
+      </div>
+    </div>
+    <div class="aviso">Protótipo criado pela Agência Rio Preto Tech — não é o site oficial.</div>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.style.opacity=1;e.target.style.transform='none';io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.col-card,.mini-card,.gal figure,.c-box').forEach(el=>{el.style.opacity=0;el.style.transform='translateY(24px)';el.style.transition='opacity .65s ease, transform .65s ease';io.observe(el)});
+</script>
+</body>
+</html>
