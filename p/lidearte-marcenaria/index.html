@@ -84,6 +84,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(246,241,231,.88);backdrop-f
     url('https://images.pexels.com/photos/26988002/pexels-photo-26988002.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1000&w=1600&dpr=2') center 45%/cover no-repeat;
 }
 .hero::after{content:"";position:absolute;inset:auto 0 0 0;height:110px;background:linear-gradient(rgba(246,241,231,0),var(--linen))}
+.hero::before{content:"";position:absolute;inset:0;z-index:1;background:radial-gradient(ellipse 72% 66% at 24% 58%,rgba(24,16,9,.44),rgba(24,16,9,0) 82%)}
 .hero-in{position:relative;z-index:2;max-width:680px;padding:90px 0 120px}
 .hero .eyebrow{color:var(--brass-soft)}
 .hero .eyebrow::before{background:var(--brass-soft)}
@@ -91,7 +92,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(246,241,231,.88);backdrop-f
 .hero h1 em{font-style:normal;color:var(--brass-soft)}
 .hero p{font-size:1.12rem;color:rgba(253,249,240,.92);max-width:56ch;text-shadow:0 1px 12px rgba(0,0,0,.4)}
 .hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:32px}
-.hero-note{margin-top:26px;font-size:.8rem;color:rgba(253,249,240,.75);display:flex;align-items:center;gap:8px}
+.hero-note{margin-top:26px;font-size:.8rem;color:rgba(253,249,240,.95);display:flex;align-items:center;gap:8px;text-shadow:0 1px 10px rgba(0,0,0,.6)}
 .hero-note svg{flex:none;opacity:.8}
 
 /* ===== STATS ===== */
@@ -222,7 +223,7 @@ footer .logo b{color:#f3ead8}
     <p>Cozinha, closet, home office e painel de TV projetados sob medida pela Lidearte: desenho 3D antes de cortar uma tábua, fabricação na nossa própria oficina e instalação por quem fez.</p>
     <div class="hero-ctas">
       <a class="btn gold" href="https://wa.me/5517981368816?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20projetar%20meus%20planejados" target="_blank" rel="noopener">Fazer meu projeto</a>
-      <a class="btn" href="#vitrine" style="background:rgba(253,249,240,.12);box-shadow:none">Ver o que fazemos</a>
+      <a class="btn" href="#vitrine" style="background:rgba(20,14,8,.5);box-shadow:none;border-color:rgba(253,249,240,.6)">Ver o que fazemos</a>
     </div>
     <div class="hero-note">
       <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
@@ -249,7 +250,7 @@ footer .logo b{color:#f3ead8}
     </div>
     <div class="vitrine">
       <a class="v-card big" href="https://wa.me/5517981368816?text=Quero%20um%20or%C3%A7amento%20de%20cozinha%20planejada" target="_blank" rel="noopener">
-        <div class="bg" style="background-image:url('https://images.pexels.com/photos/18285887/pexels-photo-18285887.jpeg?auto=compress&cs=tinysrgb&w=1400&q=75');object-position:top"></div>
+        <div class="bg" style="background-image:url('https://images.pexels.com/photos/18285887/pexels-photo-18285887.jpeg?auto=compress&cs=tinysrgb&w=1400&q=75');background-position:center top"></div>
         <div class="ov"></div>
         <div class="v-body">
           <span class="tag">carro-chefe</span>
