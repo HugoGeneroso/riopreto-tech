@@ -84,34 +84,36 @@ nav{position:sticky;top:0;z-index:50;background:rgba(5,17,26,.92);backdrop-filte
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none}
 .logo svg{flex:none}
 .logo b{font-family:'Fraunces',serif;font-size:1.18rem;color:var(--ice-soft);letter-spacing:.02em;display:block;line-height:1.1}
-.logo small{font-size:.62rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ice);font-weight:800}
-.nav-links{display:flex;gap:26px;list-style:none}
-.nav-links a{color:rgba(228,242,248,.82);text-decoration:none;font-size:.86rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+.logo small{font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ice);font-weight:800;white-space:nowrap}
+.nav-links{display:flex;gap:20px;list-style:none}
+.nav-links a{color:rgba(228,242,248,.82);text-decoration:none;font-size:.86rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;white-space:nowrap}
 .nav-links a:hover{color:var(--ice)}
 .btn{display:inline-flex;align-items:center;gap:9px;border-radius:999px;font-weight:800;font-size:.92rem;letter-spacing:.02em;text-decoration:none;transition:transform .2s,box-shadow .2s;white-space:nowrap}
 .btn svg{flex:none}
 .btn-wa{background:linear-gradient(135deg,var(--amber),var(--amber-deep));color:#221202;padding:13px 26px;box-shadow:0 12px 28px rgba(242,169,59,.28)}
 .btn-wa:hover{transform:translateY(-2px)}
 .btn-ghost{border:1px solid var(--line);color:var(--ice-soft);padding:12px 24px}
+.btn-short{display:none}
 .btn-ghost:hover{border-color:var(--ice)}
 @media(max-width:860px){.nav-links{display:none}}
 @media(min-width:861px) and (max-width:1080px){.nav-links{gap:14px}.nav-links a{font-size:.76rem}.nav-in .btn-wa{white-space:nowrap;padding:11px 16px;font-size:.8rem}.logo small{letter-spacing:.16em}}
-@media(max-width:640px){.nav-in{padding:12px 16px}.nav-in .btn-wa{padding:11px 15px;font-size:.8rem}.logo b{font-size:1.02rem}}
+@media(max-width:640px){.nav-in{padding:12px 16px}.nav-in .btn-wa{padding:10px 14px;font-size:.78rem;gap:6px}.logo b{font-size:1.02rem}.logo small{font-size:.55rem;letter-spacing:.1em}.nav-in .btn-wa .btn-full{display:none}.nav-in .btn-wa .btn-short{display:inline}}
 
 /* hero */
 .hero{position:relative;min-height:640px;display:flex;align-items:center;overflow:hidden}
+.hero::before{content:"";position:absolute;z-index:1;left:-10%;top:8%;width:85%;height:84%;background:radial-gradient(ellipse at 35% 45%, rgba(4,12,20,.82) 0%, rgba(4,12,20,.45) 55%, transparent 78%);pointer-events:none}
 .hero-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/19016904/pexels-photo-19016904.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1000&w=1600&dpr=2') center 30%/cover no-repeat}
 .hero-bg::after{content:"";position:absolute;inset:0;background:
-  linear-gradient(100deg, rgba(4,12,20,.97) 0%, rgba(5,17,28,.92) 40%, rgba(6,20,32,.55) 74%, rgba(6,20,32,.5) 100%),
+  linear-gradient(100deg, rgba(4,12,20,.97) 0%, rgba(5,17,28,.92) 40%, rgba(6,20,32,.72) 74%, rgba(6,20,32,.62) 100%),
   linear-gradient(180deg, transparent 62%, rgba(5,14,22,.86) 100%)}
 .hero-in{position:relative;z-index:2;padding:96px 0}
-.hero h1{font-size:clamp(2.3rem,5.4vw,3.7rem);margin:16px 0 18px}
+.hero h1{font-size:clamp(2.3rem,5.4vw,3.7rem);margin:16px 0 18px;max-width:17ch}
 .hero .lede{max-width:54ch;color:rgba(228,242,248,.88);font-size:1.08rem;margin-bottom:30px}
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 .hero-note{font-size:.82rem;color:var(--mut)}
 .hero-note a{color:var(--ice)}
 .stats{display:grid;grid-template-columns:repeat(3,auto);gap:16px;margin-top:52px;justify-content:start}
-.stat{background:rgba(8,24,36,.78);border:1px solid var(--line);border-radius:14px;padding:16px 24px;backdrop-filter:blur(6px)}
+.stat{background:rgba(8,24,36,.9);border:1px solid rgba(143,220,240,.32);border-radius:14px;padding:16px 24px;backdrop-filter:blur(6px)}
 .stat b{display:block;font-family:'Fraunces',serif;font-size:1.5rem;color:var(--ice)}
 .stat span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);font-weight:700}
 @media(max-width:640px){.stats{grid-template-columns:1fr 1fr}.stat:last-child{grid-column:span 2}}
@@ -232,7 +234,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     </ul>
     <a class="btn btn-wa" href="https://wa.me/5517996240725?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20climatiza%C3%A7%C3%A3o.">
       <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.2 1.1-1.7 1.2-.5.1-1 .1-1.6-.1-.4-.1-.9-.3-1.5-.6-2.7-1.2-4.4-3.9-4.6-4.1-.1-.2-1.1-1.4-1.1-2.7s.7-1.9.9-2.2c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.4l.8 2c.1.2.1.4 0 .6l-.4.5-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.9-1c.2-.2.4-.2.6-.1l2 1c.2.1.4.2.4.3.1.1.1.6-.1 1.2Z"/></svg>
-      Orçamento no WhatsApp
+      <span class="btn-full">Orçamento no WhatsApp</span><span class="btn-short">Orçamento</span>
     </a>
   </div>
 </nav>
@@ -264,7 +266,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     </div>
     <div class="svc-grid">
       <article class="svc wide">
-        <img src="https://images.pexels.com/photos/10380749/pexels-photo-10380749.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=620&w=920&dpr=2" alt="Fileira de unidades externas de ar-condicionado instaladas em fachada">
+        <img src="https://images.pexels.com/photos/20046692/pexels-photo-20046692.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=620&w=920&dpr=2" alt="Unidade externa de ar-condicionado nova, instalada sobre suporte em parede limpa">
         <div class="svc-b">
           <span class="k">Destaque</span>
           <h3>Venda de equipamentos</h3>
@@ -278,7 +280,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         </div>
       </article>
       <article class="svc">
-        <img src="https://images.pexels.com/photos/16592625/pexels-photo-16592625.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=620&w=920&dpr=2" alt="Unidade interna de ar-condicionado split instalada em ambiente">
+        <img src="https://images.pexels.com/photos/38788452/pexels-photo-38788452.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=620&w=920&dpr=2" alt="Evaporadora split branca instalada no alto da parede, sem cabos aparentes">
         <div class="svc-b">
           <span class="k">Obra limpa</span>
           <h3>Instalação profissional</h3>
