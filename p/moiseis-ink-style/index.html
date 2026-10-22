@@ -53,10 +53,10 @@ html{scroll-behavior:smooth}
 body{font-family:'Inter',system-ui,sans-serif;color:var(--steel);background:var(--paper);line-height:1.65}
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
-h1,h2,h3,.disp{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-.01em}
+h1,h2,h3,.disp{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-.01em;text-wrap:balance}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 /* layered ambient background: ink in water */
-.bg{position:fixed;inset:0;z-index:-1;background:
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;background:
   radial-gradient(960px 500px at 88% -6%, rgba(208,69,62,.10), transparent 60%),
   radial-gradient(780px 440px at -6% 28%, rgba(124,135,148,.14), transparent 58%),
   radial-gradient(720px 500px at 54% 110%, rgba(14,17,22,.09), transparent 60%),
@@ -70,7 +70,7 @@ header{position:sticky;top:0;z-index:60;background:rgba(14,17,22,.93);backdrop-f
 .brand{display:flex;align-items:center;gap:12px;color:#fff}
 .logo{width:44px;height:44px;flex:none}
 .brand b{font-family:'Fraunces';font-size:1.3rem;letter-spacing:.02em;display:block;line-height:1.1}
-.brand small{color:var(--crimson);font-size:.7rem;letter-spacing:.22em;text-transform:uppercase}
+.brand small{color:#e56a62;font-size:.7rem;letter-spacing:.22em;text-transform:uppercase}
 nav{display:flex;gap:24px;font-size:.9rem;font-weight:500}
 nav a{color:#c9d0d9;transition:color .2s}
 nav a:hover{color:var(--crimson)}
@@ -79,6 +79,7 @@ nav a:hover{color:var(--crimson)}
 .mnav a{flex:none;color:#c9d0d9;font-size:.82rem;font-weight:600;padding:7px 14px;border:1px solid rgba(208,69,62,.4);border-radius:999px;white-space:nowrap}
 .mnav a:active{background:rgba(208,69,62,.16)}
 .cta{display:inline-flex;align-items:center;gap:9px;background:var(--crimson);color:#fff;font-weight:700;font-size:.92rem;padding:11px 20px;border-radius:999px;transition:transform .18s, background .18s;white-space:nowrap}
+.cta-mini{display:none}
 .cta:hover{transform:translateY(-2px);background:#e2574f}
 .cta svg{width:17px;height:17px}
 /* hero */
@@ -96,10 +97,12 @@ nav a:hover{color:var(--crimson)}
 .ghost{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(208,69,62,.55);color:var(--crimson);font-weight:600;font-size:.92rem;padding:11px 20px;border-radius:999px}
 .ghost:hover{background:rgba(208,69,62,.12)}
 .hero-img{position:relative;border-radius:18px 18px 90px 18px;overflow:hidden;box-shadow:0 40px 90px -30px rgba(0,0,0,.75)}
-.hero-img img{width:100%;height:520px;object-fit:cover;object-position:center 32%}
+.hero-img img{width:100%;height:520px;object-fit:cover;object-position:center 32%;filter:brightness(1.28) contrast(1.04) saturate(1.05)}
+.hero .eyebrow{color:#e56a62}
+.hero .eyebrow::before{background:#e56a62}
 .hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(200deg,transparent 55%,rgba(14,17,22,.55))}
 .stats{display:flex;gap:38px;margin-top:34px;flex-wrap:wrap}
-.stat b{font-family:'Fraunces';font-size:1.7rem;color:#fff;display:block;line-height:1.1}
+.stat b{font-family:'Fraunces';font-size:1.7rem;color:#fff;display:block;line-height:1.1;font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1}
 .stat span{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:#8d99a6}
 /* sections */
 section{padding:88px 0}
@@ -109,13 +112,13 @@ section{padding:88px 0}
 .sec-head h2{font-size:clamp(1.8rem,3.4vw,2.6rem);line-height:1.12}
 .sec-head p{margin-top:14px;color:var(--mut)}
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
 .card:hover{transform:translateY(-4px);box-shadow:0 24px 48px -20px rgba(14,17,22,.26)}
 .card img{height:250px;width:100%;object-fit:cover}
-.card .body{padding:20px 22px 24px}
+.card .body{padding:20px 22px 24px;display:flex;flex-direction:column;flex:1}
 .card h3{font-size:1.22rem;margin-bottom:8px}
 .card p{color:var(--mut);font-size:.95rem}
-.card a.pricelink{display:inline-flex;align-items:center;gap:7px;margin-top:14px;font-weight:700;font-size:.88rem;color:var(--oxblood)}
+.card a.pricelink{display:inline-flex;align-items:center;gap:7px;margin-top:auto;padding-top:14px;font-weight:700;font-size:.88rem;color:var(--oxblood)}
 .tag{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--oxblood);background:rgba(138,38,34,.08);padding:5px 12px;border-radius:999px;margin-bottom:12px}
 /* process */
 .process{background:var(--steel);color:var(--bone)}
@@ -130,7 +133,7 @@ section{padding:88px 0}
 /* artist split */
 .split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
 .split .pic{border-radius:16px 90px 16px 16px;overflow:hidden;box-shadow:0 30px 60px -24px rgba(14,17,22,.42)}
-.split .pic img{width:100%;height:440px;object-fit:cover}
+.split .pic img{width:100%;height:440px;object-fit:cover;filter:brightness(1.12) contrast(1.05)}
 .split h2{font-size:clamp(1.7rem,3vw,2.4rem);margin-bottom:16px}
 .split p{color:var(--mut);margin-bottom:14px}
 .check{list-style:none;margin:20px 0 28px}
@@ -179,6 +182,11 @@ footer{background:var(--steel);color:#8d99a6;padding:56px 0 40px;font-size:.9rem
   .hero-grid{padding:64px 0 56px}
   .quote{padding:34px}
   .stats{gap:22px}
+  .cta-full{display:none}
+  .cta-mini{display:inline}
+  header .cta{padding:10px 14px;font-size:.8rem}
+  .mnav{gap:6px;padding:10px 12px}
+  .mnav a{padding:6px 10px;font-size:.74rem}
 }
 </style>
 </head>
@@ -202,7 +210,7 @@ footer{background:var(--steel);color:#8d99a6;padding:56px 0 40px;font-size:.9rem
     </nav>
     <a class="cta" href="https://wa.me/5517991542307?text=Ol%C3%A1%2C%20Moiseis!%20Quero%20um%20or%C3%A7amento%20de%20tatuagem." target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2.1.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.3.7 1.1 1.5 1.7 1 .8 1.7 1.1 2 1.2.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.9c.3.1.4.2.5.3-.1.2-.1.8-.5 1.4Z"/></svg>
-      Orçamento no WhatsApp
+      <span class="cta-full">Orçamento no WhatsApp</span><span class="cta-mini">Orçamento</span>
     </a>
   </div>
   <nav class="mnav" aria-label="Navegação mobile">
@@ -274,7 +282,8 @@ footer{background:var(--steel);color:#8d99a6;padding:56px 0 40px;font-size:.9rem
         </article>
         <article class="card">
           <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/00B-Axys_Valhalia_pen_rotary_style_tattoo_machine_with_tape_wrapped_around_tattoo_machine_to_increase_hand_stability_and_ergonomic_health.jpg/960px-00B-Axys_Valhalia_pen_rotary_style_tattoo_machine_with_tape_wrapped_around_tattoo_machine_to_increase_hand_stability_and_ergonomic_health.jpg" alt="Caneta rotary com wrap sanitário em luva — assepsia visível, imagem ilustrativa (CC Wikimedia)" loading="lazy">
-          <div class="body"><span class="tag">Estúdio</span><h3>Ambiente próprio, assepsia visível</h3><p>Material descartável, equipamento wrapado e sala reservada — higiene que você vê antes de deitar.</p></div>
+          <div class="body"><span class="tag">Estúdio</span><h3>Ambiente próprio, assepsia visível</h3><p>Material descartável, equipamento wrapado e sala reservada — higiene que você vê antes de deitar.</p>
+            <a class="pricelink" href="https://wa.me/5517991542307?text=Ol%C3%A1!%20Quero%20conhecer%20o%20est%C3%BAdio%20e%20agendar." target="_blank" rel="noopener">Conhecer o estúdio →</a></div>
         </article>
       </div>
     </div>

@@ -55,10 +55,10 @@ html{scroll-behavior:smooth}
 body{font-family:'Inter',system-ui,sans-serif;color:var(--void);background:var(--paper);line-height:1.65}
 img{max-width:100%;display:block}
 a{text-decoration:none;color:inherit}
-h1,h2,h3,.disp{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-.01em}
+h1,h2,h3,.disp{font-family:'Fraunces',serif;font-weight:600;letter-spacing:-.01em;text-wrap:balance}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 /* layered ambient background: ember light through smoke */
-.bg{position:fixed;inset:0;z-index:-1;background:
+.bg{position:fixed;inset:0;z-index:-1;overflow:hidden;background:
   radial-gradient(980px 520px at 90% -8%, rgba(224,118,44,.14), transparent 60%),
   radial-gradient(820px 460px at -8% 26%, rgba(124,58,29,.10), transparent 58%),
   radial-gradient(760px 520px at 52% 112%, rgba(20,17,13,.10), transparent 60%),
@@ -81,18 +81,19 @@ nav a:hover{color:var(--ember)}
 .mnav a{flex:none;color:#d8cfc2;font-size:.82rem;font-weight:600;padding:7px 14px;border:1px solid rgba(224,118,44,.35);border-radius:999px;white-space:nowrap}
 .mnav a:active{background:rgba(224,118,44,.18)}
 .cta{display:inline-flex;align-items:center;gap:9px;background:var(--ember);color:#fff;font-weight:700;font-size:.92rem;padding:11px 20px;border-radius:999px;transition:transform .18s, background .18s;white-space:nowrap}
+.cta-mini{display:none}
 .cta:hover{transform:translateY(-2px);background:#f08a42}
 .cta svg{width:17px;height:17px}
 /* hero */
 .hero{position:relative;color:var(--bone);overflow:hidden;background:var(--void)}
 .hero::before{content:"";position:absolute;inset:0;background:
-  radial-gradient(700px 420px at 82% 8%, rgba(224,118,44,.16), transparent 60%),
-  radial-gradient(560px 380px at 6% 92%, rgba(124,58,29,.22), transparent 58%);}
+  radial-gradient(700px 420px at 82% 8%, rgba(224,118,44,.22), transparent 60%),
+  radial-gradient(560px 380px at 6% 92%, rgba(124,58,29,.30), transparent 58%);}
 .hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;padding:96px 0 88px}
 .eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.78rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ember);margin-bottom:20px}
 .eyebrow::before{content:"";width:34px;height:1px;background:var(--ember)}
 .hero h1{font-size:clamp(2.4rem,5.2vw,4.1rem);line-height:1.06;color:#fff}
-.hero h1 em{font-style:italic;color:var(--ember)}
+.hero h1 em{font-style:italic;color:var(--ember);white-space:nowrap}
 .hero p.lead{margin:22px 0 30px;color:#c8bdae;font-size:1.08rem;max-width:52ch}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap}
 .ghost{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(224,118,44,.55);color:var(--ember);font-weight:600;font-size:.92rem;padding:11px 20px;border-radius:999px}
@@ -101,7 +102,7 @@ nav a:hover{color:var(--ember)}
 .hero-img img{width:100%;height:520px;object-fit:cover;object-position:center 30%}
 .hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(200deg,transparent 55%,rgba(20,17,13,.6))}
 .stats{display:flex;gap:38px;margin-top:34px;flex-wrap:wrap}
-.stat b{font-family:'Fraunces';font-size:1.7rem;color:#fff;display:block;line-height:1.1}
+.stat b{font-family:'Fraunces';font-size:1.7rem;color:#fff;display:block;line-height:1.1;font-variant-numeric:lining-nums;font-feature-settings:"lnum" 1}
 .stat span{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:#a99e8f}
 /* sections */
 section{padding:88px 0}
@@ -112,13 +113,13 @@ section{padding:88px 0}
 .sec-head p{margin-top:14px;color:var(--mut)}
 /* services grid */
 .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:transform .2s,box-shadow .2s;display:flex;flex-direction:column}
 .card:hover{transform:translateY(-4px);box-shadow:0 24px 48px -20px rgba(20,17,13,.28)}
 .card img{height:250px;width:100%;object-fit:cover}
-.card .body{padding:20px 22px 24px}
+.card .body{padding:20px 22px 24px;display:flex;flex-direction:column;flex:1}
 .card h3{font-size:1.22rem;margin-bottom:8px}
 .card p{color:var(--mut);font-size:.95rem}
-.card a.pricelink{display:inline-flex;align-items:center;gap:7px;margin-top:14px;font-weight:700;font-size:.88rem;color:var(--ember2)}
+.card a.pricelink{display:inline-flex;align-items:center;gap:7px;margin-top:auto;padding-top:14px;font-weight:700;font-size:.88rem;color:var(--ember2)}
 .tag{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--rust);background:rgba(124,58,29,.09);padding:5px 12px;border-radius:999px;margin-bottom:12px}
 /* process */
 .process{background:var(--void);color:var(--bone)}
@@ -182,6 +183,12 @@ footer{background:var(--void);color:#a99e8f;padding:56px 0 40px;font-size:.9rem}
   .hero-grid{padding:64px 0 56px}
   .quote{padding:34px}
   .stats{gap:22px}
+  .cta-full{display:none}
+  .cta-mini{display:inline}
+  header .cta{padding:10px 14px;font-size:.8rem}
+  .hero h1 em{white-space:normal}
+  .mnav{gap:6px;padding:10px 12px}
+  .mnav a{padding:6px 10px;font-size:.74rem}
 }
 </style>
 </head>
@@ -206,7 +213,7 @@ footer{background:var(--void);color:#a99e8f;padding:56px 0 40px;font-size:.9rem}
     </nav>
     <a class="cta" href="https://wa.me/5517991854618?text=Ol%C3%A1%2C%20The%20House!%20Quero%20um%20or%C3%A7amento%20de%20tatuagem." target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1-1.4-1-2.6 0-1.2.6-1.8.9-2.1.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 1.9c.1.2.1.4 0 .5l-.4.6c-.1.2-.3.3-.1.6.1.3.7 1.1 1.5 1.7 1 .8 1.7 1.1 2 1.2.2.1.4.1.6-.1l.7-.8c.2-.2.4-.2.6-.1l1.8.9c.3.1.4.2.5.3-.1.2-.1.8-.5 1.4Z"/></svg>
-      Orçamento no WhatsApp
+      <span class="cta-full">Orçamento no WhatsApp</span><span class="cta-mini">Orçamento</span>
     </a>
   </div>
   <nav class="mnav" aria-label="Navegação mobile">
@@ -382,7 +389,7 @@ footer{background:var(--void);color:#a99e8f;padding:56px 0 40px;font-size:.9rem}
       </details>
       <details>
         <summary>Onde fica o estúdio?</summary>
-        <p>Av. das Hortências, 743 — São José do Rio Preto/SP. Horário de atendimento e dia de curso você confirma no zap antes de vir.</p>
+        <p><a href="https://www.google.com/maps/search/?api=1&query=Av.+das+Hort%C3%AAncias+743+S%C3%A3o+Jos%C3%A9+do+Rio+Preto" target="_blank" rel="noopener" style="color:#e0762c;text-decoration:underline;text-underline-offset:3px">Av. das Hortências, 743</a> — São José do Rio Preto/SP. Horário de atendimento e dia de curso você confirma no zap antes de vir.</p>
       </details>
     </div>
   </section>
