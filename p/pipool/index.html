@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PiPool Engenharia &amp; Piscinas — Construção, Manutenção e Loja em São José do Rio Preto</title>
+<meta name="description" content="PiPool Engenharia e Piscinas: construção, aquecimento, automação e equipamentos premium para piscinas em São José do Rio Preto. Orçamento e loja direto no WhatsApp (17) 99735-6604.">
+<meta property="og:title" content="PiPool Engenharia &amp; Piscinas — sua piscina pronta, cuidada e abastecida">
+<meta property="og:description" content="Obra, reforma, tratamento de água e loja de químicos, bombas e filtros em Rio Preto. Orçamento no WhatsApp.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=1200&q=70&auto=format&fit=crop">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%23052033'/%3E%3Cpath d='M24 8c6 8 10 12.5 10 18a10 10 0 1 1-20 0c0-5.5 4-10 10-18z' fill='%2324b5d8'/%3E%3Cpath d='M14 36c3-2 5-2 7 0s5 2 7 0 5-2 7 0' stroke='%23e8f6fb' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "PiPool Engenharia & Piscinas",
+  "description": "Construção, reforma, aquecimento, automação e manutenção de piscinas em São José do Rio Preto, com loja de químicos, bombas e filtros.",
+  "telephone": "+55 17 99735-6604",
+  "url": "https://riopreto.tech/p/pipool/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Nossa Senhora da Paz, 1593 - Jardim Alto Alegre",
+    "addressLocality": "São José do Rio Preto",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "areaServed": "São José do Rio Preto e região NW-SP",
+  "priceRange": "$$",
+  "sameAs": ["https://www.instagram.com/pipooloficial"]
+}
+</script>
+<style>
+:root{
+  --deep:#052033; --deep2:#0a3550; --ink:#0e2430; --aqua:#24b5d8; --aqua-d:#0f8fb0;
+  --foam:#eaf6fb; --sand:#f7f3ea; --sun:#f5c15a; --white:#ffffff;
+  --line:rgba(5,32,51,.12); --shadow:0 18px 44px -18px rgba(5,32,51,.35);
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--white);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,.brand{font-family:'Archivo',sans-serif}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+
+/* topbar */
+.topbar{background:var(--deep);color:#bfe3ef;font-size:.82rem;padding:8px 0;letter-spacing:.02em}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.topbar b{color:var(--sun)}
+
+/* nav */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:1.2rem;color:var(--deep);flex-shrink:0}
+.brand .pi{width:38px;height:38px;border-radius:11px;background:var(--deep);color:var(--aqua);display:grid;place-items:center;font-size:1.15rem;font-weight:800;font-style:italic;font-family:'Archivo'}
+.navlinks{display:flex;gap:26px;font-weight:500;font-size:.93rem}
+.navlinks a{color:#35586b;transition:color .2s;white-space:nowrap}
+.navlinks a:hover{color:var(--aqua-d)}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--aqua-d);color:#fff;font-weight:700;padding:12px 20px;border-radius:999px;box-shadow:0 10px 24px -10px rgba(15,143,176,.6);transition:transform .18s, box-shadow .18s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 30px -12px rgba(15,143,176,.7)}
+.btn.ghost{background:transparent;color:var(--deep);border:2px solid var(--deep);box-shadow:none}
+.btn.ghost:hover{background:var(--deep);color:#fff}
+@media(max-width:1000px){.navlinks{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;color:#fff;overflow:hidden;isolation:isolate}
+.hero .bgimg{position:absolute;inset:0;z-index:-2}
+.hero .bgimg img{width:100%;height:100%;object-fit:cover;animation:slowzoom 26s ease-out forwards}
+@keyframes slowzoom{from{transform:scale(1.13)}to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(102deg,rgba(3,22,36,.86) 6%,rgba(6,42,66,.62) 46%,rgba(36,181,216,.16) 100%)}
+.hero .wrap{padding-top:86px;padding-bottom:96px}
+.kicker{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.28);padding:7px 14px;border-radius:999px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#d7f4fc}
+.hero h1{font-size:clamp(2.25rem,5.3vw,3.9rem);line-height:1.08;font-weight:800;margin:22px 0 16px;text-shadow:0 4px 26px rgba(0,0,0,.38)}
+.hero h1 em{font-style:normal;color:var(--aqua)}
+.hero p.lead{max-width:580px;font-size:1.1rem;color:#e7f4f9;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.ctas{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.hero .stats{display:flex;gap:34px;margin-top:50px;flex-wrap:wrap}
+.hero .stats div{border-left:3px solid var(--aqua);padding-left:14px}
+.hero .stats b{display:block;font-family:'Archivo';font-size:1.35rem;color:#fff}
+.hero .stats span{font-size:.84rem;color:#b7dced}
+
+/* wave */
+.wave{display:block;width:100%;height:64px}
+
+/* sections */
+section{padding:82px 0}
+.sec-head{max-width:660px;margin-bottom:42px}
+.sec-head .tag{color:var(--aqua-d);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;display:block;margin-bottom:10px}
+.sec-head h2{font-size:clamp(1.7rem,3.4vw,2.35rem);color:var(--deep);line-height:1.15;font-weight:800}
+.sec-head p{margin-top:12px;color:#466274}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.svc-card{background:var(--foam);border:1px solid var(--line);border-radius:var(--radius);padding:28px 26px;position:relative;overflow:hidden;transition:transform .2s, box-shadow .2s}
+.svc-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.svc-card::after{content:"";position:absolute;right:-38px;bottom:-38px;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle at 30% 30%, rgba(36,181,216,.22), transparent 70%)}
+.svc-card .ic{width:46px;height:46px;border-radius:12px;background:#fff;border:1px solid var(--line);display:grid;place-items:center;margin-bottom:16px}
+.svc-card h3{font-size:1.1rem;color:var(--deep);margin-bottom:8px}
+.svc-card p{font-size:.93rem;color:#4a6474}
+.svc-card ul{list-style:none;margin-top:12px}
+.svc-card li{display:flex;gap:9px;align-items:flex-start;padding:4px 0;font-size:.9rem;color:#37505e}
+.svc-card li svg{flex:none;margin-top:4px}
+
+/* split */
+.split{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+.split .ph{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);position:relative;min-height:320px}
+.split .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.split h2{font-size:clamp(1.55rem,3vw,2.1rem);color:var(--deep);line-height:1.2;font-weight:800;margin-bottom:14px}
+.split p{color:#4a6474;margin-bottom:14px}
+.steps{counter-reset:step;list-style:none;margin-top:18px}
+.steps li{display:flex;gap:16px;padding:12px 0;border-bottom:1px dashed var(--line)}
+.steps li:last-child{border-bottom:none}
+.steps .n{flex:none;width:34px;height:34px;border-radius:50%;background:var(--deep);color:var(--sun);font-weight:800;font-family:'Archivo';display:grid;place-items:center;font-size:.95rem}
+.steps b{color:var(--deep)}
+@media(max-width:880px){.split{grid-template-columns:1fr}.split .ph{min-height:250px}}
+
+/* shop */
+.shop{background:linear-gradient(180deg,#fff 0%,var(--foam) 100%)}
+.shop-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:24px}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 8px 26px -18px rgba(5,32,51,.3);display:flex;flex-direction:column;transition:transform .22s, box-shadow .22s}
+.pcard:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.pcard .ph{height:170px;background:#f2f7fa;display:grid;place-items:center;overflow:hidden}
+.pcard .ph img{max-height:150px;object-fit:contain;transition:transform .45s}
+.pcard:hover .ph img{transform:scale(1.06)}
+.pcard .bd{padding:18px 20px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.pcard .cat{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--aqua-d)}
+.pcard h3{font-size:.98rem;color:var(--deep);line-height:1.35;font-weight:700}
+.pricebox{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-top:auto;background:var(--foam);border:1px dashed rgba(5,32,51,.22);border-radius:12px;padding:10px 14px}
+.pricebox small{font-size:.7rem;color:#5d7688;text-transform:uppercase;letter-spacing:.08em}
+.pricebox b{font-family:'Archivo';font-size:1.25rem;color:var(--deep)}
+.pcard .buy{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--deep);color:#fff;font-weight:700;font-size:.88rem;padding:11px;border-radius:11px;transition:background .2s}
+.pcard .buy:hover{background:var(--aqua-d)}
+.shop-note{margin-top:22px;font-size:.82rem;color:#5d7688;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+
+/* trust band */
+.band{background:var(--deep);color:#dff1f8;padding:58px 0}
+.band .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px}
+.band .cell{border-left:3px solid var(--aqua);padding-left:16px}
+.band b{display:block;font-family:'Archivo';font-size:1.06rem;color:#fff;margin-bottom:5px}
+.band p{font-size:.89rem;color:#a9d2e2}
+.band a{color:var(--sun);font-weight:700}
+
+/* faq */
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-bottom:14px;box-shadow:0 6px 18px -14px rgba(5,32,51,.3)}
+.faq summary{cursor:pointer;font-weight:700;color:var(--deep);font-family:'Archivo';list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";width:12px;height:12px;border-right:2.5px solid var(--aqua-d);border-bottom:2.5px solid var(--aqua-d);transform:rotate(45deg);transition:transform .2s;flex:none}
+.faq details[open] summary::after{transform:rotate(225deg)}
+.faq p{margin-top:10px;color:#4a6474;font-size:.94rem}
+
+/* contact */
+.contact{background:linear-gradient(180deg,var(--foam),var(--sand))}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.ccard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.ccard h3{color:var(--deep);font-size:1rem;margin-bottom:8px;display:flex;gap:10px;align-items:center}
+.ccard p{font-size:.92rem;color:#4a6474}
+.ccard a.line{display:inline-flex;align-items:center;gap:8px;margin-top:10px;color:var(--aqua-d);font-weight:700;font-size:.9rem}
+
+/* footer */
+footer{background:var(--ink);color:#9fc3d4;font-size:.85rem;padding:40px 0 30px}
+footer .wrap{display:flex;flex-direction:column;gap:12px}
+footer .demo{background:rgba(245,193,90,.12);border:1px solid rgba(245,193,90,.35);color:#ffe2a8;border-radius:12px;padding:12px 16px;font-size:.85rem}
+footer .demo b{color:#ffd684}
+
+/* floating wa */
+.fab{position:fixed;right:20px;bottom:20px;z-index:60;background:#1faf5a;color:#fff;font-weight:700;display:flex;align-items:center;gap:9px;padding:13px 18px;border-radius:999px;box-shadow:0 14px 30px -10px rgba(31,175,90,.55);font-size:.92rem}
+.fab:hover{transform:translateY(-2px)}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <span>Engenharia + loja de piscinas em <b>São José do Rio Preto</b> — atendimento humano no WhatsApp</span>
+  <span>Av. N. Sra. da Paz, 1593 · Jd. Alto Alegre · CNPJ 39.381.401/0001-74</span>
+</div></div>
+
+<header class="nav"><div class="wrap">
+  <div class="brand"><span class="pi">&pi;</span> PiPool <span style="font-weight:500;color:#35586b;font-size:.95rem">Engenharia &amp; Piscinas</span></div>
+  <nav class="navlinks">
+    <a href="#construcao">Construção</a>
+    <a href="#manutencao">Manutenção</a>
+    <a href="#loja">Loja</a>
+    <a href="#confianca">Por que a PiPool</a>
+    <a href="#duvidas">Dúvidas</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <a class="btn" href="https://wa.me/5517997356604?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20da%20minha%20piscina." target="_blank" rel="noopener">
+    <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.3c-.6.6-2.5.8-4.7-.4a13 13 0 0 1-3.9-3.6c-1-1.4-1.4-2.9-.9-3.8.4-.9 1.2-1.1 1.7-.8.4.2.9 1 1.2 1.8.2.5.4.9.2 1.3-.2.4-.6.6-.9.9l.9 1.4c.8.8 1.6 1.3 2.1 1.3.4.1.8-.2 1.1-.5.3-.3.6-.4 1-.2.9.4 1.6 1.1 1.8 1.5.2.4 0 .8-.7 1.1z"/></svg>
+    Orçamento no zap
+  </a>
+</div></header>
+
+<section class="hero" id="topo">
+  <div class="bgimg"><img src="https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=1920&q=75&auto=format&fit=crop" alt="Piscina de borda infinita ao entardecer — imagem ilustrativa de banco de imagens" onerror="this.style.display='none'"></div>
+  <div class="wrap">
+    <span class="kicker">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f5c15a" stroke-width="2.4" stroke-linecap="round"><path d="M12 3v18M3 12h18"/></svg>
+      Construção · Aquecimento · Automação · Tratamento · Loja
+    </span>
+    <h1>Sua piscina construída por engenharia — e <em>cuidada o ano inteiro</em></h1>
+    <p class="lead">A PiPool projeta, executa e mantém piscinas em São José do Rio Preto e região: obra séria com equipe própria, água tratada por plano semanal e a loja de químicos, bombas e filtros no mesmo lugar.</p>
+    <div class="ctas">
+      <a class="btn" href="https://wa.me/5517997356604?text=Ol%C3%A1!%20Quero%20or%C3%A7amento%20de%20constru%C3%A7%C3%A3o%20de%20piscina." target="_blank" rel="noopener">Pedir orçamento de obra</a>
+      <a class="btn ghost" style="border-color:#fff;color:#fff" href="#loja">Ver a loja</a>
+    </div>
+    <div class="stats">
+      <div><b>Obra + manutenção</b><span>uma empresa do concreto ao cloro</span></div>
+      <div><b>Loja física</b><span>químicos, filtros e bombas a pronta entrega</span></div>
+      <div><b>WhatsApp direto</b><span>(17) 99735-6604 — sem intermediário</span></div>
+    </div>
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 64" preserveAspectRatio="none" aria-hidden="true"><path d="M0 34c180-26 320 26 520 14s280-40 460-18 300 30 460 10v24H0z" fill="#eaf6fb"/></svg>
+
+<section id="construcao">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Engenharia de verdade</span>
+      <h2>Do terreno à borda: construímos e reformamos piscina com projeto, impermeabilização e acabamento</h2>
+      <p>Cada obra começa com visita técnica e projeto — dimensionamento de estrutura, sistema de filtragem e prumo de borda. Reforma e troca de revestimento também.</p>
+    </div>
+    <div class="svc">
+      <div class="svc-card">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f8fb0" stroke-width="2" stroke-linecap="round"><path d="M3 21h18M6 21V10l6-5 6 5v11"/><path d="M10 21v-5h4v5"/></svg></div>
+        <h3>Construção nova</h3>
+        <p>Piscina de alvenaria ou estrutura pré-fabricada, com casa de máquinas dimensionada.</p>
+        <ul>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0f8fb0" stroke-width="2.6" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg> Projeto e visita técnica</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0f8fb0" stroke-width="2.6" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg> Impermeabilização testada</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0f8fb0" stroke-width="2.6" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg> Borda, prainha e deck</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f8fb0" stroke-width="2" stroke-linecap="round"><path d="M12 3c3.5 4.5 6 7 6 10a6 6 0 1 1-12 0c0-3 2.5-5.5 6-10z"/></svg></div>
+        <h3>Aquecimento e automação</h3>
+        <p>Instalação e integração de aquecimento, iluminação e temporização — piscina pronta para o ano todo.</p>
+        <ul>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0f8fb0" stroke-width="2.6" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg> Trocadores e bombas premium</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0f8fb0" stroke-width="2.6" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg> Automação de filtragem</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#0f8fb0" stroke-width="2" stroke-linecap="round"><path d="M14.7 6.3a4 4 0 0 0-5.2 5.2L4 17l3 3 5.5-5.5a4 4 0 0 0 5.2-5.2l-2.7 2.7-2-2 2.7-2.7z"/></svg></div>
+        <h3>Reforma e revestimento</h3>
+        <p>Piscina antiga que trinca, vaza ou perdeu o brilho? Reformamos piso, parede, borda e instalação elétrica.</p>
+        <ul>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0f8fb0" stroke-width="2.6" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg> Diagnóstico de vazamento</li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#0f8fb0" stroke-width="2.6" stroke-linecap="round"><path d="M4 12l5 5L20 6"/></svg> Novo acabamento e iluminação</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="manutencao" style="background:var(--foam)">
+  <div class="wrap split">
+    <div class="ph"><img src="manutencao.jpg" alt="Piscina residencial de água cristalina após tratamento — imagem ilustrativa de banco de imagens" loading="lazy" onerror="this.style.display='none'"></div>
+    <div>
+      <div class="sec-head" style="margin-bottom:18px">
+        <span class="tag">Água cristalina o ano todo</span>
+        <h2 style="font-size:clamp(1.55rem,3vw,2.1rem)">Manutenção periódica: quem cuida da água, prolonga a piscina</h2>
+      </div>
+      <p>Plano semanal ou quinzenal com limpeza física, aspiração, controle de cloro e alcalinidade registrado. Você recebe a leitura dos parâmetros e a lista do que foi usado — química certa, sem desperdício.</p>
+      <ol class="steps">
+        <li><span class="n">1</span><div><b>Visita programada</b> — dia fixo na semana, sem precisar chamar.</div></li>
+        <li><span class="n">2</span><div><b>Medição da água</b> — cloro livre, pH e alcalinidade testados na hora.</div></li>
+        <li><span class="n">3</span><div><b>Limpeza completa</b> — cestos, linha d'água, escovação e aspiração.</div></li>
+        <li><span class="n">4</span><div><b>Abastecimento da loja</b> — o químico acaba, a PiPool repõe da loja própria.</div></li>
+      </ol>
+      <p style="margin-top:18px"><a class="btn" href="https://wa.me/5517997356604?text=Ol%C3%A1!%20Quero%20plano%20de%20manuten%C3%A7%C3%A3o%20da%20piscina." target="_blank" rel="noopener">Quero um plano de manutenção</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="shop" id="loja">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Loja PiPool</span>
+      <h2>Químicos, bombas e filtros — os mesmos equipamentos que instalamos, à pronta entrega</h2>
+      <p>Compra no balcão da Av. N. Sra. da Paz ou reservada pelo WhatsApp. Preços abaixo colhidos da loja online da PiPool em 25/10/2026.</p>
+    </div>
+    <div class="shop-grid">
+      <div class="pcard">
+        <div class="ph"><img src="prod_7191388-03805731.jpg" alt="Bomba alta vazão Super Syllent 2,0 cv 220V — foto do produto da loja PiPool" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="bd">
+          <span class="cat">Bombas</span>
+          <h3>Bomba Alta Vazão 2,0 cv 220V Super Syllent</h3>
+          <div class="pricebox"><small>a partir de</small><b>R$ 1.850,00</b></div>
+          <a class="buy" href="https://wa.me/5517997356604?text=Ol%C3%A1!%20Quero%20reservar%20a%20bomba%20Super%20Syllent%202%2C0cv." target="_blank" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M6 6l1.5 12h9L18 6M9 6V4h6v2"/></svg>
+            Reservar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="ph"><img src="prod_7191385-33374630.jpg" alt="Filtro para piscina Syl 400 — foto do produto da loja PiPool" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="bd">
+          <span class="cat">Filtros</span>
+          <h3>Filtro para Piscina Syl 400</h3>
+          <div class="pricebox"><small>a partir de</small><b>R$ 920,05</b></div>
+          <a class="buy" href="https://wa.me/5517997356604?text=Ol%C3%A1!%20Quero%20reservar%20o%20filtro%20Syl%20400." target="_blank" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M6 6l1.5 12h9L18 6M9 6V4h6v2"/></svg>
+            Reservar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="ph"><img src="prod_7190840-01501280.jpg" alt="Cloro estabilizado granulado Genclor 10 kg — foto do produto da loja PiPool" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="bd">
+          <span class="cat">Químicos</span>
+          <h3>Genclor Cloro Estabilizado Granulado 10 kg</h3>
+          <div class="pricebox"><small>a partir de</small><b>R$ 240,00</b></div>
+          <a class="buy" href="https://wa.me/5517997356604?text=Ol%C3%A1!%20Quero%20reservar%20cloro%20Genclor%2010kg." target="_blank" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M6 6l1.5 12h9L18 6M9 6V4h6v2"/></svg>
+            Reservar no WhatsApp</a>
+        </div>
+      </div>
+      <div class="pcard">
+        <div class="ph"><img src="prod_7186307-77015275.jpg" alt="Elevador de alcalinidade Hidroazul 2 kg — foto do produto da loja PiPool" loading="lazy" onerror="this.style.display='none'"></div>
+        <div class="bd">
+          <span class="cat">Químicos</span>
+          <h3>Elevador de Alcalinidade 2 kg Hidroazul</h3>
+          <div class="pricebox"><small>a partir de</small><b>R$ 38,00</b></div>
+          <a class="buy" href="https://wa.me/5517997356604?text=Ol%C3%A1!%20Quero%20reservar%20elevador%20de%20alcalinidade." target="_blank" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 6h18M6 6l1.5 12h9L18 6M9 6V4h6v2"/></svg>
+            Reservar no WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <p class="shop-note">Catálogo, marcas e valores acima foram lidos do próprio site da PiPool em 25/10/2026 (bomba Super Syllent R$ 1.850,00 · filtro Syl 400 R$ 920,05 · Genclor 10 kg R$ 240,00 · elevador de alcalinidade Hidroazul 2 kg R$ 38,00). Disponibilidade e preço final: confirmar no WhatsApp.</p>
+  </div>
+</section>
+
+<section class="band" id="confianca">
+  <div class="wrap">
+    <div class="sec-head" style="max-width:720px">
+      <span class="tag" style="color:var(--aqua)">Por que a PiPool</span>
+      <h2 style="color:#fff">Uma casa só: quem constrói é quem mantém e quem vende o equipamento</h2>
+      <p style="color:#a9d2e2">Piscina não é compra de um dia. É obra, água, química e peça — e funciona melhor quando uma única empresa responde por tudo.</p>
+    </div>
+    <div class="grid">
+      <div class="cell"><b>Engenharia + piscina</b><p>Construção, aquecimento e automação — não só limpeza.</p></div>
+      <div class="cell"><b>Loja própria</b><p>Químicos, filtros e bombas com estoque físico em Rio Preto.</p></div>
+      <div class="cell"><b>Endereço e CNPJ à mostra</b><p>Av. N. Sra. da Paz, 1593 · Jd. Alto Alegre · CNPJ 39.381.401/0001-74.</p></div>
+      <div class="cell"><b>Atendimento direto</b><p>WhatsApp (17) 99735-6604 publicado no próprio site — o mesmo número deste protótipo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas">
+  <div class="wrap" style="max-width:820px">
+    <div class="sec-head">
+      <span class="tag">Dúvidas frequentes</span>
+      <h2>Antes de chamar no zap</h2>
+    </div>
+    <div class="faq">
+      <details>
+        <summary>Quanto tempo leva para construir uma piscina?</summary>
+        <p>Depende do porte, do acesso ao terreno e do sistema escolhido (vinil, alvenaria, borda infinita). A visita técnica define prazo e orçamento — chame no WhatsApp com fotos do quintal que a PiPool orienta por lá antes mesmo da obra.</p>
+      </details>
+      <details>
+        <summary>Vocês atendem manutenção de piscina que não foi construída por vocês?</summary>
+        <p>Sim. A casa faz diagnóstico, regularização da água e plano de manutenção periódica para qualquer piscina da região, mesmo as já existentes.</p>
+      </details>
+      <details>
+        <summary>Preciso comprar o químico ou a manutenção inclui?</summary>
+        <p>O plano periódico inclui a mão de obra e a reposição é registrada a cada visita — você aprova o consumo e pode retirar na loja da Av. N. Sra. da Paz ou receber conforme combinado.</p>
+      </details>
+      <details>
+        <summary>Como sei qual bomba e filtro servem para a minha piscina?</summary>
+        <p>Dimensionamento é por volume de água e tempo de filtragem. Leve (ou mande por foto) a plaqueta do equipamento atual no WhatsApp (17) 99735-6604 — a loja PiPool vende exatamente os modelos que a engenharia instala.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contato">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag">Contato</span>
+      <h2>Obra, manutenção ou balcão — tudo cai no mesmo WhatsApp</h2>
+    </div>
+    <div class="cgrid">
+      <div class="ccard">
+        <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0f8fb0" stroke-width="2" stroke-linecap="round"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg> WhatsApp</h3>
+        <p>(17) 99735-6604 — número publicado no rodapé do site oficial da PiPool.</p>
+        <a class="line" href="https://wa.me/5517997356604?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener">Abrir conversa →</a>
+      </div>
+      <div class="ccard">
+        <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0f8fb0" stroke-width="2" stroke-linecap="round"><path d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Loja e sede</h3>
+        <p>Av. Nossa Senhora da Paz, 1593<br>Jardim Alto Alegre — São José do Rio Preto/SP</p>
+        <a class="line" href="https://www.google.com/maps/search/?api=1&query=Av.+Nossa+Senhora+da+Paz+1593+S%C3%A3o+Jos%C3%A9+do+Rio+Preto" target="_blank" rel="noopener">Ver no Google Maps →</a>
+      </div>
+      <div class="ccard">
+        <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0f8fb0" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M8 2v4M16 2v4M3 10h18"/></svg> Instagram</h3>
+        <p>@pipooloficial — link publicado no próprio site da empresa.</p>
+        <a class="line" href="https://www.instagram.com/pipooloficial" target="_blank" rel="noopener">Seguir →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="demo"><b>Aviso:</b> Protótipo criado pela <b>Agência Rio Preto Tech</b> — não é o site oficial. As fotos de piscina são ilustrativas (banco de imagens) e os produtos exibidos são as fotos e preços públicos da própria loja PiPool lidos em 25/10/2026; marca, endereço e contatos foram copiados do material oficial da empresa.</div>
+    <span>PiPool Engenharia &amp; Piscinas · São José do Rio Preto/SP — protótipo demonstrativo: riopreto.tech/p/pipool/</span>
+  </div>
+</footer>
+
+<a class="fab" href="https://wa.me/5517997356604?text=Ol%C3%A1!%20Quero%20falar%20com%20a%20PiPool." target="_blank" rel="noopener">
+  <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.3c-.6.6-2.5.8-4.7-.4a13 13 0 0 1-3.9-3.6c-1-1.4-1.4-2.9-.9-3.8.4-.9 1.2-1.1 1.7-.8.4.2.9 1 1.2 1.8.2.5.4.9.2 1.3-.2.4-.6.6-.9.9l.9 1.4c.8.8 1.6 1.3 2.1 1.3.4.1.8-.2 1.1-.5.3-.3.6-.4 1-.2.9.4 1.6 1.1 1.8 1.5.2.4 0 .8-.7 1.1z"/></svg>
+  Falar com a PiPool
+</a>
+
+</body>
+</html>
