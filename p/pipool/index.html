@@ -66,6 +66,14 @@ header.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);back
 .btn.ghost{background:transparent;color:var(--deep);border:2px solid var(--deep);box-shadow:none}
 .btn.ghost:hover{background:var(--deep);color:#fff}
 @media(max-width:1000px){.navlinks{display:none}}
+@media(max-width:700px){
+  .nav .wrap{padding-top:11px;padding-bottom:11px;gap:10px}
+  .brand{gap:8px;font-size:1.05rem}
+  .brand .sub{display:none}
+  .btn{padding:10px 15px;font-size:.82rem;flex-shrink:0;white-space:nowrap}
+  .wrap{padding:0 16px}
+  .hero .bgimg img{object-position:center 82%}
+}
 
 /* hero */
 .hero{position:relative;min-height:88vh;display:flex;align-items:center;color:#fff;overflow:hidden;isolation:isolate}
@@ -180,7 +188,7 @@ footer .demo b{color:#ffd684}
 </div></div>
 
 <header class="nav"><div class="wrap">
-  <div class="brand"><span class="pi">&pi;</span> PiPool <span style="font-weight:500;color:#35586b;font-size:.95rem">Engenharia &amp; Piscinas</span></div>
+  <div class="brand"><span class="pi">&pi;</span> PiPool <span class="sub" style="font-weight:500;color:#35586b;font-size:.95rem">Engenharia &amp; Piscinas</span></div>
   <nav class="navlinks">
     <a href="#construcao">Construção</a>
     <a href="#manutencao">Manutenção</a>
