@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IRP Turismo — Agência de Viagens em São José do Rio Preto | Pacotes, Bate-Voltas e Excursões</title>
+<meta name="description" content="IRP Turismo: agência de viagens em São José do Rio Preto. Pacotes para Guarujá, Angra dos Reis, Campos do Jordão, Foz do Iguaçu, Holambra e mais. Reservas direto no WhatsApp (17) 99122-3661.">
+<meta property="og:title" content="IRP Turismo — As melhores viagens saindo de Rio Preto">
+<meta property="og:description" content="Pacotes e bate-voltas com saída de São José do Rio Preto. Orçamento e reserva no WhatsApp da agência.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=70&auto=format&fit=crop">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%2307223b'/%3E%3Ccircle cx='24' cy='18' r='7' fill='%23f2b544'/%3E%3Cpath d='M8 32c5-4 10-4 16 0s11 4 16 0' stroke='%23ff6a4d' stroke-width='3' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "name": "IRP Turismo",
+  "description": "Agência de viagens em São José do Rio Preto: pacotes turísticos, bate-voltas e excursões com saída da cidade.",
+  "telephone": "+55 17 99122-3661",
+  "email": "irpturismo2901@gmail.com",
+  "url": "https://riopreto.tech/p/irp-turismo/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "São José do Rio Preto",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "areaServed": "São José do Rio Preto e região NW-SP",
+  "priceRange": "$$",
+  "sameAs": ["https://instagram.com/irpturismo", "https://facebook.com/turismoirpi"]
+}
+</script>
+<style>
+:root{
+  --navy:#07223b; --navy2:#0c3154; --ink:#12222f; --sand:#f6efe3; --cream:#fffaf1;
+  --coral:#ff6a4d; --coral-d:#e2502f; --sun:#f2b544; --sea:#2f8fa8;
+  --line:rgba(7,34,59,.12); --shadow:0 18px 44px -18px rgba(7,34,59,.35);
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,.brand{font-family:'Sora',sans-serif}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:0 auto;padding:0 24px}
+
+/* ===== top bar ===== */
+.topbar{background:var(--navy);color:#cfe3f1;font-size:.82rem;padding:8px 0;letter-spacing:.02em}
+.topbar .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.topbar b{color:var(--sun)}
+
+/* ===== nav ===== */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(255,250,241,.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:14px;padding-bottom:14px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:800;font-size:1.25rem;color:var(--navy)}
+.brand svg{flex:none}
+.navlinks{display:flex;gap:26px;font-weight:500;font-size:.93rem}
+.navlinks a{color:#3b5266;transition:color .2s}
+.navlinks a:hover{color:var(--coral-d)}
+.btn{display:inline-flex;align-items:center;gap:9px;background:var(--coral);color:#fff;font-weight:700;padding:12px 20px;border-radius:999px;box-shadow:0 10px 24px -10px rgba(255,106,77,.6);transition:transform .18s, box-shadow .18s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 16px 30px -12px rgba(255,106,77,.7)}
+.btn.ghost{background:transparent;color:var(--navy);border:2px solid var(--navy);box-shadow:none}
+.btn.ghost:hover{background:var(--navy);color:#fff}
+@media(max-width:860px){.navlinks{display:none}}
+
+/* ===== hero ===== */
+.hero{position:relative;min-height:88vh;display:flex;align-items:center;color:#fff;overflow:hidden;isolation:isolate}
+.hero .bgimg{position:absolute;inset:0;z-index:-2}
+.hero .bgimg img{width:100%;height:100%;object-fit:cover;animation:slowzoom 24s ease-out forwards}
+@keyframes slowzoom{from{transform:scale(1.12)}to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(105deg,rgba(4,20,36,.82) 8%,rgba(7,34,59,.55) 48%,rgba(242,181,68,.12) 100%)}
+.hero .wrap{padding-top:90px;padding-bottom:90px}
+.kicker{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:7px 14px;border-radius:999px;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#ffe9b8}
+.hero h1{font-size:clamp(2.3rem,5.4vw,4rem);line-height:1.08;font-weight:800;margin:22px 0 18px;text-shadow:0 4px 26px rgba(0,0,0,.35)}
+.hero h1 em{font-style:normal;color:var(--sun)}
+.hero p.lead{max-width:560px;font-size:1.12rem;color:#e8f1f8;text-shadow:0 2px 12px rgba(0,0,0,.4)}
+.ctas{display:flex;gap:14px;margin-top:32px;flex-wrap:wrap}
+.hero .stats{display:flex;gap:38px;margin-top:52px;flex-wrap:wrap}
+.hero .stats div{border-left:3px solid var(--coral);padding-left:14px}
+.hero .stats b{display:block;font-family:'Sora';font-size:1.5rem;color:#fff}
+.hero .stats span{font-size:.85rem;color:#b9d0e2}
+
+/* ===== waves divider ===== */
+.wave{display:block;width:100%;height:64px}
+
+/* ===== sections ===== */
+section{padding:84px 0}
+.sec-head{max-width:640px;margin-bottom:44px}
+.sec-head .tag{color:var(--coral-d);font-weight:700;text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;display:block;margin-bottom:10px}
+.sec-head h2{font-size:clamp(1.7rem,3.4vw,2.4rem);color:var(--navy);line-height:1.15;font-weight:800}
+.sec-head p{margin-top:12px;color:#51677a}
+
+/* featured */
+.feature{background:linear-gradient(180deg,var(--cream) 0%,#fdf6ea 100%)}
+.fcard{display:grid;grid-template-columns:1.05fr 1fr;gap:0;background:#fff;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--line)}
+.fcard .ph{position:relative;min-height:340px}
+.fcard .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ribbon{position:absolute;top:16px;left:16px;background:var(--sun);color:#4c3406;font-weight:800;font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;padding:6px 13px;border-radius:999px;font-family:'Sora'}
+.fcard .bd{padding:38px 40px}
+.fcard h3{font-size:1.55rem;color:var(--navy)}
+.fcard .route{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 16px}
+.pill{background:#eef5f2;color:#2b5c4f;border:1px solid #d5e6df;font-size:.8rem;font-weight:600;padding:5px 12px;border-radius:999px;display:inline-flex;gap:6px;align-items:center}
+.fcard ul{list-style:none;margin:6px 0 22px}
+.fcard li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;color:#3d5468;font-size:.95rem}
+.fcard li svg{flex:none;margin-top:4px}
+.pricebox{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap;background:var(--sand);border:1px dashed rgba(7,34,59,.25);border-radius:14px;padding:18px 20px}
+.pricebox small{display:block;color:#6b7f91;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em}
+.pricebox b{font-family:'Sora';font-size:2rem;color:var(--coral-d);line-height:1}
+@media(max-width:860px){.fcard{grid-template-columns:1fr}.fcard .ph{min-height:240px}}
+
+/* destinations grid */
+.dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(255px,1fr));gap:24px}
+.dcard{background:#fff;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:0 8px 26px -18px rgba(7,34,59,.3);transition:transform .22s, box-shadow .22s;display:flex;flex-direction:column}
+.dcard:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.dcard .ph{height:190px;overflow:hidden}
+.dcard .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.dcard:hover .ph img{transform:scale(1.06)}
+.dcard .bd{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.dcard h3{font-size:1.12rem;color:var(--navy)}
+.dcard .meta{color:#5c7186;font-size:.88rem;display:flex;gap:8px;align-items:center}
+.dcard .foot{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:12px;border-top:1px solid var(--line)}
+.dcard .foot b{font-family:'Sora';color:var(--coral-d);font-size:1.05rem}
+.mini-cta{font-size:.85rem;font-weight:700;color:var(--sea);display:inline-flex;align-items:center;gap:6px}
+.textcard{background:linear-gradient(150deg,var(--navy) 0%,var(--navy2) 100%);color:#fff;justify-content:center;padding:30px;border:none}
+.textcard h3{color:var(--sun)}
+.textcard p{color:#c9dcec;font-size:.95rem}
+
+/* how */
+.how{background:var(--navy);color:#fff;position:relative;overflow:hidden}
+.how::before{content:"";position:absolute;right:-140px;top:-140px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,rgba(242,181,68,.22),transparent 70%)}
+.how::after{content:"";position:absolute;left:-120px;bottom:-160px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(255,106,77,.18),transparent 70%)}
+.how .sec-head h2{color:#fff}.how .sec-head p{color:#b9d0e2}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:22px;position:relative;z-index:1}
+.step{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:16px;padding:26px 22px;transition:background .2s}
+.step:hover{background:rgba(255,255,255,.11)}
+.step .n{font-family:'Sora';font-weight:800;font-size:2.2rem;color:var(--sun);line-height:1}
+.step h3{margin:12px 0 8px;font-size:1.02rem}
+.step p{font-size:.88rem;color:#c9dcec}
+
+/* trust */
+.trust .grid2{display:grid;grid-template-columns:1.1fr 1fr;gap:52px;align-items:center}
+.trust .ph{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);position:relative}
+.trust .ph img{width:100%;height:420px;object-fit:cover}
+.checks{list-style:none;margin-top:20px}
+.checks li{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);color:#33506a;font-weight:500}
+.checks svg{flex:none}
+@media(max-width:860px){.trust .grid2{grid-template-columns:1fr}}
+
+/* faq */
+.faq{background:#fbf5ea}
+.faq details{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin-bottom:12px;box-shadow:0 4px 14px -8px rgba(7,34,59,.12)}
+.faq summary{font-family:'Sora';font-weight:700;color:var(--navy);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";width:22px;height:22px;flex:none;background:var(--coral);mask:radial-gradient(circle,transparent 55%,#000 56%) center/contain;border-radius:50%;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 9l6 6 6-6' fill='none' stroke='%23000' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E") center/16px no-repeat}
+.faq details[open] summary::after{transform:rotate(180deg)}
+.faq p{margin-top:10px;color:#4c6175;font-size:.95rem}
+
+/* cta band */
+.band{background:linear-gradient(115deg,var(--coral) 0%,var(--coral-d) 55%,#b93a1e 100%);color:#fff;text-align:center;border-radius:24px;padding:58px 30px;box-shadow:0 24px 60px -24px rgba(226,80,47,.55);position:relative;overflow:hidden}
+.band::before{content:"";position:absolute;inset:0;background:radial-gradient(600px 200px at 80% -20%,rgba(255,255,255,.28),transparent 60%)}
+.band h2{font-size:clamp(1.6rem,3.4vw,2.3rem);position:relative}
+.band p{max-width:520px;margin:12px auto 28px;opacity:.92;position:relative}
+.band .btn{background:#fff;color:var(--coral-d);box-shadow:0 12px 28px -12px rgba(0,0,0,.4)}
+
+/* footer */
+footer{background:var(--ink);color:#9db4c6;padding:60px 0 34px;font-size:.9rem}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;margin-bottom:34px}
+footer h4{color:#fff;font-family:'Sora';font-size:1rem;margin-bottom:14px}
+footer a:hover{color:var(--sun)}
+.fbrand p{max-width:340px;margin-top:10px}
+.disclaim{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;display:flex;flex-direction:column;gap:8px;font-size:.82rem;color:#7b93a8}
+.disclaim .proto{background:rgba(242,181,68,.12);border:1px solid rgba(242,181,68,.35);color:#f5d48f;padding:12px 16px;border-radius:10px;font-weight:600}
+@media(max-width:860px){.fgrid{grid-template-columns:1fr}}
+
+/* float wa */
+.float{position:fixed;right:22px;bottom:22px;z-index:60;background:#25d366;color:#fff;border-radius:999px;padding:14px 20px;font-weight:700;display:inline-flex;gap:10px;align-items:center;box-shadow:0 14px 34px -10px rgba(37,211,102,.6)}
+.float:hover{transform:translateY(-2px)}
+</style>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap">
+  <span>Reservas e orçamento: <b>WhatsApp (17) 99122-3661</b></span>
+  <span>São José do Rio Preto — SP · Saídas da nossa cidade</span>
+</div></div>
+
+<header class="nav"><div class="wrap">
+  <a class="brand" href="#top">
+    <svg width="34" height="34" viewBox="0 0 48 48"><rect width="48" height="48" rx="12" fill="#07223b"/><circle cx="24" cy="18" r="7" fill="#f2b544"/><path d="M8 32c5-4 10-4 16 0s11 4 16 0" stroke="#ff6a4d" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M8 38c5-4 10-4 16 0s11 4 16 0" stroke="#2f8fa8" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+    IRP Turismo
+  </a>
+  <nav class="navlinks">
+    <a href="#destinos">Destinos</a>
+    <a href="#como">Como reservar</a>
+    <a href="#porque">Por que a IRP</a>
+    <a href="#faq">Dúvidas</a>
+  </nav>
+  <a class="btn" href="https://wa.me/5517991223661?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20informa%C3%A7%C3%B5es%20sobre%20os%20pacotes!" target="_blank" rel="noopener">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5 13.4c-.3.8-1.6 1.5-2.3 1.4-.7-.1-1.6-.4-3.3-1.5-2.1-1.5-3-3.1-3.1-3.3-.1-.2-.7-.9-.7-1.8s.4-1.3.6-1.5c.2-.2.4-.2.6-.2h.4c.2 0 .3 0 .5.4l.7 1.6c.1.1.1.3 0 .4l-.3.4-.4.5c-.1.1-.2.3 0 .5.2.3.7 1.1 1.4 1.7.9.8 1.3.9 1.5 1 .2.1.4 0 .5-.1l.7-.9c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3s0 .5-.3 1z"/></svg>
+    Reservar no WhatsApp
+  </a>
+</div></header>
+
+<section class="hero" id="top" style="padding:0">
+  <div class="bgimg"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1920&q=70&auto=format&fit=crop" alt="Praia tropical ao amanhecer com mar calmo — imagem ilustrativa de banco de imagens"></div>
+  <div class="wrap">
+    <span class="kicker">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 9.2 8.6 2 9.3l5.5 5-1.7 7.2L12 17.8l6.2 3.7-1.7-7.2 5.5-5-7.2-.7z"/></svg>
+      Agência de viagens · São José do Rio Preto
+    </span>
+    <h1>De Rio Preto pro <em>Brasil inteiro</em>, sem dor de cabeça.</h1>
+    <p class="lead">Pacotes, bate-voltas e excursões com saída da nossa cidade, ônibus fretado, hospedagem confirmada e um atendente de verdade no WhatsApp do outro lado.</p>
+    <div class="ctas">
+      <a class="btn" href="https://wa.me/5517991223661?text=Ol%C3%A1%21%20Quero%20saber%20as%20pr%C3%B3ximas%20sa%C3%ADdas%20e%20valores." target="_blank" rel="noopener">Ver datas e valores no WhatsApp</a>
+      <a class="btn ghost" style="color:#fff;border-color:#fff" href="#destinos">Explorar destinos</a>
+    </div>
+    <div class="stats">
+      <div><b>44 mil</b><span>seguidores no Instagram @irpturismo</span></div>
+      <div><b>1.354</b><span>roteiros publicados na timeline</span></div>
+      <div><b>CNPJ</b><span>32.698.394/0001-90</span></div>
+    </div>
+  </div>
+</section>
+
+<svg class="wave" viewBox="0 0 1440 64" preserveAspectRatio="none" style="background:transparent"><path d="M0 32C240 64 480 0 720 16s480 48 720 16v32H0z" fill="#fdf6ea"/></svg>
+
+<section class="feature" id="destaque" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">Em destaque — temporada</span><h2>Pacote do mês: Guarujá, um fim de semana na praia</h2>
+      <p>Pacote com 3 dias saindo de Rio Preto, divulgado na grade oficial da agência (novembro/2026).</p></div>
+    <div class="fcard">
+      <div class="ph"><span class="ribbon">Mais procurado</span><img src="https://images.pexels.com/photos/37930298/pexels-photo-37930298.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1100&amp;h=700&amp;fit=crop" alt="Vista aérea de ondas quebrando na areia em praia do Atlântico — imagem ilustrativa de banco de imagens"></div>
+      <div class="bd">
+        <h3>Guarujá / SP — 3 dias</h3>
+        <div class="route">
+          <span class="pill"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2b5c4f" stroke-width="2.4"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>Saída sex, volta dom</span>
+          <span class="pill">Pacote turístico</span><span class="pill">Ônibus de excursão</span>
+        </div>
+        <ul>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#25a06b" stroke-width="3"><path d="M4 12.5l5 5L20 7"/></svg>Transporte ida e volta saindo de Rio Preto</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#25a06b" stroke-width="3"><path d="M4 12.5l5 5L20 7"/></svg>Hospedagem com café da manhã</li>
+          <li><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#25a06b" stroke-width="3"><path d="M4 12.5l5 5L20 7"/></svg>Coordenação da agência durante toda a viagem</li>
+        </ul>
+        <div class="pricebox">
+          <div><small>A partir de, por pessoa</small><b>R$ 710</b></div>
+          <a class="btn" href="https://wa.me/5517991223661?text=Ol%C3%A1%21%20Quero%20reservar%20o%20pacote%20de%20Guaruj%C3%A1!" target="_blank" rel="noopener">Quero esse pacote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="destinos">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">Destinos</span><h2>Próximas viagens na grade da IRP</h2>
+      <p>Roteiros divulgados no site oficial da agência — valores "a partir de", por pessoa. Datas e vagas confirmam no WhatsApp.</p></div>
+    <div class="dgrid">
+      <article class="dcard">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?w=800&q=65&auto=format&fit=crop" alt="Colina de serra com pinheiros e névoa no amanhecer de inverno — imagem ilustrativa de banco de imagens" loading="lazy"></div>
+        <div class="bd"><h3>Campos do Jordão — Inverno</h3>
+          <div class="meta"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5c7186" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>2 dias · fim de semana na serra</div>
+          <div class="foot"><b>A partir de R$ 440</b><a class="mini-cta" href="https://wa.me/5517991223661?text=Quero%20o%20pacote%20de%20Campos%20do%20Jord%C3%A3o!" target="_blank" rel="noopener">Reservar <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+        </div>
+      </article>
+      <article class="dcard">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&q=65&auto=format&fit=crop" alt="Enseada de mar turquesa com barcos ancorados entre rochas e mata — imagem ilustrativa de banco de imagens" loading="lazy"></div>
+        <div class="bd"><h3>Angra dos Reis / RJ</h3>
+          <div class="meta"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5c7186" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>4 dias · mar e ilhas</div>
+          <div class="foot"><b>A partir de R$ 1.220</b><a class="mini-cta" href="https://wa.me/5517991223661?text=Quero%20o%20pacote%20de%20Angra%20dos%20Reis!" target="_blank" rel="noopener">Reservar <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+        </div>
+      </article>
+      <article class="dcard">
+        <div class="ph"><img src="https://images.pexels.com/photos/36839861/pexels-photo-36839861.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800&amp;h=600&amp;fit=crop" alt="Cataratas largas com névoa e passarela de turistas no Parque do Iguaçu — imagem ilustrativa de banco de imagens" loading="lazy"></div>
+        <div class="bd"><h3>Foz do Iguaçu + Paraguai + Argentina</h3>
+          <div class="meta"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5c7186" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3.5 3 14 0 18-3-4-3-14.5 0-18z"/></svg>3 dias · fronteira e cataratas</div>
+          <div class="foot"><b>A partir de R$ 770</b><a class="mini-cta" href="https://wa.me/5517991223661?text=Quero%20o%20pacote%20de%20Foz%20do%20Igua%C3%A7u!" target="_blank" rel="noopener">Reservar <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+        </div>
+      </article>
+      <article class="dcard">
+        <div class="ph"><img src="https://images.pexels.com/photos/4155199/pexels-photo-4155199.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=800&amp;h=600&amp;fit=crop" alt="Campo de tulipas vermelhas em plena floração sob sol — imagem ilustrativa de banco de imagens" loading="lazy"></div>
+        <div class="bd"><h3>Holambra / SP — Bate-volta</h3>
+          <div class="meta"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#5c7186" stroke-width="2"><path d="M12 21s-7-4.6-7-10a7 7 0 0 1 14 0c0 5.4-7 10-7 10z"/><circle cx="12" cy="11" r="2.6"/></svg>Um dia inteiro na cidade das flores</div>
+          <div class="foot"><b>A partir de R$ 330</b><a class="mini-cta" href="https://wa.me/5517991223661?text=Quero%20o%20bate-volta%20de%20Holambra!" target="_blank" rel="noopener">Reservar <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+        </div>
+      </article>
+      <article class="dcard textcard">
+        <h3>Caverna do Diabo + Vale das Ostras</h3>
+        <p>Roteiro de ecoturismo com saída de Rio Preto, divulgado na grade oficial da agência.</p>
+        <a class="btn" style="align-self:flex-start;margin-top:14px" href="https://wa.me/5517991223661?text=Quero%20informa%C3%A7%C3%B5es%20da%20Caverna%20do%20Diabo%20e%20Vale%20das%20Ostras!" target="_blank" rel="noopener">Pedir roteiro completo</a>
+      </article>
+      <article class="dcard textcard">
+        <h3>Montanhas de Minas: Tiradentes e Capitólio</h3>
+        <p>Excursões históricas e lagos, com saídas ao longo do calendário da agência.</p>
+        <a class="btn" style="align-self:flex-start;margin-top:14px" href="https://wa.me/5517991223661?text=Quero%20informa%C3%A7%C3%B5es%20das%20excurs%C3%B5es%20em%20Minas!" target="_blank" rel="noopener">Pedir roteiro completo</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="how" id="como">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag" style="color:var(--sun)">Simples assim</span><h2>Como reservar sua viagem</h2>
+      <p>Sem cadastro em aplicativo, sem cartão na hora: você fala com gente de Rio Preto, do início ao fim.</p></div>
+    <div class="steps">
+      <div class="step"><div class="n">1</div><h3>Chame no WhatsApp</h3><p>Diga o destino ou o mês que quer viajar — (17) 99122-3661.</p></div>
+      <div class="step"><div class="n">2</div><h3>Receba o roteiro</h3><p>Transporte, hospedagem, horários de saída e valor por pessoa, certinho.</p></div>
+      <div class="step"><div class="n">3</div><h3>Garanta a vaga</h3><p>Reserva com sinal; o restante você parcelas conforme o combinado.</p></div>
+      <div class="step"><div class="n">4</div><h3>Embarque em Rio Preto</h3><p>Ônibus sai da cidade, com coordenação da agência a bordo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="trust" id="porque">
+  <div class="wrap grid2">
+    <div class="ph"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=1000&q=70&auto=format&fit=crop" alt="Barco em lago de montanha — imagem ilustrativa de banco de imagens" loading="lazy"></div>
+    <div>
+      <div class="sec-head" style="margin-bottom:10px"><span class="tag">Por que a IRP</span><h2>A agência que viaja junto com você</h2></div>
+      <ul class="checks">
+        <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#25a06b" stroke-width="3"><path d="M4 12.5l5 5L20 7"/></svg><span><b>Empresa formalizada</b> — CNPJ 32.698.394/0001-90, contrato e recibo para cada reserva.</span></li>
+        <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#25a06b" stroke-width="3"><path d="M4 12.5l5 5L20 7"/></svg><span><b>Saídas de Rio Preto</b> — você não precisa resolver traslado nem madrugar em outro aeroporto.</span></li>
+        <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#25a06b" stroke-width="3"><path d="M4 12.5l5 5L20 7"/></svg><span><b>Atendimento humano no WhatsApp</b> — o mesmo número atende antes, durante e depois da viagem.</span></li>
+        <li><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#25a06b" stroke-width="3"><path d="M4 12.5l5 5L20 7"/></svg><span><b>Comunidade de viajantes</b> — mais de 44 mil seguidores acompanham as saídas no Instagram <a href="https://instagram.com/irpturismo" target="_blank" rel="noopener" style="color:var(--sea);font-weight:600">@irpturismo</a>.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="sec-head"><span class="tag">Dúvidas frequentes</span><h2>Antes de perguntar no zap, dá uma olhada</h2></div>
+    <details open><summary>Preciso ir ao escritório para reservar?</summary><p>Não. A reserva começa no WhatsApp (17) 99122-3661: você escolhe o pacote, recebe o roteiro com valores e confirma com o sinal combinado.</p></details>
+    <details><summary>Quanto custa e como pago?</summary><p>Cada pacote tem valor "a partir de" por pessoa (ex.: Guarujá R$ 710, Campos do Jordão R$ 440, Holambra bate-volta R$ 330). O pagamento é combinado direto com a agência — sinal na reserva e restante conforme datas.</p></details>
+    <details><summary>O pacote inclui transporte de Rio Preto?</summary><p>Sim. Os pacotes da IRP têm saída de São José do Rio Preto, com ônibus de excursão e coordenação da agência durante o trajeto.</p></details>
+    <details><summary>Posso viajar sozinho(a) ou com crianças?</summary><p>Pode — muitas saídas são de grupos mistos e famílias. Informe no WhatsApp que a equipe ajuda a escolher o quarto e o assento adequados.</p></details>
+    <details><summary>Qual a idade mínima / preciso de documentos especiais?</summary><p>Menores viajam acompanhados dos responsáveis ou com autorização. Leve documento com foto; viagens de fronteira (Foz/Paraguai/Argentina) pedem documentação específica, que a agência explica antes do embarque.</p></details>
+  </div>
+</section>
+
+<section style="padding-bottom:96px">
+  <div class="wrap">
+    <div class="band">
+      <h2>Sua próxima viagem começa com um "oi" no WhatsApp</h2>
+      <p>Valores, datas e vagas mudam toda semana. Fale agora com a equipe da IRP e garanta sua vaga.</p>
+      <a class="btn" href="https://wa.me/5517991223661?text=Ol%C3%A1%21%20Quero%20viajar%20com%20a%20IRP%20Turismo." target="_blank" rel="noopener">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="#e2502f"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+        Chamar a IRP Turismo agora
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fbrand">
+        <a class="brand" style="color:#fff" href="#top">
+          <svg width="30" height="30" viewBox="0 0 48 48"><rect width="48" height="48" rx="12" fill="#0c3154"/><circle cx="24" cy="18" r="7" fill="#f2b544"/><path d="M8 32c5-4 10-4 16 0s11 4 16 0" stroke="#ff6a4d" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+          IRP Turismo
+        </a>
+        <p>Agência de viagens em São José do Rio Preto — pacotes, bate-voltas e excursões saindo da cidade. Reservas: (17) 99122-3661 · irpturismo2901@gmail.com</p>
+      </div>
+      <div><h4>Destinos</h4>
+        <p><a href="#destinos">Guarujá</a> · <a href="#destinos">Angra dos Reis</a> · <a href="#destinos">Campos do Jordão</a> · <a href="#destinos">Foz do Iguaçu</a> · <a href="#destinos">Holambra</a></p>
+      </div>
+      <div><h4>Social</h4>
+        <p><a href="https://instagram.com/irpturismo" target="_blank" rel="noopener">Instagram @irpturismo</a><br><a href="https://facebook.com/turismoirpi" target="_blank" rel="noopener">Facebook /turismoirpi</a><br><a href="https://irpturismo.com.br" target="_blank" rel="noopener">Site oficial da agência</a></p>
+      </div>
+    </div>
+    <div class="disclaim">
+      <div class="proto">Protótipo criado pela Agência Rio Preto Tech — não é o site oficial.</div>
+      <span>Destinos, valores e condições reproduzidos do site oficial irpturismo.com.br em leitura de 24/10/2026 (grade out/2026–set/2027). Fotos de bancos de imagens livres (Unsplash/Pexels) — ilustrativas, não representam os roteiros. Datas e vagas exigem confirmação com a agência.</span>
+      <span>© IRP Turismo — CNPJ 32.698.394/0001-90 · São José do Rio Preto/SP</span>
+    </div>
+  </div>
+</footer>
+
+<a class="float" href="https://wa.me/5517991223661?text=Ol%C3%A1%21%20Vim%20pelo%20site%20demo%20e%20quero%20informa%C3%A7%C3%B5es." target="_blank" rel="noopener">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5 13.4c-.3.8-1.6 1.5-2.3 1.4-.7-.1-1.6-.4-3.3-1.5-2.1-1.5-3-3.1-3.1-3.3-.1-.2-.7-.9-.7-1.8s.4-1.3.6-1.5c.2-.2.4-.2.6-.2h.4c.2 0 .3 0 .5.4l.7 1.6c.1.1.1.3 0 .4l-.3.4-.4.5c-.1.1-.2.3 0 .5.2.3.7 1.1 1.4 1.7.9.8 1.3.9 1.5 1 .2.1.4 0 .5-.1l.7-.9c.2-.2.3-.2.5-.1l1.6.8c.2.1.4.2.4.3s0 .5-.3 1z"/></svg>
+  (17) 99122-3661
+</a>
+
+</body>
+</html>
