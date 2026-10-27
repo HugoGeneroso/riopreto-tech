@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lílian Marchiori — Fonoaudiologia Infantil em São José do Rio Preto</title>
+<meta name="description" content="Fonoaudióloga graduada pela Faculdade de Medicina da USP de Ribeirão Preto. Desenvolvimento da comunicação da sua criança, com agendamento direto pelo WhatsApp. São José do Rio Preto/SP — protótipo de site.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Lílian Marchiori — Fonoaudiologia Infantil",
+  "description": "Fonoaudióloga graduada pela Faculdade de Medicina da USP de Ribeirão Preto, dedicada ao desenvolvimento da comunicação de crianças em São José do Rio Preto.",
+  "medicalSpecialty": "Speech",
+  "url": "https://riopreto.tech/p/lilian-marchiori/",
+  "areaServed": { "@type": "City", "name": "São José do Rio Preto" },
+  "address": { "@type": "PostalAddress", "addressLocality": "São José do Rio Preto", "addressRegion": "SP", "addressCountry": "BR" },
+  "telephone": "+55 17 98152-9053",
+  "sameAs": ["https://www.instagram.com/fonolilianmarchiori", "https://linktr.ee/fonolilianmarchiori"]
+}
+</script>
+<style>
+:root{
+  --petroleo:#0f5f5a; --petroleo-esc:#0a423e; --petroleo-deep:#062d2a;
+  --menta:#3fa79c; --menta-claro:#bfe6e0;
+  --mel:#f2a33c; --mel-esc:#d9832a; --mel-claro:#ffe9c9;
+  --creme:#fdfaf4; --areia:#f6efe3; --papel:#ffffff;
+  --tinta:#20312f; --cinza:#546866; --linha:#e4dcc9;
+  --grad-hero:linear-gradient(155deg,var(--petroleo-deep) 0%,var(--petroleo) 52%,#177a70 100%);
+  --grad-mel:linear-gradient(120deg,var(--mel) 0%,var(--mel-esc) 100%);
+  --sombra:0 22px 46px -18px rgba(6,45,42,.32);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito Sans',system-ui,sans-serif;color:var(--tinta);background:var(--creme);line-height:1.65;overflow-x:hidden}
+h1,h2,h3,.serif{font-family:'Fraunces',Georgia,serif}
+img{max-width:100%;display:block;border-radius:22px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.kicker{display:inline-flex;align-items:center;gap:9px;font-weight:800;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--petroleo)}
+.kicker::before{content:"";width:26px;height:2px;background:var(--mel);border-radius:2px}
+section{padding:86px 0;position:relative}
+
+/* fundo em camadas — textura de "gotas de fala" */
+.camadas{position:absolute;inset:0;pointer-events:none;z-index:0}
+.camadas svg{position:absolute;opacity:.5}
+.camadas .blob1{top:-70px;right:-60px;width:420px}
+.camadas .blob2{bottom:-90px;left:-70px;width:520px;opacity:.35}
+.conteudo{position:relative;z-index:1}
+
+/* ===== topo ===== */
+header{position:sticky;top:0;z-index:60;background:rgba(253,250,244,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--linha)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:14px;padding-bottom:14px}
+.logo{display:flex;align-items:center;gap:11px;font-family:'Fraunces',serif;font-weight:900;font-size:1.12rem;color:var(--petroleo-deep);text-decoration:none}
+.logo .selo{width:38px;height:38px;border-radius:13px;background:var(--grad-hero);display:grid;place-items:center;color:#fff;flex:none}
+nav{display:flex;gap:26px}
+nav a{color:var(--cinza);text-decoration:none;font-weight:700;font-size:.92rem}
+nav a:hover{color:var(--petroleo)}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 24px;border-radius:999px;font-weight:800;text-decoration:none;font-size:.95rem;transition:transform .18s ease,box-shadow .18s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-mel{background:var(--grad-mel);color:#3d2606;box-shadow:0 12px 26px -10px rgba(217,131,42,.55)}
+.btn-petroleo{background:var(--petroleo);color:#eafaf6;box-shadow:0 12px 26px -12px rgba(15,95,90,.6)}
+.btn-ghost{border:2px solid var(--petroleo);color:var(--petroleo)}
+header .btn{padding:10px 18px;font-size:.86rem}
+
+/* ===== hero ===== */
+.hero{background:var(--grad-hero);color:#eefaf7;padding:104px 0 118px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-140px;top:-140px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle at 35% 35%,rgba(242,163,60,.32),transparent 65%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:54px;align-items:center;position:relative;z-index:2}
+.hero h1{font-size:clamp(2.1rem,4.6vw,3.35rem);line-height:1.12;font-weight:900;color:#fff}
+.hero h1 em{font-style:normal;color:var(--mel)}
+.hero .kicker{color:var(--menta-claro)}
+.hero .kicker::before{background:var(--mel)}
+.hero p.lead{margin:20px 0 30px;color:#cfe9e4;font-size:1.07rem;max-width:33em}
+.hero .acoes{display:flex;gap:14px;flex-wrap:wrap}
+.hero .confianca{display:flex;gap:10px;flex-wrap:wrap;margin-top:30px}
+.pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);padding:8px 15px;border-radius:999px;font-size:.86rem;font-weight:700;color:#e9f6f2}
+.pill svg{flex:none}
+.hero-foto{position:relative}
+.hero-foto img{width:100%;height:520px;object-fit:cover;border-radius:30px 30px 90px 30px;box-shadow:var(--sombra)}
+.hero-foto .cartao{position:absolute;left:-26px;bottom:-22px;background:var(--papel);color:var(--tinta);border-radius:18px;padding:15px 19px;box-shadow:var(--sombra);display:flex;gap:12px;align-items:center;max-width:300px}
+.hero-foto .cartao b{font-family:'Fraunces',serif;font-size:1rem;color:var(--petroleo-deep)}
+.hero-foto .cartao span{display:block;font-size:.82rem;color:var(--cinza)}
+.hero-foto .cartao .icone{width:42px;height:42px;flex:none;border-radius:13px;background:var(--mel-claro);display:grid;place-items:center;color:var(--mel-esc)}
+
+/* faixa de credenciais */
+.faixa{background:var(--areia);border-top:1px solid var(--linha);border-bottom:1px solid var(--linha);padding:26px 0}
+.faixa .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.faixa .item{display:flex;gap:13px;align-items:center}
+.faixa .item .icone{width:44px;height:44px;flex:none;border-radius:14px;background:var(--papel);border:1px solid var(--linha);display:grid;place-items:center;color:var(--petroleo)}
+.faixa .item b{display:block;font-size:.95rem;color:var(--petroleo-deep)}
+.faixa .item span{font-size:.84rem;color:var(--cinza)}
+
+/* ===== como funciona ===== */
+.secao-head{text-align:center;max-width:38em;margin:0 auto 54px}
+.secao-head h2{font-size:clamp(1.7rem,3.4vw,2.4rem);color:var(--petroleo-deep);margin:12px 0 14px;font-weight:900}
+.secao-head p{color:var(--cinza)}
+.passos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.passo{background:var(--papel);border:1px solid var(--linha);border-radius:24px;padding:30px 26px;position:relative;box-shadow:0 10px 30px -18px rgba(6,45,42,.22)}
+.passo .n{font-family:'Fraunces',serif;font-weight:900;font-size:2.6rem;color:var(--mel);line-height:1;margin-bottom:14px}
+.passo h3{font-size:1.16rem;color:var(--petroleo-deep);margin-bottom:10px}
+.passo p{font-size:.94rem;color:var(--cinza)}
+.passo .seta{position:absolute;right:-16px;top:44%;color:var(--menta);z-index:2}
+.passo:last-child .seta{display:none}
+
+/* ===== comunicação (conteúdo) ===== */
+.comunicacao{background:linear-gradient(170deg,var(--areia) 0%,var(--creme) 100%)}
+.comunicacao .grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.comunicacao .fotos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.comunicacao .fotos img{height:220px;width:100%;object-fit:cover;border-radius:20px}
+.comunicacao .fotos img.alto{height:454px;border-radius:24px}
+.comunicacao h2{font-size:clamp(1.6rem,3.2vw,2.25rem);color:var(--petroleo-deep);margin:12px 0 16px;font-weight:900}
+.comunicacao p{color:var(--cinza);margin-bottom:16px}
+.lista{list-style:none;display:grid;gap:12px;margin-top:20px}
+.lista li{display:flex;gap:12px;align-items:flex-start;background:var(--papel);border:1px solid var(--linha);border-radius:16px;padding:13px 16px;font-size:.95rem;font-weight:600;color:var(--tinta)}
+.lista li svg{flex:none;color:var(--petroleo);margin-top:2px}
+
+/* ===== para quem é ===== */
+.cartoes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.cartao-servico{background:var(--papel);border:1px solid var(--linha);border-radius:24px;overflow:hidden;box-shadow:0 14px 34px -20px rgba(6,45,42,.26);display:flex;flex-direction:column}
+.cartao-servico .ph{overflow:hidden;border-radius:0}
+.cartao-servico .ph img{border-radius:0;height:190px;width:100%;object-fit:cover}
+.cartao-servico .corpo{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.cartao-servico h3{color:var(--petroleo-deep);font-size:1.12rem}
+.cartao-servico p{font-size:.92rem;color:var(--cinza);flex:1}
+.wa{display:inline-flex;align-items:center;gap:8px;color:var(--petroleo);font-weight:800;font-size:.9rem;text-decoration:none;border:2px solid var(--menta-claro);border-radius:999px;padding:9px 16px;align-self:flex-start;transition:background .18s}
+.wa:hover{background:var(--mel-claro)}
+
+/* ===== assinatura/citação ===== */
+.citacao{background:var(--grad-hero);color:#eefaf7;border-radius:34px;padding:60px 46px;text-align:center;position:relative;overflow:hidden}
+.citacao::before{content:"";position:absolute;left:-90px;bottom:-120px;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle at 40% 40%,rgba(63,167,156,.4),transparent 70%)}
+.citacao blockquote{font-family:'Fraunces',serif;font-size:clamp(1.3rem,3vw,1.9rem);font-weight:600;max-width:24em;margin:0 auto 18px;position:relative;z-index:1}
+.citacao cite{font-style:normal;color:var(--menta-claro);font-weight:700;position:relative;z-index:1}
+
+/* ===== FAQ ===== */
+.faq{max-width:46em;margin:0 auto}
+details{background:var(--papel);border:1px solid var(--linha);border-radius:18px;padding:18px 22px;margin-bottom:12px}
+summary{cursor:pointer;font-weight:800;color:var(--petroleo-deep);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"";width:22px;height:22px;flex:none;border-radius:50%;background:var(--areia);display:grid;place-items:center}
+details[open] summary::after{background:var(--mel-claro)}
+details p{margin-top:12px;color:var(--cinza);font-size:.95rem}
+
+/* ===== fechamento ===== */
+.fecha{background:linear-gradient(170deg,var(--creme) 0%,var(--areia) 100%);text-align:center}
+.fecha h2{font-size:clamp(1.8rem,3.6vw,2.5rem);color:var(--petroleo-deep);margin:14px auto 16px;max-width:16em;font-weight:900}
+.fecha p{color:var(--cinza);max-width:34em;margin:0 auto 30px}
+.nota-horizonte{font-size:.8rem;color:#8a9794;margin-top:22px}
+
+footer{background:var(--petroleo-deep);color:#b9d8d2;padding:44px 0 38px;font-size:.9rem}
+footer .wrap{display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center}
+footer a{color:var(--menta-claro)}
+footer .aviso{border:1px dashed rgba(191,230,224,.45);border-radius:14px;padding:12px 18px;font-weight:700;color:#dff1ec}
+
+@media (max-width:920px){
+  .hero .wrap,.comunicacao .grid{grid-template-columns:1fr}
+  .hero-foto{order:-1}
+  .hero-foto img{height:340px}
+  .hero-foto .cartao{left:12px;max-width:260px}
+  .passos,.cartoes,.faixa .wrap{grid-template-columns:1fr}
+  .passo .seta{display:none}
+  nav{display:none}
+  .citacao{padding:44px 24px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="logo" href="#topo">
+      <span class="selo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 19a7 7 0 0 1-7-7c0-3 2-5 4-6"/><path d="M12 19a7 7 0 0 0 7-7c0-3-2-5-4-6"/><circle cx="12" cy="6" r="2.5"/></svg></span>
+      Lílian Marchiori
+    </a>
+    <nav>
+      <a href="#como">Como funciona</a>
+      <a href="#comunicacao">Comunicação</a>
+      <a href="#atendimento">Atendimento</a>
+      <a href="#duvidas">Dúvidas</a>
+    </nav>
+    <a class="btn btn-mel" href="https://wa.me/5517981529053?text=Ol%C3%A1%20L%C3%ADlian!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20fonoaudiol%C3%B3gica%20para%20minha%20crian%C3%A7a." target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg>
+      Agendar
+    </a>
+  </div>
+</header>
+
+<section class="hero" id="topo">
+  <div class="camadas">
+    <svg class="blob1" viewBox="0 0 400 400"><g fill="none" stroke="rgba(191,230,224,.28)" stroke-width="2"><circle cx="200" cy="200" r="60"/><circle cx="200" cy="200" r="110"/><circle cx="200" cy="200" r="160"/><circle cx="200" cy="200" r="200"/></g></svg>
+    <svg class="blob2" viewBox="0 0 500 500"><g fill="rgba(242,163,60,.16)"><circle cx="80" cy="420" r="46"/><circle cx="200" cy="470" r="28"/><circle cx="330" cy="430" r="60"/><circle cx="450" cy="480" r="34"/></g></svg>
+  </div>
+  <div class="wrap conteudo">
+    <div>
+      <span class="kicker">Fonoaudiologia infantil · São José do Rio Preto</span>
+      <h1>Desenvolvendo a <em>comunicação</em> da sua criança</h1>
+      <p class="lead">Acompanhamento fonoaudiológico com formação pela Faculdade de Medicina da USP de Ribeirão Preto — do primeiro som às primeiras frases, com plano de terapia desenhado para cada família.</p>
+      <div class="acoes">
+        <a class="btn btn-mel" href="https://wa.me/5517981529053?text=Ol%C3%A1%20L%C3%ADlian!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20fonoaudiol%C3%B3gica%20para%20minha%20crian%C3%A7a." target="_blank" rel="noopener">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg>
+          Agendar avaliação pelo WhatsApp
+        </a>
+        <a class="btn btn-ghost" style="border-color:rgba(255,255,255,.4);color:#eefaf7" href="#como">Ver como funciona</a>
+      </div>
+      <div class="confianca">
+        <span class="pill"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>Formada pela FM-USP Ribeirão Preto</span>
+        <span class="pill"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>Agendamento direto, sem intermediário</span>
+        <span class="pill"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21a8 8 0 0 0-16 0"/><circle cx="12" cy="8" r="4"/></svg>Acompanhamento individual</span>
+      </div>
+    </div>
+    <div class="hero-foto">
+      <img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=1200&q=80&auto=format&fit=crop" alt="Criança feliz e confiante brincando ao ar livre — imagem ilustrativa" loading="eager">
+      <div class="cartao">
+        <span class="icone"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 2v4M16 2v4M3 10h18"/><rect x="3" y="4" width="18" height="18" rx="2"/></svg></span>
+        <div><b>Agenda do mês aberta</b><span>Toque em "Agendar" e fale direto com a Lílian no WhatsApp</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="faixa">
+  <div class="wrap">
+    <div class="item"><span class="icone"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span><div><b>USP — FM Ribeirão Preto</b><span>graduação na Faculdade de Medicina</span></div></div>
+    <div class="item"><span class="icone"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8z"/></svg></span><div><b>100% pelo WhatsApp</b><span>mesmo canal que pais e pediatras já usam</span></div></div>
+    <div class="item"><span class="icone"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span><div><b>São José do Rio Preto</b><span>atendimento na cidade, região Noroeste paulista</span></div></div>
+  </div>
+</div>
+
+<section id="como">
+  <div class="camadas"><svg class="blob2" style="top:-120px;left:auto;right:-90px;bottom:auto" viewBox="0 0 500 500"><g fill="rgba(63,167,156,.10)"><circle cx="100" cy="80" r="70"/><circle cx="260" cy="60" r="40"/><circle cx="400" cy="120" r="90"/></g></svg></div>
+  <div class="wrap conteudo">
+    <div class="secao-head">
+      <span class="kicker">Primeiro passo</span>
+      <h2>Três passos até a avaliação</h2>
+      <p>Sem cadastro em plataforma, sem ligação para secretária eletrônica: o caminho mais curto entre a sua dúvida de hoje e o olhar de uma especialista.</p>
+    </div>
+    <div class="passos">
+      <div class="passo">
+        <div class="n">1</div>
+        <h3>Chame no WhatsApp</h3>
+        <p>Diga a idade da criança e o que você observa — demora para falar, troca de sons, dificuldade para entender. A primeira conversa é pelo mesmo botão deste site.</p>
+        <span class="seta"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <div class="passo">
+        <div class="n">2</div>
+        <h3>Avaliação fonoaudiológica</h3>
+        <p>Sessão inicial para entender a comunicação da criança no contexto real: som, fala, linguagem e interação. A partir dela nasce um plano individual.</p>
+        <span class="seta"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+      </div>
+      <div class="passo">
+        <div class="n">3</div>
+        <h3>Terapia com metas visíveis</h3>
+        <p>Encontros regulares com orientação contínua para a família — evolução combinada e documentada, sem "achismo" sobre o progresso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="comunicacao" id="comunicacao">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <span class="kicker">O que está em jogo</span>
+        <h2>Comunicação é a base de tudo que vem depois</h2>
+        <p>Antes da alfabetização, antes da amizade no parquinho, antes da autonomia: existe a capacidade de ser entendido e de entender. Quando ela atrasa ou desvia do caminho esperado, o tempo da criança é o que mais custa.</p>
+        <p>O papel da fonoaudiologia infantil é ler esses sinais cedo, orientar a família e treinar — em jogo, com método, na velocidade de cada criança.</p>
+        <ul class="lista">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Criança que ainda não fala (ou fala pouco para a idade)</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Fala difícil de entender fora de casa</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Gagueira, repetições e bloqueios ao falar</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Dúvida levantada por pediatra, creche ou escola</li>
+        </ul>
+      </div>
+      <div class="fotos">
+        <img class="alto" src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=700&q=75&auto=format&fit=crop" alt="Atendimento individual com acompanhamento da criança — imagem ilustrativa" loading="lazy">
+        <div>
+          <img src="https://images.unsplash.com/photo-1519689680058-324335c77eba?w=700&q=75&auto=format&fit=crop" alt="Família com bebê — imagem ilustrativa" loading="lazy">
+          <img style="margin-top:14px" src="https://images.unsplash.com/photo-1522771930-78848d9293e8?w=700&q=75&auto=format&fit=crop" alt="Cantinho infantil aconchegante — imagem ilustrativa" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="atendimento">
+  <div class="wrap">
+    <div class="secao-head">
+      <span class="kicker">Atendimento</span>
+      <h2>Feito para caber na rotina da família</h2>
+      <p>Horários, valores e encaixes são combinados diretamente — sem fila de espera de clínica grande.</p>
+    </div>
+    <div class="cartoes">
+      <div class="cartao-servico">
+        <div class="ph"><img src="https://images.pexels.com/photos/10498062/pexels-photo-10498062.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Ensaio em família — imagem ilustrativa" loading="lazy"></div>
+        <div class="corpo">
+          <h3>Avaliação inicial</h3>
+          <p>Mapa completo da comunicação da criança e orientação sobre os próximos passos, com relatório para a família.</p>
+          <a class="wa" href="https://wa.me/5517981529053?text=Ol%C3%A1!%20Quero%20agendar%20uma%20AVALIA%C3%87%C3%83O." target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg>Quero agendar avaliação</a>
+        </div>
+      </div>
+      <div class="cartao-servico">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1555252333-9f8e92e65df9?w=700&q=75&auto=format&fit=crop" alt="Bebê recém-nascido — imagem ilustrativa" loading="lazy"></div>
+        <div class="corpo">
+          <h3>Terapia regular</h3>
+          <p>Encontros semanais com metas por etapa, material para casa e devolutiva contínua para os pais.</p>
+          <a class="wa" href="https://wa.me/5517981529053?text=Ol%C3%A1!%20Quero%20come%C3%A7ar%20a%20TERAPIA." target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg>Falar sobre terapia</a>
+        </div>
+      </div>
+      <div class="cartao-servico">
+        <div class="ph"><img src="https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=700&q=75&auto=format&fit=crop" alt="Criança confiante durante atividade — imagem ilustrativa" loading="lazy"></div>
+        <div class="corpo">
+          <h3>Segunda opinião</h3>
+          <p>Já faz acompanhamento e quer uma leitura complementar? Comece contando o que já foi feito.</p>
+          <a class="wa" href="https://wa.me/5517981529053?text=Ol%C3%A1!%20Gostaria%20de%20uma%20SEGUNDA%20OPINI%C3%83O." target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg>Pedir orientação</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="citacao">
+      <blockquote>"O melhor investimento no desenvolvimento da sua criança é a fonoaudiologia."</blockquote>
+      <cite>— princípio que guia cada plano de terapia</cite>
+    </div>
+  </div>
+</section>
+
+<section id="duvidas">
+  <div class="wrap">
+    <div class="secao-head">
+      <span class="kicker">Dúvidas comuns</span>
+      <h2>Pais e mães perguntam</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Meu filho tem 2 anos e quase não fala. É cedo para procurar?</summary><p>Não é cedo — é a hora. A avaliação não "carimba" nada: ela mapeia o que já existe e orienta o que estimular. Quanto antes a família sabe o que observar, mais leve fica o caminho.</p></details>
+      <details><summary>Como funciona o agendamento?</summary><p>Pelo WhatsApp: você conta a idade e o que observa, e recebe as opções de horário e valores diretamente — sem intermediário e sem ligação para robô de triagem.</p></details>
+      <details><summary>Tem nota fiscal para reembolso de plano?</summary><p>Confira diretamente no primeiro contato: o atendimento é particular e a orientação sobre recibos e reembolso é dada caso a caso pela profissional.</p></details>
+      <details><summary>A escola pediu avaliação. Serve?</summary><p>Serve — e é um dos caminhos mais comuns. A avaliação responde à demanda da escola com relatório que apoia o trabalho dos professores.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="fecha">
+  <div class="wrap">
+    <span class="kicker" style="justify-content:center;display:flex">Vamos começar</span>
+    <h2>A primeira conversa leva dois minutos</h2>
+    <p>Chame no WhatsApp, conte o que você tem observado e receba as próximas opções. Simples assim.</p>
+    <a class="btn btn-petroleo" style="font-size:1.02rem;padding:16px 32px" href="https://wa.me/5517981529053?text=Ol%C3%A1%20L%C3%ADlian!%20Vi%20o%20prot%C3%B3tipo%20do%20site%20e%20gostaria%20de%20agendar%20a%20avalia%C3%A7%C3%A3o%20do%20meu%20filho." target="_blank" rel="noopener">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.8a2 2 0 0 1-.5 2.1L8 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg>
+      Agendar agora pelo WhatsApp
+    </a>
+    <p class="nota-horizonte">Instagram: @fonolilianmarchiori · Link para agendamento: linktr.ee/fonolilianmarchiori</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="aviso">Protótipo criado pela Agência Rio Preto Tech — não é o site oficial.</div>
+    <p>Imagens ilustrativas (Unsplash/Pexels). Conteúdo demonstrativo montado a partir do perfil público da profissional (bio do Instagram e linktr.ee, lidos em 27/10/2026); endereço, valores e agenda: a combinar direto no WhatsApp.</p>
+  </div>
+</footer>
+
+</body>
+</html>
